@@ -6,28 +6,27 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.kevin.contact;
-
-import com.kevin.contact.obsolete.OldMain;
+package com.kevin.contact.newbuild;
 
 import java.util.Scanner;
 
 /**
- * @Project Contact
- * @Package com.kevin
- * @Author Kevin KDA
+ * @Program
+ * @ClassName Main
  * @Description TODO
- * @Date 2019/9/27 9:41
+ * @Author Kevin KDA
+ * @Date 2019-10-03 22:08
  * @Interface
  * @Enum
- * @Version 1.4
+ * @Modified By
+ * @Version 1.0
+ * @University HBUT
+ * @Administrative Class 17GB CST 3
  */
 public class Main {
     public static void main(String[] args) {
-//        OldMain oldMain = new OldMain();
-//        oldMain.viewMain();
         Scanner scaScan = new Scanner(System.in);
         ContactManage contactManage = new ContactManage();
-        View viewInterface = new View(scaScan, contactManage);
+//        View viewInterface = new View(scaScan, contactManage);
     }
 }
