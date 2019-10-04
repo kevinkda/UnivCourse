@@ -8,12 +8,15 @@
 
 package com.kevin.contact.newbuild;
 
+import com.kevin.contact.newbuild.connector.RelationshipType;
+import com.kevin.contact.newbuild.contact.Contact;
+
 import java.util.Scanner;
 
 /**
  * @Program
  * @ClassName Main
- * @Description TODO
+ * @Description TODO 提供主程序接口
  * @Author Kevin KDA
  * @Date 2019-10-03 22:08
  * @Interface
@@ -27,6 +30,54 @@ public class Main {
     public static void main(String[] args) {
         Scanner scaScan = new Scanner(System.in);
         ContactManage contactManage = new ContactManage();
-//        View viewInterface = new View(scaScan, contactManage);
+        testa(scaScan, contactManage);
+        UserView viewInterface = new UserView(scaScan, contactManage);
+    }
+
+    private static void testa(Scanner scaScan, ContactManage contactManage) {
+//        contactManage.setRelation(scaScan, new Contact());
+//        RelationshipType.values();
+        contactManage.createContact(
+                new Contact(
+                        "王俊凯",
+                        0,
+                        182,
+                        "17607130921",
+                        "北京市海淀区中关村",
+                        RelationshipType.Family,
+                        "Baby"
+                )
+        );
+        contactManage.createContact(
+                new Contact(
+                        "jkhk",
+                        0,
+                        182,
+                        "2987591",
+                        "shkgaldg",
+                        RelationshipType.Classmate,
+                        "Wuhan"
+                )
+        );
+        contactManage.createContact(
+                new Contact(
+                        "dsjhg",
+                        0,
+                        182,
+                        "135879",
+                        "sdjog",
+                        RelationshipType.BusinessRelated,
+                        "ssgnui"
+                )
+        );
+        contactManage.createContact(
+                new Contact(
+                        "sgjl",
+                        0,
+                        182,
+                        "23508",
+                        "sdgjhknvj"
+                )
+        );
     }
 }

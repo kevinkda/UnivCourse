@@ -8,6 +8,10 @@
 
 package com.kevin.contact.newbuild.contact;
 
+import com.kevin.contact.newbuild.connector.RelationshipType;
+
+import java.util.ArrayList;
+
 /**
  * @Program
  * @ClassName Contact
@@ -21,7 +25,9 @@ package com.kevin.contact.newbuild.contact;
  * @University HBUT
  * @Administrative Class 17GB CST 3
  */
-public class Contact extends PersonalInformation {
+public class Contact extends Relationship {
+    protected static ArrayList<Contact> contactArrayList = new ArrayList<Contact>();
+
     public Contact() {
     }
 
@@ -45,7 +51,27 @@ public class Contact extends PersonalInformation {
         super(strName, intSex, intHeight, strPhone, strAdd);
     }
 
-    enum buddyType{
-        Classmate,Family,BusinessRelated
+    public Contact(String strName, int intSex, int intHeight, String strPhone, String strAdd, RelationshipType relationshipType, String strRelationalValue) {
+        super(strName, intSex, intHeight, strPhone, strAdd, relationshipType, strRelationalValue);
+    }
+
+    public Contact(String strName, int intSex, int intHeight, String strPhone, String strAdd, RelationshipType relationshipType, String strRelationalValue, String strCity, String strRelation, String strBusinessType) {
+        super(strName, intSex, intHeight, strPhone, strAdd, relationshipType, strRelationalValue, strCity, strRelation, strBusinessType);
+    }
+
+    public void setContactData(String strName, int intSex, String strPhone, String strAdd, int intHeight) {
+        setIntHeight(intHeight);
+        setIntSex(intSex);
+        setStrAdd(strAdd);
+        setStrName(strName);
+        setStrPhone(strPhone);
+    }
+
+    public void getContactData() {
+        if (getIntSex() == 0) {
+            System.out.printf("%s\t\t男\t\t%d\t\t%-11s\t\t\t%s%n", getStrName(), getIntHeight(), getStrPhone(), getStrAdd());
+        } else {
+            System.out.printf("%s\t\t女\t\t%d\t\t%-11s\t\t\t%s%n", getStrName(), getIntHeight(), getStrPhone(), getStrAdd());
+        }
     }
 }
