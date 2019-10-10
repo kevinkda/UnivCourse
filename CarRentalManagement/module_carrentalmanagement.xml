@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<project name="module_carrentalmanagement" default="compile.module.carrentalmanagement">
+  <dirname property="module.carrentalmanagement.basedir" file="${ant.file.module_carrentalmanagement}"/>
+  
+  <property name="module.jdk.home.carrentalmanagement" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.carrentalmanagement" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.carrentalmanagement" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.carrentalmanagement" value="-encoding UTF-8 -source 7 -target 7 ${compiler.args}"/>
+  
+  <property name="carrentalmanagement.output.dir" value="${module.carrentalmanagement.basedir}/../out/production/CarRentalManagement"/>
+  <property name="carrentalmanagement.testoutput.dir" value="${module.carrentalmanagement.basedir}/../out/test/CarRentalManagement"/>
+  
+  <path id="carrentalmanagement.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="carrentalmanagement.module.production.classpath">
+    <path refid="${module.jdk.classpath.carrentalmanagement}"/>
+  </path>
+  
+  <path id="carrentalmanagement.runtime.production.module.classpath">
+    <pathelement location="${carrentalmanagement.output.dir}"/>
+  </path>
+  
+  <path id="carrentalmanagement.module.classpath">
+    <path refid="${module.jdk.classpath.carrentalmanagement}"/>
+    <pathelement location="${carrentalmanagement.output.dir}"/>
+  </path>
+  
+  <path id="carrentalmanagement.runtime.module.classpath">
+    <pathelement location="${carrentalmanagement.testoutput.dir}"/>
+    <pathelement location="${carrentalmanagement.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.carrentalmanagement">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.carrentalmanagement">
+    <patternset refid="excluded.from.module.carrentalmanagement"/>
+  </patternset>
+  
+  <path id="carrentalmanagement.module.sourcepath">
+    <dirset dir="${module.carrentalmanagement.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.carrentalmanagement" depends="compile.module.carrentalmanagement.production,compile.module.carrentalmanagement.tests" description="Compile module CarRentalManagement"/>
+  
+  <target name="compile.module.carrentalmanagement.production" depends="register.custom.compilers" description="Compile module CarRentalManagement; production classes">
+    <mkdir dir="${carrentalmanagement.output.dir}"/>
+    <javac2 destdir="${carrentalmanagement.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.carrentalmanagement}/javac">
+      <compilerarg line="${compiler.args.carrentalmanagement}"/>
+      <bootclasspath refid="carrentalmanagement.module.bootclasspath"/>
+      <classpath refid="carrentalmanagement.module.production.classpath"/>
+      <src refid="carrentalmanagement.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.carrentalmanagement"/>
+    </javac2>
+    
+    <copy todir="${carrentalmanagement.output.dir}">
+      <fileset dir="${module.carrentalmanagement.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.carrentalmanagement.tests" depends="register.custom.compilers,compile.module.carrentalmanagement.production" description="compile module CarRentalManagement; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.carrentalmanagement" description="cleanup module">
+    <delete dir="${carrentalmanagement.output.dir}"/>
+    <delete dir="${carrentalmanagement.testoutput.dir}"/>
+  </target>
+</project>

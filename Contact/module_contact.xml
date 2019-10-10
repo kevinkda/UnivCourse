@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<project name="module_contact" default="compile.module.contact">
+  <dirname property="module.contact.basedir" file="${ant.file.module_contact}"/>
+  
+  <property name="module.jdk.home.contact" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.contact" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.contact" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.contact" value="-encoding UTF-8 -source 7 -target 7 ${compiler.args}"/>
+  
+  <property name="contact.output.dir" value="${module.contact.basedir}/../out/production/Contact"/>
+  <property name="contact.testoutput.dir" value="${module.contact.basedir}/../out/test/Contact"/>
+  
+  <path id="contact.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="contact.module.production.classpath">
+    <path refid="${module.jdk.classpath.contact}"/>
+  </path>
+  
+  <path id="contact.runtime.production.module.classpath">
+    <pathelement location="${contact.output.dir}"/>
+  </path>
+  
+  <path id="contact.module.classpath">
+    <path refid="${module.jdk.classpath.contact}"/>
+    <pathelement location="${contact.output.dir}"/>
+  </path>
+  
+  <path id="contact.runtime.module.classpath">
+    <pathelement location="${contact.testoutput.dir}"/>
+    <pathelement location="${contact.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.contact">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.contact">
+    <patternset refid="excluded.from.module.contact"/>
+  </patternset>
+  
+  <path id="contact.module.sourcepath">
+    <dirset dir="${module.contact.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.contact" depends="compile.module.contact.production,compile.module.contact.tests" description="Compile module Contact"/>
+  
+  <target name="compile.module.contact.production" depends="register.custom.compilers" description="Compile module Contact; production classes">
+    <mkdir dir="${contact.output.dir}"/>
+    <javac2 destdir="${contact.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.contact}/javac">
+      <compilerarg line="${compiler.args.contact}"/>
+      <bootclasspath refid="contact.module.bootclasspath"/>
+      <classpath refid="contact.module.production.classpath"/>
+      <src refid="contact.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.contact"/>
+    </javac2>
+    
+    <copy todir="${contact.output.dir}">
+      <fileset dir="${module.contact.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.contact.tests" depends="register.custom.compilers,compile.module.contact.production" description="compile module Contact; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.contact" description="cleanup module">
+    <delete dir="${contact.output.dir}"/>
+    <delete dir="${contact.testoutput.dir}"/>
+  </target>
+</project>

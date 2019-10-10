@@ -124,6 +124,7 @@ public class ContactManage extends Contact {
 
     public void deleteData(Scanner scaScan) {
         showAllData();
+        System.out.print("请输入您需要删除的联系人的标号:");
         int intDeleteSn = scaScan.nextInt();
         contactArrayList.remove(intDeleteSn - 1);
         showAllData();

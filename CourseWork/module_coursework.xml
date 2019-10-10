@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<project name="module_coursework" default="compile.module.coursework">
+  <dirname property="module.coursework.basedir" file="${ant.file.module_coursework}"/>
+  
+  <property name="module.jdk.home.coursework" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.coursework" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.coursework" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.coursework" value="-encoding UTF-8 -source 7 -target 7 ${compiler.args}"/>
+  
+  <property name="coursework.output.dir" value="${module.coursework.basedir}/../out/production/CourseWork"/>
+  <property name="coursework.testoutput.dir" value="${module.coursework.basedir}/../out/test/CourseWork"/>
+  
+  <path id="coursework.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="coursework.module.production.classpath">
+    <path refid="${module.jdk.classpath.coursework}"/>
+  </path>
+  
+  <path id="coursework.runtime.production.module.classpath">
+    <pathelement location="${coursework.output.dir}"/>
+  </path>
+  
+  <path id="coursework.module.classpath">
+    <path refid="${module.jdk.classpath.coursework}"/>
+    <pathelement location="${coursework.output.dir}"/>
+  </path>
+  
+  <path id="coursework.runtime.module.classpath">
+    <pathelement location="${coursework.testoutput.dir}"/>
+    <pathelement location="${coursework.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.coursework">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.coursework">
+    <patternset refid="excluded.from.module.coursework"/>
+  </patternset>
+  
+  <path id="coursework.module.sourcepath">
+    <dirset dir="${module.coursework.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.coursework" depends="compile.module.coursework.production,compile.module.coursework.tests" description="Compile module CourseWork"/>
+  
+  <target name="compile.module.coursework.production" depends="register.custom.compilers" description="Compile module CourseWork; production classes">
+    <mkdir dir="${coursework.output.dir}"/>
+    <javac2 destdir="${coursework.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.coursework}/javac">
+      <compilerarg line="${compiler.args.coursework}"/>
+      <bootclasspath refid="coursework.module.bootclasspath"/>
+      <classpath refid="coursework.module.production.classpath"/>
+      <src refid="coursework.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.coursework"/>
+    </javac2>
+    
+    <copy todir="${coursework.output.dir}">
+      <fileset dir="${module.coursework.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.coursework.tests" depends="register.custom.compilers,compile.module.coursework.production" description="compile module CourseWork; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.coursework" description="cleanup module">
+    <delete dir="${coursework.output.dir}"/>
+    <delete dir="${coursework.testoutput.dir}"/>
+  </target>
+</project>
