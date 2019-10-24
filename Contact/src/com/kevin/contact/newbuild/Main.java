@@ -8,36 +8,127 @@
 
 package com.kevin.contact.newbuild;
 
-import com.kevin.contact.newbuild.connector.RelationshipType;
+import com.kevin.contact.newbuild.connecter.RelationshipType;
 import com.kevin.contact.newbuild.contact.Contact;
+import com.kevin.contact.newbuild.management.ManageControl;
+import com.kevin.contact.newbuild.management.UserView;
 
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * @Program
- * @ClassName Main
- * @Description TODO 提供主程序接口
- * @Author Kevin KDA
- * @Date 2019-10-03 22:08
- * @Interface
- * @Enum
- * @Modified By
- * @Version 1.0
- * @University HBUT
- * @Administrative Class 17GB CST 3
+ * @author Kevin KDA on 2019/10/24 12:43
+ * @version 5.0
+ * @project Java_Course_Assignments
+ * @package com.kevin.contact.newbuild
+ * @classname Main
+ * @description TODO 程序入口类，提供部分测试方法，用于导入数据和测试
+ * @interface/enum Serializable
  */
-public class Main {
-    public static void main(String[] args) {
+public class Main implements Serializable {
+    /**
+     * Serializable参数
+     */
+    private static final long serialVersionUID = -5542151638731493989L;
+
+    /**
+     * @param [args]
+     * @throws
+     * @author Kevin KDA on 2019/10/24 13:17
+     * @description Main / main TODO
+     * @returns void
+     */
+    public static void main(String[] args) throws Exception {
         Scanner scaScan = new Scanner(System.in);
-        ContactManage contactManage = new ContactManage();
-        testa(scaScan, contactManage);
-        UserView viewInterface = new UserView(scaScan, contactManage);
+//        Login login = new Login(scaScan);
+        ManageControl manageControl = new ManageControl();
+        manageControl.readData();
+//        testA(scaScan, manageControl);
+        UserView viewInterface = new UserView(scaScan, manageControl);
+//        testC();
+//        testB();
+//        testD();
     }
 
-    private static void testa(Scanner scaScan, ContactManage contactManage) {
-//        contactManage.setRelation(scaScan, new Contact());
+    /**
+     * @author Kevin KDA on 2019/10/24 19:27
+     * @description Main / testD TODO 测试ObjectInputStream
+     * @param []
+     * @returns void
+     * @throws
+     */
+    private static void testD() throws Exception {
+        ArrayList<Contact> list1 = new ArrayList<Contact>();
+        list1.add(new Contact("张三", "23"));
+        list1.add(new Contact("李四", "24"));
+        list1.add(new Contact("王五", "25"));
+        list1.add(new Contact("赵六", "26"));
+        ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("record.txt"));
+//        os.writeObject(list1);
+        for (
+                Contact student : list1) {
+//            System.out.println(student);
+            os.writeObject(student);
+        }
+        System.out.println("集合对象写入到文件成功！");
+        os.close();
+        ObjectInputStream osi = new ObjectInputStream(new FileInputStream("record.txt"));
+        ArrayList<Contact> list2 = (ArrayList<Contact>) osi.readObject();
+
+        System.out.println("从磁盘读取到的集合遍历结果");
+        for (
+                Contact student : list2) {
+//            System.out.println(student);
+            student.getContactData();
+        }
+        osi.close();
+    }
+
+    /**
+     * @author Kevin KDA on 2019/10/24 19:26
+     * @description Main / testC TODO 测试ObjectInputStream
+     * @param []
+     * @returns void
+     * @throws
+     */
+    private static void testC() throws Exception {
+        Contact s1 = new Contact("张三", "23");
+        Contact s2 = new Contact("李四", "24");
+        ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("./Contact/resource/record.txt"));
+        os.writeObject(s1);
+        os.writeObject(s2);
+        os.close();
+
+    }
+
+    /**
+     * @author Kevin KDA on 2019/10/24 19:26
+     * @description Main / testB TODO 测试ObjectInputStream
+     * @param []
+     * @returns void
+     * @throws
+     */
+    private static void testB() throws IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./Contact/resource/record.txt"));
+        Contact s1 = (Contact) ois.readObject();
+        Contact s2 = (Contact) ois.readObject();
+        System.out.println(s1.getStrName());
+        System.out.println(s2);
+        ois.close();
+    }
+
+    /**
+     * @author Kevin KDA on 2019/10/24 19:25
+     * @description Main / testA TODO 用于在程序启动时自动添加数据，方便测试
+     * @param [scaScan, manageControl]
+     * @returns void
+     * @throws
+     */
+    private static void testA(Scanner scaScan, ManageControl manageControl) {
+//        manageControl.setRelation(scaScan, new Contact());
 //        RelationshipType.values();
-        contactManage.createContact(
+        manageControl.createDataItem(
                 new Contact(
                         "王俊凯",
                         0,
@@ -45,10 +136,10 @@ public class Main {
                         "17607130921",
                         "北京市海淀区中关村",
                         RelationshipType.Family,
-                        "Baby"
+                        "Haha"
                 )
         );
-        contactManage.createContact(
+        manageControl.createDataItem(
                 new Contact(
                         "jkhk",
                         0,
@@ -59,7 +150,7 @@ public class Main {
                         "Wuhan"
                 )
         );
-        contactManage.createContact(
+        manageControl.createDataItem(
                 new Contact(
                         "dsjhg",
                         0,
@@ -70,7 +161,7 @@ public class Main {
                         "ssgnui"
                 )
         );
-        contactManage.createContact(
+        manageControl.createDataItem(
                 new Contact(
                         "sgjl",
                         0,
@@ -79,5 +170,15 @@ public class Main {
                         "sdgjhknvj"
                 )
         );
+        manageControl.createDataItem(
+                new Contact(
+                        "sds156",
+                        0,
+                        182,
+                        "+1 16516",
+                        "kjhbkl"
+                )
+        );
     }
+
 }

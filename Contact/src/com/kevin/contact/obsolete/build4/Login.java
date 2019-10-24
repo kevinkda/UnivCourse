@@ -1,0 +1,46 @@
+/*
+ * Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+package com.kevin.contact.obsolete.build4;
+
+import java.util.Scanner;
+
+public class Login {
+    private static int intLoginStatusLock = 0;
+
+    public Login(Scanner scaScan) {
+        setLoginStatus(scaScan);
+    }
+
+
+    public int login(Scanner scaScan) {
+        System.out.print("请问是否解密显示数据(Y/y):");
+        String string = scaScan.next();
+        if ("y".equals(string) || "Y".equals(string)) {
+//            System.out.print("OK");
+            return 1;
+        }
+        return 0;
+    }
+
+    public void logout() {
+        setIntLoginStatusLock(0);
+    }
+
+    public void setLoginStatus(Scanner scaScan) {
+        setIntLoginStatusLock(login(scaScan));
+    }
+
+    public static int getIntLoginStatusLock() {
+        return intLoginStatusLock;
+    }
+
+    private void setIntLoginStatusLock(int intLoginStatusLock) {
+        this.intLoginStatusLock = intLoginStatusLock;
+    }
+}

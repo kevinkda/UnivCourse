@@ -8,20 +8,22 @@
 
 package com.kevin.contact.newbuild.contact;
 
+import java.io.Serializable;
+
 /**
- * @Program
- * @ClassName PersonalInformation
- * @Description TODO
- * @Author Kevin KDA
- * @Date 2019-10-03 22:19
- * @Interface
- * @Enum
- * @Modified By
- * @Version 1.0
- * @University HBUT
- * @Administrative Class 17GB CST 3
+ * @author Kevin KDA on 2019/10/24 12:44
+ * @version 1.0
+ * @project Java_Course_Assignments
+ * @package com.kevin.contact.newbuild.contact
+ * @classname PersonalInformation
+ * @description TODO
+ * @interface/enum
  */
-public class PersonalInformation extends People {
+public class PersonalInformation extends People implements Serializable {
+    /**
+     * Serializable参数
+     */
+    private static final long serialVersionUID = 1578003152914340539L;
     private String strPhone;
     private String strAdd;
 
