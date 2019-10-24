@@ -19,7 +19,7 @@ import java.util.Scanner;
 
 /**
  * @author Kevin KDA on 2019/10/24 12:43
- * @version 5.0
+ * @version 5.1
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild
  * @classname Main
