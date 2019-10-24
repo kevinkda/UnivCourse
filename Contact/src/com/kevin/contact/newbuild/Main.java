@@ -19,11 +19,11 @@ import java.util.Scanner;
 
 /**
  * @author Kevin KDA on 2019/10/24 12:43
- * @version 5.1
+ * @version 5.1.1
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild
  * @classname Main
- * @description TODO 程序入口类，提供部分测试方法，用于导入数据和测试
+ * @description TODO 提供程序入口类&部分测试方法(用于导入数据和测试)
  * @interface/enum Serializable
  */
 public class Main implements Serializable {
@@ -34,14 +34,13 @@ public class Main implements Serializable {
 
     /**
      * @param [args]
-     * @throws
+     * @throws [Exception]
      * @author Kevin KDA on 2019/10/24 13:17
      * @description Main / main TODO
      * @returns void
      */
     public static void main(String[] args) throws Exception {
         Scanner scaScan = new Scanner(System.in);
-//        Login login = new Login(scaScan);
         ManageControl manageControl = new ManageControl();
         manageControl.readData();
 //        testA(scaScan, manageControl);
@@ -78,7 +77,7 @@ public class Main implements Serializable {
 
     /**
      * @param []
-     * @throws
+     * @throws [Exception]
      * @author Kevin KDA on 2019/10/24 19:27
      * @description Main / testD TODO 测试ObjectInputStream
      * @returns void
@@ -112,7 +111,7 @@ public class Main implements Serializable {
 
     /**
      * @param []
-     * @throws
+     * @throws [Exception]
      * @author Kevin KDA on 2019/10/24 19:26
      * @description Main / testC TODO 测试ObjectInputStream
      * @returns void
@@ -129,7 +128,7 @@ public class Main implements Serializable {
 
     /**
      * @param []
-     * @throws
+     * @throws [IOException, ClassNotFoundException]
      * @author Kevin KDA on 2019/10/24 19:26
      * @description Main / testB TODO 测试ObjectInputStream
      * @returns void

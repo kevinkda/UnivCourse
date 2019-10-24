@@ -14,7 +14,7 @@ package com.kevin.contact.newbuild.connecter;
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.connecter
  * @classname Relation
- * @description TODO
+ * @description TODO 提供操纵关系信息接口
  * @interface/enum
  */
 public interface Relation {

@@ -17,20 +17,41 @@ import java.util.Scanner;
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.management
  * @classname UserView
- * @description TODO 用户界面，调用ManageControl类
+ * @description TODO 提供用户界面，调用ManageControl类
  * @interface/enum
  */
 public class UserView extends Login {
+    /**
+     * @param [scaScan, manageControl]
+     * @throws [IOException]
+     * @author Kevin KDA on 2019/10/24 21:56
+     * @description UserView / UserView TODO 构造方法调用userView()
+     * @returns
+     */
     public UserView(Scanner scaScan, ManageControl manageControl) throws IOException {
         super(scaScan);
         userView(scaScan, manageControl);
     }
 
+    /**
+     * @param [scaScan, manageControl]
+     * @throws [IOException]
+     * @author Kevin KDA on 2019/10/24 21:56
+     * @description UserView / userView TODO 整合主菜单视图&功能选择
+     * @returns void
+     */
     public void userView(Scanner scaScan, ManageControl manageControl) throws IOException {
         mainMenu();
         selectionFunction(scaScan, manageControl);
     }
 
+    /**
+     * @param []
+     * @throws
+     * @author Kevin KDA on 2019/10/24 21:57
+     * @description UserView / mainMenu TODO 主菜单视图
+     * @returns void
+     */
     private void mainMenu() {
         System.out.println("\n\n\t\t\t通讯录\n===============================");
         System.out.println("1.查看");
@@ -43,6 +64,13 @@ public class UserView extends Login {
         System.out.print("请选择需要执行的指令:");
     }
 
+    /**
+     * @param [scaScan, manageControl]
+     * @throws [IOException]
+     * @author Kevin KDA on 2019/10/24 21:56
+     * @description UserView / selectionFunction TODO 进行功能选择
+     * @returns void
+     */
     private void selectionFunction(Scanner scaScan, ManageControl manageControl) throws IOException {
         switch (scaScan.nextInt()) {
             default:

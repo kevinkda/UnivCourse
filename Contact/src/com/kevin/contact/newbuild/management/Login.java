@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @version 1.0
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.Management
- * @classname Login
+ * @classname Login 提供登陆界面&登陆状态
  * @description TODO
  * @interface/enum
  */

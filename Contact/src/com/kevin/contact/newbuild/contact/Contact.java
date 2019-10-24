@@ -16,12 +16,12 @@ import java.util.ArrayList;
 
 /**
  * @author Kevin KDA on 2019/10/24 13:02
- * @version 1.0
+ * @version 3.0
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.contact
  * @classname Contact
- * @description TODO
- * @interface/enum
+ * @description TODO 提供Contact实例个例
+ * @interface/enum Serializable, Encrypt
  */
 public class Contact extends Relationship implements Serializable, Encrypt {
     /**

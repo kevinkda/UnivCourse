@@ -15,14 +15,14 @@ import java.io.Serializable;
 
 /**
  * @author Kevin KDA on 2019/10/24 12:45
- * @version 1.0
+ * @version 1.1
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.contact
  * @classname Relationship
- * @description TODO
- * @interface/enum
+ * @description TODO 提供好友关系信息
+ * @interface/enum Serializable, Relation / RelationshipType
  */
-public class Relationship extends PersonalInformation implements Relation, Serializable {
+public class Relationship extends PersonalInformation implements Serializable, Relation {
     /**
      * Serializable参数
      */

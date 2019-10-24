@@ -14,7 +14,7 @@ package com.kevin.contact.newbuild.connecter;
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.connecter
  * @classname Encrypt
- * @description TODO
+ * @description TODO 提供加解密接口
  * @interface/enum
  */
 public interface Encrypt {

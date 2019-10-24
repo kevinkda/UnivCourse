@@ -21,8 +21,8 @@ import java.util.Scanner;
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.Management
  * @classname ManageControl
- * @description TODO 对Contact进行操纵&管理
- * @interface/enum
+ * @description TODO 提供对Contact的操纵&管理
+ * @interface/enum Serializable
  */
 public class ManageControl extends Contact implements Serializable {
     /**
@@ -201,7 +201,7 @@ public class ManageControl extends Contact implements Serializable {
 
     /**
      * @param []
-     * @throws
+     * @throws [IOException]
      * @author Kevin KDA on 2019/10/24 19:20
      * @description ManageControl / storageData TODO 保存数据
      * @returns void
@@ -215,14 +215,22 @@ public class ManageControl extends Contact implements Serializable {
 
     /**
      * @param []
-     * @throws
+     * @throws [IOException, ClassNotFoundException]
      * @author Kevin KDA on 2019/10/24 19:20
      * @description ManageControl / readData TODO 读取数据
      * @returns void
      */
     public void readData() throws IOException, ClassNotFoundException {
         ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File(filepath)));
-        arrayListData = (ArrayList<Contact>) objectInputStream.readObject();
+        try {
+            arrayListData = (ArrayList<Contact>) objectInputStream.readObject();
+        }catch (InvalidClassException e){
+            System.out.println("载入数据异常，已保存数据将被清空");
+            File file=new File(filepath);
+            if(file.exists()&&file.isFile()){
+                file.delete();
+            }
+        }
         objectInputStream.close();
     }
 

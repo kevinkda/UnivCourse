@@ -14,7 +14,7 @@ package com.kevin.contact.newbuild.connecter;
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.connecter
  * @classname RelationshipType
- * @description TODO 关系类型
+ * @description TODO 提供关系类型
  * @interface/enum
  */
 public enum RelationshipType {

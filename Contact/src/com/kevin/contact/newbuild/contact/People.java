@@ -12,12 +12,12 @@ import java.io.Serializable;
 
 /**
  * @author Kevin KDA on 2019/10/24 12:42
- * @version 1.0
+ * @version 1.1
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild.contact
  * @classname People
- * @description TODO
- * @interface/enum
+ * @description TODO 提供个人特征信息
+ * @interface/enum Serializable
  */
 public class People implements Serializable {
     /**
