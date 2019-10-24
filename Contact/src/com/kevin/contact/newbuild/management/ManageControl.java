@@ -54,7 +54,7 @@ public class ManageControl extends Contact implements Serializable {
         System.out.print("请输入性别（请输入0男或1女）：");
         contact.setIntSex(scaScan.nextInt());
         System.out.print("请输入手机号：");
-        contact.setStrPhone(scaScan.next());
+        contact.setStrPhone(encryption(scaScan.next()));
         System.out.print("请输入地址：");
         contact.setStrAdd(scaScan.next());
         System.out.print("请输入身高：");

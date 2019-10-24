@@ -49,14 +49,39 @@ public class Main implements Serializable {
 //        testC();
 //        testB();
 //        testD();
+//        testE();
     }
 
     /**
+     * @param []
+     * @throws
+     * @author Kevin KDA on 2019/10/24 20:08
+     * @description Main / testE TODO 测试加密解密
+     * @returns void
+     */
+    private static void testE() {
+        String data = "ABCDEFG";
+        String result = encode(data);
+        System.out.println("加密后:" + result);
+        //解密
+        String str = decode(result);
+        System.out.println("解密后:" + str);
+
+
+        //加密中文
+        data = "1234567890";
+        result = encode(data);
+        System.out.println("加密后:" + result);
+        String str1 = decode(result);
+        System.out.println("解密后:" + str1);
+    }
+
+    /**
+     * @param []
+     * @throws
      * @author Kevin KDA on 2019/10/24 19:27
      * @description Main / testD TODO 测试ObjectInputStream
-     * @param []
      * @returns void
-     * @throws
      */
     private static void testD() throws Exception {
         ArrayList<Contact> list1 = new ArrayList<Contact>();
@@ -86,11 +111,11 @@ public class Main implements Serializable {
     }
 
     /**
+     * @param []
+     * @throws
      * @author Kevin KDA on 2019/10/24 19:26
      * @description Main / testC TODO 测试ObjectInputStream
-     * @param []
      * @returns void
-     * @throws
      */
     private static void testC() throws Exception {
         Contact s1 = new Contact("张三", "23");
@@ -103,11 +128,11 @@ public class Main implements Serializable {
     }
 
     /**
+     * @param []
+     * @throws
      * @author Kevin KDA on 2019/10/24 19:26
      * @description Main / testB TODO 测试ObjectInputStream
-     * @param []
      * @returns void
-     * @throws
      */
     private static void testB() throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./Contact/resource/record.txt"));
@@ -119,11 +144,11 @@ public class Main implements Serializable {
     }
 
     /**
+     * @param [scaScan, manageControl]
+     * @throws
      * @author Kevin KDA on 2019/10/24 19:25
      * @description Main / testA TODO 用于在程序启动时自动添加数据，方便测试
-     * @param [scaScan, manageControl]
      * @returns void
-     * @throws
      */
     private static void testA(Scanner scaScan, ManageControl manageControl) {
 //        manageControl.setRelation(scaScan, new Contact());
@@ -180,5 +205,42 @@ public class Main implements Serializable {
                 )
         );
     }
+
+    /**
+     * @param [data]
+     * @throws
+     * @author Kevin KDA on 2019/10/24 20:18
+     * @description Main / encode TODO 加密 在原有的基础上*2后+1
+     * @returns java.lang.String
+     */
+    public static String encode(String data) {
+        //把字符串转为字节数组
+        byte[] b = data.getBytes();
+        //遍历
+        for (int i = 0; i < b.length; i++) {
+            //在原有的基础上*2后+1
+            b[i] = (byte) (b[i] * 2 + 1);
+        }
+        return new String(b);
+    }
+
+    /**
+     * @param [data]
+     * @throws
+     * @author Kevin KDA on 2019/10/24 20:17
+     * @description Main / decode TODO 解密 在原有的基础上-1后/2
+     * @returns java.lang.String
+     */
+    public static String decode(String data) {
+        //把字符串转为字节数组
+        byte[] b = data.getBytes();
+        //遍历
+        for (int i = 0; i < b.length; i++) {
+            //在原有的基础上-1后/2
+            b[i] = (byte) ((b[i] - 1) / 2);
+        }
+        return new String(b);
+    }
+
 
 }

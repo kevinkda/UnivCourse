@@ -28,11 +28,11 @@ public interface Encrypt {
     public String encryption(String string);
 
     /**
-     * @param []
+     * @param [string]
      * @throws
-     * @author Kevin KDA on 2019/10/24 12:53
+     * @author Kevin KDA on 2019/10/24 19:59
      * @description Encrypt / decryption TODO 解密
-     * @returns void
+     * @returns java.lang.String
      */
-    public void decryption();
+    public String decryption(String string);
 }
