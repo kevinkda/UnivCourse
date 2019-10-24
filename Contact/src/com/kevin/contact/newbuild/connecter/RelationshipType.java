@@ -18,7 +18,6 @@ package com.kevin.contact.newbuild.connecter;
  * @interface/enum
  */
 public enum RelationshipType {
-
     /**
      * 同学
      */

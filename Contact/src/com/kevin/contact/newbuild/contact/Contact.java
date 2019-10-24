@@ -85,12 +85,13 @@ public class Contact extends Relationship implements Serializable, Encrypt {
             System.out.printf("%s\t\t女\t\t%d\t\t%-11s\t\t\t%s%n", getStrName(), getIntHeight(), decryption(getStrPhone()), getStrAdd());
         }
     }
+
     /**
+     * @param [string]
+     * @throws
      * @author Kevin KDA on 2019/10/24 21:25
      * @description Contact / encryption TODO 加密 在原有的基础上*2后+1
-     * @param [string]
      * @returns java.lang.String
-     * @throws
      */
     @Override
     public String encryption(String string) {
@@ -103,12 +104,13 @@ public class Contact extends Relationship implements Serializable, Encrypt {
         }
         return new String(b);
     }
+
     /**
+     * @param [string]
+     * @throws
      * @author Kevin KDA on 2019/10/24 21:25
      * @description Contact / decryption TODO 解密 在原有的基础上-1后/2
-     * @param [string]
      * @returns java.lang.String
-     * @throws
      */
     @Override
     public String decryption(String string) {
