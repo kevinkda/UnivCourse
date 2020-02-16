@@ -1,0 +1,13 @@
+E:\University\C#\CSharpCourseDesign_201906\CSharpCourseDesign_201906\bin\Debug\CSharpCourseDesign_201906.exe.config
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\bin\Debug\CSharpCourseDesign_201906.exe.config
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\bin\Debug\CSharpCourseDesign_201906.exe
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\bin\Debug\CSharpCourseDesign_201906.pdb
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.csprojResolveAssemblyReference.cache
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.FormMain.resources
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.Properties.Resources.resources
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.csproj.GenerateResource.Cache
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.exe
+E:\University\C#\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.pdb
+D:\201710253110唐可寅\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\bin\Debug\CSharpCourseDesign_201906.exe.config
+D:\201710253110唐可寅\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.exe
+D:\201710253110唐可寅\CourseDesign\CSharpCourseDesign_201906\CSharpCourseDesign_201906\obj\Debug\CSharpCourseDesign_201906.pdb
