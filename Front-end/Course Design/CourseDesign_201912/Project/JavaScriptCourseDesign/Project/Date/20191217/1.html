@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test20191217_1</title>
+    <link rel="stylesheet" href="1.css">
+    <script src="../../../js/jQuery/jquery-3.1.1.min.js"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            console.log(document.getElementById("d2"));
+            console.log($("#d2"));
+            console.log($(".d1"));
+            console.log($("div:eq(1)"));
+            console.log($("span:contains(aaa)"));
+            console.log($("label:empty"));
+            //改变DOM的内容 innerText=>text()    innerHTML=>html()   value=>val()
+            document.getElementsByClassName("d1")[0].innerHTML = "<h1>qwer</h1>";
+            document.getElementsByTagName("input")[0].value = "pooo";
+            console.log($(".d1:last").text());
+            // $("span").css({"color": "red", "background-color": "black"})
+            $("span").addClass("spanWapper");
+        })
+    </script>
+</head>
+<body>
+<div id="d2"></div>
+<div class="d1">dsa<h1>1111</h1>dsad</div>
+<div class="d1">123</div>
+<div class="uti">
+    dsgjlk
+</div>
+<input type="text" value="ooop">
+<span>aaa</span>
+<span>bbb</span>
+<label></label>
+</body>
+</html>
