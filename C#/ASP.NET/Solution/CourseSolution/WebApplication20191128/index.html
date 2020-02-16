@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script>
+        window.onload = function () {
+            var a = document.getElementById("a");
+            a.onclick = function () {
+                var code = document.getElementById("code").src;
+                document.getElementById("code").src = src + "/d?" + new Date().getMilliseconds();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="/" method="post">
+        输入验证码：<input type="text" /><img src="code.ashx" alt="验证码" /><a href="javascript:void(0)">看不清楚？换一张</a>
+    </form>
+</body>
+</html>
