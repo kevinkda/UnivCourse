@@ -1,0 +1,78 @@
+<!--
+  ~ Copyright (c) Kevin KDA 2019. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<style type="text/css">
+			.txt{
+				width: 30px;
+				text-align: center;
+			}
+			span{
+				width: 100px;
+				display: inline-block;
+			}
+		</style>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("input[value='-']").click(function(){
+					var $value = $(this).next().val();
+					$value = ($value-1<1)?1:$value-1;
+					$(this).next().val($value);
+					calc($value, $(this));
+				});
+				$("input[value='+']").click(function(){
+					var $value = $(this).prev().val();
+					$value = parseInt($value)+1;
+					$(this).prev().val($value);
+					calc($value, $(this));
+				});
+				$(":text").blur(function(){
+					var $value = parseInt($(this).val());
+					calc($value, $(this));
+				});
+			});
+			//计算当前商品小计价格
+			function calc(val, obj){
+				var $p = obj.parent().find("span").eq(0).text();
+				$p = $p.substr(1);
+				var $allP = val*$p;
+				obj.parent().find("span").eq(1).text("￥"+$allP.toFixed(2));
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			<input type="button" value="-" />
+			<input type="text" value="1" class="txt" />
+			<input type="button" value="+" />
+			<span>￥12</span>
+			<span>￥12</span>
+		</p>
+		<p>
+			<input type="button" value="-" />
+			<input type="text" value="1" class="txt" />
+			<input type="button" value="+" />
+			<span>￥39.9</span>
+			<span>￥39.9</span>
+		</p>
+		<p>
+			<input type="button" value="-" />
+			<input type="text" value="1" class="txt" />
+			<input type="button" value="+" />
+			<span>￥27.35</span>
+			<span>￥27.35</span>
+		</p>
+	</body>
+</html>

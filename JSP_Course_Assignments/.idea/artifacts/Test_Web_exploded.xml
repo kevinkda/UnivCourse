@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Test:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Test/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="Test/web/Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/Test/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Test/web/WEB-INF/lib/sqljdbc4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Test/web/WEB-INF/lib/standard.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Test/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Test/web/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar" />
+          <element id="library" level="project" name="standard" />
+          <element id="library" level="project" name="sqljdbc4" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.34-bin" />
+          <element id="library" level="project" name="jstl" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

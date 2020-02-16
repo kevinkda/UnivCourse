@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CourseProjectA/CourseProjectA.iml" filepath="$PROJECT_DIR$/CourseProjectA/CourseProjectA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseProjectB/CourseProjectB.iml" filepath="$PROJECT_DIR$/CourseProjectB/CourseProjectB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CourseProjectC/CourseProjectC.iml" filepath="$PROJECT_DIR$/CourseProjectC/CourseProjectC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignProject/DesignProject.iml" filepath="$PROJECT_DIR$/DesignProject/DesignProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeProject/HomeProject.iml" filepath="$PROJECT_DIR$/HomeProject/HomeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JSP_Course_Assignments.iml" filepath="$PROJECT_DIR$/.idea/JSP_Course_Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyWork/MyWork.iml" filepath="$PROJECT_DIR$/MyWork/MyWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Resource/Resource.iml" filepath="$PROJECT_DIR$/Resource/Resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWeibo/SpringWeibo.iml" filepath="$PROJECT_DIR$/SpringWeibo/SpringWeibo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ZeppelinRemoteNotebooks/ZeppelinInstance_Zeppelin_connection@ZeppelinConnections@-2066528881457742515.iml" filepath="$PROJECT_DIR$/.idea/ZeppelinRemoteNotebooks/ZeppelinInstance_Zeppelin_connection@ZeppelinConnections@-2066528881457742515.iml" />
+    </modules>
+  </component>
+</project>

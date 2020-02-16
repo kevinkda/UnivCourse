@@ -1,0 +1,59 @@
+/*
+ * Copyright (c) Kevin KDA 2019. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+package com.kevin.homeproject.entity;
+
+/**
+ * @author Kevin KDA on 2019/12/5 23:46
+ * @version 1.0
+ * @project JSP_Course_Assignments
+ * @package com.kevin.homeproject.entity
+ * @classname Drivers
+ * @description TODO
+ * @interface/enum
+ */
+public class Drivers {
+    private int driversId;
+    private String driversName;
+    private double unitPrice;
+
+    public Drivers() {
+    }
+
+    public Drivers(int driversId, String driversName, double unitPrice) {
+        this.driversId = driversId;
+        this.driversName = driversName;
+        this.unitPrice = unitPrice;
+    }
+
+    public int getDriversId() {
+        return driversId;
+    }
+
+    public void setDriversId(int driversId) {
+        this.driversId = driversId;
+    }
+
+
+    public String getDriversName() {
+        return driversName;
+    }
+
+    public void setDriversName(String driversName) {
+        this.driversName = driversName;
+    }
+
+
+    public double getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+}

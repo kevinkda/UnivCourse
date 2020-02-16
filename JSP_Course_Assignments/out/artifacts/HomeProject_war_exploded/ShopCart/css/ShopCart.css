@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) Kevin KDA 2019. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+/*.page-body {*/
+/*    margin: 0px auto;*/
+/*    width: 960px;*/
+/*    border: 1px solid red;*/
+/*}*/
+
+.txt {
+    width: 30px;
+    text-align: center;
+}
+
+span {
+    width: 100px;
+    display: inline-block;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    border: 1px solid #aaaaaa;
+    width: 900px;
+}
+
+li {
+    border-bottom: 1px solid #aaaaaa;
+    height: 80px;
+}
+
+div {
+    float: left;
+}

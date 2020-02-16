@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CourseProjectA:war exploded" />
+      <artifact name="CourseProjectB:war exploded" />
+      <artifact name="CourseProjectC:war exploded" />
+      <artifact name="DesignProject:war exploded" />
+      <artifact name="HomeProject:war exploded" />
+      <artifact name="Test:Web exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <option name="showStatusBarWidget" value="true" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a9ad390-13e9-4afe-b26a-51d68008f557" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jsp: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="hibernate-configuration-5.2" />
+        <option value="hibernate-main-5.2" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="/Volumes/Exchange Program/Work_Space/Git" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HomeProject/web/ShopCart/css/ShopCart.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IntelliJConfiguration">
+    <option name="PROPERTY_FILES">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="REMOVE_NBSP" value="true" />
+    <option name="CREATE_NEW_JSP" value="true" />
+    <option name="KEY_RESOLUTION_TYPE" value="Use all words in label" />
+    <option name="PROMPT_FOR_KEY_PREFIX" value="false" />
+    <option name="LABEL_PART_1" value="&lt;bean:message key=&quot;" />
+    <option name="LABEL_PART_2" value="&quot;/&gt;" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="CourseProjectA/invalid/Web" />
+      <facet id="CourseProjectB/invalid/Web" />
+      <facet id="CourseProjectC/invalid/Web" />
+      <facet id="DesignProject/invalid/Web" />
+      <facet id="HomeProject/invalid/Web" />
+      <facet id="MyWork/invalid/Web" />
+      <facet id="Test/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1UZIlr7uCuGxreCXt8E0UwWIxMY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="537fca3c-58e6-4e13-b630-6274c85451ea" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CourseProjectB/web" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="node" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="$USER_HOME$/AppData/Roaming/npm/node_modules/jscs" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.094697" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kevin.homeproject.dbm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\CourseProjectB\src\main\java\com\kevin\courseprojectb\servlet" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\HomeProject\web\ShopCart\css" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\HomeProject\web\ShopCart" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\CourseProjectB\web\e20191211\test1" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\MyWork\web\e20191206" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.kevin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\CourseProjectB\web" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\CourseProjectB\web\WEB-INF\lib" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\HomeProject\web\js" />
+      <recent name="$PROJECT_DIR$/MyWork/web/e20191206" />
+      <recent name="E:\University\JSP\Project\JSP_Course_Assignments\CourseProjectB\web\e20191211\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 7.0.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.7">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/CourseProjectB_war_exploded/" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="CourseProjectB:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/CourseProjectB_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="CourseProjectA:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/CourseProjectA_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="CourseProjectC:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/CourseProjectC_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="DesignProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/DesignProject_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="HomeProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/HomeProject_war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="Test:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Test_Web_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_96_JSP_Course_Assignments_6" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63628" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="CourseProjectA:war exploded" />
+          <artifact name="CourseProjectB:war exploded" />
+          <artifact name="CourseProjectC:war exploded" />
+          <artifact name="DesignProject:war exploded" />
+          <artifact name="HomeProject:war exploded" />
+          <artifact name="Test:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a9ad390-13e9-4afe-b26a-51d68008f557" name="Default Changelist" comment="" />
+      <created>1575557844580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575557844580</updated>
+      <workItem from="1575557849064" duration="2570000" />
+      <workItem from="1575560500469" duration="2224000" />
+      <workItem from="1575591859673" duration="21000" />
+      <workItem from="1575591889054" duration="3495000" />
+      <workItem from="1575599517588" duration="193000" />
+      <workItem from="1575599717786" duration="10000" />
+      <workItem from="1575617724570" duration="337000" />
+      <workItem from="1575618402553" duration="919000" />
+      <workItem from="1575620187569" duration="202000" />
+      <workItem from="1576023760807" duration="1989000" />
+      <workItem from="1576026550547" duration="3024000" />
+      <workItem from="1576062195058" duration="5888000" />
+      <workItem from="1576110666938" duration="596000" />
+      <workItem from="1576113984775" duration="502000" />
+      <workItem from="1576114603949" duration="235000" />
+      <workItem from="1576114876319" duration="814000" />
+      <workItem from="1576116668477" duration="660000" />
+      <workItem from="1576117966114" duration="1732000" />
+      <workItem from="1576195914349" duration="1003000" />
+      <workItem from="1576199405010" duration="931000" />
+      <workItem from="1576200390429" duration="1989000" />
+      <workItem from="1576715090896" duration="9596000" />
+      <workItem from="1577147431602" duration="339000" />
+      <workItem from="1581837741713" duration="1373000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1032" y="177" key="#Closure_Linter" timestamp="1576200322309">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="177" key="#Closure_Linter/0.0.1920.1040@0.0.1920.1040" timestamp="1576200322309" />
+    <state x="1068" y="222" key="#JSCS" timestamp="1576200945004">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1068" y="222" key="#JSCS/0.0.1920.1040@0.0.1920.1040" timestamp="1576200945004" />
+    <state x="552" y="177" key="#JSLint" timestamp="1576200219574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#JSLint/0.0.1920.1040@0.0.1920.1040" timestamp="1576200219574" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576200461362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576200461362" />
+    <state x="1014" y="467" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1575618788492">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1014" y="467" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.23.1920.1177@0.23.1920.1177" timestamp="1575618788492" />
+    <state x="1220" y="273" key="FileChooserDialogImpl" timestamp="1576200942566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576200942566" />
+    <state width="461" height="342" key="GridCell.Tab.0.bottom" timestamp="1576208792862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792862" />
+    <state width="461" height="342" key="GridCell.Tab.0.center" timestamp="1576208792862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792862" />
+    <state width="461" height="342" key="GridCell.Tab.0.left" timestamp="1576208792862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792862" />
+    <state width="461" height="342" key="GridCell.Tab.0.right" timestamp="1576208792862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792862" />
+    <state width="461" height="342" key="GridCell.Tab.1.bottom" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.1.center" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.1.left" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.1.right" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.2.bottom" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.2.center" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.2.left" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.2.right" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.3.bottom" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.3.center" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.3.left" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state width="461" height="342" key="GridCell.Tab.3.right" timestamp="1576208792863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="461" height="342" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576208792863" />
+    <state x="922" y="250" key="SettingsEditor" timestamp="1576202385931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="250" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576202385931" />
+    <state x="778" y="319" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1575621222753" />
+    <state x="826" y="375" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1576207375106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="375" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576207375106" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="CourseProjectA" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="CourseProjectB" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="CourseProjectC" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="DesignProject" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="HomeProject" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="MyWork" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="JSP_Course_Assignments" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Test" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>

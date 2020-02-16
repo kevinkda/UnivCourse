@@ -1,0 +1,55 @@
+﻿<!--
+  ~ Copyright (c) Kevin KDA 2019. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        dl {
+            height: 200px;
+            width: 400px;
+        }
+
+        dt {
+            float: left;
+            margin-right: 20px;
+        }
+
+        dd {
+            line-height: 20px;
+        }
+    </style>
+<!--    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+        $(function () {
+            $("span").css("color", "#ff0000");
+            $("dd span:eq(1)").css("color", "#dddd00");
+            $("span+a").css("text-decoration", "none");
+        })
+    </script>
+    <script src="../js/jquery-1.8.3.js" type="text/javascript"></script>
+</head>
+
+<body>
+<dl id="dlmovie">
+    <dt><img src="img/frozen.jpg" width="150" height="200"/></dt>
+    <dd><span>评分：</span><span>8.4</span></dd>
+    <dd><span>别名:</span> 冰雪大冒险 / 魔雪奇缘</dd>
+    <dd><span>演员：</span><a href="#">伊迪娜·门泽尔 </a></dd>
+    <dd><span>导演：</span><a href="#">克里斯·巴克Jennifer Lee </a></dd>
+    <dd><span>地区：</span>美国</dd>
+    <dd><span>简介：</span>《Frozen》讲述一个诅咒令王国被冰天雪地永久覆盖，乐观无畏的安娜（由克里斯汀·贝尔配音）和一个大胆的...</dd>
+    <dd><a href="#" name="amore">more</a></dd>
+</dl>
+</body>
+
+</html>
