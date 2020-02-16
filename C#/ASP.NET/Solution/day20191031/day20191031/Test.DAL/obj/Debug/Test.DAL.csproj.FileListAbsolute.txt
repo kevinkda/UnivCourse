@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\bin\Debug\Test.DAL.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\bin\Debug\Test.DAL.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\bin\Debug\Test.Model.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\bin\Debug\Test.Model.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\obj\Debug\Test.DAL.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\Test.DAL\obj\Debug\Test.DAL.pdb

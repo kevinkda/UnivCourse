@@ -1,0 +1,24 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.BLL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.BLL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\WebApplication.dll.config
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\WebApplication.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\WebApplication.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.BLL.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.Model.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.DAL.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.BLL.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.Model.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\bin\Test.DAL.pdb
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\obj\Debug\WebApplication.dll
+E:\University\ASP.NET\Solution\day20191031\day20191031\WebApplication\obj\Debug\WebApplication.pdb

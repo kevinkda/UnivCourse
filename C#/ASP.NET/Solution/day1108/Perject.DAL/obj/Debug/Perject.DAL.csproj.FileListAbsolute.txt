@@ -1,0 +1,7 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\Perject.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\UserInfo.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.pdb

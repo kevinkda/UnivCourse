@@ -1,0 +1,7 @@
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\bin\Debug\TestDAL.dll
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\bin\Debug\TestDAL.pdb
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\bin\Debug\TestModel.dll
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\bin\Debug\TestModel.pdb
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\obj\Debug\TestDAL.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\obj\Debug\TestDAL.dll
+E:\University\ASP.NET\Solution\Solution20191031\TestDAL\obj\Debug\TestDAL.pdb

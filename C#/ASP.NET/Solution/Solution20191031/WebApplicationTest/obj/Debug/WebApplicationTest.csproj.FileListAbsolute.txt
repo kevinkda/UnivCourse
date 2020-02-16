@@ -1,0 +1,12 @@
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\WebApplicationTest.dll.config
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\WebApplicationTest.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\WebApplicationTest.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestBLL.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestModel.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestDAL.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestBLL.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestModel.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\bin\TestDAL.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\obj\Debug\WebApplicationTest.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\obj\Debug\WebApplicationTest.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplicationTest\obj\Debug\WebApplicationTest.pdb

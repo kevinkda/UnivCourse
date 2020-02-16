@@ -1,0 +1,7 @@
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\bin\Debug\Perject.DAL.dll
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\bin\Debug\Perject.DAL.pdb
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\bin\Debug\UserInfo.Model.dll
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\bin\Debug\UserInfo.Model.pdb
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\obj\Debug\Project.DAL.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\obj\Debug\Perject.DAL.dll
+E:\University\ASP.NET\Solution\day1108\Perject.DAL\obj\Debug\Perject.DAL.pdb

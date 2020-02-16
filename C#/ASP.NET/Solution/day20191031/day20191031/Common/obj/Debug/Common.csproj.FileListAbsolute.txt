@@ -1,0 +1,5 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Common\bin\Debug\Common.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Common\bin\Debug\Common.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Common\obj\Debug\Common.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Common\obj\Debug\Common.pdb

@@ -1,0 +1,12 @@
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\WebApplication4.dll.config
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\WebApplication4.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\WebApplication4.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestBLL.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestModel.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestDAL.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestBLL.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestModel.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\bin\TestDAL.pdb
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\obj\Debug\WebApplication4.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\obj\Debug\WebApplication4.dll
+E:\University\ASP.NET\Solution\Solution20191031\WebApplication4\obj\Debug\WebApplication4.pdb

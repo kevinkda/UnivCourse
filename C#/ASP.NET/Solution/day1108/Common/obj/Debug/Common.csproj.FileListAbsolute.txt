@@ -1,0 +1,8 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1108\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1108\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1108\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1108\Common\obj\Debug\Common.pdb
+E:\University\ASP.NET\Solution\day1108\Common\bin\Debug\Common.dll
+E:\University\ASP.NET\Solution\day1108\Common\bin\Debug\Common.pdb
+E:\University\ASP.NET\Solution\day1108\Common\obj\Debug\Common.dll
+E:\University\ASP.NET\Solution\day1108\Common\obj\Debug\Common.pdb

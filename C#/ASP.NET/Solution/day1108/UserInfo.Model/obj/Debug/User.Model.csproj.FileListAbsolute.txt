@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\UserInfo.Model\bin\Debug\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\UserInfo.Model\bin\Debug\UserInfo.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\UserInfo.Model\obj\Debug\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\UserInfo.Model\obj\Debug\UserInfo.Model.pdb
+E:\University\ASP.NET\Solution\day1108\UserInfo.Model\bin\Debug\UserInfo.Model.dll
+E:\University\ASP.NET\Solution\day1108\UserInfo.Model\bin\Debug\UserInfo.Model.pdb
+E:\University\ASP.NET\Solution\day1108\UserInfo.Model\obj\Debug\User.Model.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\day1108\UserInfo.Model\obj\Debug\UserInfo.Model.dll
+E:\University\ASP.NET\Solution\day1108\UserInfo.Model\obj\Debug\UserInfo.Model.pdb

@@ -1,0 +1,24 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.BLL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.BLL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\UserInfo.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.pdb
+E:\University\ASP.NET\Solution\day1108\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\day1108\WebApplication\obj\Debug\WebApplication.dll
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\WebApplication.dll.config
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\WebApplication.dll
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\WebApplication.pdb
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\Perject.BLL.dll
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\UserInfo.Model.dll
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\Perject.DAL.dll
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\Perject.BLL.pdb
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\UserInfo.Model.pdb
+E:\University\ASP.NET\Solution\day1108\WebApplication\bin\Perject.DAL.pdb
+E:\University\ASP.NET\Solution\day1108\WebApplication\obj\Debug\WebApplication.pdb
