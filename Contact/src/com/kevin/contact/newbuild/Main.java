@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
  * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
  * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
@@ -14,12 +14,13 @@ import com.kevin.contact.newbuild.management.ManageControl;
 import com.kevin.contact.newbuild.management.UserView;
 
 import java.io.*;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * @author Kevin KDA on 2019/10/24 12:43
- * @version 5.1.1
+ * @version 5.2
  * @project Java_Course_Assignments
  * @package com.kevin.contact.newbuild
  * @classname Main
@@ -42,7 +43,7 @@ public class Main implements Serializable {
     public static void main(String[] args) throws Exception {
         Scanner scaScan = new Scanner(System.in);
         ManageControl manageControl = new ManageControl();
-        manageControl.readData();
+//        manageControl.readData();
 //        testA(scaScan, manageControl);
         UserView viewInterface = new UserView(scaScan, manageControl);
 //        testC();
@@ -149,7 +150,7 @@ public class Main implements Serializable {
      * @description Main / testA TODO 用于在程序启动时自动添加数据，方便测试
      * @returns void
      */
-    private static void testA(Scanner scaScan, ManageControl manageControl) {
+    private static void testA(Scanner scaScan, ManageControl manageControl) throws SQLException {
 //        manageControl.setRelation(scaScan, new Contact());
 //        RelationshipType.values();
         manageControl.createDataItem(

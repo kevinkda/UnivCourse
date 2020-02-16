@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
  * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
  * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
@@ -10,8 +10,10 @@ package com.kevin.contact.newbuild.management;
 
 import com.kevin.contact.newbuild.connecter.RelationshipType;
 import com.kevin.contact.newbuild.contact.Contact;
+import com.kevin.contact.newbuild.database.DataManipulation;
 
 import java.io.*;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -35,17 +37,20 @@ public class ManageControl extends Contact implements Serializable {
     String filepath = "./Contact/resource/Data.txt";
 
     public ManageControl() throws Exception {
+//        readData();
+        arrayListData = DataManipulation.getDbData();
     }
 
-    public ManageControl(Contact contact) {
+    public ManageControl(Contact contact) throws SQLException {
         createDataItem(contact);
     }
 
-    public void createDataItem(Contact contact) {
+    public void createDataItem(Contact contact) throws SQLException {
         arrayListData.add(contact);
+        DataManipulation.addData(contact);
     }
 
-    public void createDataItem(Scanner scaScan) {
+    public void createDataItem(Scanner scaScan) throws SQLException {
         Contact contact = new Contact();
         System.out.println("（在数据输入时请注意将光标移至最后，已知在MyEclipse中不移动输入位置可能会出现异常，IDEA中验证正常）");
         System.out.println("\n\n\t\t\t添加好友\n-------------------------------");
@@ -63,6 +68,7 @@ public class ManageControl extends Contact implements Serializable {
         setRelation(scaScan, contact);
 
         arrayListData.add(contact);
+        DataManipulation.addData(contact);
     }
 
     public void setRelation(Scanner scaScan, Contact contact) {
@@ -200,7 +206,7 @@ public class ManageControl extends Contact implements Serializable {
     }
 
     /**
-     * @param []
+     * @param
      * @throws [IOException]
      * @author Kevin KDA on 2019/10/24 19:20
      * @description ManageControl / storageData TODO 保存数据
@@ -214,24 +220,23 @@ public class ManageControl extends Contact implements Serializable {
     }
 
     /**
-     * @param []
+     * @param
      * @throws [IOException, ClassNotFoundException]
      * @author Kevin KDA on 2019/10/24 19:20
      * @description ManageControl / readData TODO 读取数据
      * @returns void
      */
     public void readData() throws IOException, ClassNotFoundException {
-        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File(filepath)));
-        try {
+//        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File(filepath)));
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(new File(filepath)))) {
             arrayListData = (ArrayList<Contact>) objectInputStream.readObject();
-        }catch (InvalidClassException e){
+        } catch (InvalidClassException e) {
             System.out.println("载入数据异常，已保存数据将被清空");
-            File file=new File(filepath);
-            if(file.exists()&&file.isFile()){
+            File file = new File(filepath);
+            if (file.exists() && file.isFile()) {
                 file.delete();
             }
         }
-        objectInputStream.close();
     }
 
     /**

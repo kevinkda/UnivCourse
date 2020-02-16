@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
  * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
  * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
@@ -8,7 +8,7 @@
 
 package com.kevin.contact.newbuild.management;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author Kevin KDA on 2019/10/24 13:05
@@ -20,6 +20,10 @@ import java.util.Scanner;
  * @interface/enum
  */
 public class Login {
+    /**
+     * 判断正确值 "Y" "y"
+     */
+    private static final Set<String> STRINGS = Collections.unmodifiableSet(new HashSet<>(Arrays.asList("y", "Y")));
     /**
      * 登陆状态
      */
@@ -35,7 +39,7 @@ public class Login {
     public int login(Scanner scaScan) {
         System.out.print("请问是否解密显示数据(Y/y):");
         String string = scaScan.next();
-        if ("y".equals(string) || "Y".equals(string)) {
+        if (STRINGS.contains(string)) {
             return 1;
         }
         return 0;

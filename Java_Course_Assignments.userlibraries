@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="mysql-connector-java-5.1.34-bin">
+    <archive path="E:/University/Java/Project/Java_Course_Assignments/Resource/mysql-connector-java-5.1.34-bin.jar" />
+  </library>
+  <library name="mysql-connector-java-8.0.16">
+    <archive path="E:/University/Java/Project/Java_Course_Assignments/Resource/mysql-connector-java-8.0.16.jar" />
+  </library>
+  <library name="sqljdbc4">
+    <archive path="E:/University/Java/Project/Java_Course_Assignments/Resource/sqljdbc4.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
  * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
  * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
@@ -9,6 +9,7 @@
 package com.kevin.contact.newbuild.management;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
@@ -28,7 +29,7 @@ public class UserView extends Login {
      * @description UserView / UserView TODO 构造方法调用userView()
      * @returns
      */
-    public UserView(Scanner scaScan, ManageControl manageControl) throws IOException {
+    public UserView(Scanner scaScan, ManageControl manageControl) throws IOException, ClassNotFoundException, SQLException {
         super(scaScan);
         userView(scaScan, manageControl);
     }
@@ -40,7 +41,7 @@ public class UserView extends Login {
      * @description UserView / userView TODO 整合主菜单视图&功能选择
      * @returns void
      */
-    public void userView(Scanner scaScan, ManageControl manageControl) throws IOException {
+    public void userView(Scanner scaScan, ManageControl manageControl) throws IOException, SQLException {
         mainMenu();
         selectionFunction(scaScan, manageControl);
     }
@@ -71,13 +72,13 @@ public class UserView extends Login {
      * @description UserView / selectionFunction TODO 进行功能选择
      * @returns void
      */
-    private void selectionFunction(Scanner scaScan, ManageControl manageControl) throws IOException {
+    private void selectionFunction(Scanner scaScan, ManageControl manageControl) throws IOException, SQLException {
         switch (scaScan.nextInt()) {
             default:
                 System.out.print("\n输入错误，请重新输入\n");
                 userView(scaScan, manageControl);
             case 0:
-                manageControl.storageData();
+//                manageControl.storageData();
                 System.exit(-1);
                 break;
             case 1:
