@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:asp="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>User Login System</h1>
+    <form action="Login.ashx" method="post">
+        <p><label>UserName:<input type="text" name="userName" value="" required /></label></p>
+        <p><label>Password:<input type="password" name="userPsd" value="" required /></label></p>
+        <p><input type="submit" value=" Go！" style="color:red;border: dashed;"/></p>
+        <p><a href="Register.html">Register</a></p>
+    </form>
+
+    <div align="center">
+        <h1>用户登录页面</h1>
+        <form id="form1" runat="server">
+            <p> <asp:Label ID="lbusername" runat="server">用户名：</asp:Label>
+                <asp:TextBox ID="tbusername" runat="server"></asp:TextBox>
+            </p>
+
+            <p> <asp:Label ID="lbpsw" runat="server">密 码：</asp:Label>
+                <asp:TextBox ID="tbpsw" runat="server" TextMode="Password"></asp:TextBox>
+            </p>
+            <p><asp:Button ID="btnLogin" runat="server" Text="登录" onclick="btnLogin_Click" />
+                <asp:Button ID="btnCancel" runat="server" Text="取消" onclick="btnCancel_Click" />
+            </p>
+        </form>
+    </div>
+</body>
+</html>
