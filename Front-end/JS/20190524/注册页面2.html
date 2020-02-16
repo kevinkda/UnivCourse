@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+		a{text-decoration: none;}
+	</style>
+</head>
+<body>
+<!--	<a href="新建文本文档 (2).html">2</a>-->
+<div id="p" ><h1>注册新用户</h1></div>
+<a  href="注册页面2.html" name="a1">
+	<input type="button" name="youxiang" id="youxiang" value="邮箱注册"   />
+</a>
+<a href="注册页面1.html"  name="a1">
+	<input type="button" name="shouji" id="shouji" value="手机注册"   />
+</a>
+1
+<br />
+<h>邮箱：</h>
+<input type="text" name="you" id="you" value="" />
+<h>推荐使用qq邮箱</h>
+<br />
+<h>用户名：</h>
+<input type="" name="ming" id="ming" value="" />
+<h>4-16字符，不能包含数字</h>
+<br />
+<h>创建密码：</h>
+<input type="text" name="mima1" id="mima1" value="" />
+<h>6-32字符</h>
+<br />
+<h>确认密码</h>
+<input type="text" name="mima2" id="mima2" value="" />
+
+<br />
+<h>所在城市</h>
+<select name="" value=""  >
+	
+	<option value="">..省..</option>
+	<option value="" >河北</option>
+	<option value="">湖北</option>
+	<option value="">荷兰</option>
+	<option value="">河南</option>
+</select>
+<select name="">
+	<option value="">..市..</option>
+	<option value="">北京</option>
+	<option value="">南京</option>
+	<option value="">西京</option>
+	<option value="">东京</option>
+</select>
+<br />
+<h>验证码：</h>
+<input type="text" name="yanzheng" id="yanzheng" value="" />
+<img src="捕获.png"/>
+<br />
+<input type="button" name="tongyi" id="tongyi" value="同意以上条款并注册" />
+<a href="#"  name="a1">《美淘用户协议》</a>
+</body>
+</html>
+<script type="text/javascript">
+	var p=document.getElementById("p");
+	p.style.color="orange";
+	var youxiang=document.getElementById("youxiang");
+	youxiang.style.background="orange";
+	var tongyi=document.getElementById("tongyi");
+	tongyi.style.background="orange";
+	tongyi.onmousemove=function(){
+		tongyi.style.background="yellow";
+	}
+	tongyi.onmouseout=function(){
+		tongyi.style.background="orange";
+	}
+	var a1=document.getElementsByName("a1");
+	
+</script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		li{
+			list-style: none;
+			float: left;
+			margin: 10px;
+		}
+		li a{
+			display: block;
+			height: 50px;
+			width: 120px;
+			line-height: 50px;
+			text-align: center;
+			background: #ddd;
+			border-radius: 10px 10px 0 0;
+		}		
+	</style>
+
+</head>
+<body>
+	
+	<!--<input type="text" name="user" id="user" value="" />
+	<input type="text" name="user" id="" value="" />
+	<input type="text" name="user" id="" value="" />
+	
+	<input type="text" name="cha" id="cha" value="" onclick="fun()" /> 全选
+	<p></p>
+	<input type="text" name="item"  value=""  />  选项一
+	<p></p>
+	<input type="text" name="item"  value="" />  选项二
+	<p></p>
+	<input type="text" name="item"  value="" />  选项三
+	<p></p>
+	<input type="text" name="item"  value="" />  选项四
+	<p></p>
+	<input type="text" name="item"  value="" />  选项
+	-->
+	
+	<ul id="">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">产品</a></li>
+		<li><a href="#">新闻</a></li>
+	</ul>
+	<div></div>
+</body>
+</html>
+<script type="text/javascript">
+	/*
+	var user=document.getElementsByName("user");
+//	alert(user)
+	user[1].style.color="red";
+	
+	function fun(){
+		var item=document.getElementsByName("item");
+		var cha=document.getElementsByName("cha")[0];
+		for (var i=0;i<item.length;i++) {
+			item[i].checked=cha.checked;
+		}
+	}
+	var box=document.getElementsByTagName("input");
+	box[0].style.color="red";
+	
+	var a=document.getElementsByTagName("a");
+	for (var i=0;i<a.length;i++) {
+		a[i].onmouseover=function(){
+			this.style.background='red';
+		}
+		a[i].onmouseout=function(){
+			this.style.background='#ddd';
+		}
+	}
+	
+	var li=document.getElementsByTagName("li")[0];
+//	alert(li.parentNode)
+//	li.firstChild.style.color="red";
+	*/
+	
+	var h1=document.createElement("h1");
+	h1.style.color="green";
+	h1.innerText="我是添加的H1";
+	document.getElementsByTagName("div")[0].appendChild(h1);
+//	document.getElementsByTagName("div")[0].removeChild(h1);
+</script>

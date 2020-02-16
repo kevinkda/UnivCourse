@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>彩票号码</title>
+	</head>
+	<body>
+		<input type="text" name="" id="num" value="" />
+		<input type="button" name="btngo" id="btngo" value="开始" />
+		<input type="button" id="btnstop" value="结束" />
+	</body>
+</html>
+<script type="text/javascript">
+	var btngo=document.getElementById("btngo");
+	var btnstop=document.getElementById("btnstop");
+	var num=document.getElementById("num");
+	var timer=0;
+	function start(min,max,length){
+		var arr=[];
+		while(arr.length<length){
+			var b=Math.ceil(Math.random()*35+1);
+			if(arr.indexOf(b)==-1){
+				arr.push(b);
+			}
+			function sortnum(a,b){
+				return a-b;
+			}
+			arr.sort(sortnum)
+		}
+		return arr;
+	}
+	btngo.onclick=function(){
+		clearInterval(timer);
+		timer=setInterval(function(){num.value=start(1,36,7)},50)
+	}
+	btnstop.onclick=function(){
+		clearInterval(timer);
+	}
+</script>

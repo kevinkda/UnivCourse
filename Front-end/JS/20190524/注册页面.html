@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面注册</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div id="">
+			<p style=" font-size: 30px;color: orangered;">注册新用户</p>
+		</div>
+	<input type="button"  id="youxiang" value="邮箱注册" style="background: orange;"/>
+	<br />
+	<form action="" method="post" onsubmit="return fun()">
+	<p>邮箱:<input type="text" name="" id="email" value="" placeholder="推荐使用QQ邮箱"/><span></span></p>
+	<p>用户名:<input type="text" name="" id="ming" value="" placeholder="4-16字符，不能包含数字"/><span></span></p>
+	<p>创建密码:<input type="password" name="" id="mima1" value="" placeholder="6-32字符"/><span></span></p> 
+	<p>确认密码:<input type="password" name="" id="mima2" value="" /></p> 
+	<p>所在城市 <select name="">
+		<option value="">..省..</option>
+		<option value="" >河北</option>
+		<option value="">湖北</option>
+		<option value="">荷兰</option>
+		<option value="">河南</option>		
+	</select>
+	<select name="">
+		<option value="">..市..</option>
+		<option value="">北京</option>
+		<option value="">南京</option>
+		<option value="">西京</option>
+		<option value="">东京</option>
+	</select></p>
+	<p>验证码:<input type="text" name="yanzheng" id="yanzheng" value="" />
+		<img  src="yanzhengma.png"/>
+	</p>
+	<input type="submit" name="tongyi" id="tongyi" value="同意以上条款并注册" style="background: orange;"/>
+	<a href="#"  name="a1">《美淘用户协议》</a>
+	</form>
+	</body>
+</html>
+<script type="text/javascript">
+	function fun(){
+		var span1=document.getElementsByTagName("span")[0];
+		var span2=document.getElementsByTagName("span")[1];
+		var span3=document.getElementsByTagName("span")[2];
+		var ema=document.getElementById("email").value;
+		var ming=document.getElementById('ming').value;
+		var mima1=document.getElementById("mima1").value;
+		var mima2=document.getElementById("mima2").value;
+		if(ema==""||ming==""||mima1==""){
+			span1.innerText="邮箱地址和用户名和密码均不能为空";
+			span1.style.color="red";
+			span2.innerText="邮箱地址和用户名和密码均不能为空";
+			span2.style.color="red";
+			span3.innerText="邮箱地址和用户名和密码均不能为空";
+			span3.style.color="red";
+			return false;
+		}
+		if(ema.indexOf("@")==-1||ema.indexOf(".")==-1){
+			span1.innerText="邮箱地址必须包含符号@和.";
+			span1.style.color="red";
+			return false;
+		}
+		if (ming.length<4||ming.length>16) {
+			span2.innerText="用户名的长度在4到16之间";
+			span2.style.color="red";
+			return false;
+		}
+	}
+</script>
+
+
+
