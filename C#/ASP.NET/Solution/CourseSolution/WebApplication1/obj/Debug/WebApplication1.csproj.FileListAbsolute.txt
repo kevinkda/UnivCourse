@@ -1,0 +1,6 @@
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\bin\WebApplication1.dll.config
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\bin\WebApplication1.dll
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\bin\WebApplication1.pdb
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\obj\Debug\WebApplication1.dll
+E:\University\ASP.NET\Solution\CourseSolution\WebApplication1\obj\Debug\WebApplication1.pdb
