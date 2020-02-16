@@ -1,0 +1,278 @@
+C51 COMPILER V9.00   PRO2                                                                  10/16/2019 15:38:10 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE PRO2
+OBJECT MODULE PLACED IN Pro2.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE Pro2.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /************************************************************
+   2          *  标题: 74HC595驱动数码管上显示数字（C语言）             *
+   3          /*************************************************************/
+   4          #include <intrins.h>
+   5          #include<reg52.h>
+   6          #define  AT24C02 0xa0  //AT24C02 地址
+   7          #define  NOP() _nop_()  /* 定义空指令 */
+   8          sbit MOSIO =P2^0;
+   9          sbit R_CLK =P2^1;
+  10          sbit S_CLK =P2^2;
+  11          void delay(unsigned int i);      //函数声名
+  12          void HC595SendData(unsigned char SendVal,unsigned char Wei);
+  13          void Led_Show(unsigned char Wei); 
+  14          void SetLedNum(unsigned long int Numcode);
+  15          void system_Ini();
+  16          void  keyscan(void);
+  17          void SengUart(unsigned char SenData);
+  18          void SendString(unsigned char *str);
+  19          void SengNum(unsigned int num);
+  20          // 此表为 LED 的字模0    1    2    3    4    5    6   7    8    9    A    b    c    d    E    -    L   P  
+             -  U    Hidden  _ (20)
+  21          unsigned char code Disp_Tab[] = { 0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x88,0x83,0xC6,0xA1,0x
+             -86,0xbf,0xc7,0x8c,0xc1, 0xff,  0xf7 }; 
+  22          unsigned char code LED7Code[] = {~0x3F,~0x06,~0x5B,~0x4F,~0x66,~0x6D,~0x7D,~0x07,~0x7F,~0x6F,~0x77,~0x7C,~
+             -0x39,~0x5E,~0x79,~0x71};
+  23          unsigned char code Nuntable[]="0123456789abcdef";
+  24          unsigned char NumBuffer[8];
+  25          unsigned int LedNum=0; 
+  26          unsigned int time=0;
+  27          unsigned char P0flg;
+  28          unsigned char  temp;
+  29          unsigned char  key;               //键顺序吗
+  30          unsigned char ReData;
+  31          unsigned char pDat[8];
+  32          main()
+  33          { 
+  34   1         unsigned long int Num=0;
+  35   1         P0=0xff;
+  36   1         P1=0xff;
+  37   1         P2=0xff;   
+  38   1         system_Ini();   
+  39   1         P0flg=0;
+  40   1         NumBuffer[6]=pDat[5];
+  41   1        while(1)
+  42   1        {      
+  43   2                      if(LedNum==0)
+  44   2                      {
+  45   3                              Num++;
+  46   3                              Num%=10000;
+  47   3                              SetLedNum(Num);
+  48   3                      }
+  49   2                  keyscan();  
+  50   2        }
+  51   1      }
+  52          /***********************************************************
+C51 COMPILER V9.00   PRO2                                                                  10/16/2019 15:38:10 PAGE 2   
+
+  53          purpose: 系统初始化
+  54          /**********************************************************/
+  55          void system_Ini()
+  56          {
+  57   1          TMOD= 0x21;
+  58   1               TH0 = (65536-30000)>>8;    //12.000
+  59   1               TL0 = (65536-30000)&0xff;      
+  60   1           ET0 =1;
+  61   1           TR0  = 1;
+  62   1           SCON = 0x50;  //REN=1允许串行接受状态，串口工作模式2 
+  63   1               TMOD|= 0x20;      //定时器工作方式2 
+  64   1               PCON|= 0x80;      //波特率提高一倍                                                    
+  65   1               TH1 = 0xF3;// //baud*2  /* 波特率4800、数据位8、停止位1。
+  66   1           TL1 = 0xF3; 
+  67   1               TR1  = 1;        //开启定时器1                                                      
+  68   1      ES   = 1;        //开串口中断
+  69   1           IT0=1;           //下降沿触发
+  70   1           EX0=1;                         
+  71   1           EA   = 1;        // 开总中断 
+  72   1      }
+  73          void SetLedNum(unsigned long int Numcode)
+  74          {
+  75   1          unsigned char i;
+  76   1          for(i=0;i<6;i++)
+  77   1              {
+  78   2                      NumBuffer[i]=Numcode%10;
+  79   2                      Numcode/=10;
+  80   2              }
+  81   1      }       
+  82          void Led_Show(unsigned char Wei)
+  83          {        
+  84   1          unsigned char  HC595SendVal;
+  85   1              HC595SendVal = ~Disp_Tab[NumBuffer[Wei]];
+  86   1              HC595SendData(HC595SendVal,Wei);        
+  87   1      }
+  88          void delay(unsigned int i)
+  89          {
+  90   1          unsigned int j;
+  91   1          for(i; i > 0; i--)
+  92   1              for(j = 300; j > 0; j--);
+  93   1      }
+  94          /************************************************************
+  95          ** 函数名称: HC595SendData
+  96          ** 功能描述: 向SPI总线发送数据
+  97          ************************************************************/
+  98          void HC595SendData(unsigned char SendVal,unsigned char Wei)
+  99          {  
+ 100   1        unsigned char i;
+ 101   1        for(i=0;i<16;i++) 
+ 102   1         {
+ 103   2              if(i<8)
+ 104   2              {
+ 105   3                      if((SendVal<<i)&0x80) MOSIO=1; 
+ 106   3                      else MOSIO=0;      // 如果为真 MOSIO = 1  
+ 107   3              }
+ 108   2              else 
+ 109   2              {
+ 110   3                 MOSIO=((~(1<<Wei)>>(i-8))&0x01);
+ 111   3              }
+ 112   2              S_CLK=0;
+ 113   2              NOP();
+ 114   2              NOP();
+C51 COMPILER V9.00   PRO2                                                                  10/16/2019 15:38:10 PAGE 3   
+
+ 115   2              S_CLK=1;        
+ 116   2         }
+ 117   1        R_CLK=0; //set dataline low
+ 118   1        NOP();
+ 119   1        NOP();
+ 120   1        R_CLK=1; //片选
+ 121   1      }
+ 122          void SengUart(unsigned char SenData)
+ 123          {
+ 124   1                   SBUF=SenData;                   //SUBF接受/发送缓冲器
+ 125   1                  while(TI==0);
+ 126   1               TI=0;
+ 127   1      }
+ 128          void SendString(unsigned char *str)
+ 129          {
+ 130   1              while(*str!='\0')
+ 131   1              {
+ 132   2                      SengUart(*str);
+ 133   2                      str++;
+ 134   2              }
+ 135   1      }
+ 136          void SengNum(unsigned int num)
+ 137          {
+ 138   1          unsigned char buffer[10];
+ 139   1              unsigned char *Buf=buffer+8;
+ 140   1              do{
+ 141   2                 *Buf=Nuntable[num%10];
+ 142   2                 Buf--;
+ 143   2                 num/=10;
+ 144   2              }while(num!=0);
+ 145   1              buffer[9]=0;
+ 146   1              Buf++;
+ 147   1              SendString(Buf);
+ 148   1      }
+ 149           /*************************************************************/
+ 150          /*键扫描子程序  (4*3 的矩阵) P1.4 P1.5 P1.6 P1.7为行      */
+ 151          /*                                                        P1.1 P1.2 P1.3为列        */
+ 152          /**************************************************************/
+ 153           void  keyscan(void)
+ 154           {      temp = 0;
+ 155   1          P1=0xF0;            //高四位输入   行为高电平  列为低电平
+ 156   1          delay(1);
+ 157   1              temp=P1;                 //读P1口 
+ 158   1          temp=temp&0xF0;                      //屏蔽低四位
+ 159   1          temp=~((temp>>4)|0xF0);       
+ 160   1          if(temp==1)   // p1.4 被拉低
+ 161   1              key=0;
+ 162   1          else if(temp==2)   // p1.5 被拉低
+ 163   1              key=1;
+ 164   1          else if(temp==4)   // p1.6 被拉低
+ 165   1              key=2;
+ 166   1          else if(temp==8)   // p1.7 被拉低
+ 167   1               key=3;
+ 168   1          else
+ 169   1              key=16;  
+ 170   1          P1=0x0F;              //低四位输入  列为高电平 行为低电平
+ 171   1          delay(1);
+ 172   1              temp=P1;                //读P1口       
+ 173   1          temp=temp&0x0F;
+ 174   1          temp=~(temp|0xF0);
+ 175   1              if(temp==1)                // p1.0  被拉低
+ 176   1              key=key+0;
+C51 COMPILER V9.00   PRO2                                                                  10/16/2019 15:38:10 PAGE 4   
+
+ 177   1          else if(temp==2)               // p1.1  被拉低
+ 178   1              key=key+4;
+ 179   1          else if(temp==4)   // p1.2  被拉低
+ 180   1              key=key+8;
+ 181   1          else if(temp==8)    // p1.3  被拉低
+ 182   1              key=key+12;
+ 183   1          else
+ 184   1              key=16;  
+ 185   1          if(key<16)
+ 186   1              {
+ 187   2              NumBuffer[7]=key;
+ 188   2                      SendString("get the key number: ");
+ 189   2                      SengNum((unsigned int)key);
+ 190   2                      SendString("\r\n");
+ 191   2                      if(key==0)
+ 192   2                      {
+ 193   3                      SendString("write num 5 to 24c02 !\r\n");       
+ 194   3                      }
+ 195   2                      else if(key==1)
+ 196   2                      {
+ 197   3                          SendString("read num from 24c02 : ");
+ 198   3                  NumBuffer[6]=pDat[0];               
+ 199   3                              SengNum((unsigned int)pDat[0]);
+ 200   3                              SendString("\r\n");
+ 201   3                      }
+ 202   2              }
+ 203   1       }
+ 204          /********************************************************
+ 205          * INT0中断函数                                          *
+ 206          ********************************************************/
+ 207          void  counter(void) interrupt 0 
+ 208          {
+ 209   1         EX0=0;
+ 210   1         EX0=1;
+ 211   1      }
+ 212          /*************************************
+ 213           [ t1 (1ms)中断] 中断
+ 214          *************************************/
+ 215          void T1zd(void) interrupt 1     //3定时器0的中断号  1定时器0的中断号 0外部中断1 2外部中断2  4串口中断
+ 216          {
+ 217   1               TH0 = (65536-3000)>>8;    //12.000
+ 218   1               TL0 = (65536-3000)&0xff;
+ 219   1               time++;
+ 220   1               if(time==10)
+ 221   1               {
+ 222   2                  P0flg++;
+ 223   2                      P0flg%=16;
+ 224   2                      time = 0;
+ 225   2                      if(P0flg<8)
+ 226   2                          P0=~(0x01<<P0flg);
+ 227   2                      else
+ 228   2                          P0=~(0x80>>(P0flg-8));
+ 229   2               }
+ 230   1         LedNum++;     //中断计数  
+ 231   1         LedNum%=8;
+ 232   1         Led_Show(LedNum); 
+ 233   1      }
+ 234          /****************************************************
+ 235                         串口中断程序
+ 236          ******************************************************/
+ 237          void ser_int (void) interrupt 4 using 1
+ 238          {
+C51 COMPILER V9.00   PRO2                                                                  10/16/2019 15:38:10 PAGE 5   
+
+ 239   1       if(RI == 1)        //RI接受中断标志
+ 240   1       {
+ 241   2              RI = 0;             //清除RI接受中断标志
+ 242   2              ReData = SBUF;  //SUBF接受/发送缓冲器
+ 243   2       }
+ 244   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    837    ----
+   CONSTANT SIZE    =    126    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     24      24
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
