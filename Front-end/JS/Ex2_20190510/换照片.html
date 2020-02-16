@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<img id="img" src="img/flower1.jpg"/>
+		<input type="button" id="pre" value="上一张" />
+		<input type="button" id="next" value="下一张" />
+	<script type="text/javascript">
+		var next=document.getElementById("next");
+		index=1;
+	next.onclick=function(){
+			index++;
+		if(index>=5){
+			index=4;
+			alert("最后一张");
+		}
+		img.src="img/flower"+index+".jpg";
+	}
+	pre.onclick=function(){
+			index--;
+		if(index<=0){
+			index=1;
+			alert("最后一张");
+		}
+		img.src="img/flower"+index+".jpg";
+	}
+	</script>
+</html>
+<!-- 

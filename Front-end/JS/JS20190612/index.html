@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<style>
+			#div{
+				border: 1px solid rosybrown;
+				position: absolute;
+				top: 30px;
+				width: 500px;
+				height: 380px;
+			}
+			h3{
+				position: absolute;
+				top: 0px;
+			}
+			#sub{
+				border: 10px solid white;
+				background: deepskyblue;
+				font-size: 40px;
+				border-radius: 20px;
+				color: white;
+			}
+		</style>
+		<!--<h1>网易通行证</h1>-->
+		<img src="image_NetEase.jpg" style="height: 60px;"/>
+		<!--<h3>请填写注册信息</h3>-->
+		<fieldset>
+	   		<legend style="margin-left: 21px;">请填写注册信息</legend>
+	   		<p style="margin-left: 24px;">用户名：<input type="" name="yhm" id="yhm" value="" /><span></span><font color="red">由字母、数字、下划线、点、减号组成的4-18位字符，以数字、字母开头或结尾</font></p>
+		    <p style="margin-left: 40px;">昵称：<input type="" name="nc" id="nc" value="" /><span></span><font color="red">包含汉字、字母、数字、下划线的4-20位字符，汉字占2个字符</font></p>
+		    <p style="margin-left: 40px;">邮箱：<input type="" name="yx" id="yx" value="" /><span></span><font color="red">邮箱账号·域名，如：good@tom.com、whg@sina.com.cn</font></p>
+		    <p style="margin-left: 40px;">密码：<input type="" name="mm" id="mm" value="" /><span></span><font color="red">由英文字母和数字组成的4-10位字符</font></p>
+		    <p style="margin-left: 8px;">确认密码：<input type="" name="qrm" id="qrm" value="" /><span></span></p>
+		    <p style="margin-left: 8px;">手机号码：<input type="" name="sjhm" id="sjhm" value="" /><span></span><font color="red">手机号由11位数字组成，且以13，15，18开头</font></p>
+		    <p style="margin-left: 24px;">身份证：<input type="" name="sfz" id="sfz" value="" /><span></span><font color="red">由15位或18位数字组成</font></p>
+		    <input type="submit"  id="sub" value="注册" />
+	   	</fieldset>
+	   <!--<div id="div">
+			<form action="" onsubmit="return fun()">
+		    <p style="margin-left: 24px;">用户名：<input type="" name="yhm" id="yhm" value="" /><span></span></p>
+		    <p style="margin-left: 40px;">昵称：<input type="" name="nc" id="nc" value="" /><span></span></p>
+		    <p style="margin-left: 40px;">邮箱：<input type="" name="yx" id="yx" value="" /><span></span></p>
+		    <p style="margin-left: 40px;">密码：<input type="" name="mm" id="mm" value="" /><span></span></p>
+		    <p style="margin-left: 8px;">确认密码：<input type="" name="qrm" id="qrm" value="" /><span></span></p>
+		    <p style="margin-left: 8px;">手机号码：<input type="" name="sjhm" id="sjhm" value="" /><span></span></p>
+		    <p style="margin-left: 24px;">身份证：<input type="" name="sfz" id="sfz" value="" /><span></span></p>
+		    <input type="submit"  id="sub" value="注册" />
+			</form>
+		   
+		</div>-->
+	</body>
+</html>
+<script type="text/javascript">
+	function fun(){
+		var yhm=document.getElementById("yhm").value
+	    var nc=document.getElementById("nc").value
+	    var yx=document.getElementById("yx").value
+	    var mima=document.getElementById("mm").value
+	    var tele=document.getElementById("sjhm").value
+	    var shen=document.getElementById("sfz").value
+	    var qrm=document.getElementById("qrm").value
+	    var span1=document.getElementsByTagName("span")[0];
+	    var span2=document.getElementsByTagName("span")[1];
+	    var span3=document.getElementsByTagName("span")[2];
+	    var span4=document.getElementsByTagName("span")[3];
+	    var span5=document.getElementsByTagName("span")[4];
+	    var span6=document.getElementsByTagName("span")[5];
+	    var span7=document.getElementsByTagName("span")[6];
+	    if (!/^[A-Za-z0-9_.-]{4,18}$/.test(yhm)) {
+	    	span1.innerText="由字母、数字、下划线、点、减号组成的4-18位字符，以数字、字母开头或结尾";
+	    	span1.style.color="red"
+	    	return false;
+	    }
+	    if (!/^(\w{4,20}|\W{2-10})$/.test(nc)) {
+	    	span2.innerText="包含汉字、字母、数字、下划线的4-20位字符，汉字占2个字符"
+	    	span2.style.color="red"
+	    	return false;
+	    }
+	    if (!/^\w+@\w+\.[a-zA-Z]{2,3}(\.[][a-zA-Z]{2,3})?$/.test(yx)) {
+	    	span3.innerText="邮箱账号·域名，如：good@tom.com、whg@sina.com.cn"
+	    	span3.style.color="red"
+	    	return false;
+	    }
+	    if (!/^[a-zA-Z0-9]{4,10}$/.test(mima)) {
+	    	span4.innerText="由英文字母和数字组成的4-10位字符"
+	    	span4.style.color="red"
+	    	return false;
+	    }
+	    if (!/^1[3|5|8][0-9]\d{8}$/.test(tele)) {
+	    	span6.innerText="手机号由11位数字组成，且以13，15，18开头"
+	    	span6.style.color="red"
+	    	return false;
+	    }
+	    if (!/(\d{15}|\d{18})/.test(shen)) {
+	    	span7.innerText="由15位或18位数字组成"
+	    	span7.style.color="red"
+	    	return false;
+	    }
+	}
+</script>

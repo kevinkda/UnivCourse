@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>动态设置背景色</title>
+  </head>
+  <body>
+    <p>请选择背景色：</p>
+    <body onload="aa()">
+      <select id="xx" onchange="change(value)" class="" name="">
+        <option value="Orange">Orange</option>
+        <option value="Pink">Pink</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="White">White</option>
+      </select>
+    </body>
+  </body>
+  <script type="text/javascript">
+  document.bgColor = "Orange"
+    function color() {
+      document.bgColor = "Orange"
+    }
+    function change() {
+      var x = document.getElementById("xx").value;
+      document.bgColor = x;
+    }
+  </script>
+</html>
