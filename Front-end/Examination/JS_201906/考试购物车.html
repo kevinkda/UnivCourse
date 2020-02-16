@@ -1,0 +1,209 @@
+<div class="catbox">
+    <table id="cartTable">
+        <thead>
+        <tr>
+            <th><label>
+                <input class="check-all check" type="checkbox">&nbsp;&nbsp;全选</label></th>
+            <th>商品</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>小计</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="on">
+            <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+            <td class="goods"><img src="flower1.jpg" alt=""><span>第一朵花</span></td>
+            <td class="price">1</td>
+            <td class="count"><span class="reduce"></span>
+                <input class="count-input" type="text" value="0">
+                <span class="add">+</span></td>
+            <td class="subtotal">1</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr class="on">
+            <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+            <td class="goods"><img src="flower2.jpg" alt=""><span>第二朵花</span></td>
+            <td class="price">3</td>
+            <td class="count"><span class="reduce"></span>
+                <input class="count-input" type="text" value="0">
+                <span class="add">+</span></td>
+            <td class="subtotal">3</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr class="on">
+            <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+            <td class="goods"><img src="flower3.jpg" alt=""><span>第三朵花</span></td>
+            <td class="price">4</td>
+            <td class="count"><span class="reduce"></span>
+                <input class="count-input" type="text" value="0">
+                <span class="add">+</span></td>
+            <td class="subtotal">4</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        <tr class="on">
+            <td class="checkbox"><input class="check-one check" type="checkbox"></td>
+            <td class="goods"><img src="flower4.jpg" alt=""><span>第四朵花</span></td>
+            <td class="price">2</td>
+            <td class="count"><span class="reduce"></span>
+                <input class="count-input" type="text" value="0">
+                <span class="add">+</span></td>
+            <td class="subtotal">2</td>
+            <td class="operation"><span class="delete">删除</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="foot" id="foot">
+        <label class="fl select-all"><input type="checkbox" class="check-all check">&nbsp;&nbsp;全选</label>
+        <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+        <div class="fr closing" onclick="getTotal();">结算</div>
+        <input type="hidden" id="cartTotalPrice">
+        <div class="fr total">合计：￥<span id="priceTotal"></span>0</div>
+        <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span class="arrow up"></span><span class="arrow down"></span></div>
+        <div class="selected-view">
+         <span class="arrow"><span></span></span> </div>
+    </div>
+</div>
+
+<style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+        a{color:#666;text-decoration:none;}
+        table{border-collapse:collapse;border-spacing:0;border:0;}
+        body{color:#666;font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+        clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+        .clearfix{display:inline-table}
+        *html .clearfix{height:1%}
+        .clearfix{display:block}
+        *+html .clearfix{min-height:1%}
+        .fl{float:left;}
+        .fr{float:right;}
+        .checkbox{width:60px;}
+        .check-all{ vertical-align:middle;}
+        .goods{width:300px;}
+        .goods span{width:180px;margin-top:20px;text-align:left;float:left;}
+        .goods img{width:100px;height:80px;margin-right:10px;float:left;}
+        .price{width:130px;}
+        .count{width:90px;}
+        .count .add, .count input, .count .reduce{float:left;margin-right:-1px;position:relative;z-index:0;}
+        .count .add, .count .reduce{height:23px;width:17px;border:1px solid #e5e5e5;background:#f0f0f0;text-align:center;line-height:23px;color:#444;}
+        .count .add:hover, .count .reduce:hover{color:#f50;z-index:3;border-color:#f60;cursor:pointer;}
+        .count input{width:50px;height:25px;line-height:15px;border:1px solid #aaa;color:#343434;text-align:center;padding:4px 0;background-color:#fff;z-index:2;}
+        .subtotal{width:150px;color:red;font-weight:bold;}
+        .operation span:hover,a:hover{cursor:pointer;color:red;text-decoration:underline;}
+</style>
+<script>
+    window.onload = function () {
+        if (!document.getElementsByClassName) {
+            document.getElementsByClassName = function (cls) {
+                var ret = [];
+                var els = document.getElementsByTagName('*');
+                for (var i = 0, len = els.length; i < len; i++) {
+
+                    if (els[i].className.indexOf(cls + ' ') >=0 || els[i].className.indexOf(' ' + cls + ' ') >=0 || els[i].className.indexOf(' ' + cls) >=0) {
+                        ret.push(els[i]);
+                    }
+                }
+                return ret;
+            }
+        }
+var table = document.getElementById('cartTable'); 
+        var selectInputs = document.getElementsByClassName('check'); 
+        var checkAllInputs = document.getElementsByClassName('check-all') 
+        var tr = table.children[1].rows; 
+		var priceTotal = document.getElementById('priceTotal'); 
+        var selected = document.getElementById('selected'); 
+        var foot = document.getElementById('foot');
+function getTotal() {
+            var seleted = 0;
+            var price = 0;
+            var HTMLstr = '';
+            for (var i = 0, len = tr.length; i < len; i++) {
+                if (tr[i].getElementsByTagName('input')[0].checked) {
+                    tr[i].className = 'on';
+                    seleted += parseInt(tr[i].getElementsByTagName('input')[1].value);
+                    price += parseFloat(tr[i].cells[4].innerHTML);
+                    HTMLstr += '<div><img src="' + tr[i].getElementsByTagName('img')[0].src + '"><span class="del" index="' + i + '">取消选择</span></div>'
+                }
+                else {
+                    tr[i].className = '';
+                }
+            }
+            selectedTotal.innerHTML = seleted;
+            priceTotal.innerHTML = price.toFixed(2);
+            selectedViewList.innerHTML = HTMLstr;
+
+            if (seleted == 0) {
+                foot.className = 'foot';
+            }
+        }
+        
+        function getSubtotal(tr) {
+            var cells = tr.cells;
+            var price = cells[2]; 
+            var subtotal = cells[4]; 
+            var countInput = tr.getElementsByTagName('input')[1]; 
+            var span = tr.getElementsByTagName('span')[1];
+         subtotal.innerHTML = (parseInt(countInput.value) * parseFloat(price.innerHTML)).toFixed(2);
+        if (countInput.value == 1) {
+                span.innerHTML = '';
+            }else{
+                span.innerHTML = '-';
+            }
+        }
+for(var i = 0; i < selectInputs.length; i++ ){
+            selectInputs[i].onclick = function () {
+                if (this.className.indexOf('check-all') >= 0) { 
+                    for (var j = 0; j < selectInputs.length; j++) {
+                        selectInputs[j].checked = this.checked;
+                    }
+                }
+                if (!this.checked) { 
+                    for (var i = 0; i < checkAllInputs.length; i++) {
+                        checkAllInputs[i].checked = false;
+                    }
+                }
+                getTotal();
+            }
+        }
+        for (var i = 0; i < tr.length; i++) {
+          
+            tr[i].onclick = function (e) {
+                var e = e || window.event;
+                var el = e.target || e.srcElement; 
+                var cls = el.className; 
+                var countInout = this.getElementsByTagName('input')[1]; 
+                var value = parseInt(countInout.value); 
+            
+                switch (cls) {
+                    case 'add':
+                        countInout.value = value + 1;
+                        getSubtotal(this);
+                        break;
+                    case 'reduce': 
+                        if (value > 1) {
+                            countInout.value = value - 1;
+                            getSubtotal(this);
+                        }
+                        break;
+                }
+                getTotal();
+            }
+            tr[i].getElementsByTagName('input')[1].onkeyup = function () {
+                var val = parseInt(this.value);
+                if (isNaN(val) || val <= 0) {
+                    val = 1;
+                }
+                if (this.value != val) {
+                    this.value = val;
+                }
+                getSubtotal(this.parentNode.parentNode); 
+                getTotal(); 
+            }
+        }
+ console.log("\u767e\u5ea6\u641c\u7d22\u3010\u7d20\u6750\u5bb6\u56ed\u3011\u4e0b\u8f7d\u66f4\u591aJS\u7279\u6548\u4ee3\u7801");
+    checkAllInputs[0].checked = true;
+        checkAllInputs[0].onclick();
+    }
+</script>
+
