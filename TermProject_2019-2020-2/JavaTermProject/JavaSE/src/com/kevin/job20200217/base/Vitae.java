@@ -1,4 +1,4 @@
-package com.kevin.job01.base;
+package com.kevin.job20200217.base;
 
 import java.util.Date;
 
@@ -6,19 +6,19 @@ import java.util.Date;
  * @author Kevin KDA on 2020/2/17 14:26
  * @version 1.0
  * @project JavaTermProject
- * @package com.kevin.job01.base
+ * @package com.kevin.job20200217.base
  * @classname Vitae
  * @description TODO
  * @interface/enum
  */
 public class Vitae extends PersonalInformation {
-    String strPhone;
-    String strQq;
-    String strWeChat;
-    String strEmail;
-    String strLearnExp;
-    String strProjExp;
-    String strMajor;
+    private String strPhone;
+    private String strQq;
+    private String strWeChat;
+    private String strEmail;
+    private String strLearnExp;
+    private String strProjExp;
+    private String strMajor;
 
     public Vitae(String strName, String strSex, int intHeight, Date dateBirth, String strPhone,
                  String strQq, String strWeChat, String strEmail, String strLearnExp, String strProjExp,

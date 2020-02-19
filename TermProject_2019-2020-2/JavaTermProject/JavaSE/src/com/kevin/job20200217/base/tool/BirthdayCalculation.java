@@ -1,4 +1,4 @@
-package com.kevin.job01.base.tool;
+package com.kevin.job20200217.base.tool;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -7,17 +7,18 @@ import java.util.Date;
  * @author Kevin KDA on 2020/2/17 14:55
  * @version 1.0
  * @project JavaTermProject
- * @package com.kevin.job01.base.tool
+ * @package com.kevin.job20200217.base.tool
  * @classname BirthdayCalculation
- * @description TODO
+ * @description TODO 提供年龄计算的方法
  * @interface/enum
  */
 public class BirthdayCalculation {
     /**
-     * @param birthday
-     * @return
-     * @description 提供通过生日计算年龄
-     */
+    * @param birthday:
+    * @author Kevin KDA on 2020/2/17 14:55
+    * @description BirthdayCalculation / getAgeByBirth TODO 提供通过生日计算年龄
+    * @return int
+    */
     public static int getAgeByBirth(Date birthday) {
         int age = 0;
         try {
@@ -44,12 +45,12 @@ public class BirthdayCalculation {
     }
 
     /**
-     * @param birthDay
-     * @return
-     * @throws Exception
-     */
-    @Deprecated
-    public static int getAge(Date birthDay) throws Exception {
+    * @param birthDay:
+    * @author Kevin KDA on 2020/2/17 14:55
+    * @description BirthdayCalculation / getAge TODO 提供通过生日计算年龄
+    * @return int
+    */
+    public static int getAge(Date birthDay) {
         Calendar cal = Calendar.getInstance();
         if (cal.before(birthDay)) {
             throw new IllegalArgumentException(

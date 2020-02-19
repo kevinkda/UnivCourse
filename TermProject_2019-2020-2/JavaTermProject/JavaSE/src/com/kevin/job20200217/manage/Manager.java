@@ -1,6 +1,6 @@
-package com.kevin.job01.manage;
+package com.kevin.job20200217.manage;
 
-import com.kevin.job01.base.Vitae;
+import com.kevin.job20200217.base.Vitae;
 
 import java.text.SimpleDateFormat;
 
@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
  * @author Kevin KDA on 2020/2/17 15:18
  * @version 1.0
  * @project JavaTermProject
- * @package com.kevin.job01.manage
+ * @package com.kevin.job20200217.manage
  * @classname Manager
  * @description TODO
  * @interface/enum
@@ -19,7 +19,7 @@ public class Manager {
     protected void addInformation() {
     }
 
-    protected void getInformation() {
+    void getInformation() {
 //        Vitae vitae = arrayList.get(0);
         try {
             Vitae vitae = new Vitae(
@@ -49,7 +49,7 @@ public class Manager {
             System.out.println("项目经验\t" + vitae.getStrProjExp());
 
         } catch (Exception e) {
-
+            System.out.println(e.getMessage());
         }
 
         /**

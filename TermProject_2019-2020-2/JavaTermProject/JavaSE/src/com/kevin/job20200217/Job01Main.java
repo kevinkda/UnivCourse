@@ -1,12 +1,12 @@
-package com.kevin.job01;
+package com.kevin.job20200217;
 
-import com.kevin.job01.manage.View;
+import com.kevin.job20200217.manage.View;
 
 /**
  * @author Kevin KDA on 2020/2/17 15:17
  * @version 1.0
  * @project JavaTermProject
- * @package com.kevin.job01
+ * @package com.kevin.job20200217
  * @classname Job01Main
  * @description TODO
  * @interface/enum

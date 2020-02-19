@@ -1,4 +1,4 @@
-package com.kevin.job01.manage;
+package com.kevin.job20200217.manage;
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ import java.util.Scanner;
  * @author Kevin KDA on 2020/2/17 15:33
  * @version 1.0
  * @project JavaTermProject
- * @package com.kevin.job01.manage
+ * @package com.kevin.job20200217.manage
  * @classname View
  * @description TODO
  * @interface/enum
  */
 public class View extends Manager {
-    Scanner scaScan = new Scanner(System.in);
+    private Scanner scaScan = new Scanner(System.in);
 
     /**
      * @param
@@ -26,21 +26,21 @@ public class View extends Manager {
 
     /**
      * @param
+     * @return void
      * @author Kevin KDA on 2020/2/17 15:52
-     * @description View /  TODO    整合主菜单视图 & 功能选择
-     * @returns
+     * @description View / userView TODO 整合主菜单视图 & 功能选择
      */
     public void userView() {
         mainMenu();
         selectionFunction();
     }
 
+
     /**
      * @param
-     * @throws
+     * @return void
      * @author Kevin KDA on 2019/10/24 21:57
-     * @description UserView / mainMenu TODO 主菜单视图
-     * @returns void
+     * @description View / mainMenu TODO 主菜单视图
      */
     private void mainMenu() {
         System.out.println("\n\n\t\t\t个人简历\n===============================");
@@ -56,9 +56,9 @@ public class View extends Manager {
 
     /**
      * @param
+     * @return void
      * @author Kevin KDA on 2020/2/17 15:54
-     * @description View / selectionFunction TODO
-     * @returns
+     * @description View / selectionFunction TODO 提供功能选择方法
      */
     private void selectionFunction() {
         switch (scaScan.next()) {
@@ -78,26 +78,24 @@ public class View extends Manager {
 
     /**
      * @param
+     * @return void
      * @author Kevin KDA on 2020/2/17 17:36
-     * @description View /  TODO 提供程序断点等待用户输入后进行下一步操作
-     * @returns
+     * @description View / returnMainMenu TODO 提供程序断点等待用户输入后进行下一步操作
      */
     private void returnMainMenu() {
         System.out.println("\n按任意键和回车返回主菜单 or 按 x 键退出本系统");
-        switch (scaScan.next()) {
-            case "x":
-                exit();
-                break;
-            default:
-                userView();
+        if ("x".equals(scaScan.next())) {
+            exit();
+        } else {
+            userView();
         }
     }
 
     /**
      * @param
+     * @return void
      * @author Kevin KDA on 2020/2/17 17:37
-     * @description View /  TODO 提供退出系统方法
-     * @returns
+     * @description View / exit TODO 提供退出系统方法
      */
     private void exit() {
         System.out.println("系统退出");
