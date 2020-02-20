@@ -1,6 +1,6 @@
 package com.kevin.job20200219.servlet;
 
-import com.kevin.job20200219.base.Vitae;
+import com.kevin.job20200219.entity.Vitae;
 import com.kevin.job20200219.manager.Manager;
 
 import javax.servlet.ServletException;

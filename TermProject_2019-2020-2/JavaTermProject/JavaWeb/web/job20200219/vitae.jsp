@@ -11,7 +11,6 @@
     <title>个人简历</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js"></script>
 </head>
 <body>
 <div class="container">
@@ -29,15 +28,10 @@
         <hr>
     </div>
 </div>
-
-<footer class="footer">
-    <div class="sub-foot">
-        <div style="text-align: center;">
-            <span style="font-size: smaller; color: #525D76; ">
-                <em>Copyright © 2020, Kevin KDA. AllRightsReserved.</em>
-            </span>
-        </div>
-    </div>
-</footer>
+<div class="bottom-wapper">
+    <hr>
+    <p class="complete">Completion Date: February 19, 2020</p>
+</div>
 </body>
+<script src="js/Copyright.js"></script>
 </html>

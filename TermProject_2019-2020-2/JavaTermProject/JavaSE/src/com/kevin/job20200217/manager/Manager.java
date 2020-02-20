@@ -1,6 +1,6 @@
 package com.kevin.job20200217.manager;
 
-import com.kevin.job20200217.base.Vitae;
+import com.kevin.job20200217.entity.Vitae;
 
 import java.text.SimpleDateFormat;
 

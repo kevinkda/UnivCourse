@@ -5,20 +5,23 @@
     <title>Kevin的简历</title>
 
     <style type="text/css">
-        .page-wapper{
+        .page-wapper {
             width: 1024px;
-            margin:0 auto;
+            margin: 0 auto;
             text-align: center;
             /*border:1px solid green;*/
         }
-        .table-wapper{
+
+        .table-wapper {
             width: 400px;
             text-align: center;
-            margin:0 auto;
+            margin: 0 auto;
         }
-        td{
+
+        td {
             width: 200px;
         }
+
         .footer {
             position: fixed;
             left: 0px;
@@ -29,13 +32,6 @@
             z-index: 9999;
         }
     </style>
-    <script type="text/javascript">
-        window.onload = function () {
-            var height = document.body.offsetHeight;
-            var ele = document.querySelector(".content");
-            ele.style.height = (height - 140) + "px";
-        }
-    </script>
 </head>
 <body>
 <div class="container">
@@ -67,15 +63,10 @@
         </table>
     </div>
 </div>
-
-<footer class="footer">
-    <div class="sub-foot">
-        <div style="text-align: center;">
-            <span style="font-size: smaller; color: #525D76; ">
-                <em>Copyright © 2020, Kevin KDA. AllRightsReserved.</em>
-            </span>
-        </div>
-    </div>
-</footer>
+<div class="bottom-wapper">
+    <hr>
+    <p class="complete">Completion Date: February 19, 2020</p>
+</div>
 </body>
+<script src="js/Copyright.js"></script>
 </html>
