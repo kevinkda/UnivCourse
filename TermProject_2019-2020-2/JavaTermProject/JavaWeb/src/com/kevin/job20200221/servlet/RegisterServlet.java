@@ -1,6 +1,6 @@
 package com.kevin.job20200221.servlet;
 
-import com.kevin.job20200221.entity.tool.ToolUtil;
+import com.kevin.job20200221.entity.util.ToolUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

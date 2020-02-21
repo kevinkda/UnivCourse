@@ -1,6 +1,6 @@
 package com.kevin.job20200219.entity;
 
-import com.kevin.job20200219.entity.tool.BirthdayCalculation;
+import com.kevin.job20200219.entity.util.BirthdayCalculation;
 
 import java.util.Date;
 
