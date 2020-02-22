@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@page import="com.kevin.job20200223.work1.pojo.News" %>
+<%@ page import="com.kevin.job20200223.work1.pojo.News" %>
 <%@ page import="java.util.List" %>
 <%
     String path = request.getContextPath();
@@ -15,7 +15,8 @@
 <%
     //Object obj=request.getAttribute("list");
 //List<News> list=(List<News>)obj;
-    String account = session.getAttribute("account").toString();
+    String account;
+    account = session.getAttribute("account").toString();
     String sessionId = session.getId();
     List<News> list = (List<News>) request.getAttribute("list");
 //转发的数据的作用域范围只在我的转发的页面

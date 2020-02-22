@@ -1,0 +1,80 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /*border:1px solid green;*/
+}
+
+.core-wapper {
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-wapper {
+    margin-top: 30px;
+}
+
+.table-wapper {
+    width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.complete {
+    font-style: italic;
+    color: #525D76;
+    font-size: 13px;
+}
+
+th {
+    font-size: 21px;
+}
+
+tr {
+    height: 30px;
+    text-align: center;
+}
+
+td {
+    width: 200px;
+    text-align: center;
+    overflow: auto;
+}
+
+.project-date {
+    color: #525D76;
+}
+
+.top-wapper-null {
+    height: 50px;
+}
+
+#top-word {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+td:first-child {
+    width: 5%;
+}
+
+td:nth-child(2) {
+    width: 30%;
+}
+
+td:nth-child(3) {
+    width: 5%;
+}
+
+td:nth-child(4) {
+    width: 35%;
+}
+
+td:nth-child(5) {
+    width: 5%;
+}
+
+td:last-child {
+    width: 15%;
+}
