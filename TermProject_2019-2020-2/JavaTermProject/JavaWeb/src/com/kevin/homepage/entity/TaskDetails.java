@@ -24,6 +24,9 @@ public class TaskDetails {
     private String strSubmissionDate;
     private String strTaskDescription;
 
+    public TaskDetails() {
+    }
+
     public TaskDetails(String strTaskSubmitName, String strLayoutTime, String strSubmissionDate,
                        String strTaskDescription) {
         this.strTaskSubmitName = strTaskSubmitName;

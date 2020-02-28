@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaWeb:Web exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="BuildServerSettings">
     <option name="LOGIN" value="" />
     <option name="SERVER_URL" value="http://buildserver" />
@@ -26,159 +31,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee8e91cc-9546-4c88-a41c-617cb3de3a75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Backup/JavaSE/JavaSE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Backup/JavaTermProject/JavaSE/JavaSE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Backup/JavaTermProject/JavaWeb/JavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Backup/JavaWeb/JavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Backup/lishi/JavaTermProject/JavaSE/JavaSE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Backup/lishi/JavaTermProject/JavaWeb/JavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/copyright/Copyright.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaSE/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/JavaWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kevin/homepage/entity/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kevin/homepage/entity/TaskDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kevin/homepage/manager/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/kevin/homepage/servlet/TaskDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/homepage/entity/Project.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/homepage/entity/TaskDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/homepage/manager/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/homepage/servlet/TaskDetailsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/entity/PersonalInformation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/entity/Vitae.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/entity/util/BirthdayCalculation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/manager/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200219/servlet/VitaeSimperServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200221/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200221/entity/util/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200221/servlet/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/demo/entity/UserAcc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/demo/manager/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Login0221DemoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Reg0221DemoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/demo/util/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/entity/UserAcc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/pojo/News.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Login0221Work1Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Reg0221Work1Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/UserListServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/textUserListServlet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200223/work1/util/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/dao/CartDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/dao/DBUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/dao/DataManipulation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/entity/CartItems.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/entity/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/entity/UserAcc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/entity/UserInformation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/manager/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/servlet/CartItemDelete0225Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/servlet/Login0225Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/com/kevin/job20200225/util/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/rebel-remote.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/JavaWeb_Web_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/dao/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/dao/DataManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/entity/CartItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/entity/UserAcc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/entity/UserInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/manager/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/servlet/CartItemDelete0225Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/servlet/Login0225Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevin/job20200225/util/ToolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/sqljdbc4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/work/job20200225/cartItems.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/work/job20200225/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/work/job20200225/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/work/job20200225/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/artifacts/JavaWeb_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/artifacts/JavaWeb_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/copyright/Kevin_KDA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/JavaSE.eml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSE/JavaSE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSE/JavaSE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaTermProject.userlibraries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaWeb.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JavaWeb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200219/entity/PersonalInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200219/entity/Vitae.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200219/entity/util/BirthdayCalculation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200219/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200219/servlet/VitaeSimperServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200221/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200221/entity/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200221/servlet/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/demo/entity/UserAcc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/demo/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Login0221DemoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Reg0221DemoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/demo/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/entity/UserAcc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/pojo/News.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Login0221Work1Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Reg0221Work1Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/servlet/UserListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/servlet/textUserListServlet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/demo/job20200223/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/demo/job20200223/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/demo/job20200223/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kevin/homepage/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kevin/homepage/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kevin/job20200223/work1/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kevin/job20200223/work1/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/JavaWeb.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/homepage/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/homepage/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/entity/UserAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/manager/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/pojo/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/servlet/Login0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/servlet/Reg0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/servlet/UserList0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/servlet/textUserListServlet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/kevin/job20200223/work2/util/ToolUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/Copyright.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/t.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/taskDetails/job20200217.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/taskDetails/job20200219.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/taskDetails/job20200221.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/taskDetails/job20200223.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/taskDetails/template/job20200217.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200219/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200219/vitae.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200221/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200221/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/demo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/work/job20200223/userlist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/META-INF/JavaWeb.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200219/entity/PersonalInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200219/entity/Vitae.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200219/entity/util/BirthdayCalculation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200219/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200219/servlet/VitaeSimperServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200221/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200221/entity/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200221/servlet/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/demo/entity/UserAcc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/demo/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Login0221DemoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/demo/servlet/Reg0221DemoServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/demo/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/entity/UserAcc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/pojo/News.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Login0221Work1Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/Reg0221Work1Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/UserListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/servlet/textUserListServlet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/util/ToolUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/demo/job20200223/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/demo/job20200223/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/demo/job20200223/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/js/Copyright.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/t.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/taskDetails/job20200217.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/taskDetails/job20200219.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/taskDetails/job20200221.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/taskDetails/job20200223.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/taskDetails/template/job20200217.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200219/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200219/vitae.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200221/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200221/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/demo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/success.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/work/job20200223/userlist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/Job20200217Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/entity/PersonalInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/entity/Vitae.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/entity/tool/BirthdayCalculation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/manager/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/job20200217/manager/View.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/uncheck/Person1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/uncheck/数据类型与运算符作业.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaSE/com/kevin/uncheck/流程控制作业.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaWeb/META-INF/JavaWeb.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../out/production/JavaWeb/com/kevin/job20200219/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/homepage/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/homepage/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work1/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/entity/UserAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/manager/Manager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/pojo/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/servlet/Login0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/servlet/Reg0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/servlet/UserList0221Work2Servlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/servlet/textUserListServlet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/classes/com/kevin/job20200223/work2/util/ToolUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../out/artifacts/JavaWeb_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../作业提交记录/2020-2-23-17gb计职1-唐可寅-第三章JSP入门作业/Task1/JavaWeb/src/com/kevin/job20200223/work1/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../作业提交记录/2020-2-23-17gb计职1-唐可寅-第三章JSP入门作业/Task1/JavaWeb/src/com/kevin/job20200223/work1/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../作业提交记录/2020-2-23-17gb计职1-唐可寅-第三章JSP入门作业/Task2/JavaWeb/src/com/kevin/job20200223/work2/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../作业提交记录/2020-2-23-17gb计职1-唐可寅-第三章JSP入门作业/Task2/JavaWeb/src/com/kevin/job20200223/work2/manager/Manager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,19 +163,29 @@
     <option name="LABEL_PART_1" value="&lt;bean:message key=&quot;" />
     <option name="LABEL_PART_2" value="&quot;/&gt;" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1YAAaWnp1DeIfnhiuIQMl5RC6CX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="/usr/bin/git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
@@ -233,6 +193,9 @@
     <property name="project.structure.proportion" value="0.094697" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsDialog.application.dockerMachine" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -247,6 +210,114 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="Tomcat 7.0.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JavaWeb:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JavaWeb" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JavaWeb_3" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="JNDI_PORT" value="1098" />
+        <option name="PRESERVE_SESSIONS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51187" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="51188" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JavaWeb:Web exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings />
@@ -315,6 +386,7 @@
       <updated>1582375088860</updated>
       <workItem from="1582375090338" duration="295000" />
       <workItem from="1582375454847" duration="231000" />
+      <workItem from="1582604052267" duration="169000" />
     </task>
     <servers />
   </component>
@@ -333,5 +405,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -8,9 +8,10 @@
 
 package com.kevin.homepage.servlet;
 
+import com.kevin.homepage.dao.TaskDetailsDao;
 import com.kevin.homepage.entity.TaskDetails;
 import com.kevin.homepage.manager.Manager;
-import com.kevin.job20200223.work1.util.ToolUtil;
+import com.kevin.homepage.util.ToolUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 /**
  * @author Kevin KDA on 2020/2/22 19:32
@@ -36,7 +38,9 @@ public class TaskDetailsServlet extends HttpServlet {
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
         String[] params = ToolUtil.getParameter(req, new String[]{"task"});
-        TaskDetails task = Manager.getTaskDetailByTaskName(params[0]);
+//        TaskDetails task = Manager.getTaskDetailByTaskName(params[0]);
+        ArrayList<TaskDetails> details = TaskDetailsDao.getProjectByTaskName(params[0]);
+        TaskDetails task = details.get(0);
         printlnHtml(task, resp);
     }
 

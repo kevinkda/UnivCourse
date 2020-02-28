@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class Manager {
     private static ArrayList<Project> projects = new ArrayList<Project>(
             Arrays.asList(new Project(
-                            "Java程序开发概述",
+                            "Java程序开发概述 - Job20200218",
                             "20200218",
                             "控制台输出个人简历",
                             "Java SE",
@@ -41,6 +41,12 @@ public class Manager {
                             "JSP实现用户注册登录&输出用户列表",
                             "Java Web",
                             "work/job20200223/"
+                    ), new Project(
+                            "Session会话跟踪 - Job20200224",
+                            "20200225",
+                            "",
+                            "Java Web",
+                            "work/job20200225/"
                     )
             )
     );

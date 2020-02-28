@@ -10,12 +10,16 @@ package com.kevin.homepage.entity;
  * @interface/enum
  */
 public class Project {
+    private String strsn;
     private String strProjName;
     private String strSubmissionDate;
     private String strProjectDescription;
     private String strAffiliatedCourses;
     private String strUrlByProjName;
     private String strUrlByTaskDetails;
+
+    public Project() {
+    }
 
     public Project(String strProjName, String strSubmissionDate, String strProjectDescription,
                    String strAffiliatedCourses, String strUrlByProjName) {
@@ -35,6 +39,14 @@ public class Project {
         this.strAffiliatedCourses = strAffiliatedCourses;
         this.strUrlByProjName = strUrlByProjName;
         this.strUrlByTaskDetails = strUrlByTaskDetails;
+    }
+
+    public String getStrsn() {
+        return strsn;
+    }
+
+    public void setStrsn(String strsn) {
+        this.strsn = strsn;
     }
 
     public String getStrProjName() {

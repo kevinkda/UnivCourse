@@ -64,7 +64,12 @@ public class Manager {
      * @description Manager / duplicateCheck TODO 提供用于检查系统中是否存在重复项的的方法
      */
     private static int duplicateCheck(String args) {
-
+        for (UserAcc u :
+                userAccs) {
+            if (args.trim().equals(u.getStrUserAccount())) {
+                return 1;
+            }
+        }
         return 0;
     }
 
@@ -79,8 +84,11 @@ public class Manager {
     }
 
     public static boolean loginUser(String[] params) {
-        if (params[1].trim().equals(getUserByUserAcc(params[0].trim()).getStrUserPassword())) {
-            return true;
+        for (UserAcc u :
+                userAccs) {
+            if (params[0].trim().equals(u.getStrUserAccount())) {
+                return params[1].trim().equals(u.getStrUserPassword());
+            }
         }
         return false;
     }

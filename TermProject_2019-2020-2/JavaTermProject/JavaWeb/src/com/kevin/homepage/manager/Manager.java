@@ -18,7 +18,7 @@ import java.util.Arrays;
 public class Manager {
     private static ArrayList<Project> projects = new ArrayList<Project>(
             Arrays.asList(new Project(
-                            "Java程序开发概述",
+                            "Java程序开发概述 - Job20200218",
                             "20200218",
                             "控制台输出个人简历",
                             "Java SE",
@@ -41,6 +41,12 @@ public class Manager {
                             "JSP实现用户注册登录&输出用户列表",
                             "Java Web",
                             "work/job20200223/"
+                    ), new Project(
+                            "Session会话跟踪 - Job20200224",
+                            "20200225",
+                            "",
+                            "Java Web",
+                            "work/job20200225/"
                     )
             )
     );
@@ -98,6 +104,21 @@ public class Manager {
                                     "            <p>作业2： </p>\n" +
                                     "            <p>题目：在课堂中登录/注册功能的基础上，完成查看所有注册用户信息功能，要求显示用户的五个字段。</p>\n" +
                                     "            <p> 难度：中</p>"
+                    ), new TaskDetails(
+                            "job20200225",
+                            "2020-2-25-17gb计职1-唐可寅-第四章会话跟踪作业",
+                            "20200224",
+                            "20200225",
+                            "<p>作业1： </p>\n" +
+                                    "<p>题目：模拟实现购物车功能；</p>\n" +
+                                    "<p>  1）用户登录后，可以查看商品信息列表，进行添加购物车操作；</p>\n" +
+                                    "<p>  2）可以查看购物车中所有选购商品；</p>\n" +
+                                    "<p>  3）如果40分钟内没有操作，需要重新登录；</p>\n" +
+                                    "<p>  4）商品数据存储在数据库中；</p>\n" +
+                                    "<p>  难度：中</p>\n" +
+                                    "<p>商品 ID 商品名称商品详情商品数量</p>\n" +
+                                    "<p>（添加商品，删除商品）（思考：分页）（简单 Session 里面去难的就是数据库）查询，删除，修改 数量</p>\n" +
+                                    "<p>添加汽水 3</p>\n"
                     )
             )
     );

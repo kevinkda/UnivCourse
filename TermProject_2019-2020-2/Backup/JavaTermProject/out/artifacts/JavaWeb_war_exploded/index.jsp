@@ -46,8 +46,10 @@
                             <c:out value="${(p.strProjName)}"></c:out></a></td>
                         <td><c:out value="${(p.strSubmissionDate)}"></c:out></td>
                         <td><c:out value="${(p.strProjectDescription)}"></c:out></td>
-<%--                        <td><a href="<c:out value="${(p.strUrlByTaskDetails)}"></c:out>">Detail</a></td>--%>
-                        <td><a href="${pageContext.request.contextPath}/TaskDetailsServlet?task=<c:out value="${(p.strUrlByTaskDetails)}"></c:out>">Detail</a></td>
+                            <%--                        <td><a href="<c:out value="${(p.strUrlByTaskDetails)}"></c:out>">Detail</a></td>--%>
+                        <td>
+                            <a href="${pageContext.request.contextPath}/TaskDetailsServlet?task=<c:out value="${(p.strUrlByTaskDetails)}"></c:out>">Detail</a>
+                        </td>
                         <td><c:out value="${(p.strAffiliatedCourses)}"></c:out></td>
                     </tr>
                 </c:forEach>

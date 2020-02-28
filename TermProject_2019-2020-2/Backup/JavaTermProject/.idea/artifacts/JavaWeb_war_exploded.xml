@@ -10,6 +10,8 @@
         <element id="directory" name="lib">
           <element id="library" level="application" name="jstl" />
           <element id="library" level="application" name="standard" />
+          <element id="library" level="application" name="mysql-connector-java-5.1.34-bin" />
+          <element id="library" level="application" name="mysql-connector-java-8.0.16" />
         </element>
       </element>
     </root>
