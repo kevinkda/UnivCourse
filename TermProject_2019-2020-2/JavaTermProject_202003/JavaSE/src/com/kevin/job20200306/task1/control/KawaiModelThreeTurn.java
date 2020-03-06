@@ -1,19 +1,17 @@
+package com.kevin.job20200306.task1.control;
+
+
+import com.kevin.job20200306.task1.entity.Node;
 
 /**
- * Copyright 2009 ChinaSoft International Ltd. All rights reserved.
- */
-package com.chinasofit.etc.example.se.homework.advancedoop.question1;
-
-/**
- * <p>Title: KawaiModelOneTurn</p>
- * <p>Description: 连连看三折连接的模型</p>
- * <p>Copyright: Copyright (c) 2009</p>
- * <p>Company: ChinaSoft International Ltd.</p>
- *
- * @author etc
+ * @author Kevin KDA on 2020/3/6 17:56
  * @version 1.0
+ * @project JavaTermProject_202003
+ * @package com.kevin.job20200306.task1.control
+ * @classname KawaiModelThreeTurn
+ * @description
+ * @interface/enum
  */
-
 public class KawaiModelThreeTurn extends KawaiModel {
     public boolean linkByThreeTurn(int itemAI, int itemAJ, int itemBI, int itemBJ) {
         for (int i = 0; i < map.length; i++) {
@@ -46,7 +44,6 @@ public class KawaiModelThreeTurn extends KawaiModel {
 
             turningPoints = new Node[3];
         }
-
         if (map[itemAI][itemAJ] == 0 || map[itemBI][itemBJ] == 0
                 || (map[itemAI][itemAJ] != map[itemBI][itemBJ])
                 || (itemAI == itemBI && itemAJ == itemBJ)) {
@@ -69,7 +66,6 @@ public class KawaiModelThreeTurn extends KawaiModel {
 
     @Override
     public String getModelName() {
-        // TODO Auto-generated method stub
         return "三折模型";
     }
 }

@@ -1,22 +1,20 @@
-/**
- * Copyright 2009 ChinaSoft International Ltd. All rights reserved.
- */
+package com.kevin.job20200306.task1.control;
 
-package com.chinasofit.etc.example.se.homework.advancedoop.question1;
+
+import com.kevin.job20200306.task1.entity.Node;
 
 import java.util.Random;
 
 /**
- * <p>Title: KawaiModel</p>
- * <p>Description: 连连看游戏数据模型与操作</p>
- * <p>Copyright: Copyright (c) 2009</p>
- * <p>Company: ChinaSoft International Ltd.</p>
- *
- * @author etc
+ * @author Kevin KDA on 2020/3/6 17:18
  * @version 1.0
+ * @project JavaTermProject_202003
+ * @package com.kevin.job20200306.task1.control
+ * @classname KawaiModel
+ * @description
+ * @interface/enum
  */
 public abstract class KawaiModel {
-
     /**
      * 存放连连看地图元素数据
      */
@@ -54,7 +52,6 @@ public abstract class KawaiModel {
 //	 */
 //	public int turningPointBJ;
 
-
     /**
      * 存放折点
      */
@@ -67,7 +64,6 @@ public abstract class KawaiModel {
 //	}
 //
 
-
     public void setTurningPoints(int i, int j, int position) {
         if (turningPoints[position - 1] == null) {
             turningPoints[position - 1] = new Node();
@@ -76,7 +72,6 @@ public abstract class KawaiModel {
         node.setI(i);
         node.setJ(j);
     }
-
 
     /**
      * 设置地图数组，本模型所有操作均建立在一个已有数组的基础之上
@@ -98,16 +93,20 @@ public abstract class KawaiModel {
      * @throws java.lang.IllegalArgumentException 如果传递的元素总个数不为偶数或元素总个数不等于(行数-2)*(列数-2)，将抛出异常
      */
     public int[][] initMapHelper(int elementCount, int rowCount, int columnCount, int elementTypeCount) {
+        // 如果参数不满足要求，则抛出异常
         if ((elementCount % 2 != 0)
-                && (elementCount != ((rowCount - 2) * (columnCount - 2)))) {// 如果参数不满足要求，则抛出异常
+                && (elementCount != ((rowCount - 2) * (columnCount - 2)))) {
             throw new java.lang.IllegalArgumentException();
         }
         Random random = new Random();
-        int[] initElement = new int[elementCount];// 创建一个临时的一位数组保存初始化元素
+        // 创建一个临时的一位数组保存初始化元素
+        int[] initElement = new int[elementCount];
         for (int i = 0; i < elementCount; i += 2) {
-            int randomNum = Math.abs(random.nextInt()) % elementTypeCount + 1;// 获取随机元素种类
+            // 获取随机元素种类
+            int randomNum = Math.abs(random.nextInt()) % elementTypeCount + 1;
             initElement[i] = randomNum;
-            initElement[i + 1] = randomNum;// 一次性对相邻的两个元素赋值，保证随机得到（elementCount/2）对元素
+            // 一次性对相邻的两个元素赋值，保证随机得到（elementCount/2）对元素
+            initElement[i + 1] = randomNum;
         }
 
         // 随机打乱得到的原始数组
@@ -144,7 +143,6 @@ public abstract class KawaiModel {
         return resultArray;
     }
 
-
     /**
      * 判断两个元素是否能够通过一条直线连接
      *
@@ -157,8 +155,8 @@ public abstract class KawaiModel {
     public boolean linkByLine(int itemAI, int itemAJ, int itemBI, int itemBJ) {
         // 两个元素在一条水平线上
         if (itemAI == itemBI) {
-            int minJ = itemAJ < itemBJ ? itemAJ : itemBJ;
-            int maxJ = itemAJ < itemBJ ? itemBJ : itemAJ;
+            int minJ = Math.min(itemAJ, itemBJ);
+            int maxJ = Math.max(itemAJ, itemBJ);
             for (int j = minJ + 1; j < maxJ; j++) {
                 if (map[itemAI][j] != 0) {
                     return false;
@@ -167,8 +165,8 @@ public abstract class KawaiModel {
             return true;
         } else if (itemAJ == itemBJ) {
             // 两个元素在一条垂直线上
-            int minI = itemAI < itemBI ? itemAI : itemBI;
-            int maxI = itemAI < itemBI ? itemBI : itemAI;
+            int minI = Math.min(itemAI, itemBI);
+            int maxI = Math.max(itemAI, itemBI);
             for (int i = minI + 1; i < maxI; i++) {
                 if (map[i][itemAJ] != 0) {
                     return false;
@@ -253,9 +251,9 @@ public abstract class KawaiModel {
      * 返回值为1表示两个元素能够通过一条直线连接<br>
      * 返回值为2表示两个元素能够通过一次转折连接<br>
      * 返回值为3表示两个元素能够通过两次转折连接
-     * @see KawaiModel #linkByLine(int, int, int, int)
-     * @see KawaiModel #linkByOneTurn(int, int, int, int)
-     * @see KawaiModel #linkByTwoTurn(int, int, int, int)
+     * @see com.kevin.job20200306.task1.control.KawaiModel #linkByLine(int, int, int, int)
+     * @see com.kevin.job20200306.task1.control.KawaiModel #linkByOneTurn(int, int, int, int)
+     * @see com.kevin.job20200306.task1.control.KawaiModel #linkByTwoTurn(int, int, int, int)
      */
     public abstract byte isConnected(int itemAI, int itemAJ, int itemBI, int itemBJ);
 
@@ -282,7 +280,8 @@ public abstract class KawaiModel {
      * 将地图中所有非0元素往下串的方法
      */
     public void downMove() {
-        while (downHelper()) ;
+        while (downHelper()) {
+        }
     }
 
     /**
@@ -308,7 +307,8 @@ public abstract class KawaiModel {
      * 将地图中所有非0元素往上串的方法
      */
     public void upMove() {
-        while (upHelper()) ;
+        while (upHelper()) {
+        }
     }
 
     /**
@@ -334,7 +334,8 @@ public abstract class KawaiModel {
      * 将地图中所有非0元素往左串的方法
      */
     public void leftMove() {
-        while (leftHelper()) ;
+        while (leftHelper()) {
+        }
     }
 
     /**
@@ -360,7 +361,8 @@ public abstract class KawaiModel {
      * 将地图中所有非0元素往右串的方法
      */
     public void rightMove() {
-        while (rightHelper()) ;
+        while (rightHelper()) {
+        }
     }
 
     /**
@@ -369,9 +371,9 @@ public abstract class KawaiModel {
      * @return 布尔值，如果为true，则表示已经过关，如果为false则表示还未过关
      */
     public boolean isPass() {
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                if (map[i][j] != 0) {
+        for (int[] ints : map) {
+            for (int anInt : ints) {
+                if (anInt != 0) {
                     return false;
                 }
             }
@@ -385,9 +387,9 @@ public abstract class KawaiModel {
     public void resetMapHelper() {
         //计算目前地图中还存在多少元素
         int elementCount = 0;
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                if (map[i][j] != 0) {
+        for (int[] ints : map) {
+            for (int anInt : ints) {
+                if (anInt != 0) {
                     elementCount++;
                 }
             }
@@ -395,10 +397,10 @@ public abstract class KawaiModel {
         //创建一个临时数组保存现有元素
         int[] element = new int[elementCount];
         int index = 0;
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                if (map[i][j] != 0) {
-                    element[index] = map[i][j];
+        for (int[] ints : map) {
+            for (int anInt : ints) {
+                if (anInt != 0) {
+                    element[index] = anInt;
                     index++;
                 }
             }
@@ -432,7 +434,7 @@ public abstract class KawaiModel {
         } else {
             System.out.println(code + ">>>结果:恭喜，按照规则，两个节点可以连接，连接路径如下：");
 
-            StringBuffer line = new StringBuffer();
+            StringBuilder line = new StringBuilder();
             line.append("(");
             line.append(itemAI);
             line.append(",");
@@ -483,9 +485,12 @@ public abstract class KawaiModel {
      * 如果返回值为false，说明游戏已经死掉，不存在可以连接的元素对了
      */
     public boolean pointHelper() {
-        for (int i = 1; i < map.length - 1; i++) {// 外面两层循环，查找第一个元素
-            for (int j = 1; j < map[i].length - 1; j++) {// 循环时去掉最外圈的0元素，稍微优化性能
-                for (int i1 = 1; i1 < map.length - 1; i1++) {// 里面两层循环，查找地二个元素，思考：是否还有优化的可能
+        // 外面两层循环，查找第一个元素
+        for (int i = 1; i < map.length - 1; i++) {
+            // 循环时去掉最外圈的0元素，稍微优化性能
+            for (int j = 1; j < map[i].length - 1; j++) {
+                // 里面两层循环，查找地二个元素，思考：是否还有优化的可能
+                for (int i1 = 1; i1 < map.length - 1; i1++) {
                     for (int j1 = 1; j1 < map[i].length - 1; j1++) {
                         if (isConnected(i, j, i1, j1) != 0) {
                             pointItemAI = i;

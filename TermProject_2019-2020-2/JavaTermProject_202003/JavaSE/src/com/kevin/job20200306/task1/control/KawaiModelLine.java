@@ -1,10 +1,17 @@
-package com.chinasofit.etc.example.se.homework.advancedoop.question1;
+package com.kevin.job20200306.task1.control;
 
-public class KawaiModelDefault extends KawaiModel {
-
+/**
+ * @author Kevin KDA on 2020/3/6 17:54
+ * @version 1.0
+ * @project JavaTermProject_202003
+ * @package com.kevin.job20200306.task1.control
+ * @classname KawaiModelLine
+ * @description
+ * @interface/enum
+ */
+public class KawaiModelLine extends KawaiModel {
     @Override
     public byte isConnected(int itemAI, int itemAJ, int itemBI, int itemBJ) {
-
         if (map[itemAI][itemAJ] == 0 || map[itemBI][itemBJ] == 0
                 || (map[itemAI][itemAJ] != map[itemBI][itemBJ])
                 || (itemAI == itemBI && itemAJ == itemBJ)) {
@@ -13,18 +20,11 @@ public class KawaiModelDefault extends KawaiModel {
         if (linkByLine(itemAI, itemAJ, itemBI, itemBJ)) {
             return 1;
         }
-        if (linkByOneTurn(itemAI, itemAJ, itemBI, itemBJ)) {
-            return 2;
-        }
-        if (linkByTwoTurn(itemAI, itemAJ, itemBI, itemBJ)) {
-            return 3;
-        }
         return 0;
     }
 
     @Override
     public String getModelName() {
-        // TODO Auto-generated method stub
-        return "默认模型";
+        return "一条线模型";
     }
 }
