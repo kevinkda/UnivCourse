@@ -8,7 +8,7 @@ import com.kevin.job20200306.task2.control.Factory;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200306.task2.entity
  * @classname Player
- * @description TODO
+ * @description
  * @interface/enum
  */
 public class Player extends Factory {

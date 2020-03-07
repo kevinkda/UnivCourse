@@ -9,7 +9,7 @@ import com.kevin.job20200306.task2.face.IPlay;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200306.task2
  * @classname Main0306T2
- * @description TODO
+ * @description
  * @interface/enum
  */
 public class Main0306T2 {

@@ -82,6 +82,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="application" />
   </component>
   <component name="copyright">
     <Base>

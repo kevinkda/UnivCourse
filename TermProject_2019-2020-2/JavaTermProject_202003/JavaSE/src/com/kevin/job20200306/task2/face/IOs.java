@@ -6,11 +6,27 @@ package com.kevin.job20200306.task2.face;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200306.task2.face
  * @classname IOs
- * @description TODO
+ * @description
  * @interface/enum
  */
 public interface IOs {
-    public byte[] processor(String fileName);
+    /**
+     * 操作系统调用方法
+     *
+     * @param fileName:文件路径及文件名
+     * @return byte[]
+     * @author Kevin KDA on 2020/3/7 20:33
+     * @description IOs / processor 操作系统调用方法
+     */
+    byte[] processor(String fileName);
 
-    public void bootloader(String fileName);
+    /**
+     * 系统启动方法
+     *
+     * @param fileName:文件路径及文件名
+     * @return void
+     * @author Kevin KDA on 2020/3/7 20:33
+     * @description IOs / bootloader 系统启动方法
+     */
+    void bootloader(String fileName);
 }

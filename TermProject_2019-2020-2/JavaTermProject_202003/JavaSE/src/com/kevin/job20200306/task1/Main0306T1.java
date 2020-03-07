@@ -1,8 +1,7 @@
 package com.kevin.job20200306.task1;
 
 
-import com.kevin.job20200306.task1.control.KawaiModel;
-import com.kevin.job20200306.task1.control.KawaiModelLine;
+import com.kevin.job20200306.task1.control.AbstractKawaiModel;
 import com.kevin.job20200306.task1.factory.KawaiModelFactory;
 
 /**
@@ -11,7 +10,7 @@ import com.kevin.job20200306.task1.factory.KawaiModelFactory;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200306.task1
  * @classname Main0306T1
- * @description TODO 连连看
+ * @description 连连看
  * @interface/enum
  */
 public class Main0306T1 {
@@ -32,7 +31,7 @@ public class Main0306T1 {
 //        km.showConnectState(0, 3, 1, 0);
 //        km.showConnectState(2, 0, 2, 7);
 
-        KawaiModel km = KawaiModelFactory.getModel();
+        AbstractKawaiModel km = KawaiModelFactory.getModel();
         km.setMap(map);
         km.showConnectState(1, 0, 0, 4);
     }

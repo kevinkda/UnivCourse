@@ -13,7 +13,7 @@ import java.io.IOException;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200306.task2.control
  * @classname Factory
- * @description TODO
+ * @description
  * @interface/enum
  */
 public class Factory implements IPlay, IOs {
@@ -25,7 +25,7 @@ public class Factory implements IPlay, IOs {
             try {
                 input = new FileInputStream(file);
                 byte[] buf = new byte[input.available()];
-                input.read(buf);
+                final int read = input.read(buf);
                 return buf;
             } catch (Exception e) {
                 System.out.println("文件不存在，程序结构设计测试成功");
