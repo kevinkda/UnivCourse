@@ -53,7 +53,7 @@ public final class View extends Control {
      * 整合主菜单视图 & 功能选择
      */
     private void selectionFunction() {
-        int intUserChoose;
+        int intUserChoose = -1;
         // 登陆, 新增 ，修改 ，删除    借出  归还（算钱） 退出
         do {
             mainMenu();
@@ -108,7 +108,7 @@ public final class View extends Control {
     private void backVoidMethod(String strFuncName) {
         for (String i :
                 STR_IMPLEMENT_FUNCTION) {
-            if (strFuncName.equals(i)) {
+            if (strFuncName.equals(strFuncName)) {
                 return;
             }
         }
