@@ -1,5 +1,8 @@
 package com.kevin.job20200308.bookmanager.entity;
 
+import java.util.Date;
+import java.util.zip.DataFormatException;
+
 /**
  * @author Kevin KDA on 2020/3/6 18:39
  * @version 1.0
@@ -27,9 +30,13 @@ public class Book {
      */
     private int bookBorrowCount;
     /**
-     *每天的租金
+     * 每天的租金
      */
     private double bookDayPrice;
+    /**
+     * 出借日期
+     */
+    private Date dateLendTime;
 
     public Book() {
     }
@@ -81,5 +88,16 @@ public class Book {
 
     public void setBookDayPrice(double bookDayPrice) {
         this.bookDayPrice = bookDayPrice;
+    }
+
+    public Date getDateLendTime() {
+        return dateLendTime;
+    }
+
+    public void setDateLendTime(Date dateLendTime) {
+        this.dateLendTime = dateLendTime;
+    }
+
+    public void setDateLendTime(long time) {
     }
 }

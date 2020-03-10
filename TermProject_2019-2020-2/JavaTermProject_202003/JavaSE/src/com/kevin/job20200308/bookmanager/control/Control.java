@@ -1,10 +1,12 @@
 package com.kevin.job20200308.bookmanager.control;
 
 import com.kevin.job20200308.bookmanager.entity.Book;
+import com.kevin.job20200308.bookmanager.util.DateTimeUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -111,6 +113,9 @@ public class Control extends BookDao {
         if (intSubscript == -1) {
             System.out.println("没有找到您需要的书目编号，请检查后重试");
             return;
+        } else if (b[intSubscript].getBookStatus() == 1) {
+            System.out.println("您选中的书目正处于借出状态不允许修改书籍信息");
+            return;
         }
 
         System.out.print("请输入书的名字:");
@@ -186,7 +191,10 @@ public class Control extends BookDao {
             b[intSubscript].setBookStatus(1);
             int intBorrowCount = b[intSubscript].getBookBorrowCount() + 1;
             b[intSubscript].setBookBorrowCount(intBorrowCount);
-            System.out.println("操作成功");
+            b[intSubscript].setDateLendTime(new Date());
+            System.out.println("\n操作成功 书目借出时间为" +
+                    DateTimeUtil.formatStringByDate(b[intSubscript].getDateLendTime()) +
+                    "归还日前将会以" + b[intSubscript].getBookDayPrice() + "元/天产生费用\n");
             printBookInfo(b);
         } else {
             System.out.println("您所选取的书目以借出，请检查后重试或选择其他书目");
@@ -210,13 +218,20 @@ public class Control extends BookDao {
         }
 
         if (b[intSubscript].getBookStatus() == 1) {
-            b[intSubscript].setBookStatus(0);
-            System.out.println("操作成功");
+            try {
+                b[intSubscript].setBookStatus(0);
+                double douLendDay = DateTimeUtil.startToEnd(b[intSubscript].getDateLendTime(), new Date());
+                double douRent = douLendDay * b[intSubscript].getBookDayPrice();
+                System.out.println("\n本次租赁共" + douLendDay + "天，产生费用" + douRent + "元");
+                System.out.println("操作成功\n");
+            } catch (NullPointerException e) {
+                System.out.println("\n系统无法找到您租赁的日期，暂时无法计算租赁费用和时长");
+                System.out.println("书目归还成功\n");
+            }
             printBookInfo(b);
         } else {
-            System.out.println("您所选取的书目已在库中，请检查后重试或选择其他书目");
+            System.out.println("\n您所选取的书目已在库中，请检查后重试或选择其他书目\n");
         }
-
         systemPauseByEnter();
     }
 
