@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevin.job20200315.pojo.AbstractAnimal</OriginalElement>
+  <nodes>
+    <node x="506.0" y="0.0">com.kevin.job20200315.Main0315</node>
+    <node x="135.5" y="0.0">com.kevin.job20200315.pojo.IAnimal</node>
+    <node x="325.0" y="466.0">com.kevin.job20200315.pojo.Duck</node>
+    <node x="156.0" y="466.0">com.kevin.job20200315.pojo.Dolphin</node>
+    <node x="120.0" y="190.0">com.kevin.job20200315.pojo.AbstractAnimal</node>
+    <node x="0.0" y="466.0">com.kevin.job20200315.pojo.Cat</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevin.job20200315.pojo.Cat" target="com.kevin.job20200315.pojo.AbstractAnimal">
+      <point x="0.0" y="-59.0" />
+      <point x="68.0" y="441.0" />
+      <point x="156.83333333333331" y="441.0" />
+      <point x="-73.66666666666669" y="113.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.pojo.Duck" target="com.kevin.job20200315.pojo.AbstractAnimal">
+      <point x="0.0" y="-59.0" />
+      <point x="393.0" y="441.0" />
+      <point x="304.1666666666667" y="441.0" />
+      <point x="73.66666666666669" y="113.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.pojo.AbstractAnimal" target="com.kevin.job20200315.pojo.IAnimal">
+      <point x="0.0" y="-113.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.pojo.Dolphin" target="com.kevin.job20200315.pojo.AbstractAnimal">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="113.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="336.0" y="292.0" />
+  <SelectedNodes>
+    <node>com.kevin.job20200315.pojo.AbstractAnimal</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevin.job20200312.task2.Main0312T2</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">com.kevin.job20200312.task2.Main0312T2</node>
+    <node x="173.0" y="0.0">com.kevin.job20200312.task2.TestTimer</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="146.5" y="26.0" />
+  <SelectedNodes>
+    <node>com.kevin.job20200312.task2.Main0312T2</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevin.job20200317.Function0317</OriginalElement>
+  <nodes>
+    <node x="48.5" y="353.0">com.kevin.job20200317.Time</node>
+    <node x="235.25" y="574.0">com.kevin.job20200317.Main0317</node>
+    <node x="254.5" y="320.0">com.kevin.util.io.StorageFile</node>
+    <node x="0.0" y="0.0">com.kevin.util.date.TimeUtil</node>
+    <node x="529.5" y="363.0">com.kevin.job20200317.Function0317</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevin.job20200317.Time" target="com.kevin.util.date.TimeUtil">
+      <point x="0.0" y="-69.0" />
+      <point x="0.0" y="135.0" />
+    </edge>
+    <edge source="com.kevin.job20200317.Main0317" target="com.kevin.util.io.StorageFile">
+      <point x="0.0" y="-27.0" />
+      <point x="-63.75" y="102.0" />
+    </edge>
+    <edge source="com.kevin.job20200317.Main0317" target="com.kevin.job20200317.Time">
+      <point x="-66.39999999999998" y="-27.0" />
+      <point x="251.85000000000002" y="554.0" />
+      <point x="95.0" y="554.0" />
+      <point x="-46.5" y="69.0" />
+    </edge>
+    <edge source="com.kevin.job20200317.Main0317" target="com.kevin.job20200317.Function0317">
+      <point x="66.39999999999998" y="-27.0" />
+      <point x="384.65" y="554.0" />
+      <point x="601.5" y="554.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="72.0" y="311.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

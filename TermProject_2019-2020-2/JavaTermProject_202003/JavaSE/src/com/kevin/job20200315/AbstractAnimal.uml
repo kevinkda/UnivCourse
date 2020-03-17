@@ -3,34 +3,64 @@
   <ID>JAVA</ID>
   <OriginalElement>com.kevin.job20200315.pojo.AbstractAnimal</OriginalElement>
   <nodes>
-    <node x="506.0" y="0.0">com.kevin.job20200315.Main0315</node>
-    <node x="135.5" y="0.0">com.kevin.job20200315.pojo.IAnimal</node>
-    <node x="325.0" y="466.0">com.kevin.job20200315.pojo.Duck</node>
-    <node x="156.0" y="466.0">com.kevin.job20200315.pojo.Dolphin</node>
-    <node x="120.0" y="190.0">com.kevin.job20200315.pojo.AbstractAnimal</node>
-    <node x="0.0" y="466.0">com.kevin.job20200315.pojo.Cat</node>
+    <node x="72.38541666666669" y="634.0">com.kevin.job20200315.Main0315</node>
+    <node x="32.87500000000003" y="0.0">com.kevin.job20200315.pojo.IAnimal</node>
+    <node x="166.5" y="466.0">com.kevin.job20200315.pojo.Duck</node>
+    <node x="322.5" y="466.0">com.kevin.job20200315.pojo.Dolphin</node>
+    <node x="124.00000000000003" y="190.0">com.kevin.job20200315.pojo.AbstractAnimal</node>
+    <node x="10.5" y="466.0">com.kevin.job20200315.pojo.Cat</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.kevin.job20200315.pojo.Cat" target="com.kevin.job20200315.pojo.AbstractAnimal">
-      <point x="0.0" y="-59.0" />
-      <point x="68.0" y="441.0" />
-      <point x="156.83333333333331" y="441.0" />
-      <point x="-73.66666666666669" y="113.0" />
+      <point x="-34.0" y="-59.0" />
+      <point x="44.5" y="436.0" />
+      <point x="142.41666666666669" y="436.0" />
+      <point x="-92.08333333333334" y="113.0" />
     </edge>
     <edge source="com.kevin.job20200315.pojo.Duck" target="com.kevin.job20200315.pojo.AbstractAnimal">
-      <point x="0.0" y="-59.0" />
-      <point x="393.0" y="441.0" />
-      <point x="304.1666666666667" y="441.0" />
-      <point x="73.66666666666669" y="113.0" />
+      <point x="-34.0" y="-59.0" />
+      <point x="200.5" y="446.0" />
+      <point x="216.08333333333334" y="446.0" />
+      <point x="-18.416666666666686" y="113.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.Main0315" target="com.kevin.job20200315.pojo.Cat">
+      <point x="-20.75" y="-27.0" />
+      <point x="134.63541666666669" y="604.0" />
+      <point x="78.5" y="604.0" />
+      <point x="0.0" y="59.0" />
     </edge>
     <edge source="com.kevin.job20200315.pojo.AbstractAnimal" target="com.kevin.job20200315.pojo.IAnimal">
       <point x="0.0" y="-113.0" />
-      <point x="0.0" y="70.0" />
+      <point x="234.50000000000003" y="165.0" />
+      <point x="175.37500000000003" y="165.0" />
+      <point x="47.5" y="70.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.Main0315" target="com.kevin.job20200315.pojo.Dolphin">
+      <point x="62.25" y="-27.0" />
+      <point x="217.63541666666669" y="614.0" />
+      <point x="397.0" y="614.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.Main0315" target="com.kevin.job20200315.pojo.IAnimal">
+      <point x="-62.25" y="-27.0" />
+      <point x="93.13541666666669" y="614.0" />
+      <point x="0.0" y="614.0" />
+      <point x="0.0" y="165.0" />
+      <point x="80.37500000000003" y="165.0" />
+      <point x="-47.5" y="70.0" />
+    </edge>
+    <edge source="com.kevin.job20200315.Main0315" target="com.kevin.job20200315.pojo.Duck">
+      <point x="20.75" y="-27.0" />
+      <point x="176.13541666666669" y="604.0" />
+      <point x="234.5" y="604.0" />
+      <point x="0.0" y="59.0" />
     </edge>
     <edge source="com.kevin.job20200315.pojo.Dolphin" target="com.kevin.job20200315.pojo.AbstractAnimal">
-      <point x="0.0" y="-59.0" />
-      <point x="0.0" y="113.0" />
+      <point x="37.25" y="-59.0" />
+      <point x="434.25" y="436.0" />
+      <point x="326.58333333333337" y="436.0" />
+      <point x="92.08333333333337" y="113.0" />
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="336.0" y="292.0" />

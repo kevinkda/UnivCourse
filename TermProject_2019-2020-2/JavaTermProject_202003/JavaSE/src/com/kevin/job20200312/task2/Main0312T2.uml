@@ -3,16 +3,27 @@
   <ID>JAVA</ID>
   <OriginalElement>com.kevin.job20200312.task2.Main0312T2</OriginalElement>
   <nodes>
-    <node x="0.0" y="0.0">com.kevin.job20200312.task2.Main0312T2</node>
-    <node x="173.0" y="0.0">com.kevin.job20200312.task2.TestTimer</node>
+    <node x="0.0" y="146.0">com.kevin.job20200312.task2.Main0312T2</node>
+    <node x="6.0" y="0.0">com.kevin.job20200312.task2.TestTimer</node>
   </nodes>
   <notes />
-  <edges />
+  <edges>
+    <edge source="com.kevin.job20200312.task2.Main0312T2" target="com.kevin.job20200312.task2.TestTimer">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+  </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="146.5" y="26.0" />
   <SelectedNodes>
     <node>com.kevin.job20200312.task2.Main0312T2</node>
   </SelectedNodes>
-  <Categories />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>

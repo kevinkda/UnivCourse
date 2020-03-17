@@ -3,16 +3,36 @@
   <ID>JAVA</ID>
   <OriginalElement>com.kevin.job20200311.task1.ExceptionTest</OriginalElement>
   <nodes>
-    <node x="153.0" y="0.0">com.kevin.job20200311.task1.ExceptionTest</node>
-    <node x="0.0" y="0.0">com.kevin.job20200311.task1.Father</node>
-    <node x="18.0" y="104.0">com.kevin.job20200311.task1.Son</node>
-    <node x="0.0" y="201.0">com.kevin.job20200311.task1.Main0311T1</node>
+    <node x="0.0" y="206.0">com.kevin.job20200311.task1.ExceptionTest</node>
+    <node x="73.0" y="0.0">com.kevin.job20200311.task1.Father</node>
+    <node x="62.25" y="104.0">com.kevin.job20200311.task1.Son</node>
+    <node x="47.5" y="398.0">com.kevin.job20200311.task1.Main0311T1</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="com.kevin.job20200311.task1.ExceptionTest" target="com.kevin.job20200311.task1.Son">
+      <point x="-97.875" y="-71.0" />
+      <point x="32.625" y="186.0" />
+      <point x="80.25" y="186.0" />
+      <point x="-18.0" y="26.0" />
+    </edge>
+    <edge source="com.kevin.job20200311.task1.Main0311T1" target="com.kevin.job20200311.task1.ExceptionTest">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="71.0" />
+    </edge>
+    <edge source="com.kevin.job20200311.task1.ExceptionTest" target="com.kevin.job20200311.task1.Father">
+      <point x="32.625" y="-71.0" />
+      <point x="163.125" y="186.0" />
+      <point x="144.75" y="186.0" />
+      <point x="144.75" y="79.0" />
+      <point x="127.0" y="79.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
     <edge source="com.kevin.job20200311.task1.Son" target="com.kevin.job20200311.task1.Father">
       <point x="0.0" y="-26.0" />
-      <point x="0.0" y="27.0" />
+      <point x="98.25" y="79.0" />
+      <point x="91.0" y="79.0" />
+      <point x="-36.0" y="27.0" />
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="207.0" y="127.5" />
