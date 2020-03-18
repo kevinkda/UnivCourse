@@ -10,4 +10,8 @@ package com.kevin.job20200318.task1;
  * @interface/enum
  */
 public class Main0318T1 {
+    public static void main(String[] args) {
+//        Control.write();
+        Control.read();
+    }
 }

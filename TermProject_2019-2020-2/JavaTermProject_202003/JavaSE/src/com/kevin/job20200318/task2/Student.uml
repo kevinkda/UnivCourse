@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevin.job20200318.task2.pojo.Student</OriginalElement>
+  <nodes>
+    <node x="127.83333333333331" y="400.0">com.kevin.job20200318.task2.Control</node>
+    <node x="267.0" y="125.0">com.kevin.util.io.StorageFile</node>
+    <node x="126.33333333333331" y="698.0">com.kevin.job20200318.task2.Main0318T2</node>
+    <node x="0.0" y="0.0">java.lang.Comparable</node>
+    <node x="21.0" y="104.0">com.kevin.job20200318.task2.pojo.Student</node>
+    <node x="286.5" y="1.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevin.job20200318.task2.Control" target="com.kevin.util.io.StorageFile">
+      <point x="32.60000000000002" y="-124.0" />
+      <point x="241.93333333333334" y="370.0" />
+      <point x="330.75" y="370.0" />
+      <point x="-63.75" y="102.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task2.pojo.Student" target="java.lang.Comparable">
+      <point x="-56.5" y="-123.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task2.pojo.Student" target="java.io.Serializable">
+      <point x="56.5" y="-123.0" />
+      <point x="190.5" y="79.0" />
+      <point x="322.5" y="79.0" />
+      <point x="-36.0" y="26.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task2.Main0318T2" target="com.kevin.job20200318.task2.Control">
+      <point x="41.5" y="-27.0" />
+      <point x="40.75" y="124.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task2.Control" target="com.kevin.job20200318.task2.pojo.Student">
+      <point x="-65.19999999999999" y="-124.0" />
+      <point x="144.13333333333333" y="380.0" />
+      <point x="58.666666666666686" y="380.0" />
+      <point x="-75.33333333333331" y="123.0" />
+    </edge>
+    <edge source="com.kevin.util.io.StorageFile" target="java.io.Serializable">
+      <point x="0.0" y="-102.0" />
+      <point x="36.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="263.5" y="316.5" />
+  <SelectedNodes>
+    <node>com.kevin.job20200318.task2.pojo.Student</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

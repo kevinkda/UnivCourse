@@ -1,22 +1,19 @@
-/*
- * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
- */
+package com.kevin.job20200318.task1;
 
-package com.kevin.util.date;
+import java.io.Serializable;
 
 /**
- * @author Kevin KDA on 2020/3/17 10:18
+ * @author Kevin KDA on 2020/3/17 15:26
  * @version 1.0
- * @package com.kevin.util.date
- * @classname TimeUtil
- * @description 提供计时方法
+ * @project JavaTermProject_202003
+ * @package com.kevin.job20200317
+ * @classname Time
+ * @description
  * @interface/enum
  */
-public class TimeUtil {
+public class Time implements Serializable {
+    private static final long serialVersionUID = -8402795596948954372L;
+    private String funcName;
     private long startTime;
     private long endTime;
     private long duration;
@@ -88,9 +85,6 @@ public class TimeUtil {
         return time / 1000.0 / 60.0;
     }
 
-    public TimeUtil() {
-    }
-
     public long getStartTime() {
         return startTime;
     }
@@ -102,4 +96,17 @@ public class TimeUtil {
     public long getDuration() {
         return duration;
     }
+
+    public Time(String funcName) {
+        this.funcName = funcName;
+    }
+
+    public String getFuncName() {
+        return funcName;
+    }
+
+    public void setFuncName(String funcName) {
+        this.funcName = funcName;
+    }
+
 }

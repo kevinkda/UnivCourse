@@ -14,8 +14,8 @@ import java.io.Serializable;
  * @interface/enum
  */
 public class Time extends TimeUtil implements Serializable {
-    private String funcName;
     private static final long serialVersionUID = -8402795596948954372L;
+    private String funcName;
 
     public Time(String funcName) {
         this.funcName = funcName;
@@ -28,4 +28,5 @@ public class Time extends TimeUtil implements Serializable {
     public void setFuncName(String funcName) {
         this.funcName = funcName;
     }
+
 }

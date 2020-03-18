@@ -17,19 +17,15 @@
       <point x="151.5" y="373.0" />
       <point x="0.0" y="26.0" />
     </edge>
-    <edge source="com.kevin.job20200306.task2.control.Factory" target="com.kevin.job20200306.task2.face.IOs">
-      <point x="-50.5" y="-60.0" />
-      <point x="0.0" y="38.0" />
-    </edge>
     <edge source="com.kevin.job20200306.task2.Main0306T2" target="com.kevin.job20200306.task2.face.IPlay">
       <point x="41.5" y="-27.0" />
       <point x="290.5" y="373.0" />
       <point x="346.5" y="373.0" />
       <point x="41.5" y="38.0" />
     </edge>
-    <edge source="com.kevin.job20200306.task2.entity.Player" target="com.kevin.job20200306.task2.control.Factory">
-      <point x="0.0" y="-26.0" />
-      <point x="0.0" y="60.0" />
+    <edge source="com.kevin.job20200306.task2.control.Factory" target="com.kevin.job20200306.task2.face.IOs">
+      <point x="-50.5" y="-60.0" />
+      <point x="0.0" y="38.0" />
     </edge>
     <edge source="com.kevin.job20200306.task2.control.Factory" target="com.kevin.job20200306.task2.face.IPlay">
       <point x="50.5" y="-60.0" />
@@ -37,17 +33,21 @@
       <point x="263.5" y="101.0" />
       <point x="-41.5" y="38.0" />
     </edge>
+    <edge source="com.kevin.job20200306.task2.entity.Player" target="com.kevin.job20200306.task2.control.Factory">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="52.0" y="163.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="194.0" y="226.0" />
   <SelectedNodes>
     <node>com.kevin.job20200306.task2.control.Factory</node>
   </SelectedNodes>
   <Categories>
-    <Category>Inner Classes</Category>
-    <Category>Properties</Category>
-    <Category>Methods</Category>
-    <Category>Constructors</Category>
     <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

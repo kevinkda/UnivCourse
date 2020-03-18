@@ -10,4 +10,12 @@ package com.kevin.job20200318.task2;
  * @interface/enum
  */
 public class Main0318T2 {
+    public static void main(String[] args) {
+        Control control = new Control();
+        control.add();
+        control.show();
+        control.write();
+        control.show();
+        control.read();
+    }
 }
