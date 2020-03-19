@@ -8,6 +8,9 @@
 
 package com.kevin.util.date;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author Kevin KDA on 2020/3/17 10:18
  * @version 1.0
@@ -101,5 +104,29 @@ public class TimeUtil {
 
     public long getDuration() {
         return duration;
+    }
+
+    public static String getTimeStatus() {
+        Date date = new Date();
+        SimpleDateFormat df = new SimpleDateFormat("HH");
+        String str = df.format(date);
+        String str2 = null;
+        int a = Integer.parseInt(str);
+        if (a >= 0 && a <= 6) {
+            str2 = "，现在已是深夜，智能管家提醒您注意用眼健康噢~\n";
+        }
+        if (a > 6 && a <= 12) {
+            str2 = "，早上好~~~\n";
+        }
+        if (a == 13) {
+            str2 = "，中午好~~~\n";
+        }
+        if (a > 13 && a <= 18) {
+            str2 = "，下午好~~~\n";
+        }
+        if (a > 18 && a <= 24) {
+            str2 = "，晚上好~~~\n";
+        }
+        return str2;
     }
 }

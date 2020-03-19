@@ -13,51 +13,11 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="com.kevin.job20200308.bookmanager.Main0308" target="com.kevin.job20200308.bookmanager.control.View">
-      <point x="41.5" y="-27.0" />
-      <point x="353.25" y="1343.0" />
-      <point x="370.0" y="1343.0" />
-      <point x="58.25" y="102.0" />
-    </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.Control" target="com.kevin.job20200308.bookmanager.control.Login">
-      <point x="135.625" y="-266.0" />
-      <point x="447.375" y="512.0" />
-      <point x="656.2363636363636" y="512.0" />
-      <point x="656.2363636363636" y="300.0" />
-      <point x="710.4295454545454" y="300.0" />
-      <point x="82.0" y="92.0" />
-    </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.BookDao" target="com.kevin.job20200308.bookmanager.entity.Book">
-      <point x="-72.0" y="-59.0" />
-      <point x="374.7295454545454" y="300.0" />
-      <point x="368.2295454545454" y="300.0" />
-      <point x="50.80000000000001" y="135.0" />
-    </edge>
     <edge source="com.kevin.job20200308.bookmanager.control.Control" target="com.kevin.job20200308.bookmanager.control.BookDao">
       <point x="19.375" y="-266.0" />
       <point x="331.125" y="482.0" />
       <point x="374.7295454545454" y="482.0" />
       <point x="-72.0" y="59.0" />
-    </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.Control" target="com.kevin.job20200308.bookmanager.util.DateTimeUtil">
-      <point x="-135.625" y="-266.0" />
-      <point x="176.125" y="512.0" />
-      <point x="128.0" y="512.0" />
-      <point x="0.0" y="71.0" />
-    </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.Control" target="com.kevin.job20200308.bookmanager.entity.Book">
-      <point x="-58.125" y="-266.0" />
-      <point x="253.625" y="512.0" />
-      <point x="277.5" y="512.0" />
-      <point x="277.5" y="290.0" />
-      <point x="266.6295454545454" y="290.0" />
-      <point x="-50.8" y="135.0" />
-    </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.BookDao" target="com.kevin.job20200308.bookmanager.control.Login">
-      <point x="72.0" y="-59.0" />
-      <point x="518.7295454545454" y="300.0" />
-      <point x="546.4295454545454" y="300.0" />
-      <point x="-82.0" y="92.0" />
     </edge>
     <edge source="com.kevin.job20200308.bookmanager.control.View" target="com.kevin.job20200308.bookmanager.control.Control">
       <point x="-58.25" y="-102.0" />
@@ -65,14 +25,8 @@
       <point x="234.25" y="1089.0" />
       <point x="-77.5" y="266.0" />
     </edge>
-    <edge source="com.kevin.job20200308.bookmanager.control.BookDao" target="com.kevin.job20200308.bookmanager.control.Control">
-      <point x="71.99999999999999" y="59.0" />
-      <point x="518.7295454545454" y="502.0" />
-      <point x="408.625" y="502.0" />
-      <point x="96.875" y="-266.0" />
-    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.4814020028612303" x="301.0" y="679.0" />
+  <settings layout="Hierarchic Group" zoom="0.4667128987517337" x="395.5" y="711.0" />
   <SelectedNodes>
     <node>com.kevin.job20200308.bookmanager.control.BookDao</node>
   </SelectedNodes>

@@ -24,7 +24,7 @@ public class Control {
     /**
      * 文件路径
      */
-    private final static String FILE_PATH = "." + File.separator +
+    private static final String FILE_PATH = "." + File.separator +
             "JavaSE" + File.separator +
             "src" + File.separator +
             "com" + File.separator +

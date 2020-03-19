@@ -3,11 +3,11 @@ package com.kevin.util.io;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Kevin KDA on 2020/3/17 13:14
  * @version 1.0
- * @project JavaTermProject_202003
  * @package com.kevin.util.io
  * @classname StorageFile
  * @description 实现文件存储和读取
@@ -38,6 +38,12 @@ public class StorageFile<T> implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
             return false;
+        } finally {
+            try {
+                Objects.requireNonNull(objectOutputStream).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return true;
     }
@@ -64,6 +70,12 @@ public class StorageFile<T> implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
             return false;
+        } finally {
+            try {
+                Objects.requireNonNull(objectOutputStream).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return true;
     }

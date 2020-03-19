@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevin.job20200318.task1.Control</OriginalElement>
+  <nodes>
+    <node x="0.0" y="102.0">com.kevin.job20200318.task1.Time</node>
+    <node x="222.29166666666666" y="518.0">com.kevin.job20200318.task1.Control</node>
+    <node x="578.0" y="221.0">com.kevin.job20200318.task1.Function0317</node>
+    <node x="303.0" y="178.0">com.kevin.util.io.StorageFile</node>
+    <node x="218.29166666666666" y="708.0">com.kevin.job20200318.task1.Main0318T1</node>
+    <node x="186.9027777777778" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevin.job20200318.task1.Main0318T1" target="com.kevin.job20200318.task1.Control">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.kevin.util.io.StorageFile" target="java.io.Serializable">
+      <point x="0.0" y="-102.0" />
+      <point x="430.5" y="77.0" />
+      <point x="294.9027777777778" y="77.0" />
+      <point x="36.0" y="26.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task1.Control" target="com.kevin.job20200318.task1.Time">
+      <point x="-13.166666666666629" y="-70.0" />
+      <point x="288.125" y="478.0" />
+      <point x="235.83333333333331" y="478.0" />
+      <point x="94.33333333333331" y="178.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task1.Control" target="com.kevin.job20200318.task1.Function0317">
+      <point x="65.83333333333331" y="-70.0" />
+      <point x="367.125" y="498.0" />
+      <point x="650.0" y="498.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task1.Control" target="com.kevin.util.io.StorageFile">
+      <point x="13.166666666666686" y="-70.0" />
+      <point x="314.45833333333337" y="478.0" />
+      <point x="366.75" y="478.0" />
+      <point x="-63.75" y="102.0" />
+    </edge>
+    <edge source="com.kevin.job20200318.task1.Time" target="java.io.Serializable">
+      <point x="0.0" y="-178.0" />
+      <point x="141.5" y="77.0" />
+      <point x="222.9027777777778" y="77.0" />
+      <point x="-36.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="158.5" y="316.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

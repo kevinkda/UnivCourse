@@ -49,7 +49,7 @@ public class Control extends BookDao {
 
     /**
      * @author Kevin KDA on 2020/3/6 18:09
-     * @description Control / forceLoginCheck 登录处理功能
+     * @description Control / login 登录处理功能
      */
     public void login() {
         if (!Login.isBoolLoginStatus()) {
