@@ -109,12 +109,12 @@ public final class View extends Control {
                 case 6:
 //                    书列表
                     backVoidMethod(STR_PROVIDE_FUNCTION[intUserChoose - 1]);
-                    showBookList();
+                    showBookListImpl();
                     break;
                 case 7:
-//
+//                    读书
                     backVoidMethod(STR_PROVIDE_FUNCTION[intUserChoose - 1]);
-                    systemPauseByEnter();
+                    readBook();
                     break;
             }
         } while (intUserChoose != STR_PROVIDE_FUNCTION.length);

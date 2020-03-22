@@ -30,16 +30,44 @@ public class InputNum {
     public static int getInt(String prompt) {
         int num = 0;
         boolean flag = true;
-        while (flag) {
-//            打印提示信息
-            System.out.print(prompt);
-            if (SCANNER.hasNextInt()) {
+        do {
+            try {
+//                打印提示信息
+                System.out.print(prompt);
+                int i = SCANNER.nextInt();
                 flag = false;
-                num = SCANNER.nextInt();
-            } else {
+                num = i;
+            } catch (Exception e) {
                 System.out.println("输入的内容不是数字！");
+                flag = true;
+                String str = SCANNER.nextLine();
             }
-        }
+        } while (flag);
+        return num;
+    }
+
+    /**
+     * @param prompt: 提示信息
+     * @return double 返回一个可以使用的数字
+     * @author Kevin KDA on 2020/3/18 18:29
+     * @description InputNum / getDouble 提供键盘接收的操作
+     */
+    public static double getDouble(String prompt) {
+        double num = 0;
+        boolean bl = true;
+        do {
+            try {
+//                打印提示信息
+                System.out.print(prompt);
+                double i = SCANNER.nextDouble();
+                bl = false;
+                num = i;
+            } catch (Exception e) {
+                System.out.println("输入的内容不是数字或格式错误！");
+                bl = true;
+                String str = SCANNER.nextLine();
+            }
+        } while (bl);
         return num;
     }
 

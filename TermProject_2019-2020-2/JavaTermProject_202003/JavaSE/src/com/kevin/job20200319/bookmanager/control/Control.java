@@ -2,6 +2,7 @@ package com.kevin.job20200319.bookmanager.control;
 
 import com.kevin.job20200319.bookmanager.pojo.Account;
 import com.kevin.job20200319.bookmanager.pojo.Book;
+import com.kevin.job20200319.bookmanager.pojo.PageBean;
 import com.kevin.job20200319.bookmanager.service.AccManagerLocalIo;
 import com.kevin.job20200319.bookmanager.service.BookManagerLocalIo;
 import com.kevin.job20200319.bookmanager.service.DataPersistenceLayer;
@@ -44,11 +45,11 @@ public class Control extends SysInitOperation {
     /**
      * 系统规划提供功能
      */
-    protected static final String[] STR_PROVIDE_FUNCTION = {"登陆", "注册", "充值", "修改密码", "购买小说", "书列表"};
+    protected static final String[] STR_PROVIDE_FUNCTION = {"登陆", "注册", "充值", "修改密码", "购买小说", "书列表", "读书"};
     /**
      * 提供当前可用功能
      */
-    protected static final String[] STR_REALIZATION_FUNCTION = {"登陆", "注册", "充值", "修改密码", "购买小说", "书列表"};
+    protected static final String[] STR_REALIZATION_FUNCTION = {"登陆", "注册", "充值", "修改密码", "购买小说", "书列表", "读书"};
     /**
      * 系统登录前可用功能
      * 关联对象 STR_IMPLEMENT_FUNCTION
@@ -191,13 +192,7 @@ public class Control extends SysInitOperation {
      * @description Control / showAccList 购买小说
      */
     public void buyingNovels() {
-        List<Book> bookList = DataPersistenceLayer.getBookList();
-        System.out.println("系统中已存在的书目如下：\n");
-        System.out.printf("%4s\t%-20s\t%-12s\t%5s\t\t%4s\n", "书目ID", "书名", "作者", "总价", "购买状态");
-        for (Book i :
-                bookList) {
-            System.out.printf("%4d\t%-20s\t%-12s\t%5.2f\t\t%-4s\n", i.getIntBookId(), i.getBookName(), i.getPeopleName(), i.getBookPrice(), i.getBookStatus() == 1 ? "已购买" : "未购买");
-        }
+        showBookList();
         int id = InputNum.getInt("请输入您需要购买的书目ID：");
         Book book = BookManagerLocalIo.searchBookByBookId(id);
         if (book != null) {
@@ -211,10 +206,11 @@ public class Control extends SysInitOperation {
                     accAccountLoggedIn.setDouBalance(douDeductionFee);
                     AccManagerLocalIo.modifyAccInfo(accAccountLoggedIn);
                     System.out.println("购买成功\n当前账户余额：" + accAccountLoggedIn.getDouBalance());
+                    System.out.println("您希望购买的书目：" + book.getBookName() + ":" + book.getBookPrice() + "元");
                 } else {
                     System.out.println("很抱歉您当前帐户余额不足，未完成购买。\n当前账户余额：" + accAccountLoggedIn.getDouBalance());
+                    System.out.println("您希望购买的书目：" + book.getBookName() + "需要" + book.getBookPrice() + "元\n请充值后重试");
                 }
-                System.out.println("您希望购买的书目：" + book.getBookName() + "需要" + book.getBookPrice() + "元\n请充值后重试");
             } else {
                 System.out.println("您所选中的书目已购买，请检查后重试");
             }
@@ -234,12 +230,115 @@ public class Control extends SysInitOperation {
     public void showBookList() {
         List<Book> bookList = DataPersistenceLayer.getBookList();
         System.out.println("系统中已存在的书目如下：\n");
-        System.out.printf("%4s\t%-20s\t%-12s\t%5s\t\t%4s\n", "书目ID", "书名", "作者", "总价", "购买状态");
+        System.out.printf("%4s\t%-20s\t%-12s\t%5s\t\t%4s\t\t%s\n", "书目ID", "书名", "作者", "总价", "购买状态", "URL");
         for (Book i :
                 bookList) {
-            System.out.printf("%4d\t%-20s\t%-12s\t%5.2f\t\t%-4s\n", i.getIntBookId(), i.getBookName(), i.getPeopleName(), i.getBookPrice(), i.getBookStatus() == 1 ? "已购买" : "未购买");
+            System.out.printf("%4d\t%-20s\t%-12s\t%5.2f\t\t%-4s\t\t%s\n", i.getIntBookId(), i.getBookName(), i.getPeopleName(), i.getBookPrice(), i.isBuy(), i.getBookUrl());
+//            System.out.println(i.getFullBookUrl());
         }
+    }
+
+    /**
+     * 显示所有图书
+     * View调用方法
+     *
+     * @return void
+     * @author Kevin KDA on 2020/3/19 17:48
+     * @description Control / showBookList 显示所有图书
+     */
+    public void showBookListImpl() {
+        showBookList();
         systemPauseByEnter();
+    }
+
+    /**
+     * 读书
+     *
+     * @return void
+     * @author Kevin KDA on 2020/3/22 19:16
+     * @description Control / readBook 提供读书方法
+     */
+    public void readBook() {
+        showBookList();
+        int choose = InputNum.getInt("请输入您将要阅读的书目ID：");
+        Book book = BookManagerLocalIo.searchBookByBookId(choose);
+        if (book == null) {
+            System.out.println("查无此书，请确认书目ID！");
+            return;
+        }
+        if (book.getBookStatus() == 0) {
+            System.out.println("您所选择的书目ID尚未购买，请购买后重试");
+            return;
+        }
+        List<String> list = DataPersistenceLayer.readBookFromDisk(book.getFullBookUrl());
+        PageBean p = new PageBean(
+                15,
+                list.size(),
+                list,
+                book.getBookStatus() == 1
+        );
+        int pageIndex = 1;
+        //用户的选项
+        String choice;
+        label:
+        do {
+            try {
+                pageIndex = p.setPageIndex(pageIndex, accAccountLoggedIn);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            for (int i = p.startRow(); i < p.endRow(); i++) {
+                try {
+                    System.out.println(list.get(i).trim());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            System.out.println("当前页:" + p.getPageIndex());
+            System.out.println("总的页数:" + p.getTotalPage());
+//            System.out.println("总的数量:" + p.getTotalCount());
+//            System.out.println("每页的最大条数:" + p.getPageSize());
+            if (p.getPageIndex() > 1 && p.getPageIndex() < p.getTotalPage()) {
+                System.out.println("a:上一页b:下一页c:自己输入相应的页数d:退出");
+            } else if (p.getPageIndex() == 1) {
+                System.out.println("b:下一页c:自己输入相应的页数d:退出");
+            } else if (p.getPageIndex() == p.getTotalPage()) {
+                System.out.println("a:上一页c:自己输入相应的页数d:退出");
+            }
+            choice = scaScan.next();
+            switch (choice) {
+                case "d":
+                    System.out.println("正在退出《" + book.getBookName() + "》...");
+                    break label;
+                case "a":
+                    if (pageIndex <= 1) {
+                        pageIndex = 1;
+                    } else {
+                        pageIndex--;    //表示上一页，当前页要-1
+
+                    }
+                    break;
+                case "b":
+                    if (pageIndex >= p.getTotalPage()) {
+                        pageIndex = p.getTotalPage();
+                        System.out.println("当前已是最后一页了。");
+                    } else {
+                        pageIndex++;    //表示下一页，当前页要+1
+
+                    }
+                    break;
+                case "c":
+                    System.out.print("请输入自定义的页数:");
+                    int number = InputNum.getInt("");
+                    //判断输入的页数是否正确
+                    if (number >= 1 && number <= p.getTotalPage()) {
+                        pageIndex = number;
+                    } else {
+                        System.out.println("输入的页码不正确！");
+                    }
+                    break;
+            }
+        } while (true);
     }
 
     /**
