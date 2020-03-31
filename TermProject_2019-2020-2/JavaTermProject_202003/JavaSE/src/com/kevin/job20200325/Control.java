@@ -1,11 +1,7 @@
-package com.kevin.job20200324;
+package com.kevin.job20200325;
 
-import com.kevin.job20200324.pojo.Car;
 import com.kevin.util.db.JdbcUtils;
 import com.kevin.util.number.InputNum;
-
-import java.sql.Connection;
-import java.sql.Statement;
 
 /**
  * @author Kevin KDA on 2020/3/24 14:21
@@ -17,11 +13,13 @@ import java.sql.Statement;
  */
 public class Control {
     public void func() {
-//        System.out.println(JdbcUtils.getConnection() + "连接成功！");
         int choice = 3;
         do {
             System.out.println("---操作栏---");
-            System.out.println("1.通过循环插入信息\n2.通过数据库语句插入\n3.删除第二行和第行列的数据\n0.退出");
+            System.out.println("1.通过循环插入信息\n" +
+                    "2.通过数据库语句插入\n" +
+                    "3.删除第二行和第行列的数据\n" +
+                    "0.退出");
             choice = InputNum.getInt("请选择您想使用的方法：");
             int intReturn = -1;
             switch (choice) {
@@ -29,19 +27,19 @@ public class Control {
                     break;
                 case 1:
                     intReturn = task1();
+                    System.out.println(intReturn + "条数据受影响");
                     break;
                 case 2:
                     intReturn = task2();
+                    System.out.println(intReturn + "条数据受影响");
                     break;
                 case 3:
                     intReturn = task3();
+                    System.out.println(intReturn + "条数据受影响");
                     break;
                 default:
                     System.out.println("输入有误，请重新输入！");
                     break;
-            }
-            if (intReturn != -1) {
-                System.out.println(intReturn + "条信息插入成功。");
             }
         } while (choice != 0);
     }
@@ -54,18 +52,11 @@ public class Control {
      * @description Control / task1
      */
     private int task1() {
-        Car[] cars = {new Car("大众", 230000), new Car("奔驰", 440000),
-                new Car("奥迪", 250000)};
         int count = 0;
-        Connection connection = JdbcUtils.getConnection();
-        for (Car car : cars) {
-            try {
-                Statement statement = connection.createStatement();
-                count = statement.executeUpdate("insert into carInfo(carName, carPrice) values('" + car.getCarName() + "','" + car.getCarPrice() + "')");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        count += JdbcUtils.insertSingle("carInfo(carName,carPrice)", new Object[]{"大众", 200000});
+        count += JdbcUtils.insertSingle("carInfo(carName,carPrice)", new Object[]{"奔驰", 300000});
+        count += JdbcUtils.insertSingle("carInfo(carName,carPrice)", new Object[]{"奥迪", 400000});
+        System.out.println(count + "条数据已添加。");
         return count;
     }
 
@@ -78,13 +69,7 @@ public class Control {
      */
     private int task2() {
         int count = 0;
-        Connection connection = JdbcUtils.getConnection();
-        try {
-            Statement statement = connection.createStatement();
-            count = statement.executeUpdate("insert into carInfo(carName, carPrice) values('大众','230000'),('奔驰',440000),('奥迪',250000)");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        count = JdbcUtils.updateSingle("carInfo", new String[]{"carName", "carPrice", "carID"}, new Object[]{"丰田", 450000, 2});
         return count;
     }
 
@@ -97,14 +82,7 @@ public class Control {
      */
     private int task3() {
         int count = 0;
-        Connection connection = JdbcUtils.getConnection();
-        try {
-            Statement statement = connection.createStatement();
-            count = statement.executeUpdate("delete from carInfo where carID = 2");
-            count = statement.executeUpdate("delete from carInfo where carID = 3");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        count = JdbcUtils.delete("carInfo", "carID", "1,2,3");
         return count;
     }
 

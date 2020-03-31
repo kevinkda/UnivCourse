@@ -10,7 +10,10 @@ import java.util.Date;
  * @package com.kevin.job20200319.bookmanager.pojo
  * @classname Account
  * @description 用户信息
+ * @serial
  * @interface/enum Serializable, Comparable<Account>
+ * @see java.io.Serializable
+ * @see java.lang.Comparable
  */
 public class Account implements Serializable, Comparable<Account> {
     private static final long serialVersionUID = 42L;

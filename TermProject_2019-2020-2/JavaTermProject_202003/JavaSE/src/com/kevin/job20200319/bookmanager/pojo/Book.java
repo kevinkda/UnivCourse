@@ -10,8 +10,10 @@ import java.io.Serializable;
  * @project JavaTermProject_202003
  * @package com.kevin.job20200319.bookmanager.pojo
  * @classname Book
+ * @serial
  * @description 图书信息
  * @interface/enum
+ * @see java.io.Serializable
  */
 public class Book implements Serializable {
     private static final long serialVersionUID = 42L;
