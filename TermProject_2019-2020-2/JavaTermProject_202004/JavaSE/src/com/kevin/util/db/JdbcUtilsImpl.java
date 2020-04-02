@@ -5,58 +5,23 @@ import com.kevin.util.number.Section;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ResourceBundle;
 
 /**
  * @author Kevin KDA on 2020/4/1 09:19
- * @version 1.1
- * @project JavaUtils
+ * @version 1.2
+ * @project JavaTermProject_202004
  * @package com.kevin.util.db
  * @classname JdbcUtilsImpl
- * @description
- * @interface/enum
+ * @interface/enum AutoCloseable
+ * @apiNote <p>此项目希望做到提供尽可能的通用方法，但某些特殊情况可能无法提供处理。</p>
+ * <p>此封装类已实现对{@link AutoCloseable}的支持，调用方可以获取它的资源直到结束，这将自动调用{@code close}。</p>
+ * <p>此封装类已尽可能的对{@link Exception}进行{@code try}捕获，
+ * 不可避免的这可能将会导致后续程序的在特定情况下产生{@link NullPointerException}。</p>
+ * <p>此封装类依赖{@link PageBean}、{@link JdbcUtils}，数据分页部分依赖{@link PageBean}，
+ * 自1.5版本开始本类方法提供的数据分页将被标记为{@link Deprecated}</p>
+ * @since 1.0 (JDK 1.7)
  */
-public class JdbcUtilsImpl implements AutoCloseable {
-    /**
-     * 当前使用的数据库
-     */
-    private static final int DATABASE_CURRENTLY_IN_USE;
-    /**
-     * 批处理最大接收数值
-     */
-    private static final int BATCH_MAX;
-    /**
-     * 批处理当前接收数值
-     */
-    private int intBatchCount;
-    /**
-     * 数据库类型MySQL
-     */
-    private static final int MYSQL = 1;
-    /**
-     * 数据库类型Oracle
-     */
-    private static final int ORACLE = 2;
-    /**
-     * 数据库类型SQL Server
-     */
-    private static final int SQL_SERVER = 3;
-    /**
-     * 数据库驱动名称
-     */
-    private static final String DRIVER;
-    /**
-     * 数据库链接地址
-     */
-    private static final String URL;
-    /**
-     * 数据库用户名
-     */
-    private static final String USER;
-    /**
-     * 数据库用户密码
-     */
-    private static final String PASSWORD;
+public class JdbcUtilsImpl extends AbstractJdbc implements AutoCloseable {
     /**
      * Connection
      */
@@ -78,40 +43,6 @@ public class JdbcUtilsImpl implements AutoCloseable {
      */
     private ResultSet resultSet = null;
 
-//    初始化对象
-
-    /*
-     * 根据配置文件选择使用指定数据库
-     * 提供获取数据库链接字段 DRIVER、URL、USER、PASSWORD 的方法
-     * @author Kevin KDA on 2020/3/25 12:18
-     * @description JdbcUtils / static
-     */
-    static {
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("com.kevin.util.resource.db.db");
-        DATABASE_CURRENTLY_IN_USE = Integer.parseInt(resourceBundle.getString("db.DatabaseCurrentlyInUse"));
-        BATCH_MAX = Integer.parseInt(resourceBundle.getString("db.BatchMax"));
-        switch (DATABASE_CURRENTLY_IN_USE) {
-            case ORACLE:
-                DRIVER = resourceBundle.getString("jdbc.oracle.driver");
-                URL = resourceBundle.getString("jdbc.oracle.url");
-                USER = resourceBundle.getString("jdbc.oracle.user");
-                PASSWORD = resourceBundle.getString("jdbc.oracle.password");
-                break;
-            case SQL_SERVER:
-                DRIVER = resourceBundle.getString("jdbc.sqlserver.driver");
-                URL = resourceBundle.getString("jdbc.sqlserver.url");
-                USER = resourceBundle.getString("jdbc.sqlserver.user");
-                PASSWORD = resourceBundle.getString("jdbc.sqlserver.password");
-                break;
-            case MYSQL:
-            default:
-                DRIVER = resourceBundle.getString("jdbc.mysql.driver");
-                URL = resourceBundle.getString("jdbc.mysql.url");
-                USER = resourceBundle.getString("jdbc.mysql.user");
-                PASSWORD = resourceBundle.getString("jdbc.mysql.password");
-                break;
-        }
-    }
 
 //    获得连接
 
@@ -144,12 +75,39 @@ public class JdbcUtilsImpl implements AutoCloseable {
     }
 
     /**
+     * 提供获得Statement对象的方法
+     *
+     * @return Statement 返回Statement
+     * @author Kevin KDA on 2020/3/31 18:45
+     * @description JdbcUtils / getStatement
+     * @apiNote <p>此方法需要实例化，对于批处理方式请按照如下方式执行：</p>
+     * <ol><li>实例化对象获得{@link Connection}连接</li>
+     * <li>使用{@link Connection}连接获得{@link Statement}对象</li>
+     * <li>使用{@code addBatch()}向{@link Statement}追加参数</li>
+     * <li>使用{@code executeBatch()}提交批处理</li>
+     * <li>清楚批处理缓存</li></ol>
+     * @since 1.1
+     */
+    public Statement getStatement() {
+        try {
+            getConnection();
+            if (statement == null) {
+                statement = connection.createStatement();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return statement;
+    }
+
+    /**
      * 提供获得PreparedStatement对象的方法
      *
      * @param sql: 提供创建PreparedStatement的SQL语句
      * @return PreparedStatement 返回PreparedStatement
      * @author Kevin KDA on 2020/3/31 18:45
-     * @description JdbcUtils / getConnection
+     * @description JdbcUtils / getPreparedStatement
      * @apiNote <p>此方法需要实例化，对于批处理方式请按照如下方式执行：</p>
      * <ol><li>实例化对象获得{@link Connection}连接</li>
      * <li>使用{@link Connection}连接获得{@link PreparedStatement}对象</li>
@@ -201,11 +159,55 @@ public class JdbcUtilsImpl implements AutoCloseable {
 //    批处理提交方法
 
     /**
+     * 设置自动提交关闭
+     *
+     * @return boolean 返回设置结果
+     * @author Kevin KDA on 2020/4/2 13:30
+     * @description JdbcUtilsImpl / changeAutoCommit
+     */
+    public boolean changeAutoCommit() {
+        try {
+            connection.setAutoCommit(false);
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 提供插入、更新、删除单行数据的方法
+     * 提供向Statement添加参数的方法
+     *
+     * @param sql: 传入标准SQL语句
+     * @return int 返回添加成功行数
+     * @author Kevin KDA on 2020/3/24 22:10
+     * @description JdbcUtils / addBatch
+     * @apiNote <p>本方法执行完成后系统将不会提交本次批处理</p>
+     * <ol><li>实例化对象获得{@link Connection}连接</li>
+     * <li>使用{@link Connection}连接获得{@link PreparedStatement}对象</li>
+     * <li>使用{@code addBatch()}向{@link PreparedStatement}追加参数</li>
+     * <li>使用{@code executeBatch()}提交批处理</li>
+     * <li>清楚批处理缓存</li></ol>
+     * @since 1.0
+     */
+    public int addBatch(String sql) {
+        try {
+            statement.addBatch(sql);
+            intBatchCount++;
+            return 1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
      * 提供插入、更新、删除单行数据的方法
      * 提供向PreparedStatement添加参数的方法
      *
      * @param args: 传入需提交的参数
-     * @return boolean 返回参数是否添加成功
+     * @return int 返回添加成功行数
      * @author Kevin KDA on 2020/3/24 22:10
      * @description JdbcUtils / addBatch
      * @apiNote <p>本方法执行完成后系统将不会提交本次批处理</p>
@@ -285,8 +287,14 @@ public class JdbcUtilsImpl implements AutoCloseable {
     public int[] executeBatch() {
         int[] count = new int[0];
         try {
-            count = preparedStatement.executeBatch();
-            preparedStatement.clearBatch();
+            if (statement != null) {
+                count = statement.executeBatch();
+                statement.clearBatch();
+            }
+            if (preparedStatement != null) {
+                count = preparedStatement.executeBatch();
+                preparedStatement.clearBatch();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -308,8 +316,8 @@ public class JdbcUtilsImpl implements AutoCloseable {
      */
     private List<Section> calcSection(int count) {
         List<Section> sectionList = new ArrayList<>();
-        Section section = null;
-        int tempLeft = 0;
+        Section section;
+        int tempLeft;
         int tempRight = 0;
         while (tempRight < count) {
             tempLeft = tempRight;
@@ -438,14 +446,6 @@ public class JdbcUtilsImpl implements AutoCloseable {
         return BATCH_MAX;
     }
 
-    public int getIntBatchCount() {
-        return intBatchCount;
-    }
-
-    public void setIntBatchCount(int intBatchCount) {
-        this.intBatchCount = intBatchCount;
-    }
-
     public static int getMySql() {
         return MYSQL;
     }
@@ -492,10 +492,6 @@ public class JdbcUtilsImpl implements AutoCloseable {
 
     public void setResultSet(ResultSet resultSet) {
         this.resultSet = resultSet;
-    }
-
-    public Statement getStatement() {
-        return statement;
     }
 
     public void setStatement(Statement statement) {
