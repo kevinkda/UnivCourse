@@ -5,7 +5,6 @@ import java.util.ResourceBundle;
 /**
  * @author Kevin KDA on 2020/4/1 21:08
  * @version 1.0
- * @project JavaTermProject_202004
  * @package com.kevin.util.db
  * @classname AbstractJdbc
  * @description

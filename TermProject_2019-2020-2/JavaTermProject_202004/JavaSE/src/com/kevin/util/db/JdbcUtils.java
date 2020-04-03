@@ -17,59 +17,19 @@ import java.util.*;
  * 提供对于JDBC的操纵服务
  *
  * @author Kevin KDA on 2020/3/23 09:14
- * @version 1.5
+ * @version 1.6
  * @package com.kevin.util.db
  * @classname JdbcUtils
  * @description 提供对于JDBC的操纵服务
- * @interface/enum {@link AutoCloseable} 实现自动关闭
+ * @interface/enum {@link java.lang.AutoCloseable} 实现自动关闭
  * @apiNote <p>此项目希望做到提供尽可能的通用方法，但某些特殊情况可能无法提供处理。</p>
- * <p>此封装类已实现对{@link AutoCloseable}的支持，调用方可以获取它的资源直到结束，这将自动调用{@code close}。</p>
- * <p>此封装类已尽可能的对{@link Exception}进行{@code try}捕获，
- * 不可避免的这可能将会导致后续程序的在特定情况下产生{@link NullPointerException}。</p>
+ * <p>此封装类已实现对{@link java.lang.AutoCloseable}的支持，调用方可以获取它的资源直到结束，这将自动调用{@code close}。</p>
+ * <p>此封装类已尽可能的对{@link java.lang.Exception}进行{@code try}捕获，
+ * 不可避免的这可能将会导致后续程序的在特定情况下产生{@link java.lang.NullPointerException}。</p>
  * <p>数据分页部分依赖{@link com.kevin.util.db.PageBean}，自1.5版本开始本类方法提供的数据分页将被标记为{@link Deprecated}</p>
  * @since 1.0 (JDK 1.7)
  */
-public class JdbcUtils implements AutoCloseable {
-    /**
-     * 当前使用的数据库
-     */
-    private static final int DATABASE_CURRENTLY_IN_USE;
-    /**
-     * 批处理最大接收数值
-     */
-    private static final int BATCH_MAX;
-    /**
-     * 批处理当前接收数值
-     */
-    private int intBatchCount;
-    /**
-     * 数据库类型MySQL
-     */
-    private static final int MYSQL = 1;
-    /**
-     * 数据库类型Oracle
-     */
-    private static final int ORACLE = 2;
-    /**
-     * 数据库类型SQL Server
-     */
-    private static final int SQL_SERVER = 3;
-    /**
-     * 数据库驱动名称
-     */
-    private static final String DRIVER;
-    /**
-     * 数据库链接地址
-     */
-    private static final String URL;
-    /**
-     * 数据库用户名
-     */
-    private static final String USER;
-    /**
-     * 数据库用户密码
-     */
-    private static final String PASSWORD;
+public class JdbcUtils extends AbstractJdbc implements AutoCloseable {
     /**
      * Connection
      */
@@ -90,42 +50,6 @@ public class JdbcUtils implements AutoCloseable {
      * ResultSet
      */
     private static ResultSet resultSet = null;
-
-
-//    初始化对象
-
-    /*
-     * 根据配置文件选择使用指定数据库
-     * 提供获取数据库链接字段 DRIVER、URL、USER、PASSWORD 的方法
-     * @author Kevin KDA on 2020/3/25 12:18
-     * @description JdbcUtils / static
-     */
-    static {
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("com.kevin.util.resource.db.db");
-        DATABASE_CURRENTLY_IN_USE = Integer.parseInt(resourceBundle.getString("db.DatabaseCurrentlyInUse"));
-        BATCH_MAX = Integer.parseInt(resourceBundle.getString("db.BatchMax"));
-        switch (DATABASE_CURRENTLY_IN_USE) {
-            case ORACLE:
-                DRIVER = resourceBundle.getString("jdbc.oracle.driver");
-                URL = resourceBundle.getString("jdbc.oracle.url");
-                USER = resourceBundle.getString("jdbc.oracle.user");
-                PASSWORD = resourceBundle.getString("jdbc.oracle.password");
-                break;
-            case SQL_SERVER:
-                DRIVER = resourceBundle.getString("jdbc.sqlserver.driver");
-                URL = resourceBundle.getString("jdbc.sqlserver.url");
-                USER = resourceBundle.getString("jdbc.sqlserver.user");
-                PASSWORD = resourceBundle.getString("jdbc.sqlserver.password");
-                break;
-            case MYSQL:
-            default:
-                DRIVER = resourceBundle.getString("jdbc.mysql.driver");
-                URL = resourceBundle.getString("jdbc.mysql.url");
-                USER = resourceBundle.getString("jdbc.mysql.user");
-                PASSWORD = resourceBundle.getString("jdbc.mysql.password");
-                break;
-        }
-    }
 
 //    获得连接
 
@@ -971,8 +895,8 @@ public class JdbcUtils implements AutoCloseable {
      */
     private List<Section> calcSection(int count) {
         List<Section> sectionList = new ArrayList<>();
-        Section section = null;
-        int tempLeft = 0;
+        Section section;
+        int tempLeft;
         int tempRight = 0;
         while (tempRight < count) {
             tempLeft = tempRight;
@@ -1132,14 +1056,6 @@ public class JdbcUtils implements AutoCloseable {
 
     public static int getBatchMax() {
         return BATCH_MAX;
-    }
-
-    public int getIntBatchCount() {
-        return intBatchCount;
-    }
-
-    public void setIntBatchCount(int intBatchCount) {
-        this.intBatchCount = intBatchCount;
     }
 
     public void setConnection(Connection connection) {

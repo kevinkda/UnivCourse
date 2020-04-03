@@ -1,0 +1,101 @@
+/*
+ * Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+.container, .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    /*border:1px solid green;*/
+}
+
+.core-wrapper {
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bottom-wrapper {
+    margin-top: 30px;
+}
+
+.table-wrapper {
+    width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.complete {
+    font-style: italic;
+    color: #525D76;
+    font-size: 13px;
+}
+
+th {
+    font-size: 21px;
+}
+
+tr {
+    height: 30px;
+    text-align: center;
+}
+
+td {
+    width: 200px;
+    text-align: center;
+    overflow: auto;
+}
+
+.project-date {
+    color: #525D76;
+}
+
+.top-wrapper-null {
+    height: 50px;
+}
+
+#top-word {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+td:first-child {
+    width: 5%;
+}
+
+td:nth-child(2) {
+    width: 30%;
+}
+
+td:nth-child(3) {
+    width: 5%;
+}
+
+td:nth-child(4) {
+    width: 35%;
+}
+
+td:nth-child(5) {
+    width: 5%;
+}
+
+td:last-child {
+    width: 15%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#miit {
+    color: #525D76;
+    transition: 50ms;
+}
+
+#miit:hover, #miit:active, #miit:link {
+    color: #00a4ff;
+}
