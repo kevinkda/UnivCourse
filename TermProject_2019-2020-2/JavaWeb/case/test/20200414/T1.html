@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test {
+            font-size: 0.48rem;
+            color: #333;
+            line-height: 0.8rem;
+            width: 8.8rem;
+            word-break: break-all;
+            /*显示为省略号 */
+            text-overflow: ellipsis;
+            /*对象作为伸缩盒子模型显示 */
+            display: -webkit-box;
+            /*设置或检索伸缩盒对象的子元素的排列方式*/
+            -webkit-box-orient: vertical;
+            /*显示行数## 标题文字 ##*/
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+        .test:hover{
+            text-overflow:inherit;
+            overflow: visible;
+            white-space: pre-line;     /*合并空白符序列，但是保留换行符。*/
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<p class="test">通过css控制段落只显示两行，且第二行结尾处超出部分以省略号显示通过css控制段落只显示两行，且第二行结尾处超出部分以省略号显示通过css控制段落只显示两行，且第二行结尾处超出部分以省略号显示</p>
+</body>
+</html>

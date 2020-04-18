@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="info"/><br/>
+<input type="button" value="点击" onclick="check();"/>
+<script>
+    function check() {
+        var regExp = /[a-zA-Z0-9]/g;
+        var val = document.getElementById("info").value;
+        document.getElementById("info").value = val.replace(regExp, "*")
+    }
+</script>
+</body>
+</html>

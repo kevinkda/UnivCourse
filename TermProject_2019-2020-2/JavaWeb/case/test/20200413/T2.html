@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let strA = "abcdefgabcdefg";
+        let searchStr = "a";
+
+        function f() {
+            for (let i = 0; i < strA.length; i++) {
+                if (strA[i] === searchStr) {
+                    document.write(i + 1 + " ");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="f();" value="search">
+</body>
+</html>

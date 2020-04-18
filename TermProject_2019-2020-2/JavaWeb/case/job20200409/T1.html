@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>job20200409</title>
+    <link rel="stylesheet" href="../../css/case/job20200409/T1.css">
+</head>
+<body>
+<!--    1.利用form表单完成数据的验证跳转-->
+<!--    2.账号必须是英文加字母，且第一个字符只能是英文-->
+<!--    3.最大长度是8而且不能用正则表达式-->
+<!--    4.密码只能是3个英文3个数字长度6-->
+<!--    5.部门，后勤部，研发部-->
+<!--    6.文本域-->
+<form action="successful.html" method="post">
+    <fieldset id="reg">
+        <!--    铭牌-->
+        <legend>Reg</legend>
+        <!--    输入账号-->
+        <p>
+            账号：
+            <input type="text" id="account" maxlength="8" value="" onfocus="accountNote1()"
+                   onblur="accountNote2()" required>
+            <span id="account_tip"> 账号不能为空！</span>
+        </p>
+        <!--    输入密码-->
+        <p>
+            密码：
+            <input type="password" id="pwd1" maxlength="6" value="" onfocus="passNote1()" onblur="passNote2()"
+                   required>
+            <span id="pwd1_tip"> 密码不能为空！</span>
+        </p>
+        <!--    让用户再一次确认密码-->
+        <p>
+            确认密码：<input type="password" id="pwd2" maxlength="6" value="" onfocus="passNote3()" onblur="pwdNoitcer4()"
+                        required>
+            <span id="pwd2_tip"></span>
+        </p>
+        <!--    用户选择部门-->
+        <p>
+            意向部门：<input type="radio" name="department" id="dep_hr" onclick="departInfo()">HR
+            <input type="radio" name="department" id="dep_rd" onclick="departInfo()">RD
+        </p>
+        <!--    部门细则，点击部门后展示相对应的细则-->
+        <p id="departmentRule" style="display: none">部门细则：<textarea style="vertical-align: top"></textarea></p>
+        <p><input type="button" value="注册" onclick="valiUser()"></p>
+    </fieldset>
+</form>
+</body>
+<script src="../../js/case/job20200409/T1.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>job20200410</title>
+    <script src="../../js/case/job20200410/T1.js"></script>
+    <link rel="stylesheet" href="../../css/case/job20200410/T1.css">
+</head>
+
+<body>
+<table border="1">
+
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>ID</td>
+    </tr>
+
+    <!--    改这底下的name和age就行-->
+    <tr>
+        <td>Kevin</td>
+        <td>21</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Karry</td>
+        <td>20</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Roy</td>
+        <td>19</td>
+        <td>3</td>
+
+    </tr>
+    <tr>
+        <td>Jackson</td>
+        <td>19</td>
+        <td>4</td>
+    </tr>
+
+</table>
+<p>通过双击单行修改</p>
+<div class="modify-Div" id="modify-Div">
+    <p>
+        New Name：<input type="text" id="newName">
+    </p>
+    <p>
+        New Age：<input type="number" maxlength="3" id="newAge">
+    </p>
+    <p>
+        New Tel：<input type="number" id="newID">
+    </p>
+    <input type="text" hidden="hidden" id="preName">
+    <div id="modify-icon">
+        <p>
+            <input type="button" value="修改" id="modify-btn" onclick="modify()">
+        </p>
+    </div>
+</div>
+</body>
+</html>

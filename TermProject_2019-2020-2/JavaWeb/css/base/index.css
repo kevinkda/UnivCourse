@@ -91,11 +91,11 @@ a {
     text-decoration: none;
 }
 
-#miit {
+#miit:link, #miit:active, #miit:visited {
     color: #525D76;
-    transition: 50ms;
+    /*transition: 0.1s;*/
 }
 
-#miit:hover, #miit:active, #miit:link {
+#miit:hover {
     color: #00a4ff;
 }

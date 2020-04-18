@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to right, #3B6176, #3A6A98, #3B72B3, #3A7AD2);
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: sandybrown;
+    color: wheat;
+}

@@ -1,0 +1,51 @@
+body {
+    /*background-color: #141c30;*/
+    background-color: #525f79;
+}
+
+table {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 30px;
+    color: #eeff00;
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+    color: #eeff00;
+}
+
+
+input button {
+    width: 60px;
+    height: 40px;
+}
+
+/*类名选择器*/
+.modify-Div {
+    display: none;
+    margin: 0 auto;
+    width: 500px;
+}
+
+/*id选择器*/
+#modify-btn {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+}
+
+#modify-icon {
+    border: 1px solid black;
+    width: 80px;
+    height: 30px;
+    position: relative;
+}

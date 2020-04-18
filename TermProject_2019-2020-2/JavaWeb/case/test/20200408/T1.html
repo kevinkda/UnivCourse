@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="T1.js"></script>
+    <style>
+        .errorT1 {
+            color: red;
+            font-size: initial;
+        }
+    </style>
+    <script>
+        function getInfo() {
+            let country = document.getElementById("country").value;
+            switch (country) {
+                case "china":
+                    document.getElementById("te").innerText = "中国条款。。。。";
+                    break;
+                case "us":
+                    document.getElementById("te").innerText = "美国条款。。。。";
+                    break;
+                case "jp":
+                    document.getElementById("te").innerText = "日本条款。。。。";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="" method="post" onsubmit="return check();">
+    <fieldset align="left">
+        <legend>Reg</legend>
+        <p>Account:<input type="text" id="account" onblur="checkAccount();" maxlength="20">
+            <span id="accountError">账号为必填项</span>
+        </p>
+        <p>
+            Country:
+            <select name="country" id="country" id="" onchange="getInfo()">
+                <option value="choose" selected="selected">please choose country</option>
+                <option value="china">china</option>
+                <option value="us">us</option>
+                <option value="jp">japan</option>
+            </select>
+        </p>
+        <p>
+            条款：
+            <textarea name="t" id="te" cols="30" rows="10">
+
+            </textarea>
+        </p>
+        <p><input type="submit" value="Sumbit"></p>
+    </fieldset>
+</form>
+</body>
+</html>
