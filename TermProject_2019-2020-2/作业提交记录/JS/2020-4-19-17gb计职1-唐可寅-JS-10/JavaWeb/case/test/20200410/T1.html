@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showTime() {
+            var strWelcome;    //显示当前时段
+            var clearTime;
+            //清楚重复计时
+            clearInterval(clearTime);
+            var obj = new Date();
+            var year = obj.getFullYear();
+            var month = obj.getMonth() + 1;
+            var date = obj.getDate();
+            var day = obj.getDay();
+            var hours = obj.getHours();
+            var minute = obj.getMinutes();
+            var seconds = obj.getSeconds();
+            document.getElementById("div1").innerText = '今天是' + year + '年' + month + '月' + date + '日,星期' + day +
+                ',当前时间为：' + hours + ':' + minute + ':' + seconds;
+        }
+
+        let s = setInterval("showTime()", 1000);
+
+        function stopTime() {
+            clearInterval(s);
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+
+</div>
+<p><input type="button" value="stop" onclick="stopTime()"></p>
+</body>
+</html>

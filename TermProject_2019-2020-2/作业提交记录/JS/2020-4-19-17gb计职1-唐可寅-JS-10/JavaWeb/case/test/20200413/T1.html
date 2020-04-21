@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //1-15随机数
+        let number1 = Math.floor(1 + 15 * Math.random());
+
+        function rush() {
+            number1 = Math.floor(1 + 15 * Math.random());
+            console.log(number1);
+        }
+
+        function guess() {
+            let result = prompt("随机数范围1-10 n退出");
+            if (result === 'n') {
+                alert("下次再来");
+            } else {
+                let r;
+                let x = false;
+                for (let i = 0; i < 10; i++) {
+                    let s = parseInt(prompt("您第" + i + "次猜数为"));
+                    if (number1 === s) {
+                        r = i;
+                        x = true;
+                        break
+                    } else if (s > number1) {
+                        alert("猜的数偏大");
+                    } else {
+                        alert("猜的数偏小");
+                    }
+                }
+                if (x) {
+                    if (r > 0 && r < 11) {
+                        alert("恭喜你，第" + r + "次成功猜对")
+                    } else {
+                        alert("最后还是没有猜对")
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="Start" onclick="guess();">
+<input type="text" value="刷新随机数" onclick="rush();">
+</body>
+</html>

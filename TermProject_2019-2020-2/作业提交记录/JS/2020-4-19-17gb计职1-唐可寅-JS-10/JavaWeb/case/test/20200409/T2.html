@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //全选数据检查
+        function firstBtn() {
+            let box = document.getElementsByName("ids");
+            if (box[0].checked) {
+                for (let i = 0; i < box.length; i++) {
+                    box[i].checked = true;
+                }
+                document.getElementById("id-delete").disabled = "";
+            } else {
+                for (let i = 0; i < box.length; i++) {
+                    box[i].checked = false;
+                }
+                document.getElementById("id-delete").disabled = "disabled";
+            }
+        }
+
+        //单项数据检查
+        function dataBtn() {
+            let box = document.getElementsByName("ids");
+            let result = false;
+            for (let i = 1; i < box.length; i++) {
+                if (box[i].checked === false) {
+                    result = true;
+                    break;
+                }
+            }
+            //全部数据勾选时选中第一行全选checkbox
+            if (result) {
+                box[0].checked = false;
+            } else {
+                box[0].checked = true;
+            }
+            let temp = false;
+            for (let i = 0; i < box.length; i++) {
+                if (box[i].checked) {
+                    temp = true;
+                    break;
+                }
+            }
+            if (temp) {
+                document.getElementById("id-delete").disabled = "";
+            } else {
+                document.getElementById("id-delete").disabled = "disabled";
+            }
+        }
+
+        //执行删除操作
+        function del() {
+            let box = document.getElementsByName("ids");
+            let str = "";
+            for (let i = 0; i < box.length; i++) {
+                if (box[i].checked) {
+                    str += box[i].value + ",";
+                }
+            }
+            if (confirm("确认删除数据号：" + str)) {
+                alert(str + "被删除");
+            } else {
+                alert("取消删除操作被确认");
+            }
+        }
+    </script>
+</head>
+<body>
+<table border="1" width="300" height="100">
+    <tr>
+        <td><input type="checkbox" name="ids" onclick="firstBtn()"></td>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="ids" onclick="dataBtn()" value="1"></td>
+        <td>1</td>
+        <td>USER</td>
+        <td>11</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="ids" onclick="dataBtn()" value="2"></td>
+        <td>2</td>
+        <td>NPC</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="ids" onclick="dataBtn()" value="3"></td>
+        <td>3</td>
+        <td>KFC</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td colspan="4" align="center">
+            <input type="button" id="id-delete" value="Delete" disabled="disabled" onclick="del()">
+        </td>
+    </tr>
+</table>
+</body>
+</html>

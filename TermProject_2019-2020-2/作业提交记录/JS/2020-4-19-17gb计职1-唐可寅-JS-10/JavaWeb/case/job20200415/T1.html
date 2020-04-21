@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>job20200415T1</title>
+    <link rel="stylesheet" href="../../css/case/job20200415/T1.css">
+</head>
+<body>
+<div class="container">
+    <div align="left">
+        <h2 align="center">注册</h2>
+        <fieldset>
+            <legend>请按要求输入信息</legend>
+            <p id="p1">用户名:
+                <input type="text" id="user" maxlength="16" onblur="checkUser()"/>
+                <span id="userA">由英文字母和数字组成4-16位字符，以字母开头</span>
+            </p>
+            <p>昵称:
+                <input type="text" id="name" maxlength="6" onblur="checkName()"/>
+                <span id="nameA">由2~6个汉字组成</span>
+            </p>
+            <p>邮箱:
+                <input type="text" id="emil" onblur="checkEmail()"/>
+                <span id="emailA">邮箱账号@域名.如：admin@kevinkda.cn等</span>
+            </p>
+            <p>密码:
+                <input type="password" id="passA" maxlength="10" onblur="checkPass()"/>
+                <span id="passAt">由英文字母和数字组成的4-10位字符</span>
+            </p>
+            <p>确认密码:
+                <input type="password" id="passB" maxlength="10" onblur="checkCpass()"/>
+                <span id="passBt">再次输入密码</span>
+            </p>
+            <p>手机号码:
+                <input type="text" id="pnum" maxlength="11" onblur="checkPhone()"/>
+                <span id="phoneA">输入您的手机号</span>
+            </p>
+            <p>出生日期:
+                <input type="text" id="birday" onblur="checkBirthday()"/>
+                <span id="birthday">出生日期在1900~2020之间，e.g.1998-9-1</span>
+            </p>
+        </fieldset>
+        <p>
+            <button>提交</button>
+        </p>
+    </div>
+</div>
+</body>
+<script src="../../js/case/job20200415/T1.js"></script>
+</html>

@@ -1,0 +1,13 @@
+img {
+    width: 352px;
+    height: 220px;
+}
+
+tr:nth-child(2) td {
+    height: 50px;
+}
+
+#wrapper {
+    width: 355px;
+    margin: 20px auto;
+}

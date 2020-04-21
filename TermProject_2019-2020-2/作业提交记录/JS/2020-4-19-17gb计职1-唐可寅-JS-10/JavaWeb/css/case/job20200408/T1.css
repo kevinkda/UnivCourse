@@ -1,0 +1,19 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+td {
+    border: #000000 solid 1px;
+}
+
+.core-wrapper, .table-wrapper {
+    margin: 0 auto;
+}
+
+#t1a, #t1b, #t2 {
+    display: none;
+}
+
+td {
+    width: 25%;
+}

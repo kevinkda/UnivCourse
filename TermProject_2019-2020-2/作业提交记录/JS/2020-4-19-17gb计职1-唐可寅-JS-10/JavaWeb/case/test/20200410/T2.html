@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #photoDiv {
+            border: 1px solid red;
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #number {
+            border: 1px solid red;
+            width: 400px;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        table tr td {
+            text-align: center;
+        }
+    </style>
+    <script>
+        let numberCount = 1;
+
+        function work1() {
+            //检查最大图片数
+            if (numberCount === 4) {
+                numberCount = 1;
+            }
+            //图片路径拼接
+            let photoUrl = "img/img" + numberCount + ".jpg";
+            document.getElementById("img1").src = photoUrl;
+            //循环增加图片号
+            numberCount++;
+        }
+        //每隔3秒调用，自动换图
+        setInterval("work1()", 3000);
+        onload = work1();
+    </script>
+</head>
+<body>
+<div id="photoDiv">
+    <img src="img/img1.jpg" height="200" width="400" id="img1" alt="">
+</div>
+<div id="number">
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

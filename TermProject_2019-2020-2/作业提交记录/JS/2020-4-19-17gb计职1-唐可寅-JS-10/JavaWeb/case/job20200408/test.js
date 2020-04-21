@@ -1,0 +1,12 @@
+let script_foot = document.createElement("script");
+script_foot.type = "text/javascript";
+script_foot.src = "../../js/base/Copyright.js";
+// script_foot.src = "c.js";
+document.getElementsByTagName('head')[0].appendChild(script_foot);
+let script_apply = document.createElement("script");
+script_apply.type = "text/javascript";
+script_apply.innerHTML = "footerFixedBottom()";
+// script_foot.src = "c.js";
+// script_apply.getElementsByTagName('head')[0].append(script_apply);
+// script_apply.getElementsByTagName("head")[length].appendChild(script_apply);
+document.body.appendChild(script_apply);

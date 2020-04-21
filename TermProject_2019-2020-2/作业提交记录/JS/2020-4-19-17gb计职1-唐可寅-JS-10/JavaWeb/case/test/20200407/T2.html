@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function f() {
+            let va = document.getElementById("i1");
+            console.log(Number.parseInt(va.innerText.trim()));
+            let var1 = document.getElementById("i1").value.trim();
+            let var2 = document.getElementById("i2").value.trim();
+            let var3 = document.getElementById("i3").value.trim();
+            let result = document.getElementById('result');
+            if (var1 !== '' && var2 !== '') {
+                console.log('i1 & i2 存在内容');
+                if (!isNaN(var1) && !isNaN(var2)) {
+                    if (var3 === '+' || var3 === '-' || var3 === '*' || var3 === '/') {
+                        let temp = var1 + var3 + var2;
+                        result.innerText = eval(temp);
+                    } else {
+                        console.log('i3符号错误');
+                    }
+                } else {
+                    console.log('bushishuzi');
+                }
+            } else {
+                console.log('i1 & i2 至少有一个没有内容');
+            }
+            console.log(document.getElementById("i1").style);
+        }
+
+        // fireDebug
+
+    </script>
+</head>
+<body>
+<p>i1<input type="text" id="i1"></p>
+<p>i2<input type="text" id="i2"></p>
+<p>i3<input type="text" id="i3"></p>
+<p>btn1<input type="button" id="btn1" onclick="f()"></p>
+<p id="result"></p>
+</body>
+</html>

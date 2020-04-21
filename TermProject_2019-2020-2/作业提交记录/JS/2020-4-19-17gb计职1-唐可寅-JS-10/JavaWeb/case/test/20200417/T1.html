@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #nav {
+            color: blue;
+        }
+
+        .p1 {
+            color: red;
+        }
+
+        .p2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<ul id="nav">
+    <li>汽车</li>
+    <li>飞机</li>
+    <li>坦克</li>
+</ul>
+</body>
+<script>
+    let nav = document.getElementById("nav");
+    let lis = nav.getElementsByTagName("li");
+    for (let i = 0; i < lis.length; i++) {
+        lis[i].onmouseover = function () {
+            this.className = "p1";
+        }
+        lis[i].onmouseleave = function () {
+            this.className = "p2";
+        }
+    }
+</script>
+</html>

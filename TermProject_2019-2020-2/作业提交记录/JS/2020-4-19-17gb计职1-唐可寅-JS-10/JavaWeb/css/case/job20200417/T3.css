@@ -1,0 +1,17 @@
+input[type=button] {
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+}
+
+table{
+    text-align: center;
+}
+
+input[type=text]{
+    text-align: center;
+    width: 30px;
+}

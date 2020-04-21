@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/case/job20200412/cloth.css">
+
+</head>
+
+<body>
+
+<div id="time" class="time">
+    <h1 id="show"></h1>
+    <input type="button" value="暂停" onclick="btnChange()">
+</div>
+
+<hr/>
+
+<div id="task2" class="task2">
+    <div id="photoDiv" class="photo">
+        <p>↓↓↓这里放自己的图片进去</p>
+<!--        <img src="../../img/job20200412/photo1.jpg" height="6016"-->
+<!--             id="urlPhoto" width="4016"/>-->
+        <img src="../../img/job20200412/" id="urlPhoto">
+    </div>
+    <div id="number" class="number">
+        <table border="1" width="350" height="50">
+            <tr>
+                <td onmouseenter="changeImg(1)" onmouseleave="changeNextImg(1)">1</td>
+                <td onmouseenter="changeImg(2)" onmouseleave="changeNextImg(2)">2</td>
+                <td onmouseenter="changeImg(3)" onmouseleave="changeNextImg(3)">3</td>
+                <td onmouseenter="changeImg(4)" onmouseleave="changeNextImg(4)">4</td>
+            </tr>
+        </table>
+        <p>***图片将3s切换一次***</p>
+    </div>
+</div>
+</body>
+<script src="../../js/case/job20200412/control.js"></script>
+</html>

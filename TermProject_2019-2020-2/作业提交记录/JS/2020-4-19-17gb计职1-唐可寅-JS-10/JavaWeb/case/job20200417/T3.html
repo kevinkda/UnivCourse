@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/case/job20200417/T3.css">
+</head>
+<body>
+<table width="500" height="200" border="1" align="center">
+    <tr>
+        <!--        给一个name控制全局-->
+        <td>全选<input type="checkbox" name="checker" onclick="valiAllChecked()"></td>
+        <td>商品名称</td>
+        <td>商品单价</td>
+        <td>商品数量</td>
+        <td width="100px">总计</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checker" id="checker1" onclick="checkerControl(1)"></td>
+        <td>奥妙洗衣粉</td>
+        <td>12.50</td>
+        <td>
+            <input type="button" value="-" onclick="sub(12.5,1)"/>
+            <input type="text" id="good1" value="0" readonly="readonly">
+            <input type="button" value="+" onclick="add(12.5,1)"/>
+        </td>
+        <td>￥<span class="all" id="all1">0.00</span></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checker" id="checker2" onclick="checkerControl(2)"></td>
+        <td>苹果手机</td>
+        <td>899.99</td>
+        <td>
+            <input type="button" value="-" onclick="sub(899.99,2)"/>
+            <input type="text" id="good2" value="0" readonly="readonly">
+            <input type="button" value="+" onclick="add(899.99,2)"/>
+        </td>
+        <td>￥<span class="all" id="all2">0.00</span></td>
+    </tr>
+    <tr>
+        <td colspan="5" align="right">共计商品:<span id="allGoodsCount">0</span>个,总价:￥<span id="allPriceTotal">0</span></td>
+    </tr>
+</table>
+<script src="js/control3.js"></script>
+</body>
+</html>

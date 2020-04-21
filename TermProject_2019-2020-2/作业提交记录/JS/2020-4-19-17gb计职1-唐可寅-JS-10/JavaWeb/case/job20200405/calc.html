@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>job20200405</title>
+    <!--    <link rel="stylesheet" href="../../css/base/index.css">-->
+    <link rel="stylesheet" href="../../css/case/job20200405/calc.css">
+    <script src="../../js/base/Copyright.js"></script>
+    <script src="../../js/case/job20200405/calc.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="core-wrapper">
+        <div class="top-wrapper">
+            <h1>Calc form Kevin</h1>
+        </div>
+        <hr>
+        <div class="table-wrapper">
+            <table>
+                <tr id="expression">
+                    <td id="exponent_td" class="func" colspan="4" onclick="">0</td>
+                </tr>
+                <tr>
+                    <td id="result" class="func" colspan="4" onclick="">0</td>
+                </tr>
+                <tr class="key">
+                    <td id="clear" class="num" onclick="clean()">AC</td>
+                    <td id="leftPar" class="num" onclick="func_oper('(')">(</td>
+                    <td id="rightPar" class="num" onclick="func_oper(')')">)</td>
+                    <td id="except" class="oper" onclick="func_oper('/')">/</td>
+                </tr>
+                <tr class="key">
+                    <td id="7" class="num" onclick="func_num(7)">7</td>
+                    <td id="8" class="num" onclick="func_num(8)">8</td>
+                    <td id="9" class="num" onclick="func_num(9)">9</td>
+                    <td id="ride" class="oper" onclick="func_oper('*')">*</td>
+                </tr>
+                <tr class="key">
+                    <td id="4" class="num" onclick="func_num(4)">4</td>
+                    <td id="5" class="num" onclick="func_num(5)">5</td>
+                    <td id="6" class="num" onclick="func_num(6)">6</td>
+                    <td id="minus" class="oper" onclick="func_oper('-')">-</td>
+                </tr>
+                <tr class="key">
+                    <td id="1" class="num" onclick="func_num(1)">1</td>
+                    <td id="2" class="num" onclick="func_num(2)">2</td>
+                    <td id="3" class="num" onclick="func_num(3)">3</td>
+                    <td id="plus" class="oper" onclick="func_oper('+')">+</td>
+                </tr>
+                <tr class="key">
+                    <td id="0" class="num" colspan="2" onclick="func_num(0)">0</td>
+                    <td id="dot" class="num" onclick="">.</td>
+                    <td id="equal" class="oper" onclick="equals()">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/index.js"></script>
+</html>
+
+
+// $(function () {
+//     let script = document.createElement("script");
+//     script.type = "text/javascript";
+//     script.src = "../../js/base/Copyright.js";
+//     document.getElementsByTagName('head')[0].appendChild(script);
+// });
