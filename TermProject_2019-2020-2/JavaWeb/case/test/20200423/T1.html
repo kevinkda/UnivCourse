@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <style>
+        #all {
+            border: 1px solid red;
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p><input type="text" id="info"></p>
+    <div id="all">
+        <!--        <div id="time-now">-->
+
+        <!--        </div>-->
+        <!--        <div id="say">-->
+
+        <!--        </div>-->
+    </div>
+    <p><input type="button" value="Click" id="btn"></p>
+</div>
+</body>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            // $("#time-now").append(showTime());
+            // let result = "小明说：" + $("#info").val().trim();
+            // $("#say").append(result + "</br>");
+
+            let result = showTime() + "</br>" + "小明说：" + $("#info").val().trim();
+            $("#all").append(result + "</br>");
+        });
+        $("#info").blur(function () {
+            if ($("#info").val().trim() !== "") {
+                $("#btn").removeAttr("disabled");
+            } else {
+                $("#info").val("不能为空");
+                $("#btn").attr("disabled", "disabled");
+            }
+        });
+    })
+
+    function showTime() {
+        // clearInterval(clearTime);
+        let strWelcome;    //显示当前时段
+        let obj = new Date();
+        let year = obj.getFullYear();
+        let month = obj.getMonth() + 1;
+        let date = obj.getDate();
+        let day = obj.getDay();
+        let hours = obj.getHours();
+        let minute = obj.getMinutes();
+        let seconds = obj.getSeconds();
+        if (hours >= 0 && hours <= 5) {
+            strWelcome = '夜深了，请注意用眼健康噢~';
+        } else if (hours >= 6 && hours <= 10) {
+            strWelcome = '早上好！';
+        } else if (hours >= 11 && hours <= 13) {
+            strWelcome = '中午好！';
+        } else if (hours >= 14 && hours <= 17) {
+            strWelcome = '下午好！';
+        } else if (hours >= 18 && hours <= 23) {
+            strWelcome = '晚上好！';
+        }
+        if (day === 1) {
+            day = '一';
+        } else if (day === 2) {
+            day = '二';
+        } else if (day === 3) {
+            day = '三';
+        } else if (day === 4) {
+            day = '四';
+        } else if (day === 5) {
+            day = '五';
+        } else if (day === 6) {
+            day = '六';
+        } else if (day === 0) {
+            day = '日';
+        } else {
+            day = '几？这是个问题。';
+        }
+        return strWelcome + '<br/>今天是' + year + '年' + month + '月' + date + '日,星期' + day + ',当前时间为：' + hours + ':' + minute + ':' + seconds;
+        // clearTime = setInterval(showTime, 1000);
+    }
+</script>
+</html>

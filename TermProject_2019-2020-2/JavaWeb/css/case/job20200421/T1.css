@@ -7,7 +7,7 @@ tr:nth-child(2) td {
     height: 50px;
 }
 
-#wrapper {
+#container {
     width: 355px;
     margin: 20px auto;
 }

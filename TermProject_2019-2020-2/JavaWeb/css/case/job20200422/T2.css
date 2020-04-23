@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+p:nth-child(6) {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#picture, img {
+    width: 750px;
+    height: 945px;
+    float: left;
+
+}
+
+#word-body-wrapper {
+    float: left;
+    width: 666px;
+    overflow-wrap: break-word;
+
+}
