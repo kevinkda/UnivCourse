@@ -1,0 +1,18 @@
+#info {
+    width: 200px;
+    height: 50px;
+    vertical-align: top;
+}
+
+#showInfo {
+    width: 666px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    display: none;
+    overflow: scroll;
+}
+
+#reg {
+    width: 500px;
+}

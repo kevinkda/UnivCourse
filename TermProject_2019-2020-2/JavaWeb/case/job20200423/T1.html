@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <link rel="stylesheet" href="../../css/case/job20200423/T1.css">
+</head>
+<body>
+<form action="#">
+    <fieldset id="reg">
+        <legend>注册</legend>
+        <p><label for="account">账号：</label><input type="text" id="account" value=""></p>
+        <p><label for="pass">密码：</label><input type="password" id="pass"></p>
+        <p><label>性别：</label>
+            <input class="sex" name="sex" type="radio" value="1" id="sex-man" checked="checked">
+            <label for="sex-man">男</label>
+            <input class="sex" name="sex" type="radio" value="0" id="sex-woman"><label for="sex-woman">女</label>
+        </p>
+        <p><label>喜欢的歌手：</label>
+            <input name="idol" type="checkbox" id="idolA" value="周杰伦"><label for="idolA">周杰伦</label>
+            <input name="idol" type="checkbox" id="idolB" value="Karry"><label for="idolB">王俊凯</label>
+            <input name="idol" type="checkbox" id="idolC" value="路人甲"><label for="idolC">路人甲</label>
+            <input name="idol" type="checkbox" id="idolD" value="路人丙"><label for="idolD">路人丙</label>
+        </p>
+        <p><label for="lang-user">浏览本网站的语言：</label>
+            <select id="lang-user">
+                <option id="lang-user-option">请选择</option>
+                <option id="lang-user-cn">中文</option>
+                <option id="lang-user-en">English</option>
+                <option id="lang-user-jp">にほんご</option>
+                <option id="lang-user-kr">한국어</option>
+            </select>
+        </p>
+        <p><label for="info">服务协议：</label>
+            <textarea id="info" readonly="readonly">此处省略x字...</textarea>
+        </p>
+        <p><input type="button" id="submitBtn" value="提交"></p>
+    </fieldset>
+    <div id="showInfo">
+
+    </div>
+</form>
+</body>
+<script src="../../js/case/job20200423/T1.js"></script>
+</html>
