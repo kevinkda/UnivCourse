@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .sLi ul {
+            display: none;
+        }
+    </style>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <script>
+        $(function () {
+            $(".sLi").hover(function () {
+                $(".sLi ul").slideDown(1000);
+            }, function () {
+                $(".sLi ul").slideUp(1000);
+            })
+        });
+    </script>
+</head>
+<body>
+<ul class="menu">
+    <li>购物车</li>
+    <li class="sLi">当当
+        <ul>
+            <li>订单</li>
+            <li>收藏</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

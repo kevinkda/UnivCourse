@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                if ($(this).val() === "显示") {
+                    $("#img").show("slow", function () {
+                        $(this).css({
+                            "border": "1px solid #ccc",
+                            "padding": "5px"
+                        });
+                    });
+                    $(this).val("隐藏");
+                } else {
+                    $("#img").hide("slow");
+                    $(this).val("显示");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <input type="button" name="btn" id="btn" value="隐藏">
+    <br>
+    <img src="../../../img/job20200412/photo1.jpg" height="300" width="400"/></div>
+</body>
+</html>

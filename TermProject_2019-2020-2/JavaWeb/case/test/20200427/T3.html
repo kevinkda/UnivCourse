@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <script>
+        $(function () {
+            $("#op").change(function () {
+                let val = $("#op").val();
+                if (val !== 'choose') {
+                    $("img").fadeTo(3000, val, function () {
+                        $(this).css({
+                            "border": "1px solid #ccc",
+                            "padding": "5px"
+                        })
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<img src="../../../img/job20200412/photo1.jpg" height="300" width="400"/>
+<p>
+    <select name="" id="op">
+        <option value="choose" selected="selected">choose</option>
+        <option value="0.1">2</option>
+        <option value="0.3">3</option>
+        <option value="0.5">4</option>
+        <option value="0.7">5</option>
+        <option value="1">6</option>
+    </select>
+</p>
+</body>
+</html>
