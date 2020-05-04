@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+    <style>
+        #container {
+            border: 1px solid red;
+            margin: 0 auto;
+            width: 100%;
+            height: 800px;
+        }
+
+        #menu {
+            border: 1px solid red;
+            width: 100%;
+            height: 100px;
+        }
+
+        .firstLi {
+            list-style: none;
+            float: left;
+            padding-left: 10%;
+        }
+
+        #pl {
+            list-style: none;
+            margin-left: -50%;
+            display: none;
+        }
+
+        .secondUl {
+            list-style: none;
+            margin-left: 20%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li class="firstLi">首页</li>
+            <li class="firstLi">文化</li>
+            <li class="firstLi">新闻</li>
+            <li class="firstLi">招聘
+                <ul id="pl">
+                    <li>企业招聘</li>
+                    <li>个人求职
+                        <ul class="secondUl">
+                            <li>Java开发工程师</li>
+                            <li>PHP开发工程师</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $(".firstLi:eq(3)").hover(function () {
+            $(".firstLi>ul").stop().slideDown("fast");
+        }, function () {
+            $(".firstLi>ul").stop().slideUp("fast");
+        });
+        let box = $("#pl>li:eq(1)").hover(function () {
+            $(".secondUl").stop().slideDown("fast");
+        }, function () {
+            $(".secondUl").stop().slideUp("fast");
+        });
+    });
+</script>
+</html>

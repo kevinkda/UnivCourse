@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #s {
+            transform: rotate(7deg);
+            /*IE 9*/
+            -ms-transform: rotate(7deg);
+            /*FireFox*/
+            -moz-transform: rotate(7deg);
+            /*Safari & Chrome*/
+            -webkit-transform: rotate(7deg);
+            /*Opera*/
+            -o-transform: rotate(7deg);
+
+
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 80px;
+            border-radius: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        img {
+            border-radius: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+</head>
+<body>
+<div id="s">
+    <img src="../../../img/job20200412/photo1.jpg" height="300" width="300"/>
+</div>
+
+<div>
+    <video id="video">
+        <source src="../../../static/music/music1.mp3" controls="controls">
+    </video>
+    <p><input type="button" id="btn" value="play/stop"></p>
+</div>
+</body>
+<script>
+    let count = 1;
+    let s;
+    let result = true;
+    $(function () {
+        $("#btn").click(function () {
+            if (result) {
+                $("#video")[0].play();
+                s = setInterval("work()", 10);
+            } else {
+                $("#video")[0].pause();
+                clearInterval(s);
+                result = true;
+            }
+        });
+    });
+
+    function work() {
+        result = false;
+        console.log(count);
+        $("div")[0].style.webkitTransform = 'rotate(' + count + 'deg)';
+        // $("#s").style.webkitTransform = 'rotate(' + count + 'deg)';
+        count++;
+    }
+</script>
+</html>

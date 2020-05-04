@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .all {
+            /*边框*/
+            border: 1px solid red;
+            /*页面居中*/
+            margin: 0 auto;
+            /*页面上边距*/
+            margin-top: 80px;
+            /*元素宽度*/
+            width: 1000px;
+        }
+
+        .photo {
+            /*元素宽度*/
+            width: 300px;
+            /*元素高度*/
+            height: 300px;
+            /*边框*/
+            border: 1px solid #00ff73;
+            /*形状圆角*/
+            border-radius: 300px;
+            transform: rotate(7deg);
+            /*IE 9*/
+            -ms-transform: rotate(7deg);
+            /*FireFox*/
+            -moz-transform: rotate(7deg);
+            /*Safari & Chrome*/
+            -webkit-transform: rotate(7deg);
+            /*Opera*/
+            -o-transform: rotate(7deg);
+        }
+
+        .video {
+            /*元素隐藏*/
+            display: none;
+        }
+    </style>
+    <script src="../../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+</head>
+<body>
+<div class="all">
+    <!--    图形元素显示区-->
+    <table>
+        <tr>
+            <td><img src="../../../img/job20200412/photo1.jpg" id="photo1" class="photo" alt="">
+                <input type="button" id="btn1" value="Play" onclick="play(1)">
+            </td>
+            <td><img src="../../../img/job20200412/photo2.jpg" id="photo2" class="photo" alt="">
+                <input type="button" id="btn2" value="Play" onclick="play(2)">
+            </td>
+            <td><img src="../../../img/job20200412/photo3.jpg" id="photo3" class="photo" alt="">
+                <input type="button" id="btn3" value="Play" onclick="play(3)">
+            </td>
+        </tr>
+    </table>
+
+    <!--    音乐元素预留区-->
+    <div class="video" id="videoALL">
+        <video id="video1" controls="controls">
+            <source type="video/mp4" src="../../../static/music/music1.mp3">
+        </video>
+        <video id="video2" controls="controls">
+            <source type="video/mp4" src="../../../static/music/music2.mp3">
+        </video>
+        <video id="video3" controls="controls">
+            <source type="video/mp4" src="../../../static/music/music3.mp3">
+        </video>
+    </div>
+</div>
+</body>
+<script>
+    let count = 1;
+    let s;
+    let result = true;
+    $(function () {
+        // $("#btn").click(function () {
+        //     if (result) {
+        //         $("#video")[0].play();
+        //         s = setInterval("work()", 10);
+        //     } else {
+        //         $("#video")[0].pause();
+        //         clearInterval(s);
+        //         result = true;
+        //     }
+        // });
+    });
+
+    // 获取到的ID即对应图形ID
+    function play(id) {
+        // 获取图形元素ID
+        let img = $("#photo" + id + "")[0];
+        // console.log(img);
+        // 获取图形元素ID
+        let btn = $("#btn" + id + "")[0];
+        // console.log(btn);
+        // console.log(this);
+
+        // if (btn.value === "Play") {
+        //     // console.log("Play");
+        //
+        //     // 停止图片旋转
+        //
+        //     // 图片旋转
+        //
+        //     // 播放对应音乐
+        //
+        //     // 变更对应按钮值
+        //
+        //     let s = setInterval("work(" + id + ")", 50);
+        //
+        // } else {
+        //     console.log("Pause");
+        // }
+
+        let s;
+        let video;
+        for (let i = 0; i < 3; i++) {
+            let tempA = i + 1;
+            if (id === tempA) {
+                // 找到当前点击对象
+                // 图片旋转 当前点击
+                s = setInterval("work(" + tempA + ")", 50);
+                video = $("#video" + id + "")[0];
+                if (btn.value === "Play") {
+                    // console.log("Play");
+
+                    // 停止图片旋转 非当前点击
+
+                    // 图片旋转 当前点击
+                    // s = setInterval("work(" + tempA + ")", 50);
+                    // 播放对应音乐
+                    video.play();
+                    // 变更对应按钮值
+                    btn.value = "Pause";
+                } else {
+                    console.log("Pause");
+
+                    // 图片停止旋转 当前点击
+                    clearInterval(s);
+
+                    // 停止播放对应音乐
+                    video.pause();
+                    // 变更对应按钮值
+                    btn.value = "Play";
+                }
+            } else {
+                // 找到非当前点击对象
+
+
+            }
+        }
+    }
+
+    function work(id) {
+        // 传入图形ID，本方法自行拼接
+        // console.log(id);
+        let img = $("#photo" + id + "")[0];
+        // 图形旋转
+        img.style.webkitTransform = 'rotate(' + count + 'deg)';
+        // img.css("webkitTransform","rotate(" + count + "deg)");
+        // 旋转角度自增
+        count++;
+        let btn = $("#video" + id + "")[0];
+        // 音乐播放
+        // btn.play();
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+

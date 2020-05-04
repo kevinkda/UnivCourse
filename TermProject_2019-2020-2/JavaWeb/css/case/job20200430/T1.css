@@ -1,0 +1,29 @@
+#father {
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 300px;
+    height: 480px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.idolImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.btn {
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
