@@ -29,7 +29,7 @@
 
 
 <%
-    if ("0".equals(userSex)) {
+    if ("1".equals(userSex)) {
 %>
 <jsp:include page="man.jsp" flush="true">
     <jsp:param name="userAcc" value="<%=userAcc%>"/>

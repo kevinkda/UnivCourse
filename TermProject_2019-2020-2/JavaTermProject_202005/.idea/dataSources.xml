@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Aliyun ECS Beijing MySQL" uuid="fd1ac589-0d6c-4a4d-bb4c-5b2fc944ab6d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://bj.kevinkda.cn:3306</jdbc-url>
+    </data-source>
+  </component>
+</project>

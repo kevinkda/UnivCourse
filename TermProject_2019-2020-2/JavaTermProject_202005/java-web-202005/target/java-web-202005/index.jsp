@@ -15,6 +15,8 @@
 <body>
 <div>
     <a href="<c:url value="case/job20200507/T1.jsp"/>">job20200507/T1</a>
+    <a href="<c:url value="case/job20200508/T1.jsp"/>">job20200508/T1</a>
+    <a href="<c:url value="case/job20200508/T2.jsp"/>">job20200508/T2</a>
 </div>
 </body>
 </html>

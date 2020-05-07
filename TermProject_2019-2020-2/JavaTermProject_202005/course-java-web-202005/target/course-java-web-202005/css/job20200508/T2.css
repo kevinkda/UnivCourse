@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 70%;
+    text-align: center;
+    /*border: #ff0000 solid 1px;*/
+}
+
+table {
+    margin: 0 auto;
+
+    width: 60%;
+    /*border: #000000 solid 1px;*/
+}

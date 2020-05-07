@@ -9,5 +9,5 @@ function workA() {
             break;
         }
     }
-    location.href = "sign.jsp?userAcc" + userAcc + "&sex" + sex;
+    location.href = "../../case/20200507/sign.jsp?userAcc" + userAcc + "&sex" + sex;
 }

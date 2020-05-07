@@ -27,7 +27,7 @@
         <dependency>
             <groupId>com.kevinkda.univ.course</groupId>
             <artifactId>java-web-202005</artifactId>
-            <version>2020.05.07</version>
+            <version>2020.05.08</version>
             <type>pom</type>
         </dependency>
         <dependency>

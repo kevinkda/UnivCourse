@@ -17,7 +17,7 @@
         <p><label for="userPass">性别：</label><input type="text" id="userPass"></p>
         <p>
             <label for="man">Man</label><input type="radio" id="man" name="sex" value="1">
-            <label for="woman">Woman</label><input type="radio" id="woman" name="sex" value="1">
+            <label for="woman">Woman</label><input type="radio" id="woman" name="sex" value="0">
         </p>
         <p><input type="submit" onclick="workA();"></p>
     </form>
