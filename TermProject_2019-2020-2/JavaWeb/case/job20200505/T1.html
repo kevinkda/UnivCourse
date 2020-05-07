@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>job20200505</title>
+    <style type="text/css">
+        #father {
+            width: 1000px;
+            height: 500px;
+        }
+
+        .box {
+            width: 300px;
+            height: 480px;
+            margin: 15px;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+
+        .idolImg {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+
+        .btn {
+            font-size: 20px;
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+        }
+    </style>
+    <script src="../../js/http_cdn.bootcss.com_jquery_1.12.4_jquery.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="father">
+        <div id="box1" class="box">
+            <div id="img-1" class="idolImg">
+                <img src="../../img/job20200430/photo1.png">
+            </div>
+            <input type="button" class="btn" value="播放">
+            <input type="button" class="add" value="音量+">
+            <input type="button" class="dec" value="音量-">
+            <video id="player1" controls style="display: none">
+                <source src="../../static/music/music1.mp3">
+            </video>
+        </div>
+        <div id="box2" class="box">
+            <div id="img-2" class="idolImg">
+                <img src="../../img/job20200430/photo2.png">
+            </div>
+            <input type="button" class="btn" value="播放">
+            <input type="button" class="add" value="音量+">
+            <input type="button" class="dec" value="音量-">
+            <video id="player2" controls style="display: none">
+                <source src="../../static/music/music2.mp3">
+            </video>
+        </div>
+        <div id="box3" class="box">
+            <div id="img-3" class="idolImg">
+                <img src="../../img/job20200430/photo3.png">
+            </div>
+            <input type="button" class="btn" value="播放">
+            <input type="button" class="add" value="音量+">
+            <input type="button" class="dec" value="音量-">
+            <video id="player3" controls style="display: none">
+                <source src="../../static/music/music3.mp3">
+            </video>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/case/job20200505/T1.js"></script>
+</html>
