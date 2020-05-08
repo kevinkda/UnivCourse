@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+}
+
+span {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+tr {
+
+    height: 30px;
+    line-height: 30px;
+}
+
+td:first-child {
+    width: 70px;
+}
+
+textarea {
+    width: auto;
+    height: auto;
+}
+
+.user-wrapper {
+    width: 30%;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: left;
+}
