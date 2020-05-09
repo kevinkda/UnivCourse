@@ -46,6 +46,8 @@
     <div>
         <p>job20200509</p>
         <a href="<c:url value="case/20200509/T1.jsp"/>">job20200509/T1</a>
+<%--        <a href="<c:url value="case/20200509/T2.jsp"/>">job20200509/T2</a>--%>
+        <a href="case/20200509/T2.jsp">job20200509/T2</a>
     </div>
 </div>
 </body>

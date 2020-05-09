@@ -5,7 +5,7 @@
 
     <groupId>com.kevinkda.univ.course</groupId>
     <artifactId>java-web-202005</artifactId>
-    <version>2020.05.10</version>
+    <version>2020.05.12</version>
     <packaging>war</packaging>
 
     <name>java-web-202005 Maven Webapp</name>

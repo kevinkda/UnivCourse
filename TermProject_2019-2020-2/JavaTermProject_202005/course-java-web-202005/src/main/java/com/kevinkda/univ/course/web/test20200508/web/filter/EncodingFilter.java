@@ -28,26 +28,27 @@ public class EncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         //        获得子接口的实例化对象
-        HttpServletRequest request = (HttpServletRequest) req;
-
-//        设置响应字符编码集为UTF-8
-        resp.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/html;charset=utf-8");
-//        resp.setContentType("application/json; charset=utf-8");
-
-//        进行请求方法判断
-        if (GET.equals(request.getMethod())) {
-//            GET请求进行 request 对象的替换
-            EncodingRequest ecReq = new EncodingRequest(request);
-//            System.out.println("AAA");
-//            传递过滤链，本次放行
-            chain.doFilter(ecReq, resp);
-        } else if (POST.equals(request.getMethod())) {
-//            Post请求，执行编码类型转换
-            req.setCharacterEncoding("UTF-8");
-//            传递过滤链，本次放行
-            chain.doFilter(req, resp);
-        }
+//        HttpServletRequest request = (HttpServletRequest) req;
+//
+////        设置响应字符编码集为UTF-8
+//        resp.setCharacterEncoding("UTF-8");
+//        resp.setContentType("text/html;charset=utf-8");
+////        resp.setContentType("application/json; charset=utf-8");
+//
+////        进行请求方法判断
+//        if (GET.equals(request.getMethod())) {
+////            GET请求进行 request 对象的替换
+//            EncodingRequest ecReq = new EncodingRequest(request);
+////            System.out.println("AAA");
+////            传递过滤链，本次放行
+//            chain.doFilter(ecReq, resp);
+//        } else if (POST.equals(request.getMethod())) {
+////            Post请求，执行编码类型转换
+//            req.setCharacterEncoding("UTF-8");
+////            传递过滤链，本次放行
+//            chain.doFilter(req, resp);
+//        }
+        chain.doFilter(req, resp);
     }
 
     @Override
