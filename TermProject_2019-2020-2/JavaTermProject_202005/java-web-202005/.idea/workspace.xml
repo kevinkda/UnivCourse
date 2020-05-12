@@ -19,44 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b5c83d-4c65-40fe-bd2f-2377f384ed8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/web/job20200508/domain/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/case/job20200508/T1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/case/job20200508/T2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/case/job20200508/novip.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/case/job20200508/sign.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/case/job20200508/vip.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/job20200508/T2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/job20200508/T1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/T3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/T3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/man.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/man.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/sign.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/sign.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/woman.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/case/20200507/woman.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/js/20200507/T1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/src/main/webapp/js/20200507/T1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/T3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/T3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/man.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/man.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/sign.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/sign.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/woman.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/case/20200507/woman.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/index1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/js/20200507/T1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/course-java-web-202005/js/20200507/T1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-web-202005.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-web-202005.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/web/job20200507/Taaaaa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-web-202005.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-web-202005.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-web-202005/WEB-INF/classes/com/kevinkda/univ/course/web/job20200507/Taaaaa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-web-202005/index1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="63b5c83d-4c65-40fe-bd2f-2377f384ed8d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,6 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588863436903</updated>
       <workItem from="1588863438280" duration="65000" />
+      <workItem from="1589158933312" duration="11000" />
     </task>
     <servers />
   </component>
@@ -215,6 +179,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="682" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588863484348">
