@@ -5,7 +5,7 @@
 
     <groupId>com.kevinkda.univ.course</groupId>
     <artifactId>course-java-web-202005</artifactId>
-    <version>2020.05.11</version>
+    <version>2020.05.13</version>
     <packaging>war</packaging>
 
     <name>course-java-web-202005 Maven Webapp</name>
@@ -22,13 +22,13 @@
         <dependency>
             <groupId>com.kevinkda.univ.course</groupId>
             <artifactId>java-web-202005</artifactId>
-            <version>2020.05.12</version>
+            <version>2020.05.13</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>com.kevinkda.univ.course</groupId>
             <artifactId>java-web-202005</artifactId>
-            <version>2020.05.12</version>
+            <version>2020.05.13</version>
             <type>war</type>
         </dependency>
 
