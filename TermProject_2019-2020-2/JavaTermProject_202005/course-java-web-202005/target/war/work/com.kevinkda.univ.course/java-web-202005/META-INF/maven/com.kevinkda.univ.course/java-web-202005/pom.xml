@@ -5,12 +5,12 @@
 
     <groupId>com.kevinkda.univ.course</groupId>
     <artifactId>java-web-202005</artifactId>
-    <version>2020.05.13</version>
+    <version>2020.05.14</version>
     <packaging>war</packaging>
 
     <name>java-web-202005 Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://www.kevinkda.cn</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,47 +19,61 @@
     </properties>
 
     <dependencies>
+        <!--        java-utils-->
         <dependency>
             <groupId>com.kevinkda</groupId>
             <artifactId>java-utils</artifactId>
             <version>3.1.2-SNAPSHOT</version>
         </dependency>
 
+        <!--        mysql-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.20</version>
             <scope>runtime</scope>
         </dependency>
+
+        <!--        taglibs-->
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
             <version>1.1.2</version>
-            <!--            <scope>provided</scope>-->
+            <!--            <scope>compile</scope>-->
         </dependency>
+
         <!-- JSTL -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
             <!--            <scope>compile</scope>-->
-<!--            <scope>provided</scope>-->
+            <!--            <scope>provided</scope>-->
         </dependency>
 
+        <!-- JSTL -->
         <!--        <dependency>-->
         <!--            <groupId>javax.servlet</groupId>-->
         <!--            <artifactId>jstl</artifactId>-->
         <!--            <version>1.2</version>-->
         <!--            <scope>provided</scope>-->
         <!--        </dependency>-->
-        <!-- JSTL实现包 -->
+
+        <!-- jstl-impl -->
         <dependency>
-            <groupId>org.apache.taglibs</groupId>
-            <artifactId>taglibs-standard-impl</artifactId>
-            <version>1.2.5</version>
-<!--            <scope>provided</scope>-->
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jstl-impl</artifactId>
+            <version>1.2</version>
         </dependency>
 
+        <!-- jstl-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <!--        junit-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

@@ -5,7 +5,7 @@
   Time: 22:38
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <jsp:useBean id="teacher" class="com.kevinkda.univ.course.web.job20200508.domain.Teacher"/>
 <jsp:setProperty name="teacher" property="id" value="921"/>
 <jsp:setProperty name="teacher" property="name" value="Karry"/>

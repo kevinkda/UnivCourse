@@ -1,12 +1,13 @@
+com/kevinkda/univ/course/web/job20200513/servlet/ModifyNewsServlet0513.class
+com/kevinkda/univ/course/web/job20200513/servlet/DeleteServlet0513.class
+com/kevinkda/univ/course/web/job20200508/domain/Teacher.class
+com/kevinkda/univ/course/web/job20200513/servlet/RegNewsServlet0513.class
 com/kevinkda/univ/course/web/job20200512/servlet/ExitServlet0512.class
+com/kevinkda/univ/course/web/job20200514/domain/Student.class
 com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet0512.class
 com/kevinkda/univ/course/web/job20200512/servlet/DoServlet051203.class
-com/kevinkda/univ/course/web/job20200513/servlet/ModifyNewsServlet0513.class
 com/kevinkda/univ/course/web/job20200512/servlet/DoServlet0512.class
 com/kevinkda/univ/course/web/job20200513/domain/News.class
 com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet051202.class
 com/kevinkda/univ/course/web/job20200512/domain/Account.class
-com/kevinkda/univ/course/web/job20200513/servlet/DeleteServlet0513.class
-com/kevinkda/univ/course/web/job20200508/domain/Teacher.class
 com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet051203.class
-com/kevinkda/univ/course/web/job20200513/servlet/RegNewsServlet0513.class

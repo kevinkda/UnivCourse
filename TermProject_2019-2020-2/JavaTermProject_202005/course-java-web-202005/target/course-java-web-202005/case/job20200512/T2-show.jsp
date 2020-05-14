@@ -5,7 +5,7 @@
   Time: 13:13
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%
     List<String> userList = (List<String>) application.getAttribute("userList");
     request.setAttribute("userList", userList);

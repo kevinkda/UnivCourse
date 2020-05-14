@@ -8,7 +8,7 @@
   Time: 21:40
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%
     //    获得用户输入的用户名
     String userAcc = request.getParameter("userAcc");
