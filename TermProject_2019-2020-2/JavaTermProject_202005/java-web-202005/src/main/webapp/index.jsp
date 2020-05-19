@@ -1,4 +1,3 @@
-<%--<%@ taglib prefix="c" uri=""%>--%>
 <%--
   Created by IntelliJ IDEA.
   User: kevinkda
@@ -66,9 +65,16 @@
         <a href="<c:url value="case/job20200514/T2.jsp"/>">job20200514/T2</a>
     </div>
     <div>
-        <p>job20200514</p>
+        <p>job20200515</p>
         <a href="<c:url value="case/job20200515/T1.jsp"/>">job20200515/T1</a>
-        <a href="<c:url value="case/job20200515/T2.jsp"/>">job20200515/T2</a>
+    </div>
+    <div>
+        <p>job20200517</p>
+        <a href="<c:url value="case/job20200517/T2.jsp"/>">job20200517/T2</a>
+    </div>
+    <div>
+        <p>job2020051</p>
+        <a href="<c:url value="case/job20200519/T1.jsp"/>">job20200519/T1</a>
     </div>
 </div>
 </body>
