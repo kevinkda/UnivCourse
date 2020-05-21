@@ -14,6 +14,7 @@ com/kevinkda/univ/course/web/job20200512/domain/Account.class
 com/kevinkda/univ/course/web/job20200520/dao/impl/TeacherDaoImpl.class
 com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet051203.class
 com/kevinkda/univ/course/web/job20200513/servlet/ModifyNewsServlet0513.class
+com/kevinkda/univ/course/web/job20200521/web/servlet/WordServlet0521.class
 com/kevinkda/univ/course/web/job20200515/domain/Car.class
 com/kevinkda/univ/course/web/job20200517/web/servlet/LoginServlet0517.class
 com/kevinkda/univ/course/web/job20200508/domain/Teacher.class
