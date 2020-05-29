@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="chatRoom-202005:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="chatRoom-202005/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="chatRoom-202005" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-beanutils-1.9.4" />
+          <element id="library" level="project" name="commons-collections-3.1" />
+          <element id="library" level="project" name="commons-lang-2.6" />
+          <element id="library" level="project" name="commons-logging-1.1" />
+          <element id="library" level="project" name="ezmorph-1.0.6" />
+          <element id="library" level="project" name="fastjson-1.2.68" />
+          <element id="library" level="project" name="javax.servlet-api-3.1.0" />
+          <element id="library" level="project" name="json-lib-2.4-jdk15" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

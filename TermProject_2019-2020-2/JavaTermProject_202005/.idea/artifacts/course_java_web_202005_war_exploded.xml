@@ -14,9 +14,6 @@
           <element id="module-output" name="course-java-web-202005" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="java-web-202005-2020.05.19.pom">
-            <element id="module-output" name="java-web-202005" />
-          </element>
           <element id="library" level="project" name="Maven: com.kevinkda:java-utils:3.1.2-SNAPSHOT" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.6" />
@@ -38,7 +35,6 @@
         <element id="file-copy" path="$PROJECT_DIR$/course-java-web-202005/target/course-java-web-202005/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="course-java-web-202005/web/Web" />
-      <element id="artifact" artifact-name="java-web-202005:war exploded" />
     </root>
   </artifact>
 </component>

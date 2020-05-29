@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/chatRoom-202005"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="Tomcat 7.0.96" scope="PROVIDED"/>
+	<levels>
+		<level name="Tomcat 7.0.96" value="application_server_libraries"/>
+		<level name="commons-beanutils-1.9.4" value="project"/>
+		<level name="commons-collections-3.1" value="project"/>
+		<level name="commons-lang-2.6" value="project"/>
+		<level name="commons-logging-1.1" value="project"/>
+		<level name="ezmorph-1.0.6" value="project"/>
+		<level name="fastjson-1.2.68" value="project"/>
+		<level name="javax.servlet-api-3.1.0" value="project"/>
+		<level name="json-lib-2.4-jdk15" value="project"/>
+	</levels>
+</component>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="chatRoom-202005:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de709a2c-c721-4af6-ad82-77ee46786375" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/libraries/Maven__com_kevinkda_univ_course_java_web_202005_war_2020_05_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200508/domain/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/domain/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/DoServlet0512.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/DoServlet051203.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/ExitServlet0512.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet0512.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet051202.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200512/servlet/LoginServlet051203.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200513/domain/News.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200513/servlet/DeleteServlet0513.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200513/servlet/ModifyNewsServlet0513.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200513/servlet/RegNewsServlet0513.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200514/domain/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200515/domain/Car.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200515/domain/CarServlet0515.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200517/web/filter/AccessFilter0517.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200517/web/filter/EncodingsFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200517/web/filter/UserFilter0517.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200517/web/servlet/LoginServlet0517.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200519/web/listener/UserListener0519.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/classes/com/kevinkda/univ/course/web/job20200519/web/servlet/UserServlet0519.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/commons-beanutils-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/commons-io-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/java-utils-3.1.2-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/jsp-api-2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/jstl-impl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/mysql-connector-java-8.0.20.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/servlet-api-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200507/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/S1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/novip.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200508/vip.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T1-2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T2-2-error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T2-2-sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T2-2-suc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200509/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T1-error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T1-sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T1-suc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T2-login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T2-sign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200510/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T1-login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T1-suc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T2-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T3-login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T3-suc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200512/T3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200513/T1-delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200513/T1-modify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200513/T1-reg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200513/T1-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200513/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200514/T1-regist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200514/T1-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200514/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200514/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200515/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200517/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200517/access/T2-List.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200517/access/admin/T2-admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200517/access/user/T2-user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200519/T1-login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200519/T1-success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/case/job20200519/T1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/css/job20200508/T2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/css/job20200509/T1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/js/job20200507/T1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/js/job20200508/T1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/overlays/com.kevinkda.univ.course.java-web-202005-2020.05.19/js/job20200509/T1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/java/com/kevinkda/univ/course/web/test20200525/web/servlet/JsonServlet0525.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/java/com/kevinkda/univ/course/web/test20200526/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/java/com/kevinkda/univ/course/web/test20200526/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/java/com/kevinkda/univ/course/web/test20200526/web/servlet/LoginServlet0526.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/java/com/kevinkda/univ/course/web/test20200526/web/servlet/UserNickCheckServlet0526.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200525/T2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200526/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200526/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200526/admin/send_msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200526/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200526/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/js/20200526/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/chat-room-202005.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/commons-logging-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/model/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/service/ToolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/web/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/web/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/java/com/kevinkda/univ/course/chat/room/b202005/web/servlet/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/T1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/admin/msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chat-room-202005/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/chatRoom_202005_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fastjson_1_2_68.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_lib_2_4_jdk15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatRoom-202005.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chatRoom-202005.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/model/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/service/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/web/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/web/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/univ/course/chat/room/b202005/web/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/classes/com/kevinkda/web/support/EncodingRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/commons-logging-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/admin/msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/chatRoom_202005_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/model/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/service/ToolUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/web/filter/DataFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/web/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/web/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/web/listener/UserListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005/web/servlet/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kevinkda/web/support/EncodingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/libraries/java_utils_3_1_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/exam-java-2019-term-2.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/exam-java-2019-term-2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/exam-java-2019-term-2.userlibraries" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/lib/java-utils-3.1.2-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/annotation/func/FuncVerification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/annotation/func/TestInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/annotation/func/VerifiedType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/annotation/func/container/FuncVerificationContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/annotation/func/container/TestInfoContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/dao/IManagerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/dao/impl/ManagerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/model/Dvd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/service/IManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/src/main/java/com/kevinkda/univ/exam/javase/term20192/service/impl/ManagerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/target/exam-java-2019-term-2-2020.05.22.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exam-java-2019-term-2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/artifacts/course_java_web_202005_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/artifacts/course_java_web_202005_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/course-java-web-202005.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/course-java-web-202005.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200520/T3-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/case/20200520/T3-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/course-java-web-202005/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005/WEB-INF/lib/commons-beanutils-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005/WEB-INF/lib/java-utils-3.1.2-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202005/java-web-202005/target/java-web-202005/WEB-INF/lib/java-utils-3.1.2-SNAPSHOT.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../../DevLocalEnv/repository/.m2/kevinkda.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cUUZcL8nHrmfbUdZMXFCrtZ7rs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/src/com/kevinkda/univ/course/chat/room/b202005" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 7.0.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="chatRoom-202005:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/chatRoom" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_96_chatRoom-202005" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="PRESERVE_SESSIONS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58551" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="chatRoom-202005:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de709a2c-c721-4af6-ad82-77ee46786375" name="Default Changelist" comment="" />
+      <created>1590582721514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590582721514</updated>
+      <workItem from="1590582725615" duration="1381000" />
+      <workItem from="1590657074988" duration="3418000" />
+      <workItem from="1590672272158" duration="1615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="165" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590583828182">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="165" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590583828182" />
+    <state x="250" y="203" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1590582971869">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="250" y="203" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590582971869" />
+    <state width="1083" height="272" key="GridCell.Tab.0.bottom" timestamp="1590673892535">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892535" />
+    <state width="1083" height="272" key="GridCell.Tab.0.center" timestamp="1590673892534">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892534" />
+    <state width="1083" height="272" key="GridCell.Tab.0.left" timestamp="1590673892534">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892534" />
+    <state width="1083" height="272" key="GridCell.Tab.0.right" timestamp="1590673892534">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892534" />
+    <state width="1083" height="272" key="GridCell.Tab.1.bottom" timestamp="1590673892535">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892535" />
+    <state width="1083" height="272" key="GridCell.Tab.1.center" timestamp="1590673892535">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892535" />
+    <state width="1083" height="272" key="GridCell.Tab.1.left" timestamp="1590673892535">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892535" />
+    <state width="1083" height="272" key="GridCell.Tab.1.right" timestamp="1590673892535">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892535" />
+    <state width="1083" height="272" key="GridCell.Tab.2.bottom" timestamp="1590673892536">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.2.bottom/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892536" />
+    <state width="1083" height="272" key="GridCell.Tab.2.center" timestamp="1590673892536">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.2.center/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892536" />
+    <state width="1083" height="272" key="GridCell.Tab.2.left" timestamp="1590673892536">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.2.left/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892536" />
+    <state width="1083" height="272" key="GridCell.Tab.2.right" timestamp="1590673892536">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1083" height="272" key="GridCell.Tab.2.right/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590673892536" />
+    <state x="0" y="23" key="SettingsEditor" timestamp="1590582995525">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="0" y="23" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590582995525" />
+    <state width="500" height="467" key="SwitcherDM" timestamp="1590660130663">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="500" height="467" key="SwitcherDM/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1590660130663" />
+  </component>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kevinkda.univ.exam</groupId>
+    <artifactId>exam-java-2019-term-2</artifactId>
+    <version>2020.05.22</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!--        自有项目依赖 java-utils-->
+<!--        <dependency>-->
+<!--            <groupId>com.kevinkda</groupId>-->
+<!--            <artifactId>java-utils</artifactId>-->
+<!--            &lt;!&ndash;            <version>3.1.1</version>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <version>3.1.0-RELEASE</version>&ndash;&gt;-->
+<!--            <version>3.1.2-SNAPSHOT</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/128454-release-XYCiWj/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/128454-snapshot-eonQ3s/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

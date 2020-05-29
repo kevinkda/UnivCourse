@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.kevinkda.univ.course:java-web-202005:war:2020.05.19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../DevLocalEnv/repository/.m2/repository/com/kevinkda/univ/course/java-web-202005/2020.05.19/java-web-202005-2020.05.19.war!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../DevLocalEnv/repository/.m2/repository/com/kevinkda/univ/course/java-web-202005/2020.05.19/java-web-202005-2020.05.19-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../DevLocalEnv/repository/.m2/repository/com/kevinkda/univ/course/java-web-202005/2020.05.19/java-web-202005-2020.05.19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
