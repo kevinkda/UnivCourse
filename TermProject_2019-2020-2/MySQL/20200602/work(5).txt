@@ -1,0 +1,14 @@
+写出安装mysql的步骤，然后利用可视化工具，DDL 语句进行创库，创表，并且
+
+建立表的相关的约束，
+
+tb_user
+
+userId int 主键 自增
+userName 字符串不允许为空
+userCard 身份证不允许为空，唯一
+userSex 性别
+userHeight 身高小数，（小数点保留后面两位）
+
+
+作业提交的格式是txt

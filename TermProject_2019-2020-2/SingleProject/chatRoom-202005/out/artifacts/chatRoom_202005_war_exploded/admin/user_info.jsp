@@ -23,6 +23,11 @@
             width: 100%;
         }
 
+        #userCount {
+            text-align: center;
+            width: 100%;
+        }
+
         body {
             background: #7ceefd;
         }
@@ -31,6 +36,9 @@
 </head>
 <body>
 <div class="container">
+    <div id="userCount">
+        <p>当前在线<span>${userCount}</span>人</p>
+    </div>
     <div id="userInfo">
         玩命加载中
     </div>
@@ -59,10 +67,16 @@
                         info += '<tr style="color: #eeab8b"><td align="left">' + data[i].nickName + '</td><td align="right">' + str + '</td></tr>'
                     }
                 }
-                info += "</table>"
+                info += "</table>";
+                info += "<p><input type='button' value='exit' onclick='exitSystem();'/></p>";
                 div.html(info);
             }
         });
+    }
+
+    function exitSystem() {
+        //肯定是需要经过后台的//application如果在session没有失效的状态是需要移除这个人的
+        parent.location.href = "/chatRoom/User/UserServlet?num=5";
     }
 
     setInterval("work()", 1000);

@@ -37,7 +37,10 @@ public class LoginFilter implements Filter {
 
     @Override
     public void init(FilterConfig config) throws ServletException {
-
+//        初始化在线人数统计
+        int userCount = 0;
+//        向全局存入
+        config.getServletContext().setAttribute("userCount", userCount);
     }
 
 }

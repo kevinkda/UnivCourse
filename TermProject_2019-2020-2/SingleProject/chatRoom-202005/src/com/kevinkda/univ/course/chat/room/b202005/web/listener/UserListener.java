@@ -8,13 +8,14 @@ package com.kevinkda.univ.course.chat.room.b202005.web.listener; /**
  * @since 1.0.0
  */
 
+import com.kevinkda.univ.course.chat.room.b202005.model.domain.User;
+
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import javax.servlet.http.HttpSessionAttributeListener;
-import javax.servlet.http.HttpSessionEvent;
-import javax.servlet.http.HttpSessionListener;
-import javax.servlet.http.HttpSessionBindingEvent;
+import javax.servlet.http.*;
+import java.util.List;
 
 @WebListener()
 public class UserListener implements ServletContextListener,
@@ -56,8 +57,30 @@ public class UserListener implements ServletContextListener,
     public void sessionDestroyed(HttpSessionEvent se) {
         /* Session is destroyed. */
         System.out.println("Destroyed");
-        se.getSession().setAttribute("delectUser", se.getSession().getAttribute("user"));
-        se.getSession().removeAttribute("user");
+//        se.getSession().setAttribute("delectUser", se.getSession().getAttribute("user"));
+//        se.getSession().removeAttribute("user");
+
+        HttpSession session = se.getSession();
+        ServletContext application = session.getServletContext();
+        User u = (User) session.getAttribute("user");
+//        session.invalidate()强制性让session销毁
+        System.out.println("销毁" + u.getNickName());
+//        登陆的人员的集合
+        List<User> list = (List<User>) application.getAttribute("userLoginList");
+        for (int i = 0; i < list.size(); i++) {
+            User u1 = list.get(i);
+            if (u1.getNickName().equals(u.getNickName())) {
+                list.remove(i);
+                break;
+            }
+        }
+
+        se.getSession().setAttribute("info", u);
+        //在放进去
+        application.setAttribute("userLoginList", list);
+//        在线人数减1
+        int userCount = (int) application.getAttribute("userCount");
+        application.setAttribute("userCount", userCount - 1);
     }
 
     // -------------------------------------------------------

@@ -50,6 +50,9 @@ public class UserDao {
             application.setAttribute("userLoginList", list);
         }
         session.setAttribute("user", u);
+
+        application.setAttribute("userCount", ((int) application.getAttribute("userCount")) + 1);
+
         return "../admin/index.jsp";
     }
 }

@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -50,23 +51,55 @@ public class UserServlet extends HttpServlet {
 //            String str = u.getNickName() + " - " + ToolUtil.getNowTime() + "<br/>" + request.getParameter("msg") + "<br/>";
 //            ToolUtil.msgList.add(str);
 //            o = 1;
-
-            if (request.getSession().getAttribute("user") == null) {
-                User delect = (User) request.getSession().getAttribute("delectUser");
-                List<User> list = (List<User>) request.getServletContext().getAttribute("userLoginList");
-                for (User u :
-                        list) {
-                    if (u.getNickName().equals(delect.getNickName())) {
-                        list.remove(u);
-                        request.getServletContext().setAttribute("userLoginList", list);
-                    }
-                }
-                request.getSession().setAttribute("msg", "超过三分钟没有聊天，自动退出");
-                //response.sendRedirect("../login.jsp");
+            if (request.getAttribute("info") != null) {
+                request.getSession().setAttribute("msg", "登录超时3分钟");
+                // response.sendRedirect("../login.jsp");
                 o = 0;
             } else {
                 o = 1;
             }
+//            if (request.getSession().getAttribute("user") == null) {
+//                User delect = (User) request.getSession().getAttribute("delectUser");
+//                List<User> list = (List<User>) request.getServletContext().getAttribute("userLoginList");
+//                for (User u :
+//                        list) {
+//                    if (u.getNickName().equals(delect.getNickName())) {
+//                        list.remove(u);
+//                        request.getServletContext().setAttribute("userLoginList", list);
+//                    }
+//                }
+//                request.getSession().setAttribute("msg", "超过三分钟没有聊天，自动退出");
+//                //response.sendRedirect("../login.jsp");
+//                o = 0;
+//            } else {
+//                o = 1;
+//            }
+        } else if ("5".equals(request.getParameter("num"))) {
+            HttpSession session = request.getSession();
+            if (session.getAttribute("user") == null) {
+                response.sendRedirect("../login.jsp");
+//                 !=null的情况证明所属的session仍然有效期
+            } else {
+//                手动从application里面给移除
+                ServletContext application = getServletConfig().getServletContext();
+                User u = (User) session.getAttribute("user");
+//                登陆的人员的集合
+                List<User> list = (List<User>) application.getAttribute("userLoginList");
+                for (int i = 0; i < list.size(); i++) {
+                    User u1 = list.get(i);
+                    if (u1.getNickName().equals(u.getNickName())) {
+                        list.remove(i);
+                        break;
+                    }
+                }
+                // 在放进去
+                application.setAttribute("userLoginList", list);
+                response.sendRedirect("../login.jsp");
+            }
+//            在线人数减1
+            int userCount = (int) request.getServletContext().getAttribute("userCount");
+            request.getServletContext().setAttribute("userCount", userCount - 1);
+
         }
 
         response.getWriter().print(o);
