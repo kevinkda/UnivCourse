@@ -1,4 +1,4 @@
-# MySQL Course Work 20200601
+# MySQL Course Work 20200602
 
 ## MySQL安装 Linux
 

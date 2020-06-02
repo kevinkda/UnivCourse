@@ -33,34 +33,7 @@
 3. 查询出按照car_service分组后比平均价格还低的数据有哪些
 
    ```mysql
-   SELECT *
-   FROM `20200603_tb_car` F
-WHERE (
-           CAR_SERVICE = '保养'
-           AND CAR_PRICE < (
-           SELECT AVG(CAR_PRICE)
-           FROM `20200603_tb_car` F
-           WHERE CAR_SERVICE = '保养'
-           GROUP BY CAR_SERVICE
-       ))
-      OR (
-           CAR_SERVICE = '维修'
-           AND CAR_PRICE < (
-           SELECT AVG(CAR_PRICE)
-           FROM `20200603_tb_car` F
-           WHERE CAR_SERVICE = '维修'
-           GROUP BY CAR_SERVICE
-       ))
-      OR (
-           CAR_SERVICE = '清洗'
-           AND CAR_PRICE < (
-           SELECT AVG(CAR_PRICE)
-           FROM `20200603_tb_car` F
-           WHERE CAR_SERVICE = '清洗'
-           GROUP BY CAR_SERVICE
-       ))
-   # GROUP BY CAR_SERVICE
-   ORDER BY CAR_SERVICE;
-   ```
    
+   ```
+
    
