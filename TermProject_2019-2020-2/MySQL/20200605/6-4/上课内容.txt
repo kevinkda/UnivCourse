@@ -1,0 +1,84 @@
+select * from tb_car1
+
+
+
+/*假设每台车一年需要做这个服务5次，请问5年需要的总费用是多少(所有车)*/
+select sum(CAR_PRICE)*5*5 from tb_car1
+
+
+/*假设每台车一年需要做这个服务5次，请问5年需要的总费用是多少(针对每一个品牌)*/
+select sum(CAR_PRICE)*5*5,CAR_NAME from tb_car1 group by CAR_NAME 
+
+
+/*电商*/
+
+select * from tb_order
+
+
+ t1,tb_product t2 where t1.PRODUCT_ID=t2.PRODUCT_ID
+
+select * from tb_product
+
+
+insert into tb_order values (null,'chinasoft123',1,3,SYSDATE())
+insert into tb_order values (null,'chinasoft123',2,2,SYSDATE())
+insert into tb_order values (null,'chinasoft123',3,1,SYSDATE())
+
+
+/*求出在订单中所有的商品卖出的数量的总和是多少*/
+select sum(PRODUCT_COUNT) as total from tb_order 
+
+
+/*求出订单中卖的最好的商品是哪个显示该商品的详情*/
+select max(PRODUCT_COUNT) from tb_order/*得到卖的商品最好的数量是多少*/ 
+select PRODUCT_ID from tb_order where PRODUCT_COUNT=(select max(PRODUCT_COUNT) from tb_order) /*得到卖的最好的商品的产品ID*/
+select * from tb_product where PRODUCT_ID in (select PRODUCT_ID from tb_order where PRODUCT_COUNT=(select max(PRODUCT_COUNT) from tb_order))
+
+
+/*求出高于产品的平均价格的商品的订单有哪些*/
+select * from tb_order
+select avg(PRODUCT_PRICE) from tb_product 
+select PRODUCT_ID from tb_product where PRODUCT_PRICE>=(select avg(PRODUCT_PRICE) from tb_product)
+select distinct ORDER_NUMBER from tb_order where PRODUCT_ID in (select PRODUCT_ID from tb_product where PRODUCT_PRICE>=(select avg(PRODUCT_PRICE) from tb_product))
+
+
+
+/*求出高于adsfsdf1234订单编号(的价格)的订单编号，订单产品名称，单价和数量，以及每个商品的总价*//*很难*/
+/*两张表*/
+1 adsfsdf1234 订单的价格弄出来
+
+insert into tb_order values (null,'adsfsdf1234',1,2,SYSDATE())
+
+select PRODUCT_ID,PRODUCT_COUNT from tb_order where ORDER_NUMBER='adsfsdf1234'
+/*订单的总和是40*/
+select t1.PRODUCT_PRICE,t2.PRODUCT_COUNT, t1.PRODUCT_PRICE*t2.PRODUCT_COUNT from tb_product t1,
+(select PRODUCT_ID,PRODUCT_COUNT from tb_order where ORDER_NUMBER='adsfsdf1234') 
+t2 where t1.PRODUCT_ID=t2.PRODUCT_ID
+
+
+SELECT SUM(orders.product_count*product_price) price,orders.order_number,orders.order_id  from tb_order orders ,tb_product products where orders.product_id=products.product_id 
+GROUP BY order_number HAVING price>(
+SELECT SUM(t1.product_count*t2.product_price) from tb_order t1,tb_product t2 where t1.product_id=t2.product_id and t1.order_number='qwrewer456456' 
+)
+
+
+select * from tb_car1
+
+select sum(CAR_PRICE+CAR_TAX) from tb_car1 where CAR_TAX is not null
+
+/*查询出所有的再加上新的查出含有税的汽车总价以及汽车里面的每一项数据*/
+select *,(CAR_PRICE+CAR_TAX) from tb_car1 where CAR_TAX is not null
+
+/*加入我想一次性弄出所有的*/
+SELECT SUM(IFNULL(CAR_TAX,0)) from tb_car1
+
+SELECT SUM(CAR_TAX) from tb_car1
+
+select *,(CAR_PRICE+IFNULL(CAR_TAX,0)) from tb_car1 
+
+select * from tb_car where CAR_SERVICE in('维修','保养');/*效率比较高*/
+
+select * from tb_car where CAR_SERVICE = '维修' or CAR_SERVICE = '保养'/*效率比较低下*/
+
+
+
