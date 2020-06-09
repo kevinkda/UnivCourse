@@ -1,0 +1,114 @@
+select * from tb_employee
+
+insert into tb_employee values (null,'林志玲','420104199809341235','湖北省武汉市','公关部','女','1998-02-02');
+
+insert into tb_employee values (null,'林志炫','420104198809341235','湖北省襄阳市','研发部','男','1996-03-02');
+
+insert into tb_employee values (null,'张林','420104197809341235','湖北省荆州','研发部','女','1976-08-09');
+
+insert into tb_employee values (null,'五小林','420104197709341235','湖南省长沙市','后勤部','男','1976-09-09');
+
+insert into tb_employee values (null,'小小美','420104199909341235','湖北省沙洋市','研发部','女','1996-09-24');
+
+insert into tb_employee values (null,'喜洋洋','420104196909341235','江西省南昌市','研发部','女','1986-09-24');
+
+insert into tb_employee values (null,'admin','420104196909341235','江西省南昌市','研发部','女','1999-05-23');
+
+/*查询出以林字为开头的，女孩子有哪些*/
+select * from tb_employee where EMPLOYEE_NAME like '林%' and EMPLOYEE_SEX='女'
+/*查询出有林字的员工且是湖北省的有哪些*/
+select * from tb_employee where EMPLOYEE_NAME like '%林%' and EMPLOYEE_CITY like '%湖北省%'
+/*查询出在既是公关部又是男性用户，但是名字不包含林字的有哪些员工*/
+select * from tb_employee where EMPLOYEE_DEPT='公关部' and EMPLOYEE_SEX='男' and  EMPLOYEE_NAME not like '%林%'
+
+
+/*查询出以林字为结尾的，名字长度是3的人员有哪些*/
+select * from tb_employee where  EMPLOYEE_NAME like '%林' and length(EMPLOYEE_NAME)=9
+
+select * from tb_employee where  EMPLOYEE_NAME like '__林'
+/*查询出长度是3中间的是小字的人员有哪些*/
+select * from tb_employee where  EMPLOYEE_NAME like '_小_'
+
+/*查询出名字是两个字的人员有哪些*/
+select * from tb_employee where  EMPLOYEE_NAME like '__'
+
+/*查询出以林字为开头的且年龄超过了30岁的员工有哪些*/
+select *,
+EMPLOYEE_CARD,
+(substring(now(),1,4)-substring(EMPLOYEE_CARD,7,4))-(substring(EMPLOYEE_CARD,11,4)-date_format(now(),'%m%d')>0) as age
+from tb_employee t where t.age>=30
+
+select 
+(substring(now(),1,4)-substring(EMPLOYEE_CARD,7,4))-(substring(EMPLOYEE_CARD,11,4)-date_format(now(),'%m%d')>0) as age
+from tb_employee t 
+
+select * from tb_employee where (substring(now(),1,4)-substring(EMPLOYEE_CARD,7,4))-(substring(EMPLOYEE_CARD,11,4)-date_format(now(),'%m%d')>0)>=30 
+and EMPLOYEE_NAME like '林%'
+
+/*YEAR年差，MONTH月差 DAY天差*/
+ select TIMESTAMPDIFF(YEAR, EMPLOYEE_TIME, NOW()) from tb_employee;
+ select DATEDIFF(NOW(),EMPLOYEE_TIME) from tb_employee;
+
+
+/*查询出入职超过了40年的员工有哪些*/
+/*也不能这样直接用年*/
+/*计算时间差年月日加起来*/
+ select *,TIMESTAMPDIFF(DAY, EMPLOYEE_TIME, NOW())/365 from tb_employee;
+select * from tb_employee where TIMESTAMPDIFF(DAY, EMPLOYEE_TIME, NOW())/365>=40
+
+
+SELECT INSERT('Football',2,4,'Play') AS col1
+/*索引是从1开始的，不是从0*/
+select insert('abc',1,1,'*') as str
+/*变成小写*/
+select lower('ABC')
+
+select upper('abc')
+
+select upper(SUBSTRING('abc',1,2))
+
+select CONCAT(upper(SUBSTRING('abc',1,2)),SUBSTRING('abc',3,1));
+
+
+/*这个是指定从2这个位置开始*/
+select SUBSTRING('abc',2,2)
+/*默认从第一个开始*/
+select left('abc',2)
+
+select CONCAT(upper(left('abc',2)),SUBSTRING('abc',3,1));
+
+/*左右两个，右边1个*/
+select CONCAT(upper(left('abc',2)),right('abc',1));
+
+select right('abc',2)
+
+select lpad('abc',5,'*')
+
+select lpad('admin',15,'chinasoft@')
+/*公司为了统一账号的格式*/
+select lpad('admin111',(length('admin111')+10),'chinasoft@')
+/*去掉了空格*/
+select length(' admin')
+select length(ltrim(' admin'))
+
+SELECT repeat('*', 4)
+
+SELECT repeat('*', length('你大爷的')/3)
+
+/*替换*/
+select replace('你大爷，你哥哥的，你大爷','你大爷',repeat('*', length('你大爷')/3))
+/*同字符串的内容的大小的比较*/
+select strcmp('abc','ab')
+
+
+
+
+
+
+
+
+
+
+
+
+

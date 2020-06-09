@@ -1,0 +1,134 @@
+abs(x)	返回x的绝对值
+ceil(x)	返回大于x的最小整数值
+floor(x)	返回小于x的最大整数值
+mod(x,y)	返回x/y的模
+rand()	返回0~1内的随机值
+round(x,y)	返回参数x的四舍五入的有y位小数的值
+truncate(x,y)	返回数字x截断为y位小数的结果
+
+select round(12.37,1)
+
+select round(12.34,3)
+
+select truncate(12.37,1)	返回数字x截断为y位小数的结果
+
+
+select abs(-2)
+
+/*只要后面有一个大于0的数都会往整数位进1*/
+select ceil(12.1)
+/*只取整数的 */
+select floor(12.9)
+
+select mod(10,2)
+/*范围是0-9*/
+select floor(rand()*10) union all
+select floor(rand()*10)  union all
+select floor(rand()*10) union  all
+select floor(rand()*10) union all
+select floor(rand()*10)  union all
+select floor(rand()*10) union  all
+select floor(rand()*10) union all
+select floor(rand()*10)  union all
+select floor(rand()*10) union  all
+select floor(rand()*10) 
+
+
+/*日期函数*/
+select CURDATE()
+/*显示是时间时分秒*/
+select CURTIME()
+/*年月日时分秒*/
+select now();
+
+select unix_timestamp(CURDATE())
+
+
+/*2020年的第23周*/
+select week('2020-02-01')
+
+
+select * from tb_car
+
+/*每个车是50年报废*/
+
+select *,year(CAR_DATE)+50 from tb_car
+select *,year(CAR_DATE)+50,month(CAR_DATE),day(CAR_DATE) from tb_car
+select *,CONCAT(year(CAR_DATE)+50,'-',month(CAR_DATE),'-',day(CAR_DATE)) from tb_car
+select *,CONCAT(year(CAR_DATE)+50,'-',right(CAR_DATE,5)) from tb_car
+select year(now()) 
+select month(now()) 
+select day(now()) 
+select week(now()) 
+/*这个是得到日期的星期*/
+select WEEKDAY('2020-6-18')+1
+select hour(now()) 
+select minute(now()) 
+select second(now()) 
+/*英文*/
+select monthname(now())
+/*日期转换成字符串*/
+select date_format(now(),'%Y-%m-%d %H:%i:%S')
+/*灵活性比较好(不适合值的大小比较或者区间查询)*/
+/*适合等值比较*/
+select date_format(now(),'%Y-%m')
+select * from tb_car
+/*select * from orders order by CONVERT(mark,SIGNED)  desc*/
+/*select *,CONVERT(CAR_DATE,SIGNED) from tb_car*/
+select date_format(CAR_DATE,'%Y')
+
+select date_format(now(),'%m-%d')
+
+
+/*https://www.cnblogs.com/baby123/p/11716896.html*/
+select *,(CONVERT(date_format(CAR_DATE,'%Y'),SIGNED)+50) from tb_car
+
+select *,CONCAT(CONVERT(date_format(CAR_DATE,'%Y'),SIGNED)+50,
+'-',date_format(CAR_DATE,'%m-%d')) from tb_car
+
+select DATE_ADD(now(),INTERVAL 2 DAY)
+/*亲测能用*/
+select *,DATE_ADD(now(),INTERVAL 50*365 DAY) from tb_car
+
+select *,DATE_ADD(now(),INTERVAL 3*30 DAY) from tb_car/*叫做消息推送*/
+
+/*假设carDate是优惠券的到期时间，那么增加一项，显示发送时间，时间长为3个月*/
+select *,DATE_ADD(now(),INTERVAL -3*30 DAY) from tb_car
+
+switch  case 90 优秀 80-90一般 70-80以下中等 
+
+/*查询出假设汽车的保质期在20年以内，请得到20年的该品牌的保养和维修费用(1年两次)总数是多少，且得到最后该汽车报废的日期*/
+
+/*查询出假设汽车的保质期在20年以内，请得到20年的该品牌的保养和维修费用(1年两次)总数是多少，且得到最后该汽车报废的日期(取日期最近的数据)*/
+select * from tb_car
+select distinct(CAR_NAME),DATE_ADD(CAR_DATE,INTERVAL 20 year) from tb_car
+
+select distinct(CAR_NAME),DATE_ADD(CAR_DATE,INTERVAL 20 year) from tb_car
+
+
+select sum(CAR_PRICE+PRICE)*2*20,CAR_NAME from tb_car where CAR_SERVICE<>'清洗'  group by CAR_NAME  
+
+
+select * from tb_car where CAR_SERVICE!='清洗'
+/*我现在要按照品牌，来取宝马的这个最新的一条数据*/
+select max(CAR_DATE),CAR_NAME from tb_car group by CAR_NAME/*1*/
+select  * from tb_car t1 where  t1.CAR_DATE=(select max(CAR_DATE) from tb_car t2 where t1.CAR_NAME=t2.CAR_NAME and t2.CAR_SERVICE<>'清洗' group by CAR_NAME)/*2*/
+
+select  t1.CAR_NAME,DATE_ADD(t1.CAR_DATE,INTERVAL 20 year) from tb_car t1 where  t1.CAR_DATE=(select max(CAR_DATE) from tb_car t2 where t1.CAR_NAME=t2.CAR_NAME and t2.CAR_SERVICE<>'清洗' group by CAR_NAME)
+
+
+/*日期要取该品牌的最新的在加20年，该品牌的总价是需要分组得到的，然后最后的两个表示通过carname来等值获取*/
+select * from (select sum(CAR_PRICE+PRICE)*2*20,CAR_NAME from tb_car where CAR_SERVICE<>'清洗'  group by CAR_NAME  ) A inner join
+ (select  t1.CAR_NAME,DATE_ADD(t1.CAR_DATE,INTERVAL 20 year) from tb_car t1 where  t1.CAR_DATE=(select max(CAR_DATE) 
+from tb_car t2 where t1.CAR_NAME=t2.CAR_NAME and t2.CAR_SERVICE<>'清洗' group by CAR_NAME)) B
+on A.CAR_NAME=B.CAR_NAME
+
+
+
+
+
+
+
+
+
+
