@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Mybatis config sample -->
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+        <typeAliases>
+        <package name="com.kevinkda.test.mybatis.domain.uservice"/>
+        <package name="com.kevinkda.test.mybatis.domain.ecs"/>
+    </typeAliases>
+
+    <environments default = "default">
+        <environment id="default">
+            <transactionManager type="JDBC"/>
+            <dataSource type="UNPOOLED">
+                <property name = "driver" value = "com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://bj.kevinkda.cn:3306"/>
+                <property name="username" value="kevin"/>
+                <property name="password" value="Karry0921"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+
+    <mappers>
+        <mapper resource="mybatis/mapper/pro.xml"/>
+    </mappers>
+</configuration>
