@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.course.mysql.job.b20200612.service.mapper.ProMapper">
+    <insert id="addUser" parameterType="String" statementType="CALLABLE">
+		call 20200612_insert_user(#{arg1,mode=IN,jdbcType=VARCHAR})
+    </insert>
+    <insert id="addUserA" parameterType="String" statementType="CALLABLE">
+		call 20200612_insert_user_copy1(#{arg1,mode=IN,jdbcType=VARCHAR})
+    </insert>
+</mapper>

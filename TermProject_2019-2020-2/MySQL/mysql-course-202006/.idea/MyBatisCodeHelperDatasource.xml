@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="lastUsedTestConfiguration">
+      <TestConfiguration>
+        <option name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+        <option name="from" value="history" />
+        <option name="intellij" value="false" />
+        <option name="order" value="-1" />
+        <option name="password" value="Karry0921" />
+        <option name="url" value="jdbc:mysql://bj.kevinkda.cn:3306" />
+        <option name="userName" value="kevin" />
+      </TestConfiguration>
+    </option>
+    <option name="testConfigurations">
+      <list>
+        <TestConfiguration>
+          <option name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+          <option name="from" value="history" />
+          <option name="intellij" value="false" />
+          <option name="order" value="-1" />
+          <option name="password" value="Karry0921" />
+          <option name="url" value="jdbc:mysql://bj.kevinkda.cn:3306" />
+          <option name="userName" value="kevin" />
+        </TestConfiguration>
+      </list>
+    </option>
+  </component>
+</project>

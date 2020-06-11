@@ -1,0 +1,114 @@
+select * from tb_car1
+/*基表*/
+create view view_tb_car1 as select * from tb_car1
+/*封装*/
+select * from view_tb_car1
+
+/*查询出比大众的汽车价格贵(汽车价格)的汽车的平均价格是多少(汽车价格加上税)*/
+select * from tb_car1 where CAR_PRICE>=(select CAR_PRICE from tb_car1 where CAR_NAME='大众')
+
+/*三张表*/
+select avg(A.CAR_PRICE+ifnull(0,CAR_TAX)) from (select * from tb_car1 where CAR_PRICE>=(select CAR_PRICE from tb_car1 where CAR_NAME='大众')) A
+
+
+/*存储过程语法*/
+CREATE  PROCEDURE  num_from_employee (IN emp_id INT, OUT count_num INT )  
+          READS SQL DATA  
+          BEGIN  
+              SELECT  COUNT(*)  INTO  count_num  
+              FROM  employee  
+              WHERE  d_id=emp_id ;  
+          END 
+
+
+
+
+
+select * from tb_car1
+create PROCEDURE pro_tb_car1_data(in carId int)
+BEGIN 
+  select * from tb_car1 where CAR_ID=carId;
+end;
+
+
+/*根据汽车的ID查出汽车的价格*/
+drop PROCEDURE pro_tb_car1_data1
+create PROCEDURE pro_tb_car1_data1(in carId int,out carPrice int)
+BEGIN 
+  select CAR_PRICE into carPrice from tb_car1 where CAR_ID=carId;
+end;
+
+/*证明存储过程into随便放哪个位置，但是函数必须放后面*/
+drop PROCEDURE pro_tb_car1_data2
+/*根据汽车的ID查出汽车的价格*/
+create PROCEDURE pro_tb_car1_data2(inout carId int)
+BEGIN 
+  select CAR_PRICE  from tb_car1 where CAR_ID=carId into carId;
+end;
+
+/*形参*/
+set @result=1;
+call pro_tb_car1_data2(@result);
+select @result;
+
+/*利用存储过程插入数据*/
+select * from tb_car1
+/*不写输入或者输出类型的时候默认是输入的*/
+drop PROCEDURE pro_tb_car1_insert
+create PROCEDURE pro_tb_car1_insert(carId int,carName varchar(50),carDate varchar(50),carPrice int,carService varchar(50),carTax int)
+BEGIN 
+  insert into  tb_car1 values(carId,carName,carDate,carPrice,carService,carTax);
+end;
+
+call pro_tb_car1_insert(11,'雪铁龙1','1999-12-12',200,'维修',50);/*前面的4个是按顺序来，后面的两个是按变量名称来(oracle才可)*/
+
+/*写一个存储过程将所有的tax的为null的填充该数据价格的10%*/
+
+/*函数*/
+
+/*在存储过程中常看到declare定义的变量和@set定义的变量。简单的来说，declare定义的类似是局部变量，@set定义的类似全局变量。*/
+drop FUNCTION fun_getCarPrice
+create FUNCTION fun_getCarPrice(carPrice int) RETURNS int
+BEGIN
+/*declare price int;*/
+set @price=0;
+select CAR_PRICE  from tb_car1 where CAR_ID=carPrice into @price;
+return @price;
+end;
+
+select fun_getCarPrice(1);
+
+create function myselect2() returns int return 666;
+select myselect2(); -- 调用函数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Elasticsearch全文检索实战小结 https://www.cnblogs.com/cxxjohnson/p/9629134.html*/
+/*耗费 10 8 */
+/*创造索引查询的列比较平凡 SEO*/
+create index index_CAR_SERVICE on tb_car1(CAR_SERVICE);
+
+/*显示索引*/
+show index from tb_car1
+
+/*删除索引*/
+drop index index_CAR_SERVICE on tb_car1
