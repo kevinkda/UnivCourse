@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.course.enter.framework.b20200623.mapper.CommentMapper">
+  <resultMap id="BaseResultMap" type="com.kevinkda.univ.course.enter.framework.b20200623.domain.Comment">
+    <!--@mbg.generated-->
+    <!--@Table university.20200623_tb_comment-->
+    <id column="COMMENT_ID" jdbcType="INTEGER" property="commentId" />
+    <result column="BLOG_ID" jdbcType="INTEGER" property="blogId" />
+    <result column="CONTENT" jdbcType="VARCHAR" property="content" />
+    <result column="COMMENT_TIME" jdbcType="TIMESTAMP" property="commentTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    COMMENT_ID, BLOG_ID, CONTENT, COMMENT_TIME
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <include refid="Base_Column_List" />
+    from university.20200623_tb_comment
+    where COMMENT_ID = #{commentId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByBlogId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <include refid="Base_Column_List" />
+    from university.20200623_tb_comment
+    where BLOG_ID = #{blogId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from university.20200623_tb_comment
+    where COMMENT_ID = #{commentId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="COMMENT_ID" keyProperty="commentId" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Comment" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into university.20200623_tb_comment (BLOG_ID, CONTENT, COMMENT_TIME
+      )
+    values (#{blogId,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{commentTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="COMMENT_ID" keyProperty="commentId" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Comment" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into university.20200623_tb_comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="blogId != null">
+        BLOG_ID,
+      </if>
+      <if test="content != null">
+        CONTENT,
+      </if>
+      <if test="commentTime != null">
+        COMMENT_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="blogId != null">
+        #{blogId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="commentTime != null">
+        #{commentTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Comment">
+    <!--@mbg.generated-->
+    update university.20200623_tb_comment
+    <set>
+      <if test="blogId != null">
+        BLOG_ID = #{blogId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        CONTENT = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="commentTime != null">
+        COMMENT_TIME = #{commentTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where COMMENT_ID = #{commentId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Comment">
+    <!--@mbg.generated-->
+    update university.20200623_tb_comment
+    set BLOG_ID = #{blogId,jdbcType=INTEGER},
+      CONTENT = #{content,jdbcType=VARCHAR},
+      COMMENT_TIME = #{commentTime,jdbcType=TIMESTAMP}
+    where COMMENT_ID = #{commentId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.course.enter.framework.b20200627.mapper.AuthorMapper">
+    <resultMap id="BaseResultMap" type="com.kevinkda.univ.course.enter.framework.b20200627.domain.Author">
+        <!--@mbg.generated-->
+        <!--@Table university.20200623_tb_author-->
+        <id column="AUTHOR_ID" jdbcType="INTEGER" property="authorId"/>
+        <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName"/>
+        <result column="AUTHOR_AGE" jdbcType="INTEGER" property="authorAge"/>
+    </resultMap>
+    <sql id="Base_Column_List_NO_ID">
+        <!--@mbg.generated-->
+        AUTHOR_NAME, AUTHOR_AGE
+    </sql>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        AUTHOR_ID, AUTHOR_NAME, AUTHOR_AGE
+    </sql>
+    <sql id="queryConditionById">
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="authorId != null and crmOperationId != ''">
+                and AUTHOR_ID =#{authorId}
+            </if>
+        </trim>
+    </sql>
+    <sql id="queryConditionByOther">
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="authorAge != null and crmOperationId != ''">
+                and AUTHOR_NAME =#{authorAge}
+            </if>
+            <if test="authorAge != null and crmOperationId != ''">
+                and AUTHOR_AGE =#{authorAge}
+            </if>
+        </trim>
+    </sql>
+    <select id="selectCount" resultType="int">
+        select COUNT(*)
+        from university.`20200623_tb_author`
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from university.20200623_tb_author
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from university.20200623_tb_author
+        <!--        where AUTHOR_ID = -->#{authorId,jdbcType=INTEGER}
+        <include refid="queryConditionById">
+        </include>
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete
+        from university.20200623_tb_author
+        where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyProperty="authorId" parameterType="hashmap" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        <!--        insert into university.20200623_tb_author (AUTHOR_NAME, AUTHOR_AGE)-->
+        <!--        values (#{authorName,jdbcType=VARCHAR}, #{authorAge,jdbcType=INTEGER})-->
+        insert into university.20200623_tb_author (
+        <trim suffix="" suffixOverrides=",">
+            <if test="authorName != null">
+                AUTHOR_NAME,
+            </if>
+            <if test="authorAge != null">
+                AUTHOR_AGE,
+            </if>
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="authorName != null">
+                #{authorName,jdbcType=VARCHAR},
+            </if>
+            <if test="authorAge != null">
+                #{authorAge,jdbcType=INTEGER},
+            </if>
+        </trim>
+        )
+    </insert>
+    <insert id="insertSelective" keyColumn="AUTHOR_ID" keyProperty="authorId"
+            parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Author" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into university.20200623_tb_author
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="authorName != null">
+                AUTHOR_NAME,
+            </if>
+            <if test="authorAge != null">
+                AUTHOR_AGE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="authorName != null">
+                #{authorName,jdbcType=VARCHAR},
+            </if>
+            <if test="authorAge != null">
+                #{authorAge,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelectiveOfMap" parameterType="hashmap">
+        <!--@mbg.generated-->
+        update university.20200623_tb_author
+        <set>
+            <if test="authorName != null">
+                AUTHOR_NAME = #{authorName,jdbcType=VARCHAR},
+            </if>
+            <if test="authorAge != null">
+                AUTHOR_AGE = #{authorAge,jdbcType=INTEGER},
+            </if>
+        </set>
+        <include refid="queryConditionById">
+        </include>
+        <!--        where AUTHOR_ID = #{authorId,jdbcType=INTEGER}-->
+    </update>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Author">
+        <!--@mbg.generated-->
+        update university.20200623_tb_author
+        <set>
+            <if test="authorName != null">
+                AUTHOR_NAME = #{authorName,jdbcType=VARCHAR},
+            </if>
+            <if test="authorAge != null">
+                AUTHOR_AGE = #{authorAge,jdbcType=INTEGER},
+            </if>
+        </set>
+        where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.Author">
+        <!--@mbg.generated-->
+        update university.20200623_tb_author
+        set AUTHOR_NAME = #{authorName,jdbcType=VARCHAR},
+            AUTHOR_AGE  = #{authorAge,jdbcType=INTEGER}
+        where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.course.enter.framework.b20200623.mapper.20200623TbAuthorMapper">
+  <resultMap id="BaseResultMap" type="com.kevinkda.univ.course.enter.framework.b20200623.domain.20200623TbAuthor">
+    <!--@mbg.generated-->
+    <!--@Table university.20200623_tb_author-->
+    <id column="AUTHOR_ID" jdbcType="INTEGER" property="authorId" />
+    <result column="AUTHOR_NAME" jdbcType="VARCHAR" property="authorName" />
+    <result column="AUTHOR_AGE" jdbcType="INTEGER" property="authorAge" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    AUTHOR_ID, AUTHOR_NAME, AUTHOR_AGE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from university.20200623_tb_author
+    where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from university.20200623_tb_author
+    where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="AUTHOR_ID" keyProperty="authorId" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.20200623TbAuthor" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into university.20200623_tb_author (AUTHOR_NAME, AUTHOR_AGE)
+    values (#{authorName,jdbcType=VARCHAR}, #{authorAge,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" keyColumn="AUTHOR_ID" keyProperty="authorId" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.20200623TbAuthor" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into university.20200623_tb_author
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="authorName != null">
+        AUTHOR_NAME,
+      </if>
+      <if test="authorAge != null">
+        AUTHOR_AGE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="authorName != null">
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="authorAge != null">
+        #{authorAge,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.20200623TbAuthor">
+    <!--@mbg.generated-->
+    update university.20200623_tb_author
+    <set>
+      <if test="authorName != null">
+        AUTHOR_NAME = #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="authorAge != null">
+        AUTHOR_AGE = #{authorAge,jdbcType=INTEGER},
+      </if>
+    </set>
+    where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kevinkda.univ.course.enter.framework.b20200623.domain.20200623TbAuthor">
+    <!--@mbg.generated-->
+    update university.20200623_tb_author
+    set AUTHOR_NAME = #{authorName,jdbcType=VARCHAR},
+      AUTHOR_AGE = #{authorAge,jdbcType=INTEGER}
+    where AUTHOR_ID = #{authorId,jdbcType=INTEGER}
+  </update>
+</mapper>

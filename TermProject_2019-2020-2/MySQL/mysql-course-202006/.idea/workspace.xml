@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b72d86b2-d0cb-4bec-9981-4b5c9140654b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/course_mysql_202006_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/course_mysql_202006_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_alibaba_fastjson_1_2_71.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_kevinkda_java_utils_3_1_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_kevinkda_java_utils_3_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_io_commons_io_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_glassfish_web_jstl_impl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/course-mysql-202006.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/lib/jspSmartUpload.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/src/main/java/com/kevinkda/univ/course/mysql/course/b20200618/web/servlet/UpFileServlet0618.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/lib/jspSmartUpload.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/mysql-course-202006.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/sql/20200612-university.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/sql/20200612.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/constant/ConfigConsts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/JdbcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/resources/db/university.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/resources/mybatis/config/mybatis-config-us.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/resources/mybatis/mapper/MybatisGenerator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/main/resources/mybatis/mapper/pro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/test/java/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/src/test/resources/mybatisTestConfiguration/ProMapperTestConfiguration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/constant/ConfigConsts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/JdbcService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/db/university.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/mybatis/config/mybatis-config-us.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/mybatis/mapper/MybatisGenerator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/classes/mybatis/mapper/pro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/mysql-course-202006-2020.06.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/test-classes/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/mysql-course-202006/target/test-classes/mybatisTestConfiguration/ProMapperTestConfiguration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20200612/MySQL Course Work 20200610.md" beforeDir="false" afterPath="$PROJECT_DIR$/../20200612/MySQL Course Work 20200610.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20200612/mysql-course-202006.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../20200612/mysql-course-202006.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql-course-202006.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/20200612-university.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/20200612.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/constant/ConfigConsts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/Control.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/JdbcService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/university.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/config/mybatis-config-us.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MybatisGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/pro.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mybatisTestConfiguration/ProMapperTestConfiguration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/constant/ConfigConsts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/Control.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/JdbcService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/university.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/config/mybatis-config-us.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/MybatisGenerator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/pro.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/mysql-course-202006-2020.06.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kevinkda/univ/course/mysql/job/b20200612/service/mapper/ProMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mybatisTestConfiguration/ProMapperTestConfiguration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../作业提交记录/MySQL/2020-6-12-17gb计职1-唐可寅-mysql-9.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../作业提交记录/MySQL/2020-6-12-17gb计职1-唐可寅-mysql-9.zip" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../../DevLocalEnv/repository/.m2/kevinkda_old.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1dAcVJqOGNfFd4gehcxECtkF0lm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mybatis" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kevinkda.univ.course.mysql.job.b20200612.constant" />
+      <recent name="com.kevinkda.univ.course.mysql.job.b20200612.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mybatis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.mysql-course-202006 [clean,deploy...]">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kevinkda.univ.course.mysql.job.b20200612.Main" />
+      <module name="mysql-course-202006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kevinkda.univ.course.mysql.job.b20200612.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProMapperTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mysql-course-202006" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kevinkda.univ.course.mysql.job.b20200612.service.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kevinkda.univ.course.mysql.job.b20200612.service.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.kevinkda.univ.course.mysql.job.b20200612.service.mapper.ProMapperTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mysql-course-202006 [clean,deploy...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="deploy" />
+                <option value="-DskipTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ProMapperTest.testAddUser" />
+      <item itemvalue="Maven.mysql-course-202006 [clean,deploy...]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ProMapperTest.testAddUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b72d86b2-d0cb-4bec-9981-4b5c9140654b" name="Default Changelist" comment="" />
+      <created>1591871360274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591871360274</updated>
+      <workItem from="1591871369575" duration="11991000" />
+      <workItem from="1591886418284" duration="53000" />
+      <workItem from="1592443946009" duration="846000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="820" y="364" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591884444743">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="820" y="364" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884444743" />
+    <state x="958" y="496" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591881060634">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="958" y="496" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591881060634" />
+    <state x="958" y="453" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591873723153">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="958" y="453" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591873723153" />
+    <state width="1357" height="336" key="GridCell.Tab.0.bottom" timestamp="1591884890050">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890050" />
+    <state width="1357" height="336" key="GridCell.Tab.0.center" timestamp="1591884890049">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890049" />
+    <state width="1357" height="336" key="GridCell.Tab.0.left" timestamp="1591884890048">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890048" />
+    <state width="1357" height="336" key="GridCell.Tab.0.right" timestamp="1591884890049">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890049" />
+    <state width="1357" height="336" key="GridCell.Tab.1.bottom" timestamp="1591884890052">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890052" />
+    <state width="1357" height="336" key="GridCell.Tab.1.center" timestamp="1591884890051">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890051" />
+    <state width="1357" height="336" key="GridCell.Tab.1.left" timestamp="1591884890051">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890051" />
+    <state width="1357" height="336" key="GridCell.Tab.1.right" timestamp="1591884890052">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1357" height="336" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884890052" />
+    <state width="268" height="457" key="HiddenNamespacesPopup" timestamp="1591879857967">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state width="268" height="457" key="HiddenNamespacesPopup/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591879857967" />
+    <state x="725" y="473" key="Maven.ArtifactSearchDialog" timestamp="1591881113297">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="725" y="473" key="Maven.ArtifactSearchDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591881113297" />
+    <state x="722" y="338" key="SettingsEditor" timestamp="1591884837924">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="722" y="338" key="SettingsEditor/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591884837924" />
+    <state x="915" y="519" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591872847804">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="915" y="519" key="com.intellij.testIntegration.createTest.CreateTestDialog/-1920.23.1920.1057/0.23.1920.1177@0.23.1920.1177" timestamp="1591872847804" />
+    <state x="588" y="362" key="new project wizard" timestamp="1592444196135">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="588" y="362" key="new project wizard/0.23.1920.1177@0.23.1920.1177" timestamp="1592444196135" />
+  </component>
+</project>

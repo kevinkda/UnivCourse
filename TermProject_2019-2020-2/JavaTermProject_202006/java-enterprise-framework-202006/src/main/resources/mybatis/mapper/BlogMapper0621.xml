@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.course.enter.framework.b20200621.mapper.BlogMapper">
+    <resultMap id="BaseResultMap" type="com.kevinkda.univ.course.enter.framework.b20200621.domain.Blog">
+        <!--@mbg.generated-->
+        <!--@Table university.`20200621_tb_blog`-->
+        <id column="BLOG_ID" jdbcType="INTEGER" property="blogId"/>
+        <result column="BLOG_TITLE" jdbcType="VARCHAR" property="blogTitle"/>
+        <result column="BLOG_COUNT" jdbcType="VARCHAR" property="blogCount"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        BLOG_ID, BLOG_TITLE, BLOG_COUNT
+    </sql>
+    <select id="queryBlog" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from university.`20200621_tb_blog`
+    </select>
+    <select id="queryBlogById" parameterType="int" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from university.`20200621_tb_blog`
+        where BLOG_ID = #{BLOG_ID,jdbcType=INTEGER}
+    </select>
+    <insert id="insertBlog" parameterType="com.kevinkda.univ.course.enter.framework.b20200621.domain.Blog">
+        insert into 20200621_tb_blog (BLOG_TITLE, BLOG_COUNT) values (#{blogTitle},#{blogCount,jdbcType=INTEGER});
+    </insert>
+    <update id="updateBlog" parameterType="com.kevinkda.univ.course.enter.framework.b20200621.domain.Blog">
+        update university.`20200621_tb_blog` set BLOG_TITLE=#{blogTitle},BLOG_COUNT=#{blogCount} where BLOG_ID=#{blogId};
+    </update>
+    <delete id="deleteBlog" parameterType="int">
+        delete from university.`20200621_tb_blog` where BLOG_ID=#{BLOG_ID};
+</delete>
+</mapper>

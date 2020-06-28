@@ -1,0 +1,115 @@
+/*1:查询出订单表里面用户购买的商品数量最多的那个用户的信息资料*/
+select count(PRODUCT_COUNT) c ,USER_ID userId from tb_order group by USER_ID 
+select max(A.c) from (select count(PRODUCT_COUNT) c ,USER_ID userId from tb_order group by USER_ID ) A
+select * from (select count(PRODUCT_COUNT) c ,USER_ID userId from tb_order group by USER_ID ) K
+where k.c=(select max(A.c) from (select count(PRODUCT_COUNT) c ,USER_ID userId from tb_order group by USER_ID ) A)
+
+/*2查询出商品的名称包含有面的商品在订单表中的总价是多少*/
+select PRODUCT_ID,PRODUCT_PRICE from 
+tb_product where PRODUCT_NAME like '%面%' and PRODUCT_PARENT_ID!=-100
+
+
+3:查询出电器类卖的最不好的产品是哪个
+select PRODUCT_ID from tb_product where PRODUCT_PARENT_ID=(select PRODUCT_ID from tb_product
+where PRODUCT_NAME='电器类')
+
+select PRODUCT_ID from tb_product A where EXISTS
+(select * from tb_product B where PRODUCT_NAME='电器类' and A.PRODUCT_PARENT_ID=B.PRODUCT_ID)
+
+select sum(A.PRODUCT_COUNT) c,A.PRODUCT_ID id from tb_order A inner join (select PRODUCT_ID from tb_product A where EXISTS
+(select * from tb_product B where PRODUCT_NAME='电器类' and A.PRODUCT_PARENT_ID=B.PRODUCT_ID)) K
+on A.PRODUCT_ID=K.PRODUCT_ID group by A.PRODUCT_ID
+
+select min(S.c),S.id from (select sum(A.PRODUCT_COUNT) c,A.PRODUCT_ID id from tb_order A inner join (select PRODUCT_ID from tb_product A where EXISTS
+(select * from tb_product B where PRODUCT_NAME='电器类' and A.PRODUCT_PARENT_ID=B.PRODUCT_ID)) K
+on A.PRODUCT_ID=K.PRODUCT_ID group by A.PRODUCT_ID) S
+
+/*实施开发工程师*/
+
+
+
+
+
+
+
+
+
+4:查询出用户的账号里面含有数字的有哪些
+select ('admin8' REGEXP '[0-9.]');
+select * from tb_user where USER_ACCOUNT REGEXP '[0-9.]'=1
+
+5求出下订单表里面下订单在上午的订单量金额最大的是谁(人)
+SELECT DATE_FORMAT(NOW(),'%p')
+select * from tb_order where DATE_FORMAT(ORDER_TIME,'%p')='AM'
+
+select * from tb_order where ORDER_NUMBER = 
+(SELECT B.num from (SELECT max(A.s),A.num from 
+(SELECT sum(tb_product.PRODUCT_PRICE*tb_order.PRODUCT_COUNT)
+ s,tb_order.ORDER_NUMBER as 'num' FROM tb_order,
+tb_product WHERE DATE_FORMAT(tb_order.ORDER_TIME,'%p')='AM' and  tb_order.PRODUCT_ID=
+tb_product.PRODUCT_ID GROUP BY tb_order.ORDER_NUMBER) A)B)
+
+
+SELECT * from tb_user where USER_ID =
+ (select DISTINCT USER_ID from 
+tb_order where ORDER_NUMBER =
+ (SELECT B.num from (SELECT max(A.s),A.num from
+ (SELECT sum(tb_product.PRODUCT_PRICE*tb_order.PRODUCT_COUNT) s,
+tb_order.ORDER_NUMBER as 'num' FROM tb_order,
+tb_product WHERE DATE_FORMAT(tb_order.ORDER_TIME,'%p')='AM' and
+  tb_order.PRODUCT_ID=tb_product.PRODUCT_ID GROUP BY tb_order.ORDER_NUMBER) A)B))
+
+6求出比调和油卖的好的产品是哪(是卖出的比较数量)
+select PRODUCT_ID from tb_product where PRODUCT_NAME='食用调和油'
+select PRODUCT_COUNT,PRODUCT_ID from tb_order where PRODUCT_ID=(select PRODUCT_ID from tb_product where PRODUCT_NAME='食用调和油')
+
+select A.PRODUCT_ID from tb_order A where A.PRODUCT_COUNT
+>(select PRODUCT_COUNT from tb_order where PRODUCT_ID=(select PRODUCT_ID from tb_product where PRODUCT_NAME='食用调和油'))
+/*在去连接产品表*/
+
+
+7求出用户的注册时间是在07之前的用户且用户不是订单中订单金额最少的那些用户
+select USER_ID from tb_user where year(USER_REG_TIME)<2007
+
+select A.USER_ID,A.PRODUCT_ID,A.PRODUCT_COUNT,B.PRODUCT_PRICE from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID
+/*-------*/
+select A.USER_ID userId,A.PRODUCT_ID productId,A.PRODUCT_COUNT*B.PRODUCT_PRICE total from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID
+
+select sum(k.total),k.userId from (select A.USER_ID userId,A.PRODUCT_ID productId,A.PRODUCT_COUNT*B.PRODUCT_PRICE total from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID) k GROUP BY k.userId
+
+
+
+
+select min(S.t),S.userId1 from (select sum(k.total) t,k.userId userId1 from (select A.USER_ID userId,A.PRODUCT_ID productId,A.PRODUCT_COUNT*B.PRODUCT_PRICE total from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID) k GROUP BY k.userId) S
+
+select sum(k.total),k.userId from (select A.USER_ID userId,A.PRODUCT_ID productId,A.PRODUCT_COUNT*B.PRODUCT_PRICE total from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID) k GROUP BY k.userId having sum(k.total)<>(select min(S.t) from (select sum(k.total) t,k.userId userId1 from (select A.USER_ID userId,A.PRODUCT_ID productId,A.PRODUCT_COUNT*B.PRODUCT_PRICE total from tb_order A,tb_product B 
+where A.USER_ID in (select USER_ID from tb_user where year(USER_REG_TIME)<2007)  
+and A.PRODUCT_ID=B.PRODUCT_ID) k GROUP BY k.userId) S)
+
+/*2  4  6 */
+
+
+
+8求出商品的入住时间在17年之后入住的商品卖的最好的(金额)男性用户是谁
+
+
+9:查出比整体商品的平均单价高的商品在19年的订单中的总价是多少
+
+10:查出比每个父类下面的子类的商品的平均价格低的商品男性用户购买的订单详情(用户账号，用户性别，商品名称)
+(商品单价，商品数量(购买),总金额,订单编号,下单时间)
+
+11:查出最近10年内用户购买的最多的商品是哪个
+
+12:查询出库存量不足400的产品且在19年卖的最好的产品是哪些
+
+13:查询出含有电(包括父节点和子节点)的商品女性用户购买最多的产品是哪个

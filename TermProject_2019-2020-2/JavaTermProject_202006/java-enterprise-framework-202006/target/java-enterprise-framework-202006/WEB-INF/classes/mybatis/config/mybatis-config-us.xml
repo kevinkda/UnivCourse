@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (c) 2020 Kevin KDA. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="com.kevinkda.test.mybatis.domain.uservice"/>
+        <package name="com.kevinkda.test.mybatis.domain.ecs"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://bj.kevinkda.cn:3306/university?characterEncoding=UTF-8&amp;rewriteBatchedStatements=true&amp;useOldAliasMetadataBehavior=true"/>
+                <property name="username" value="kevin"/>
+                <property name="password" value="Karry0921"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mybatis/mapper/BlogMapper0621.xml"/>
+        <mapper resource="mybatis/mapper/20200623TbAuthorMapper.xml"/>
+        <mapper resource="mybatis/mapper/20200623TbBlogMapper.xml"/>
+        <mapper resource="mybatis/mapper/20200623TbCommentMapper.xml"/>
+        <mapper resource="mybatis/mapper/20200627TbAuthorTemp2Mapper.xml"/>
+        <package name="com.kevinkda.univ.course.enter.framework.b20200621.domain"/>
+    </mappers>
+</configuration>

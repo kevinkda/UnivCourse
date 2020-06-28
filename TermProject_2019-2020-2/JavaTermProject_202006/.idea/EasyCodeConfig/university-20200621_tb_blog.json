@@ -1,0 +1,31 @@
+{
+  "name" : "20200621TbBlog",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "blogId",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "blogTitle",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "blogCount",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "com.kevinkda",
+  "savePath" : "./java-enterprise-framework-202006/src/main/java/com/kevinkda",
+  "saveModelName" : "java-enterprise-framework-202006"
+}

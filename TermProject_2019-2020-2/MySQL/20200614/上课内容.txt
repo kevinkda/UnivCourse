@@ -1,0 +1,116 @@
+select * from tb_user
+
+insert into  tb_user values (1,'admin','123','199-12-12 11:32:22','420104198803210872','林志玲','女');
+insert into  tb_user values (2,'userKk','123','2005-10-11 12:32:22','420104198703210872','蔡依林','女');
+insert into  tb_user values (3,'khj','123','2006-10-12 13:32:22','420104198603210872','林志颖','男');
+insert into  tb_user values (4,'adm12','123','2000-09-12 14:32:22','420104199903210872','周杰伦','男');
+insert into  tb_user values (5,'evo123','123','2007-08-12 16:32:22','420104199303210872','迪丽热巴','女');
+insert into  tb_user values (6,'fufu123','123','2001-06-12 09:32:22','420104199203210872','小刚','男');
+insert into  tb_user values (7,'mumu89','123','2008-05-12 07:32:22','420104199503210872','乌龙','男');
+
+select * from tb_product 
+truncate table tb_product
+insert into  tb_product values(1,'电器类',null,null,null,-100);
+insert into  tb_product values(2,'格力电风扇',155,30,'2017-12-12 03:04:05',1);
+insert into  tb_product values(3,'美的空凋',2000,15,'2018-11-11 03:04:05',1);
+insert into  tb_product values(4,'食品类',null,null,null,-100);
+insert into  tb_product values(5,'方便面',8,490,'2019-12-11 05:04:05',4);
+insert into  tb_product values(6,'火腿肠',5,290,'2020-05-11 06:04:05',4);
+insert into  tb_product values(7,'食用调和油',85,190,'2018-04-11 06:04:05',4);
+insert into  tb_product values(8,'法国面包',12,90,'2020-06-11 06:04:05',4);
+insert into  tb_product values(9,'加湿器',18,450,'2016-11-11 02:04:05',1);
+
+select * from tb_order
+truncate table tb_order
+insert into tb_order values (1,'201787678ESD',1,2,2,'2020-04-03 12:12:10');
+insert into tb_order values (2,'20134587ESDA',2,3,3,'2020-03-03 11:12:10');
+insert into tb_order values (3,'20134587ESDA',2,4,1,'2020-03-03 11:12:10');
+insert into tb_order values (4,'202045875AHAJ',4,7,2,'2019-02-03 11:12:10');
+insert into tb_order values (5,'202045875AHAJ',4,6,1,'2019-02-03 11:12:10');
+insert into tb_order values (6,'201046865AGAK',6,3,2,'2015-04-03 12:12:10');
+insert into tb_order values (7,'202047825APAN',6,4,4,'2017-03-03 14:12:10');
+
+/*各位准备好了就开始了*/
+
+1:找出人的名字是3个字的用户有哪些
+select * from tb_user where length(USER_NAME)=9
+select * from tb_user where USER_NAME like '___'
+2:找出是男孩子的用户有哪些
+select * from tb_user where USER_SEX='男'
+3:找出产品属于电器类的产品有哪些
+select * from tb_product where PRODUCT_PARENT_ID=(select PRODUCT_ID from tb_product where PRODUCT_NAME='电器类')
+4:找出库存比法国面包多的产品有哪些，并显示该产品属于什么类型的
+select PRODUCT_TOTAL from tb_product where PRODUCT_NAME='法国面包' 
+select * from tb_product where  PRODUCT_TOTAL>(select PRODUCT_TOTAL from tb_product where PRODUCT_NAME='法国面包') 
+
+select * from (select * from tb_product where  PRODUCT_TOTAL>(select PRODUCT_TOTAL from tb_product where PRODUCT_NAME='法国面包') ) A
+inner join tb_product B on A.PRODUCT_PARENT_ID=B.PRODUCT_ID
+
+
+5:找出性别是男且是在2002年之后注册的网站且年龄在25-35岁区间
+的用户购买的所有订单的总价是多少
+/*计算规则为先取出年份与当前年份作差，再比较当前日期与身份证上的月日（即判断此人是否已经过了国历生日），决定是否需要减去一岁，已经过了生日就不用减掉了。*/
+select 
+(substring(now(),1,4)-substring(USER_CARD,7,4))-(substring(USER_CARD,11,4)-date_format(now(),'%m%d')>0) as age
+from tb_user
+select USER_ID from tb_user where USER_SEX='女' and YEAR(USER_REG_TIME)>2002 and (substring(now(),1,4)-substring(USER_CARD,7,4))-(substring(USER_CARD,11,4)-date_format(now(),'%m%d')>0) between 25 and 35
+select PRODUCT_ID,PRODUCT_COUNT from tb_order where USER_ID in
+ (select USER_ID from tb_user where USER_SEX='女' and YEAR(USER_REG_TIME)>2002 
+and (substring(now(),1,4)-substring(USER_CARD,7,4))-(substring(USER_CARD,11,4)-date_format(now(),'%m%d')>0)
+ between 25 and 35)
+
+select A.PRODUCT_COUNT,B.PRODUCT_PRICE,A.PRODUCT_COUNT*B.PRODUCT_PRICE from (select PRODUCT_ID,PRODUCT_COUNT from tb_order where USER_ID in
+ (select USER_ID from tb_user where USER_SEX='女' and YEAR(USER_REG_TIME)>2002 
+and (substring(now(),1,4)-substring(USER_CARD,7,4))-(substring(USER_CARD,11,4)-date_format(now(),'%m%d')>0)
+ between 25 and 35)) A inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID
+
+亲爱的学校领导和老师们，
+我们同学在做项目！！！
+
+6:查出电器类在订单中的总价是多少(两个表)
+select PRODUCT_ID from tb_product where PRODUCT_NAME='电器类'
+select PRODUCT_ID,PRODUCT_PRICE from tb_product where PRODUCT_PARENT_ID=(select PRODUCT_ID from tb_product where PRODUCT_NAME='电器类') 
+select  sum(A.PRODUCT_PRICE*B.PRODUCT_COUNT) from (select PRODUCT_ID,PRODUCT_PRICE from tb_product where PRODUCT_PARENT_ID=(select PRODUCT_ID from tb_product where PRODUCT_NAME='电器类') ) A
+inner join tb_order B on A.PRODUCT_ID=B.PRODUCT_ID
+
+7:查出订单中比林志玲购买的商品的总价高的是哪些人
+第一步查询出林志玲购买的商品的总价?
+select USER_ID from tb_user where USER_NAME='林志玲'
+select PRODUCT_ID,PRODUCT_COUNT from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME='林志玲')
+select sum(A.PRODUCT_COUNT*B.PRODUCT_PRICE)from (select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME='林志玲')) A
+inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID
+
+select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME<>'林志玲')
+
+select A.PRODUCT_COUNT*B.PRODUCT_PRICE,USER_ID from (select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME<>'林志玲')) A
+inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID and B.PRODUCT_PARENT_ID<>-100
+
+select k.total,k.USER_ID from (select A.PRODUCT_COUNT*B.PRODUCT_PRICE as total,USER_ID from (select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME<>'林志玲')) A
+inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID and B.PRODUCT_PARENT_ID<>-100) k group by k.USER_ID
+
+select * from (select k.total,k.USER_ID from (select A.PRODUCT_COUNT*B.PRODUCT_PRICE as total,USER_ID from (select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME<>'林志玲')) A
+inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID and B.PRODUCT_PARENT_ID<>-100) k group by k.USER_ID) m where m.total>(select sum(A.PRODUCT_COUNT*B.PRODUCT_PRICE)from (select PRODUCT_ID,PRODUCT_COUNT,USER_ID from tb_order where USER_ID in (select USER_ID from tb_user where USER_NAME='林志玲')) A
+inner join tb_product B on A.PRODUCT_ID=B.PRODUCT_ID)
+
+
+8: 查出用户的注册时间是10月份注册的用户购买了哪些产品(产品所有属性以及对应的产品属于哪个类型)
+
+9:查出比食品类产品的平均价格高的产品(不包括食品类产品)购买过的用户有哪些
+
+10:求出订单表一个订单中至少买了两种不同的商品的用户详情
+
+11:按照年份（下单时间)来分组，求出订单表中最高的年份的订单总价是多少
+
+12:求出没有下过订单的用户有哪些
+
+13:求出库存量在470以内的商品且用户没有购买过的商品有哪些?
+
+
+
+
+
+
+
+
+
+

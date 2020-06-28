@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/course-mysql-202006/course-mysql-202006.iml" filepath="$PROJECT_DIR$/course-mysql-202006/course-mysql-202006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-enterprise-framework-202006/java-enterprise-framework-202006.iml" filepath="$PROJECT_DIR$/java-enterprise-framework-202006/java-enterprise-framework-202006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-course-202006/mysql-course-202006.iml" filepath="$PROJECT_DIR$/mysql-course-202006/mysql-course-202006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-upload-202006/mysql-upload-202006.iml" filepath="$PROJECT_DIR$/mysql-upload-202006/mysql-upload-202006.iml" />
+    </modules>
+  </component>
+</project>

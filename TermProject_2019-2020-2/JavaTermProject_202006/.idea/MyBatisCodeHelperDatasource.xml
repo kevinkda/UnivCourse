@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSchemaName" value="true" />
+        <option name="generateService" value="true" />
+        <option name="javaMapperPackage" value="com.kevinkda.univ.course.enter.framework.b20200623.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/java" />
+        <option name="javaModelPackage" value="com.kevinkda.univ.course.enter.framework.b20200623.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="course-mysql-202006" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="course-mysql-202006">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.kevinkda.univ.course.enter.framework.b20200623.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/java" />
+                  <option name="javaModelPacakge" value="com.kevinkda.univ.course.enter.framework.b20200623.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/java" />
+                  <option name="javaServicePackage" value="com.kevinkda.univ.course.enter.framework.b20200623.service" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/java-enterprise-framework-202006/src/main/java" />
+                  <option name="xmlPackage" value="mybatis.mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="p3CComment" value="true" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="university:20200623_tb_author">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="AUTHOR_ID" />
+                  <option name="javaModelName" value="20200623TbAuthor" />
+                  <option name="moduleName" value="course-mysql-202006" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="university:20200623_tb_blog">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="BLOG_ID" />
+                  <option name="javaModelName" value="20200623TbBlog" />
+                  <option name="moduleName" value="course-mysql-202006" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="university:20200623_tb_comment">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="COMMENT_ID" />
+                  <option name="javaModelName" value="20200623TbComment" />
+                  <option name="moduleName" value="course-mysql-202006" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mybatis.mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

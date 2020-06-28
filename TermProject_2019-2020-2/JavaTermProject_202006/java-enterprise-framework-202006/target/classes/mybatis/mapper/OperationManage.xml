@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hj.online.basemanage.dao.OperationManageDao">
+    <!-- 查询全部记录 这个配的为实体类，下面配置的是map形式-->
+    <!--  
+	<select id="selectOperationList" resultType="map" parameterType="map">
+   select Operation_ID as OperationId,Operation_NAME as OperationName,PASSWORD as password,Operation_TIME as OperationTime from Operation limit #{startRow},#{pageSize}
+	</select>
+	-->
+
+    <sql id="queryFields">
+        select CRM_OPERATION_ID   as crmOperationId,
+               CRM_OPERATION_NAME as crmOperationName
+        from crm_operation as o
+    </sql>
+
+    <sql id="queryCondition">
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="crmOperationId != null and crmOperationId != ''">
+                and o.CRM_OPERATION_ID =#{crmOperationId}
+            </if>
+            <if test="crmOperationName != null and crmOperationName != ''">
+                and o.CRM_OPERATION_NAME =#{crmOperationName}
+            </if>
+        </trim>
+    </sql>
+
+    <select id="selectOperationManageCount" parameterType="hashmap" resultType="int">
+        select count(CRM_OPERATION_ID)
+        from crm_operation as o
+        <include refid="queryCondition"/>
+    </select>
+
+    <select id="selectOperationManage" parameterType="hashmap" resultType="hashmap">
+        <include refid="queryFields"/>
+        <include refid="queryCondition"/>
+        order by CRM_OPERATION_ID DESC
+        <if test="start != null and pageSize != null">
+            limit #{start}, #{pageSize}
+        </if>
+    </select>
+
+
+    <insert id="insertOperationManage" parameterType="hashmap" keyProperty="CRM_OPERATION_ID" useGeneratedKeys="true">
+        insert into crm_operation (
+        <trim suffix="" suffixOverrides=",">
+            <if test="crmOperationName != null">
+                CRM_OPERATION_NAME,
+            </if>
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="crmOperationName != null">
+                #{crmOperationName},
+            </if>
+        </trim>
+        )
+    </insert>
+
+
+    <update id="updateOperationManage" parameterType="hashmap">
+        update crm_operation
+        <trim prefix="set" suffixOverrides=",">
+            <if test="crmOperationName != null">
+                CRM_OPERATION_NAME =#{crmOperationName},
+            </if>
+        </trim>
+        where CRM_OPERATION_ID = #{crmOperationId}
+    </update>
+
+
+    <delete id="deleteOperationManage" parameterType="java.util.List">
+        delete
+        from crm_operation
+                where CRM_OPERATION_ID in
+        <foreach collection="list" item="item" open="(" separator=","
+                 close=")">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>
