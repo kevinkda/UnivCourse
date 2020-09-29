@@ -1,0 +1,25 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /demo200910
+
+jdbc:
+  username: kevin
+  password: Karry0921
+  jdbcUrl: jdbc:mysql://bj.kevinkda.cn:3306/temp
+  driverClassName: com.mysql.cj.jdbc.Driver
+
+
+spring:
+  datasource:
+    username: kevin
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/TemplateData?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.kevinkda.univ.tcp.course.demo0220200910ssm

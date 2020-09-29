@@ -1,0 +1,70 @@
+#server:
+#    port: 8080
+#spring:
+#    application:
+#        name: enterprise-framework-exam-202009
+#    datasource:
+#        driver-class-name: com.mysql.cj.jdbc.Driver
+#        name: defaultDataSource
+#        password: '***'
+#        url: jdbc:mysql://localhost:3306/blue?serverTimezone=UTC
+#        username: '***'
+#    resources:
+#        static_locations: classpath:/static/
+
+
+server:
+  port: 9008
+  servlet:
+    context-path: /exam-09
+
+spring:
+  #  profiles:
+  #    active: dev-access
+  #    active: prod
+  application:
+    name: exam-framework
+  resources:
+    static_locations: classpath:/static/
+  #    mvc:
+  #        static-path-pattern:
+  #            - classpath:/static/**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/university?serverTimezone=UTC&characterEncoding=UTF-8&rewriteBatchedStatements=true&useUnicode=true&useSSL=true&allowPublicKeyRetrieval=true
+    username: kevin
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    check-template-location: true #检查模板是否存在
+    charset: UTF-8 #编码方式
+    content-type: text/html
+    enabled: true #是否启用freemarker
+    expose-request-attributes: false #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+    expose-spring-macro-helpers: true #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+    expose-session-attributes: false #否在merge模板的时候，将HttpSession属性都添加到model中
+    prefer-file-system-access: true #是否优先从文件系统加载template，以支持热加载，默认为true
+    suffix: .ftl #设定模板的后缀.
+    template-loader-path:
+      - classpath:/templates/ #设定模板的加载路径，多个以逗号分隔，默认:
+    settings:
+      classic_compatible: true
+
+
+
+mybatis:
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.kevinkda.univ.exam.enterpriseframeworkexam202009
+
+pagehelper:
+  helper-dialect: mysql
+  #  dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+version:
+  main: 3.0.1
+  sub: 1015

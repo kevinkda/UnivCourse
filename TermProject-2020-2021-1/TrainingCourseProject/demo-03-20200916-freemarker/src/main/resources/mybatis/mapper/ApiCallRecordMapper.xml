@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.tcp.course.demo0320200916freemarker.mapper.ApiCallRecordMapper">
+    <resultMap id="BaseResultMap" type="com.kevinkda.univ.tcp.course.demo0320200916freemarker.domain.ApiCallRecord">
+        <!--@mbg.generated-->
+        <!--@Table AccessForECS.ApiCallRecord-->
+        <id column="ID" jdbcType="INTEGER" property="id"/>
+        <result column="UserID" jdbcType="INTEGER" property="userid"/>
+        <result column="ApiType" jdbcType="VARCHAR" property="apitype"/>
+        <result column="CallParameters" jdbcType="LONGVARCHAR" property="callparameters"/>
+        <result column="REGION_ID" jdbcType="VARCHAR" property="regionId"/>
+        <result column="INSTANCE_ID" jdbcType="VARCHAR" property="instanceId"/>
+        <result column="ApiReturn" jdbcType="LONGVARCHAR" property="apireturn"/>
+        <result column="Date" jdbcType="TIMESTAMP" property="date"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        ID, UserID, ApiType, CallParameters, REGION_ID, INSTANCE_ID, ApiReturn, `Date`
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from AccessForECS.ApiCallRecord
+        where ID = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultType="hashmap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from AccessForECS.ApiCallRecord
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete
+        from AccessForECS.ApiCallRecord
+        where ID = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="ID" keyProperty="id"
+            parameterType="com.kevinkda.univ.tcp.course.demo0320200916freemarker.domain.ApiCallRecord"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into AccessForECS.ApiCallRecord (UserID, ApiType, CallParameters,
+                                                REGION_ID, INSTANCE_ID, ApiReturn,
+                                                `Date`)
+        values (#{userid,jdbcType=INTEGER}, #{apitype,jdbcType=VARCHAR}, #{callparameters,jdbcType=LONGVARCHAR},
+                #{regionId,jdbcType=VARCHAR}, #{instanceId,jdbcType=VARCHAR}, #{apireturn,jdbcType=LONGVARCHAR},
+                #{date,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" keyColumn="ID" keyProperty="id"
+            parameterType="com.kevinkda.univ.tcp.course.demo0320200916freemarker.domain.ApiCallRecord"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into AccessForECS.ApiCallRecord
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userid != null">
+                UserID,
+            </if>
+            <if test="apitype != null">
+                ApiType,
+            </if>
+            <if test="callparameters != null">
+                CallParameters,
+            </if>
+            <if test="regionId != null">
+                REGION_ID,
+            </if>
+            <if test="instanceId != null">
+                INSTANCE_ID,
+            </if>
+            <if test="apireturn != null">
+                ApiReturn,
+            </if>
+            <if test="date != null">
+                `Date`,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userid != null">
+                #{userid,jdbcType=INTEGER},
+            </if>
+            <if test="apitype != null">
+                #{apitype,jdbcType=VARCHAR},
+            </if>
+            <if test="callparameters != null">
+                #{callparameters,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="regionId != null">
+                #{regionId,jdbcType=VARCHAR},
+            </if>
+            <if test="instanceId != null">
+                #{instanceId,jdbcType=VARCHAR},
+            </if>
+            <if test="apireturn != null">
+                #{apireturn,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="date != null">
+                #{date,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.kevinkda.univ.tcp.course.demo0320200916freemarker.domain.ApiCallRecord">
+        <!--@mbg.generated-->
+        update AccessForECS.ApiCallRecord
+        <set>
+            <if test="userid != null">
+                UserID = #{userid,jdbcType=INTEGER},
+            </if>
+            <if test="apitype != null">
+                ApiType = #{apitype,jdbcType=VARCHAR},
+            </if>
+            <if test="callparameters != null">
+                CallParameters = #{callparameters,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="regionId != null">
+                REGION_ID = #{regionId,jdbcType=VARCHAR},
+            </if>
+            <if test="instanceId != null">
+                INSTANCE_ID = #{instanceId,jdbcType=VARCHAR},
+            </if>
+            <if test="apireturn != null">
+                ApiReturn = #{apireturn,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="date != null">
+                `Date` = #{date,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where ID = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="com.kevinkda.univ.tcp.course.demo0320200916freemarker.domain.ApiCallRecord">
+        <!--@mbg.generated-->
+        update AccessForECS.ApiCallRecord
+        set UserID         = #{userid,jdbcType=INTEGER},
+            ApiType        = #{apitype,jdbcType=VARCHAR},
+            CallParameters = #{callparameters,jdbcType=LONGVARCHAR},
+            REGION_ID      = #{regionId,jdbcType=VARCHAR},
+            INSTANCE_ID    = #{instanceId,jdbcType=VARCHAR},
+            ApiReturn      = #{apireturn,jdbcType=LONGVARCHAR},
+            `Date`         = #{date,jdbcType=TIMESTAMP}
+        where ID = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

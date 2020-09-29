@@ -1,0 +1,6 @@
+com\chinasoft\ssm\service\IUserService.class
+com\chinasoft\ssm\dao\UserMapper.class
+com\chinasoft\ssm\SsmTestApplication.class
+com\chinasoft\ssm\service\impl\UserServiceImpl.class
+com\chinasoft\ssm\domain\User.class
+com\chinasoft\ssm\controller\UserController.class

@@ -1,0 +1,7 @@
+server:
+  port: 9101
+  servlet:
+    context-path: /hw200909
+
+
+school: chinaSchool

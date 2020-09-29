@@ -1,0 +1,30 @@
+#server:
+#  port: 9006
+#  servlet:
+#    context-path: /demo200916
+
+spring:
+  datasource:
+    username: kevin
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/AccessForECS?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#  freemarker:
+#    check-template-location: true #检查模板是否存在
+#    charset: UTF-8 #编码方式
+#    content-type: text/html
+#    enabled: true #是否启用freemarker
+#    expose-request-attributes: false #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+#    expose-spring-macro-helpers: true #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+#    expose-session-attributes: false #否在merge模板的时候，将HttpSession属性都添加到model中
+#    prefer-file-system-access: true #是否优先从文件系统加载template，以支持热加载，默认为true
+#    suffix: .ftl #设定模板的后缀.
+#    template-loader-path: classpath:/templates/ #设定模板的加载路径，多个以逗号分隔，默认:
+#    settings:
+#      classic_compatible: true
+
+#mybatis:
+#  mapper-locations:
+#    - classpath:mybatis/mapper/*.xml
+#  type-aliases-package: com.kevinkda.univ.tcp.course.demo0320200916freemarker

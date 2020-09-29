@@ -1,0 +1,42 @@
+#jdbc:
+#  username: root
+#  password: admin
+#  jdbcUrl: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+#  driverClassName: com.mysql.jdbc.Driver
+
+
+#https://blog.csdn.net/jywhpu0612/article/details/105827327/
+server:
+  port: 8081  #端口号
+  servlet:
+    context-path: /ssm #项目名称
+spring:
+  datasource:
+    username: root
+    password: admin
+    #url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql:///test?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    charset: utf-8 #编码方式
+    check-template-location: true #检查模板位置是否存在
+    content-type: text/html
+    enabled: true #是否启用freemarker
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      classic_compatible: true
+
+
+#配置mybatis
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.chinasoft.ssm.domain
+#通配符
+
+#配置模板引擎
