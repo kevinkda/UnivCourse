@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.exam.enterpriseframeworkexam202009.mapper.TbProfileMapper">
+    <resultMap id="BaseResultMap" type="com.kevinkda.univ.exam.enterpriseframeworkexam202009.domain.TbProfile">
+        <!--@mbg.generated-->
+        <!--@Table university.tb_Profile-->
+        <id column="Profile_ID" jdbcType="INTEGER" property="profileId"/>
+        <result column="Profile_Name" jdbcType="VARCHAR" property="profileName"/>
+        <result column="Profile_Birthday" jdbcType="TIMESTAMP" property="profileBirthday"/>
+        <result column="Profile_Gender" jdbcType="VARCHAR" property="profileGender"/>
+        <result column="Profile_Career" jdbcType="VARCHAR" property="profileCareer"/>
+        <result column="Profile_Address" jdbcType="VARCHAR" property="profileAddress"/>
+        <result column="Profile_Mobile" jdbcType="VARCHAR" property="profileMobile"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        Profile_ID, Profile_Name,
+        DATE_FORMAT(Profile_Birthday,'%Y-%m-%d') as Profile_Birthday ,
+        Profile_Gender,
+        Profile_Career,
+        Profile_Address,
+        Profile_Mobile
+    </sql>
+    <!--    <sql id="Base_Column_List">-->
+    <!--        &lt;!&ndash;@mbg.generated&ndash;&gt;-->
+    <!--        Profile_ID, Profile_Name, Profile_Birthday, Profile_Gender, Profile_Career, Profile_Address,-->
+    <!--        Profile_Mobile-->
+    <!--    </sql>-->
+    <select id="selectAll" resultType="hashmap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from university.tb_Profile
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultType="hashmap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from university.tb_Profile
+        where Profile_ID = #{profileId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete
+        from university.tb_Profile
+        where Profile_ID = #{profileId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="Profile_ID" keyProperty="profileId"
+            parameterType="com.kevinkda.univ.exam.enterpriseframeworkexam202009.domain.TbProfile"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into university.tb_Profile (Profile_Name, Profile_Birthday, Profile_Gender,
+                                           Profile_Career, Profile_Address, Profile_Mobile)
+        values (#{profileName,jdbcType=VARCHAR}, #{profileBirthday,jdbcType=TIMESTAMP},
+                #{profileGender,jdbcType=VARCHAR},
+                #{profileCareer,jdbcType=VARCHAR}, #{profileAddress,jdbcType=VARCHAR},
+                #{profileMobile,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="Profile_ID" keyProperty="profileId"
+            parameterType="com.kevinkda.univ.exam.enterpriseframeworkexam202009.domain.TbProfile"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into university.tb_Profile
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="profileName != null">
+                Profile_Name,
+            </if>
+            <if test="profileBirthday != null">
+                Profile_Birthday,
+            </if>
+            <if test="profileGender != null">
+                Profile_Gender,
+            </if>
+            <if test="profileCareer != null">
+                Profile_Career,
+            </if>
+            <if test="profileAddress != null">
+                Profile_Address,
+            </if>
+            <if test="profileMobile != null">
+                Profile_Mobile,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="profileName != null">
+                #{profileName,jdbcType=VARCHAR},
+            </if>
+            <if test="profileBirthday != null">
+                #{profileBirthday,jdbcType=TIMESTAMP},
+            </if>
+            <if test="profileGender != null">
+                #{profileGender,jdbcType=VARCHAR},
+            </if>
+            <if test="profileCareer != null">
+                #{profileCareer,jdbcType=VARCHAR},
+            </if>
+            <if test="profileAddress != null">
+                #{profileAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="profileMobile != null">
+                #{profileMobile,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.kevinkda.univ.exam.enterpriseframeworkexam202009.domain.TbProfile">
+        <!--@mbg.generated-->
+        update university.tb_Profile
+        <set>
+            <if test="profileName != null">
+                Profile_Name = #{profileName,jdbcType=VARCHAR},
+            </if>
+            <if test="profileBirthday != null">
+                Profile_Birthday = #{profileBirthday,jdbcType=TIMESTAMP},
+            </if>
+            <if test="profileGender != null">
+                Profile_Gender = #{profileGender,jdbcType=VARCHAR},
+            </if>
+            <if test="profileCareer != null">
+                Profile_Career = #{profileCareer,jdbcType=VARCHAR},
+            </if>
+            <if test="profileAddress != null">
+                Profile_Address = #{profileAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="profileMobile != null">
+                Profile_Mobile = #{profileMobile,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where Profile_ID = #{profileId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="com.kevinkda.univ.exam.enterpriseframeworkexam202009.domain.TbProfile">
+        <!--@mbg.generated-->
+        update university.tb_Profile
+        set Profile_Name     = #{profileName,jdbcType=VARCHAR},
+            Profile_Birthday = #{profileBirthday,jdbcType=TIMESTAMP},
+            Profile_Gender   = #{profileGender,jdbcType=VARCHAR},
+            Profile_Career   = #{profileCareer,jdbcType=VARCHAR},
+            Profile_Address  = #{profileAddress,jdbcType=VARCHAR},
+            Profile_Mobile   = #{profileMobile,jdbcType=VARCHAR}
+        where Profile_ID = #{profileId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyMap"
+            parameterType="hashmap">
+        <!--@mbg.generated-->
+        update university.tb_Profile
+        set Profile_Name     = #{Profile_Name,jdbcType=VARCHAR},
+            Profile_Birthday = #{Profile_Birthday,jdbcType=TIMESTAMP},
+            Profile_Gender   = #{Profile_Gender,jdbcType=VARCHAR},
+            Profile_Career   = #{Profile_Career,jdbcType=VARCHAR},
+            Profile_Address  = #{Profile_Address,jdbcType=VARCHAR},
+            Profile_Mobile   = #{Profile_Mobile,jdbcType=VARCHAR}
+        where Profile_ID = #{Profile_ID,jdbcType=INTEGER}
+    </update>
+</mapper>

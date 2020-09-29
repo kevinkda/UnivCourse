@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hibernate-work-20200701:war">
+    <output-path>$PROJECT_DIR$/hibernate-work-20200701/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>hibernate-work-20200701</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="java-enterprise-framework-hibernate-work-20200701.war">
+      <element id="artifact" artifact-name="hibernate-work-20200701:war exploded" />
+    </root>
+  </artifact>
+</component>

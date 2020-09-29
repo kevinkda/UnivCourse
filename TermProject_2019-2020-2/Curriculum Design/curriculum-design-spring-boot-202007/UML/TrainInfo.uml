@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo</OriginalElement>
+  <nodes>
+    <node x="48.25" y="0.0">lombok.Data</node>
+    <node x="0.0" y="104.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo</node>
+    <node x="281.25" y="1.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo" target="java.io.Serializable">
+      <point x="126.75" y="-190.0" />
+      <point x="380.25" y="79.0" />
+      <point x="352.25" y="79.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo" target="lombok.Data">
+      <point x="-126.75" y="-190.0" />
+      <point x="126.75" y="79.0" />
+      <point x="154.75" y="79.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="121.0" y="77.0" />
+  <SelectedNodes>
+    <node>com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,7 +22,333 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63b5c83d-4c65-40fe-bd2f-2377f384ed8d" name="Default Changelist" comment="" />
+    <list default="true" id="63b5c83d-4c65-40fe-bd2f-2377f384ed8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/artifacts/curriculum_design_java_web_202007_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/commons_collections_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/commons_logging_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/ezmorph_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/fastjson_1_2_68.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/libraries/json_lib_2_4_jdk15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/0.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/Class Dependency.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/ConstConfig.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/Package-Dependency.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/photo/Class Dependency.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/photo/ConstConfig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/photo/Package chatroom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/UML/photo/chat-room-202005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/curriculum-design-java-web-202007.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/commons-logging-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/core/util/web/support/EncodingRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/constant/ConstConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/service/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/DataFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/listener/UserListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/commons-beanutils-1.9.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/commons-collections-3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/commons-logging-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/fastjson-1.2.68.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/admin/msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/out/artifacts/curriculum_design_java_web_202007_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/core/util/web/support/EncodingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/constant/ConstConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/service/WordAndTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/DataFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/EncodingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/listener/UserListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/src/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/servlet/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/core/util/web/support/EncodingRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/constant/ConstConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/service/ToolUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/DataFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/EncodingFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/listener/UserListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/classes/com/kevinkda/univ/curriculum/design/b202007/java/web/chatroom/web/servlet/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/admin/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/admin/msg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/admin/msg_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/admin/user_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/js/jquery-1.12.4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-java-web-202007/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/curriculum-design-spring-boot-202007.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/SQL/train_info.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/Class.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/ConstConfig.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/IndexController.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/Package Dependencies.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/TrainInfo.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/TrainInfoService.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/package.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/Class.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/IndexController.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/Package Dependencies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/Package manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/TrainInfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/UML/photo/TrainInfoService.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/curriculum-design-spring-boot-202007.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/core/web/support/EncodingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/TrainNumberManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/constant/ConstConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/domain/TrainInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/mapper/TrainInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/service/TrainInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/web/servlet/TrainInfoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/resources/mybatis/mapper/TrainInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/resources/templates/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/webapp/WEB-INF/jsp/getAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/webapp/WEB-INF/jsp/getTrain.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/test/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/TrainNumberManagementApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/src/test/java/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/controller/IndexControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/core/web/support/EncodingRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/TrainNumberManagementApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/config/WebConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/constant/ConstConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/domain/TrainInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/mapper/TrainInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/service/TrainInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/web/servlet/TrainInfoServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/mybatis/mapper/TrainInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/templates/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/test-classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/TrainNumberManagementApplicationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Curriculum Design/curriculum-design-spring-boot-202007/target/test-classes/com/kevinkda/univ/curriculum/design/b202007/spring/boot/train/number/manager/controller/IndexControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/job20200401/Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/job20200401/Main0401.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/job20200402/Control.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/job20200402/Main0402.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/date/TimeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/db/AbstractJdbc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/db/JdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/db/JdbcUtilsImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/db/PageBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/number/Section.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/JavaSE/bin/com/kevin/util/resource/db/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../course-java-web-202005/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_73.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jstl_impl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/toolkit_smartfox_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/framework_hibernate_work_20200701_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/framework_hibernate_work_20200701_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/hibernate_work_20200701_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/hibernate_work_20200701_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_alibaba_fastjson_1_2_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/framework-hibernate-work-20200701.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/java/com/kevinkda/univ/course/framework/hibernate/b20200701/dao/AuthorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/java/com/kevinkda/univ/course/framework/hibernate/b20200701/domain/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/java/com/kevinkda/univ/course/framework/hibernate/b20200701/factory/HibernateSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/java/com/kevinkda/univ/course/framework/hibernate/b20200701/web/servlet/AuthorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/java/com/kevinkda/univ/course/framework/hibernate/b20200701/web/servlet/BaseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/resources/Author.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/framework-hibernate-work-20200701/src/main/webapp/js/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/hibernate-demo-20200630.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/src/main/java/com/kevinkda/test/domain/CarInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/src/main/java/com/kevinkda/test/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/src/test/java/com/kevinkda/test/domain/CarInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/target/classes/com/kevinkda/test/domain/CarInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/target/classes/com/kevinkda/test/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/hibernate-demo-20200630/target/test-classes/com/kevinkda/test/domain/CarInfoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/java/com/kevinkda/univ/course/enter/framework/b20200629/common/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/java/com/kevinkda/univ/course/enter/framework/b20200629/domain/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/java/com/kevinkda/univ/course/enter/framework/b20200629/mapper/AuthorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/java/com/kevinkda/univ/course/enter/framework/b20200629/service/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/java/com/kevinkda/univ/course/enter/framework/b20200629/web/servlet/AuthorServlet0629.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/resources/mybatis/mapper/20200629TbAuthorTemp2Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/webapp/case/b0629/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/webapp/case/b0629/queryAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/target/classes/mybatis/mapper/20200629TbAuthorTemp2Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/target/java-enterprise-framework-202006/WEB-INF/classes/mybatis/mapper/20200629TbAuthorTemp2Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/target/java-enterprise-framework-202006/case/b0629/queryAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../作业提交记录/EnterpriseFramework/2020-6-29-17gb计职1-唐可寅-mybatis-5/JavaTermProject_202006.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../作业提交记录/EnterpriseFramework/2020-6-30-17gb计职1-唐可寅-mybatis-6/JavaTermProject_202006.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../作业提交记录/EnterpriseFramework/2020-7-1-17gb计职1-唐可寅-hibernate-1/JavaTermProject_202006.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202003/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202003/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202003/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202003/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202004/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200507/domain/Empolyee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200507/domain/Empolyee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200508/service/StringProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200508/service/StringProcess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200508/service/ToolUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200508/service/ToolUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servive/ToolUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servive/ToolUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/DoServlet0511.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/DoServlet0511.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/LoginServlet0511.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/LoginServlet0511.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/LoginServlet051102.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200511/servlet/LoginServlet051102.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200512/User0512Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200512/User0512Servlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200513/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200513/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200513/servlet/StudentServlet0513.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200513/servlet/StudentServlet0513.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200514/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200514/domain/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200514/servlet/StudentServlet0514.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200514/servlet/StudentServlet0514.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200515/EncodingsFilter0515.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200515/EncodingsFilter0515.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200515/TestServlet0515.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200515/TestServlet0515.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200518/UserServlet0518.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200518/UserServlet0518.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/dao/IUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/dao/impl/UserDapImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/dao/impl/UserDapImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/servlet/TestServlet0519.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200519/servlet/TestServlet0519.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200520/web/servlet/WordServlet0520.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200520/web/servlet/WordServlet0520.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200525/web/servlet/JsonServlet0525.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200525/web/servlet/JsonServlet0525.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/web/servlet/LoginServlet0526.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/web/servlet/LoginServlet0526.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/web/servlet/UserNickCheckServlet0526.class" beforeDir="false" afterPath="$PROJECT_DIR$/../course-java-web-202005/target/classes/com/kevinkda/univ/course/web/test20200526/web/servlet/UserNickCheckServlet0526.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/java_web_202005_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/java_web_202005_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-web-202005.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-web-202005.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/course_mysql_202006_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/course_mysql_202006_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/java_enterprise_framework_202006_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/java_enterprise_framework_202006_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/mysql_upload_202006_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/artifacts/mysql_upload_202006_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_alibaba_fastjson_1_2_71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_kevinkda_java_utils_3_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/libraries/Maven__com_kevinkda_java_utils_3_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/course-mysql-202006.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/course-mysql-202006/course-mysql-202006.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/webapp/case/b0627/queryAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/src/main/webapp/case/b0627/queryAll.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/target/java-enterprise-framework-202006/case/b0627/queryAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaTermProject_202006/java-enterprise-framework-202006/target/java-enterprise-framework-202006/case/b0627/queryAll.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SingleProject/chat-room-202005/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SingleProject/chat-room-202005/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SingleProject/chat-room-202005/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SingleProject/chat-room-202005/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SingleProject/chatRoom-202005/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SingleProject/chatRoom-202005/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/maven-public-test-02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/pom.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/pom.pom.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/target/maven-public-test-02-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/target/maven-public-test-02-0.0.1.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../maven-public-test-02/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +363,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="JupyterTrust" id="81f0ddb9-d3cb-44e4-9a8c-b30ff48879a1" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../../DevLocalEnv/repository/.m2/kevinkda.xml" />
       </MavenGeneralSettings>
     </option>
@@ -70,6 +401,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 7.0.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -94,6 +426,10 @@
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="51075" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="DEBUG_PORT" value="58325" />
+        <option name="visualVMId" value="403980283961225" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -125,7 +461,37 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug with VisualVM">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run with VisualVM">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -148,6 +514,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
@@ -163,11 +530,12 @@
       <updated>1588863436903</updated>
       <workItem from="1588863438280" duration="65000" />
       <workItem from="1589158933312" duration="11000" />
+      <workItem from="1600753029484" duration="641000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -182,13 +550,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="682" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588863484348">
+    <state x="682" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600754227803">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="682" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1588863484348" />
-    <state x="940" y="345" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1588863464213">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="940" y="345" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1920.1177@0.23.1920.1177" timestamp="1588863464213" />
+    <state x="682" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1600754227803" />
   </component>
 </project>

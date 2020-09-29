@@ -27,13 +27,16 @@
                 <td>${comment.authorId}</td>
                 <td>${comment.authorName}</td>
                 <td>${comment.authorAge}</td>
-                <td><a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=queryItem&blogId=${comment.authorId}">detailed</a>
-                <td><a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=updateB&blogId=${comment.authorId}">update</a>
+                <td>
+                    <a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=queryItem&blogId=${comment.authorId}">detailed</a>
+                <td>
+                    <a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=updateB&blogId=${comment.authorId}">update</a>
                 </td>
                 <td>
                     <a href="updateB.jsp?operType=updateB&authorId=${comment.authorId}&authorName=${comment.authorName}&authorAge=${comment.authorAge}">update</a>
                 </td>
-                <td><a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=delete&authorId=${comment.authorId}">delete</a>
+                <td>
+                    <a href="${pageContext.request.contextPath}/AuthorServlet0627?operType=delete&authorId=${comment.authorId}">delete</a>
                 </td>
             </tr>
         </c:forEach>

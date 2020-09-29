@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!--    <property name="connection.url"/>-->
+        <!--    <property name="connection.driver_class"/>-->
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+
+        <!--  mysql账户名  -->
+        <property name="connection.username">kevin</property>
+
+        <!--  mysql密码  -->
+        <property name="connection.password">Karry0921</property>
+
+        <!--  mysql驱动  -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<!--        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>-->
+
+        <!--  mysql连接URL  -->
+<!--        <property name="connection.url">jdbc:mysql:///hibernate?useUnicode=true&amp;characterEncoding=UTF-8</property>-->
+<!--        <property name="connection.url">jdbc:mysql:///hibernate?serverTimeZone=UTC</property>-->
+        <property name="connection.url">jdbc:mysql://bj.kevinkda.cn:3306/university?serverTimeZone=UTC</property>
+<!--        <property name="connection.url">jdbc:mysql://bj.kevinkda.cn:3306/university?characterEncoding=UTF-8&amp;rewriteBatchedStatements=true</property>-->
+
+        <!--  数据库方言  -->
+<!--        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!--  显示sql语句  -->
+        <property name="show_sql">true</property>
+
+        <!--  格式化sql语句  -->
+        <property name="format_sql">true</property>
+
+        <!--  根据需要创建数据库  -->
+        <property name="hbm2ddl.auto">create</property>
+
+        <mapping class="com.kevinkda.test.domain.CarInfo"></mapping>
+    </session-factory>
+</hibernate-configuration>

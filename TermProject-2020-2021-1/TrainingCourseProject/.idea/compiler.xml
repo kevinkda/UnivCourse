@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-03-20200916-freemarker" />
+        <module name="data-source-demo-spring" />
+        <module name="hw-20200909" />
+        <module name="demo-01-20200909" />
+        <module name="demo-02-20200910-ssm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-source-demo-spring" target="1.8" />
+      <module name="demo-01-20200909" target="1.8" />
+      <module name="demo-02-20200910-ssm" target="1.8" />
+      <module name="demo-03-20200916-freemarker" target="1.8" />
+      <module name="hw-20200909" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data-source-demo-spring" options="-parameters" />
+      <module name="demo-01-20200909" options="-parameters" />
+      <module name="demo-02-20200910-ssm" options="-parameters" />
+      <module name="demo-03-20200916-freemarker" options="-parameters" />
+      <module name="hw-20200909" options="-parameters" />
+    </option>
+  </component>
+</project>

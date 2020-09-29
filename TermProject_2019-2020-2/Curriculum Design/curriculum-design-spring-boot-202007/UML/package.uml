@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager</OriginalElement>
+  <nodes>
+    <node x="112.0" y="306.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.controller</node>
+    <node x="206.75" y="204.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.constant</node>
+    <node x="0.0" y="505.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.TrainNumberManagementApplicationTest</node>
+    <node x="0.0" y="102.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.mapper</node>
+    <node x="15.5" y="403.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.TrainNumberManagementApplication</node>
+    <node x="36.75" y="204.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.service</node>
+    <node x="40.75" y="0.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.controller" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.service">
+      <point x="-43.25" y="-26.0" />
+      <point x="155.25" y="281.0" />
+      <point x="111.75" y="281.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.TrainNumberManagementApplicationTest" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.TrainNumberManagementApplication">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.service" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.mapper">
+      <point x="-37.5" y="-26.0" />
+      <point x="74.25" y="179.0" />
+      <point x="71.0" y="179.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.service" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain">
+      <point x="37.5" y="-26.0" />
+      <point x="149.25" y="179.0" />
+      <point x="152.5" y="179.0" />
+      <point x="152.5" y="77.0" />
+      <point x="147.25" y="77.0" />
+      <point x="35.5" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.mapper" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain">
+      <point x="0.0" y="-26.0" />
+      <point x="71.0" y="77.0" />
+      <point x="76.25" y="77.0" />
+      <point x="-35.5" y="26.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.controller" target="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.constant">
+      <point x="43.25" y="-26.0" />
+      <point x="241.75" y="281.0" />
+      <point x="285.25" y="281.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="246.0" y="268.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

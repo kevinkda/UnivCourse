@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$/data-source-demo-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-01-20200909/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-02-20200910-ssm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-03-20200916-freemarker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hw-20200909/src/main/java" charset="UTF-8" />
+  </component>
+</project>

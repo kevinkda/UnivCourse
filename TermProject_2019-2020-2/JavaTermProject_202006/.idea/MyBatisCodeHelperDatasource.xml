@@ -5,6 +5,11 @@
       <ProjectProfile>
         <option name="addSchemaName" value="true" />
         <option name="generateService" value="true" />
+        <option name="generatedClassPathList">
+          <list>
+            <option value="$PROJECT_DIR$/../hibernate-demo-20200630/src/main/java/com/kevinkda/test/domain" />
+          </list>
+        </option>
         <option name="javaMapperPackage" value="com.kevinkda.univ.course.enter.framework.b20200623.mapper" />
         <option name="javaMapperPath" value="$PROJECT_DIR$/course-mysql-202006/src/main/java" />
         <option name="javaModelPackage" value="com.kevinkda.univ.course.enter.framework.b20200623.domain" />

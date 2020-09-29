@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.constant.ConstConfig</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.constant.ConstConfig</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="67.0" y="26.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

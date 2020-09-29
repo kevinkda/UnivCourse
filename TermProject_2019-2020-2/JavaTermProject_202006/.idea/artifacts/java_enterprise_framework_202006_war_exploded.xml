@@ -14,7 +14,7 @@
           <element id="module-output" name="java-enterprise-framework-202006" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: com.kevinkda:java-utils:3.2.0-SNAPSHOT" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../DevLocalEnv/repository/.m2/repository/com/kevinkda/java-utils/3.2.0-SNAPSHOT/java-utils-3.2.0-20200529.085656-3.jar" output-file-name="java-utils-3.2.0-SNAPSHOT.jar" />
           <element id="library" level="project" name="Maven: io.jsonwebtoken:jjwt-api:0.11.1" />
           <element id="library" level="project" name="Maven: io.jsonwebtoken:jjwt-impl:0.11.1" />
           <element id="library" level="project" name="Maven: io.jsonwebtoken:jjwt-jackson:0.11.1" />

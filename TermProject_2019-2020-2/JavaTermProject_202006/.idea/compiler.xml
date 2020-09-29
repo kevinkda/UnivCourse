@@ -6,14 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-enterprise-framework-202006" />
-        <module name="mysql-upload-202006" />
+        <module name="framework-hibernate-work-20200701" />
         <module name="mysql-course-202006" />
+        <module name="java-enterprise-framework-202006" />
+        <module name="hibernate-demo-20200630" />
         <module name="course-mysql-202006" />
+        <module name="mysql-upload-202006" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="course-mysql-202006" target="1.8" />
+      <module name="framework-hibernate-work-20200701" target="1.8" />
+      <module name="hibernate-demo-20200630" target="1.8" />
+      <module name="hibernate-work-20200701" target="1.8" />
       <module name="java-enterprise-framework-202006" target="1.8" />
       <module name="mysql-course-202006" target="1.8" />
       <module name="mysql-upload-202006" target="1.8" />

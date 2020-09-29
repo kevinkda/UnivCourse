@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/data-source-demo-spring/data-source-demo-spring.iml" filepath="$PROJECT_DIR$/data-source-demo-spring/data-source-demo-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-01-20200909/demo-01-20200909.iml" filepath="$PROJECT_DIR$/demo-01-20200909/demo-01-20200909.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-02-20200910-ssm/demo-02-20200910-ssm.iml" filepath="$PROJECT_DIR$/demo-02-20200910-ssm/demo-02-20200910-ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-03-20200916-freemarker/demo-03-20200916-freemarker.iml" filepath="$PROJECT_DIR$/demo-03-20200916-freemarker/demo-03-20200916-freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw-20200909/hw-20200909.iml" filepath="$PROJECT_DIR$/hw-20200909/hw-20200909.iml" />
+    </modules>
+  </component>
+</project>

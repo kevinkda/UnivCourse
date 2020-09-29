@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.kevinkda.univ.course.framework.hibernate.b20200701.domain">
+
+    <!--name指的是POJO类的类名，table是数据库的表名，catalog是数据库的名称  -->
+    <class name="Author" table="20200623_tb_author" catalog="university">
+        <!--id表示此字段为数据库的主键，这里也可以用property来写，name为Student类的成员变量名，type为类型的包全名  -->
+        <id name="author_ID" type="java.lang.Integer">
+            <!--column表示映射的数据库的字段，name表示数据库中字段名，length表示varchar/char型的长度  -->
+            <column name="AUTHOR_ID" length="8"></column>
+            <generator class="assigned"></generator>
+        </id>
+        <property name="author_Name" type="java.lang.String">
+            <column name="AUTHOR_NAME" length="40"/>
+        </property>
+        <property name="author_Age" type="java.lang.Integer">
+            <column name="AUTHOR_AGE"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+server:
+  port: 8095
+  servlet:
+    context-path: /train
+
+mybatis:
+  #type-aliases-package: com.chinasoft.springboot_mybatis.pojo
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+spring:
+  thymeleaf:
+    enabled: true  #开启thymeleaf视图解析
+    encoding: utf-8  #编码
+    prefix: classpath:/templates/  #前缀
+    cache: false  #是否使用缓存
+    mode: HTML  #严格的HTML语法模式
+    suffix: .html  #后缀名
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/upload/
+  mvc:
+    static-path-pattern: /**
+    view:
+#      prefix: /static/jsp/
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bj.kevinkda.cn:3306/TemplateData?characterEncoding=UTF-8&rewriteBatchedStatements=true
+    username: kevin
+    password: Karry0921
+
+jdbc:
+  username: kevin
+  password: Karry0921
+  url: jdbc:mysql://bj.kevinkda.cn:3306/test?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+  driverClassName: com.mysql.cj.jdbc.Driver

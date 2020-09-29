@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/data-source-demo-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-01-20200909/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-02-20200910-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-03-20200916-freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/hw-20200909/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

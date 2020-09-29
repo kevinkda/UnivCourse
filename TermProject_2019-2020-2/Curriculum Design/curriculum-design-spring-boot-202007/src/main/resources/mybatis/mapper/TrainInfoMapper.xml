@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.mapper.TrainInfoMapper">
+    <resultMap id="BaseResultMap"
+               type="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo">
+        <!--@mbg.generated-->
+        <!--@Table temp.train_info-->
+        <id column="train_no" jdbcType="VARCHAR" property="trainNo"/>
+        <result column="start_station" jdbcType="VARCHAR" property="startStation"/>
+        <result column="arrival_station" jdbcType="VARCHAR" property="arrivalStation"/>
+        <result column="start_time" jdbcType="VARCHAR" property="startTime"/>
+        <result column="arrival_time" jdbcType="VARCHAR" property="arrivalTime"/>
+        <result column="type" jdbcType="VARCHAR" property="type"/>
+        <result column="runtime" jdbcType="VARCHAR" property="runtime"/>
+        <result column="mile" jdbcType="DECIMAL" property="mile"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        train_no, start_station, arrival_station, start_time, arrival_time, `type`, runtime,
+        mile
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from temp.train_info
+        where train_no = #{trainNo,jdbcType=VARCHAR}
+    </select>
+    <select id="selectByPrimaryKeyMap" parameterType="java.lang.String" resultType="hashmap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from temp.train_info
+        where train_no = #{trainNo,jdbcType=VARCHAR}
+    </select>
+    <select id="selectAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from temp.train_info
+    </select>
+    <select id="selectAllMap" parameterType="java.lang.String" resultType="hashmap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from temp.train_info
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        <!--@mbg.generated-->
+        delete
+        from temp.train_info
+        where train_no = #{trainNo,jdbcType=VARCHAR}
+    </delete>
+    <delete id="deleteByPrimaryKeyString" parameterType="java.lang.String">
+        <!--@mbg.generated-->
+        delete
+        from temp.train_info
+        where train_no in #{trainNo,jdbcType=VARCHAR}
+    </delete>
+    <insert id="insert"
+            parameterType="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo">
+        <!--@mbg.generated-->
+        insert into temp.train_info (train_no, start_station, arrival_station,
+                                     start_time, arrival_time, `type`,
+                                     runtime, mile)
+        values (#{trainNo,jdbcType=VARCHAR}, #{startStation,jdbcType=VARCHAR}, #{arrivalStation,jdbcType=VARCHAR},
+                #{startTime,jdbcType=VARCHAR}, #{arrivalTime,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR},
+                #{runtime,jdbcType=VARCHAR}, #{mile,jdbcType=DECIMAL})
+    </insert>
+    <insert id="insertSelective"
+            parameterType="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo">
+        <!--@mbg.generated-->
+        insert into temp.train_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="trainNo != null">
+                train_no,
+            </if>
+            <if test="startStation != null">
+                start_station,
+            </if>
+            <if test="arrivalStation != null">
+                arrival_station,
+            </if>
+            <if test="startTime != null">
+                start_time,
+            </if>
+            <if test="arrivalTime != null">
+                arrival_time,
+            </if>
+            <if test="type != null">
+                `type`,
+            </if>
+            <if test="runtime != null">
+                runtime,
+            </if>
+            <if test="mile != null">
+                mile,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="trainNo != null">
+                #{trainNo,jdbcType=VARCHAR},
+            </if>
+            <if test="startStation != null">
+                #{startStation,jdbcType=VARCHAR},
+            </if>
+            <if test="arrivalStation != null">
+                #{arrivalStation,jdbcType=VARCHAR},
+            </if>
+            <if test="startTime != null">
+                #{startTime,jdbcType=VARCHAR},
+            </if>
+            <if test="arrivalTime != null">
+                #{arrivalTime,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="runtime != null">
+                #{runtime,jdbcType=VARCHAR},
+            </if>
+            <if test="mile != null">
+                #{mile,jdbcType=DECIMAL},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo">
+        <!--@mbg.generated-->
+        update temp.train_info
+        <set>
+            <if test="startStation != null">
+                start_station = #{startStation,jdbcType=VARCHAR},
+            </if>
+            <if test="arrivalStation != null">
+                arrival_station = #{arrivalStation,jdbcType=VARCHAR},
+            </if>
+            <if test="startTime != null">
+                start_time = #{startTime,jdbcType=VARCHAR},
+            </if>
+            <if test="arrivalTime != null">
+                arrival_time = #{arrivalTime,jdbcType=VARCHAR},
+            </if>
+            <if test="type != null">
+                `type` = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="runtime != null">
+                runtime = #{runtime,jdbcType=VARCHAR},
+            </if>
+            <if test="mile != null">
+                mile = #{mile,jdbcType=DECIMAL},
+            </if>
+        </set>
+        where train_no = #{trainNo,jdbcType=VARCHAR}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="com.kevinkda.univ.curriculum.design.b202007.spring.boot.train.number.manager.domain.TrainInfo">
+        <!--@mbg.generated-->
+        update temp.train_info
+        set start_station   = #{startStation,jdbcType=VARCHAR},
+            arrival_station = #{arrivalStation,jdbcType=VARCHAR},
+            start_time      = #{startTime,jdbcType=VARCHAR},
+            arrival_time    = #{arrivalTime,jdbcType=VARCHAR},
+            `type`          = #{type,jdbcType=VARCHAR},
+            runtime         = #{runtime,jdbcType=VARCHAR},
+            mile            = #{mile,jdbcType=DECIMAL}
+        where train_no = #{trainNo,jdbcType=VARCHAR}
+    </update>
+</mapper>
