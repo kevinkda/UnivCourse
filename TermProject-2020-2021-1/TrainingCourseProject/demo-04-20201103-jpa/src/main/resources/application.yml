@@ -1,0 +1,26 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /jpa
+
+spring:
+  application:
+    name: demo-04-20201103-jpa
+  datasource:
+    username: kevin
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/TemplateData?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true

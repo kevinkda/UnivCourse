@@ -1,0 +1,55 @@
+spring:
+  profiles:
+    active: dev
+  #    active: prod
+  application:
+    name: spring-cloud-test-202011
+  freemarker:
+    check-template-location: true #检查模板是否存在
+    charset: UTF-8 #编码方式
+    content-type: text/html
+    enabled: true #是否启用freemarker
+    expose-request-attributes: false #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+    expose-spring-macro-helpers: true #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+    expose-session-attributes: false #否在merge模板的时候，将HttpSession属性都添加到model中
+    prefer-file-system-access: true #是否优先从文件系统加载template，以支持热加载，默认为true
+    suffix: .ftl #设定模板的后缀.
+    template-loader-path:
+      - classpath:/templates/ #设定模板的加载路径，多个以逗号分隔，默认:
+    settings:
+      classic_compatible: true
+  mvc:
+    static-path-pattern:
+      - classpath:/static/**
+  resources:
+    static-locations:
+      - classpath:/META-INF/resources/
+      - classpath:/resources/
+      - classpath:/static/
+      - classpath:/public/
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+mybatis:
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.kevinkda.demo.proj.spring.cloud.test.b20201117
+
+
+eureka:
+  server:
+    enable-self-preservation: true
+  client:
+    #    register-with-eureka: false # 是否注册自己的信息到EurekaServer，默认是true
+    register-with-eureka: false # 是否注册自己的信息到EurekaServer，默认是true
+    fetch-registry: false # 是否拉取其它服务的信息，默认是true
+    #    fetch-registry: false # 是否拉取其它服务的信息，默认是true
+    service-url: # EurekaServer的地址，现在是自己的地址，如果是集群，需要加上其它Server的地址。
+      #      defaultZone: http://127.0.0.1:9099/eureka
+      defaultZone: http://localhost:${server.port}/eureka/
+  instance:
+    prefer-ip-address: true # 当调用getHostname获取实例的hostname时，返回ip而不是host名称
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找
+

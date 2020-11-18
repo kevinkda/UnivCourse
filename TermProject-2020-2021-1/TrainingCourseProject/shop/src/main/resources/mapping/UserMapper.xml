@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.shop.dao.UserMapper">
+    <select id="queryUserIsExist" resultType="hashmap">
+
+                select * from  tb_user where user_email=#{userEmail}
+
+    </select>
+
+    <select id="userLogin" resultType="hashmap" parameterType="hashmap">
+
+                SELECT
+                t.user_id as userId,
+                t.user_email as userEmail,
+                t.user_password as userPassword,
+                t.user_reg_time as userRegTime,
+                t.user_last_time as userLastTime,
+                t.user_last_login_ip as userLastLoginId,
+                t.user_status as userStatus,
+                t.user_sessionId as userSessionId,
+                t.user_login_count as userLoginCount
+                FROM
+                tb_user t
+                where user_email=#{userEmail}
+
+    </select>
+
+    <insert id="insertUser" parameterType="hashmap" keyProperty="user_id" useGeneratedKeys="true">
+        insert into tb_user (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userEmail         != null">
+                user_email,
+            </if>
+            <if test="userPassword      != null">
+                user_password,
+            </if>
+            <if test="userRegTime       != null">
+                user_reg_time,
+            </if>
+            <if test="userLastTime      != null">
+                user_last_time,
+            </if>
+            <if test="userLastLoginIp   != null">
+                user_last_login_ip,
+            </if>
+            <if test="userStatus        != null">
+                user_status,
+            </if>
+            <if test="userSessionId     != null">
+                user_sessionid,
+            </if>
+            <if test="userLoginCount    != null">
+                user_login_count,
+            </if>
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userEmail         != null">
+                #{userEmail},
+            </if>
+            <if test="userPassword      != null">
+                #{userPassword},
+            </if>
+            <if test="userRegTime       != null">
+                #{userRegTime},
+            </if>
+            <if test="userLastTime      != null">
+                #{userLastTime},
+            </if>
+            <if test="userLastLoginIp   != null">
+                #{userLastLoginIp},
+            </if>
+            <if test="userStatus        != null">
+                #{userStatus},
+            </if>
+            <if test="userSessionId     != null">
+                #{userSessionId},
+            </if>
+            <if test="userLoginCount    != null">
+                #{userLoginCount},
+            </if>
+        </trim>
+        )
+    </insert>
+
+    <update id="updateUser" parameterType="hashmap">
+        update tb_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userPassword       != null">
+                user_password = #{userPassword},
+            </if>
+            <if test="userRegTime        != null">
+                user_reg_time = #{userRegTime},
+            </if>
+            <if test="userLastTime       != null">
+                user_last_time = #{userLastTime},
+            </if>
+            <if test="userLastLoginIp    != null">
+                user_last_login_ip = #{userLastLoginIp},
+            </if>
+            <if test="userStatus         != null">
+                user_status = #{userStatus},
+            </if>
+            <if test="userSessionId      != null">
+                user_sessionid = #{userSessionId},
+            </if>
+            <if test="userLoginCount     != null">
+                user_login_count = #{userLoginCount},
+            </if>
+        </trim>
+        where user_id = #{userId}
+    </update>
+
+    <select id="queryAddressList" resultType="hashmap" parameterType="hashmap">
+
+                SELECT
+                t.user_address_id as userAddressId,
+                t.user_address_people as userAddressPeople,
+                t.user_phone as userPhone,
+                t.user_address as userAddress,
+                t.user_email as userEmail,
+                t.user_address_status as userAddressStatus
+                FROM
+                tb_user_address t
+                where user_email=#{userEmail} order by user_address_status desc
+
+    </select>
+
+    <update id="updateUserAddressOne" parameterType="hashmap">
+
+                update tb_user_address set user_address_status=0 where user_email=#{userEmail}
+
+    </update>
+
+    <update id="updateUserAddressTwo" parameterType="hashmap">
+
+                update tb_user_address set user_address_status=1 where user_address_id=#{userAddressId}
+
+    </update>
+
+    <delete id="deleteUserAddress" parameterType="java.util.List">
+
+                delete from tb_user
+                where user_id in
+
+    </delete>
+
+    <select id="selectAreaList" resultType="hashmap">
+           SELECT
+            amapDistrictTable.districtId as area_id,
+            amapDistrictTable.adcode,
+            amapDistrictTable.`name` as area_name,
+            amapDistrictTable.`level`,
+            amapDistrictTable.parentId as area_parent_id
+        FROM
+            amapDistrictTable
+    </select>
+
+    <insert id="addressInsert" parameterType="hashmap">
+        insert into tb_user_address (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userAddressPeople         != null">
+                user_address_people,
+            </if>
+            <if test="userPhone      != null">
+                user_phone,
+            </if>
+            <if test="userAddress       != null">
+                user_address,
+            </if>
+            <if test="userEmail      != null">
+                user_email,
+            </if>
+            <if test="userAddressStatus   != null">
+                user_address_status,
+            </if>
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userAddressPeople         != null">
+                #{userAddressPeople},
+            </if>
+            <if test="userPhone      != null">
+                #{userPhone},
+            </if>
+            <if test="userAddress       != null">
+                #{userAddress},
+            </if>
+            <if test="userEmail      != null">
+                #{userEmail},
+            </if>
+            <if test="userAddressStatus   != null">
+                #{userAddressStatus},
+            </if>
+        </trim>
+        )
+    </insert>
+
+    <!--指的是一个普通的sql语句不代表某一个方法-->
+    <!--
+    <sql id="queryFields">
+     select user_id as userId,
+     user_name as userName,
+     user_score as userScore
+      from  tb_user
+    </sql>
+
+    <sql id="queryCondition">
+        <trim prefix="where"  prefixOverrides="and|or">
+            <if test="userId            != null and userId              !=''">and user_id=#{userId}</if>
+            <if test="userName          != null and userName            !=''">and user_name  like '%${userName}%'</if>
+            <if test="userScore         != null and userScore           !=''">and user_score=#{userScore}</if>
+        </trim>
+    </sql>
+
+    <select id="selectUserCount" parameterType="hashmap" resultType="int">
+        select count(*)
+        from tb_user
+        <include refid="queryCondition" />
+    </select>
+
+    <select id="selectUserList" parameterType="hashmap" resultType="hashmap">
+        <include refid="queryFields" />
+        <include refid="queryCondition" />
+        order by user_id DESC
+        <if test="start != null  and pageSize != null ">
+            limit #{start}, #{pageSize}
+        </if>
+    </select>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    <delete id="deleteUserByIds" parameterType="java.util.List">
+        delete from tb_user
+        where user_id in
+        <foreach collection="list" item="item" open="(" separator=","
+                 close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+
+
+    <insert id="insertUser" parameterType="hashmap" keyProperty="user_id" useGeneratedKeys="true">
+        insert into tb_user (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userName != null">user_name,</if>
+            <if test="userScore != null">user_score,</if>
+
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userName     != null">#{userName},</if>
+            <if test="userScore    != null">#{userScore},</if>
+        </trim>
+        )
+    </insert>
+
+
+    <select id="selectUserById"  resultType="hashmap" parameterType="int">
+        select user_id as userId,user_name as userName,user_score as userScore from  tb_user where user_id=#{userId}
+    </select>
+
+    <update id="updateUser" parameterType="hashmap">
+        update tb_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userName       != null">user_name      = #{userName},</if>
+            <if test="userScore      != null">user_score     = #{userScore},</if>
+
+        </trim>
+        where user_id = #{userId}
+    </update>
+    -->
+</mapper>

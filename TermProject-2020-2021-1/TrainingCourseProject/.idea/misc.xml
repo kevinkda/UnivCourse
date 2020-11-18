@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/demo-02-20200910-ssm/pom.xml" />
         <option value="$PROJECT_DIR$/demo-03-20200916-freemarker/pom.xml" />
         <option value="$PROJECT_DIR$/hw-20200909/pom.xml" />
+        <option value="$PROJECT_DIR$/online-retailers-springboot-202010/pom.xml" />
+        <option value="$PROJECT_DIR$/shop/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-04-20201103-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-test-202011/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-test-202011/module/spring-cloud-test-consumer-20201117-01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-demo-20201117/module/eureka-service-20201117/pom.xml" />
       </list>
     </option>
   </component>

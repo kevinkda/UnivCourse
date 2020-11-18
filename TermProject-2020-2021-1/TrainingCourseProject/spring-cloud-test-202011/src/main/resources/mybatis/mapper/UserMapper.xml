@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kevinkda.demo.proj.spring.cloud.test.b20201117.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain.User">
+    <!--@mbg.generated-->
+    <!--@Table TemplateData.`user`-->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_pass" jdbcType="VARCHAR" property="userPass" />
+    <result column="reg_time" jdbcType="TIMESTAMP" property="regTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    user_id, user_name, user_pass, reg_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from TemplateData.`user`
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from TemplateData.`user`
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="user_id" keyProperty="userId" parameterType="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain.User" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into TemplateData.`user` (user_name, user_pass, reg_time
+      )
+    values (#{userName,jdbcType=VARCHAR}, #{userPass,jdbcType=VARCHAR}, #{regTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="user_id" keyProperty="userId" parameterType="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain.User" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into TemplateData.`user`
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userPass != null">
+        user_pass,
+      </if>
+      <if test="regTime != null">
+        reg_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPass != null">
+        #{userPass,jdbcType=VARCHAR},
+      </if>
+      <if test="regTime != null">
+        #{regTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain.User">
+    <!--@mbg.generated-->
+    update TemplateData.`user`
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userPass != null">
+        user_pass = #{userPass,jdbcType=VARCHAR},
+      </if>
+      <if test="regTime != null">
+        reg_time = #{regTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain.User">
+    <!--@mbg.generated-->
+    update TemplateData.`user`
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_pass = #{userPass,jdbcType=VARCHAR},
+      reg_time = #{regTime,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>

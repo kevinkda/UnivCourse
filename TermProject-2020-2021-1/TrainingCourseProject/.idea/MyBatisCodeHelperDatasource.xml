@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSchemaName" value="true" />
+        <option name="addSerializeUid" value="true" />
+        <option name="checkBlobColumn" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+        <option name="javaModelPackage" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="spring-cloud-test-202011" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="modelAddEqualHashCode" value="true" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="spring-cloud-test-202011">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+                  <option name="javaModelPacakge" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.domain" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.service.table" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+                  <option name="javaServicePackage" value="com.kevinkda.demo.proj.spring.cloud.test.b20201117.service.table.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/java" />
+                  <option name="xmlPackage" value="mybatis.mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="mybatisPlusIdType" value="AUTO" />
+        <option name="p3CComment" value="true" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="HuangSir:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="user_id" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="spring-cloud-test-202011" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="TemplateData:user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="user_id" />
+                  <option name="javaModelName" value="User" />
+                  <option name="moduleName" value="spring-cloud-test-202011" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="TemplateData:user_1">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="user_id" />
+                  <option name="javaModelName" value="User1" />
+                  <option name="moduleName" value="spring-cloud-test-202011" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mybatis.mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/spring-cloud-test-202011/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-03-20200916-freemarker" />
         <module name="data-source-demo-spring" />
+        <module name="shop" />
+        <module name="demo-04-20201103-jpa" />
+        <module name="online-retailers-springboot-202010" />
+        <module name="spring-cloud-test-consumer-20201117-01" />
+        <module name="demo-03-20200916-freemarker" />
+        <module name="spring-cloud-test-202011" />
         <module name="hw-20200909" />
+        <module name="eureka-service-20201117" />
         <module name="demo-01-20200909" />
         <module name="demo-02-20200910-ssm" />
       </profile>
@@ -18,7 +25,13 @@
       <module name="demo-01-20200909" target="1.8" />
       <module name="demo-02-20200910-ssm" target="1.8" />
       <module name="demo-03-20200916-freemarker" target="1.8" />
+      <module name="demo-04-20201103-jpa" target="1.8" />
+      <module name="eureka-service-20201117" target="1.8" />
       <module name="hw-20200909" target="1.8" />
+      <module name="online-retailers-springboot-202010" target="1.8" />
+      <module name="shop" target="1.8" />
+      <module name="spring-cloud-test-202011" target="1.8" />
+      <module name="spring-cloud-test-consumer-20201117-01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,7 +40,9 @@
       <module name="demo-01-20200909" options="-parameters" />
       <module name="demo-02-20200910-ssm" options="-parameters" />
       <module name="demo-03-20200916-freemarker" options="-parameters" />
+      <module name="demo-04-20201103-jpa" options="-parameters" />
       <module name="hw-20200909" options="-parameters" />
+      <module name="shop" options="-parameters" />
     </option>
   </component>
 </project>

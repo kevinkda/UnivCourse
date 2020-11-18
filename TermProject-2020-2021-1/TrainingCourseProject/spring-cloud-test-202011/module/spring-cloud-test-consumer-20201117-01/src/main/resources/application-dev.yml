@@ -1,0 +1,27 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /consumer_1
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/TemplateData?serverTimezone=UTC&characterEncoding=UTF-8&rewriteBatchedStatements=true&useUnicode=true&useSSL=true&allowPublicKeyRetrieval=true
+    username: kevin
+    type: com.alibaba.druid.pool.DruidDataSource
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 8084

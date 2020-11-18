@@ -1,0 +1,34 @@
+server:
+  port: 9002
+  servlet:
+    context-path: /cloud
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?serverTimezone=UTC&characterEncoding=UTF-8&rewriteBatchedStatements=true&useUnicode=true&useSSL=true&allowPublicKeyRetrieval=true
+    username: kevin
+    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+
+
+## 生成的公钥
+#public-key: 这里添生成的公钥
+## 配置 connection-properties，启用加密，配置公钥。
+#spring.datasource.druid.connection-properties: config.decrypt=true;config.decrypt.key=${public-key}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 9002

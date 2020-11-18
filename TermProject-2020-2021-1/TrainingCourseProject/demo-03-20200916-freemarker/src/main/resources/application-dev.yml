@@ -4,6 +4,12 @@
 #    context-path: /demo200916
 
 spring:
+  datasource:
+    username: kevin
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/TemplateData?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
 #  freemarker:
 #    check-template-location: true #检查模板是否存在
 #    charset: UTF-8 #编码方式

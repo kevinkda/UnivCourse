@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /manager
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    password: Karry0921
+    url: jdbc:mysql://bj.kevinkda.cn:3306/university?serverTimezone=UTC&characterEncoding=UTF-8&rewriteBatchedStatements=true&useUnicode=true&useSSL=true&allowPublicKeyRetrieval=true
+    username: kevin
+    type: com.alibaba.druid.pool.DruidDataSource

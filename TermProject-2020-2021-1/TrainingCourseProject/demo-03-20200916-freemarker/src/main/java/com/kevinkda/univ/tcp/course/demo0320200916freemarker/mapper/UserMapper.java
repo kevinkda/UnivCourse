@@ -76,4 +76,6 @@ public interface UserMapper {
     List<HashMap> selectAll();
 
     int deleteByIds(List ids, @Param("item") String item);
+
+    int deleteByIds(List ids);
 }

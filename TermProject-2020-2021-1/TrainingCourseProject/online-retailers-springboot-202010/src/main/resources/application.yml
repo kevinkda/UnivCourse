@@ -1,0 +1,57 @@
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /manager
+spring:
+  profiles:
+    #    active: dev-access
+    active: prod
+  application:
+    name: ecs-control-springboot-202009
+  freemarker:
+    check-template-location: true #检查模板是否存在
+    charset: UTF-8 #编码方式
+    content-type: text/html
+    enabled: true #是否启用freemarker
+    expose-request-attributes: false #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+    expose-spring-macro-helpers: true #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+    expose-session-attributes: false #否在merge模板的时候，将HttpSession属性都添加到model中
+    prefer-file-system-access: true #是否优先从文件系统加载template，以支持热加载，默认为true
+    suffix: .ftl #设定模板的后缀.
+    template-loader-path:
+      - classpath:/templates/ #设定模板的加载路径，多个以逗号分隔，默认:
+    settings:
+      classic_compatible: true
+  mvc:
+    static-path-pattern:
+      - classpath:/static/**
+  resources:
+    static-locations:
+      - classpath:/META-INF/resources/
+      - classpath:/resources/
+      - classpath:/static/
+      - classpath:/public/
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+mybatis:
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.kevinkda.demo.proj.onlineretailers.springboot.b202010
+
+pagehelper:
+  helper-dialect: mysql
+  #  dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+version:
+  name: Online Retialers Demo Project
+  main: 1.0.0
+  sub: 1040
+  pom: 1.0.0-SNAPSHOT
+
+
