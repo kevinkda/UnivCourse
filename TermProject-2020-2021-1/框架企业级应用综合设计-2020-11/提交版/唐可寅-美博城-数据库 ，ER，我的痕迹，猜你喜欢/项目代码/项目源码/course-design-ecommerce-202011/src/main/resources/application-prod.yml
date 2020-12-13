@@ -1,0 +1,13 @@
+server:
+  port: 9004
+#  servlet:
+#    context-path: /ecommerce
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: defaultDataSource
+    password: CourseDes2020.11.11
+    url: jdbc:mysql://bj.kevinkda.cn:3306/CourseDesign202011?serverTimezone=UTC&characterEncoding=UTF-8&rewriteBatchedStatements=true&useUnicode=true&useSSL=true&allowPublicKeyRetrieval=true
+    username: CourseDesign202011
+    type: com.alibaba.druid.pool.DruidDataSource

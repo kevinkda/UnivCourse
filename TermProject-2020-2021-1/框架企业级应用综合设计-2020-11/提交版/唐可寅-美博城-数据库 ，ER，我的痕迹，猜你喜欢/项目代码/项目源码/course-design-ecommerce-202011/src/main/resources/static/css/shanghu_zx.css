@@ -1,0 +1,685 @@
+@charset "utf-8";
+/* CSS Document */
+/* 商户管理 左侧 */
+.shanghu_left {
+    width: 220px;
+    height: auto;
+}
+
+.shanghu_head {
+    width: 220px;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #cd3951;
+    color: #ffffff;
+    background: #e34b64 url(../img/user/shanghu_user.gif) 70px center no-repeat;
+}
+
+.shanghu_head span {
+    font-weight: bold;
+    margin-left: 98px;
+    font-size: 14px;
+}
+
+.shangpu_head_user {
+    width: 220px;
+    height: 94px;
+    border-bottom: 1px solid #cd3951;
+    color: #ffffff;
+    background: #e34b64;
+}
+
+.shangpu_head_user img {
+    width: 65px;
+    height: 65px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+
+.shangpu_head_user p {
+    width: 120px;
+    padding-top: 35px;
+    float: left;
+}
+
+/* 商户管理菜单 */
+.shanghu_menu {
+    width: 218px;
+    border: 1px solid #dedede;
+    background: #fff;
+    border-top: none
+}
+
+.shanghu_menu ul {
+    padding: 0 0 10px 0
+}
+
+.shanghu_menu ul h2 {
+    margin-bottom: 10px;
+}
+
+.shanghu_menu ul li {
+    font-family: "宋体";
+    text-indent: 70px;
+    line-height: 26px;
+}
+
+.shanghu_menu ul li #current {
+    color: #888888
+}
+
+.shanghu_menu ul li a:hover {
+    color: #cf1031
+}
+
+.shanghu_menu ul li #current {
+    color: #cf1031
+}
+
+.title {
+    width: 218px;
+    height: 33px;
+    text-align: center;
+    display: block;
+    line-height: 33px;
+    background: #fafafa;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+}
+
+/* 商户管理 右侧 */
+.shanghu_right {
+    width: 960px;
+    height: auto;
+}
+
+.shanghu_dingdan {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 2px solid #e34b64
+}
+
+.shanghu_dingdan p {
+    display: block;
+    width: 90px;
+    height: 33px;
+    background: #e34b64;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px 2px 0 0
+}
+
+.shanghu_list {
+    width: 958px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.shanghu_list table tr td {
+}
+
+.shanghu_list table tr td {
+    line-height: 20px;
+    padding: 5px 3px;
+}
+
+.shanghu_list table span {
+    color: red;
+}
+
+.shangpu_logo img {
+    width: 80px;
+    height: 80px;
+    padding: 1px;
+    border: 1px solid #dcdcdc;
+}
+
+.btn {
+    width: 84px;
+    height: 30px;
+    background: #f98a23;
+    border: 1px solid #eb7d17;
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.jiesuan p {
+    padding: 4px;
+    border: 1px solid #dcdcdc;
+    float: left;
+    background: #ffffe5;
+    color: #898989;
+}
+
+.jiesuan img {
+    width: 10px;
+    height: 11px;
+    border: none;
+    padding: 0px;
+}
+
+.oto_text_two {
+    border: 1px solid #ccc;
+    line-height: 18px;
+    padding: 3px;
+    width: 160px;
+}
+
+.oto_text_three {
+    border: 1px solid #ccc;
+    line-height: 19px;
+    padding: 2px;
+    width: 40px;
+}
+
+.oto_text_for {
+    border: 1px solid #ccc;
+    line-height: 18px;
+    padding: 3px;
+    width: 100px;
+}
+
+/*商户订单*/
+.shanghu_pro {
+    width: 958px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.shanghu_newsTitle {
+    width: 100%;
+    background: url(../img/sprite/sprite-point.jpg) #f7f7f7 bottom repeat-x;
+    height: 36px;
+    border: 1px solid #ededed;
+    border-bottom: none;
+}
+
+.shanghu_newsTitle a {
+    float: left;
+    padding: 6px 15px;
+    text-align: center;
+    border-right: 1px solid #dedede
+}
+
+.shanghu_newsTitle #current3 {
+    background: #fffdee;
+}
+
+
+.shanghu_pro .shanghu_pro_top tr td {
+    border-bottom: 1px solid #ededed;
+    color: #666666;
+}
+
+.shanghu_pro .shanghu_pro_top tr td {
+    line-height: 23px;
+    padding: 5px 3px;
+}
+
+.disabled {
+    width: 55px;
+    height: 22px;
+    border: 1px solid #cccccc;
+    display: block;
+    text-align: center;
+    float: right;
+    margin-right: 5px;
+}
+
+.shanghu_pro_list {
+    border: 1px solid #ffeedf;
+    margin-top: 5px;
+    border-bottom: none;
+}
+
+.shanghu_pro_list tr td {
+    border-bottom: 1px solid #f1eed7;
+    color: #666666;
+    line-height: 23px;
+    padding: 5px 3px;
+}
+
+.blue_color {
+    color: #005ea6;
+}
+
+.blue_color:hover {
+    color: #005ea6
+}
+
+/*评价管理*/
+.pj-Box1 {
+    width: 100%;
+    height: auto;
+    margin-top: 20px
+}
+
+.wwww {
+    width: 100%;
+    height: auto;
+    margin-top: 10px
+}
+
+.pj-body-list1 table tr td {
+    border-bottom: 1px solid #ededed;
+    color: #666666;
+    line-height: 23px;
+    padding: 5px 3px;
+}
+
+.pj-body-list1 {
+    border-bottom: 1px dotted #dedede
+}
+
+.pj-header1 {
+    width: 100%;
+    background: #f5f5f5;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.pj-header1 a {
+    display: block;
+    float: left;
+    line-height: 40px;
+    padding: 0 20px
+}
+
+.pj-header1 a:hover {
+    background: #fff;
+    border-top: 2px solid #7ba823
+}
+
+.pj-header1 #current3 {
+    background: #fff;
+    border-top: 2px solid #7ba823
+}
+
+.shanghu_pj {
+    width: 100%;
+    height: auto;
+}
+
+.shanghu_pj table tr td {
+    border-bottom: 1px solid #ededed;
+    color: #666666;
+    line-height: 23px;
+    padding: 10px 3px;
+}
+
+.btn1 {
+    width: 74px;
+    height: 25px;
+    background: #f98a23;
+    border: 1px solid #eb7d17;
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.btn2 {
+    width: 54px;
+    height: 25px;
+    background: #f98a23;
+    border: 1px solid #eb7d17;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.btn4 {
+    width: 34px;
+    height: 25px;
+    background: #f98a23;
+    border: 1px solid #eb7d17;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.shanghu_wl tr td {
+    color: #666666;
+    line-height: 23px;
+    padding: 10px 3px;
+}
+
+
+/*发送快递*/
+.shanghu_kuaidi {
+    width: 100%;
+    height: auto;
+}
+
+.shanghu_kuaidi table {
+    border: 1px solid #dedede;
+    color: #737373
+}
+
+.shanghu_kuaidi table tr td {
+}
+
+.shanghu_kuaidi table .table_manu {
+    border-bottom: 1px solid #dedede
+}
+
+
+/*发布产品*/
+.shanghu_search {
+    width: 100%;
+    height: 55px;
+}
+
+.shanghu_fenlei {
+    width: 956px;
+    height: 298px;
+    background: #fffdee;
+    border: 1px solid #ffcc7f;
+}
+
+.shanghu_fenlei_left {
+    width: 20px;
+    height: 298px;
+}
+
+.shanghu_fenlei_left img {
+    margin-top: 125px;
+    margin-left: 5px;
+}
+
+.shanghu_feinlei_pro {
+    width: 233px;
+    height: 298px;
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-left: 1px solid #ffcc7f;
+}
+
+.shanghu_feinlei_pro ul strong {
+    margin-left: 30px;
+    color: #737373;
+}
+
+.shanghu_feinlei_pro ul span {
+    color: #737373;
+}
+
+.shanghu_feinlei_pro ul p {
+    width: 100%;
+    height: 25px;
+    display: block;
+    line-height: 25px;
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+.shanghu_feinlei_pro ul li {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+
+.xuxian {
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+.shanghu_feinlei_pro ul li a {
+    margin-left: 30px;
+    float: left;
+}
+
+.shanghu_feinlei_pro ul li span {
+    float: right;
+    margin-right: 5px;
+}
+
+.shanghu_tishi {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ffcc7f;
+    margin-top: 10px;
+    background: #fffdee;
+    line-height: 30px;
+    color: #737373;
+}
+
+.shanghu_tishi1 {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*发布详细*/
+
+.shanghu_pro strong {
+    color: #737373;
+}
+
+/*退款详细*/
+.shanghu_tuikuan0 {
+    width: 100%;
+    height: 38px;
+    background: url(../img/user/tk0.jpg) no-repeat;
+    margin-top: 10px;
+}
+
+.shanghu_tuikuan0 span {
+    width: 330px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.shanghu_tuikuan {
+    width: 100%;
+    height: 38px;
+    background: url(../img/user/tk.jpg) no-repeat;
+    margin-top: 10px;
+}
+
+.shanghu_tuikuan span {
+    width: 330px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.shanghu_tuikuan1 {
+    width: 100%;
+    height: 38px;
+    background: url(../img/user/tk1.jpg) no-repeat;
+    margin-top: 10px;
+}
+
+.shanghu_tuikuan1 span {
+    width: 330px;
+    height: 38px;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.shanghu_tk_left {
+    width: 958px;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #dcdcdc;
+}
+
+.shanghu_tk_left_left {
+    width: 210px;
+    height: auto;
+    padding: 10px;
+}
+
+.color_shanghu {
+    color: #666666;
+}
+
+.shanghu_tk_left_right {
+    width: 727px;
+    border-left: 1px solid #dcdcdc;
+    height: auto;
+}
+
+.shanghu_tk_left_right p {
+    font-size: 14px;
+    width: 210px;
+    height: 25px;
+    background: #fffdee;
+    display: block;
+    border: 1px solid #ffcc7f;
+}
+
+.shanghu_tk_left_right tr td .tk {
+    padding: 5px 20px;
+    display: block;
+    background: #ff6600;
+    color: #ffffff;
+    float: left;
+}
+
+.shanghu_tk_left_right tr td .tk1 {
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: block;
+    background: #fcfcfc;
+    color: #666666;
+    border: 1px solid #f3f3f3;
+    float: left;
+}
+
+.zzs_title a {
+    display: block;
+    width: 60px;
+    height: 26px;
+    background: #f2f2f2;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    color: #666666
+}
+
+.zzs_title a:hover {
+    display: block;
+    width: 60px;
+    height: 26px;
+    background: #ffffff;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    color: #666666
+}
+
+/*产品分类*/
+.shanghu_cpfl {
+    width: 942px;
+    height: 30px;
+    padding: 8px;
+    background: #fafafa;
+    border: 1px solid #e9e9e9;
+}
+
+.oto_text {
+    width: 260px;
+    border: 1px solid #7f9fb8;
+    line-height: 18px;
+    margin-top: 2px;
+    background: #fff;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.oto_submit {
+    display: block;
+    width: 60px;
+    height: 26px;
+    background: #f2f2f2;
+    margin-top: 2px;
+    margin-left: 10px;
+    border: 1px solid #e0e0e0;
+    color: #666666
+}
+
+.oto_submit:hover {
+    background: #4eaa01;
+    border: 1px solid #4a9d04;
+    color: #FFFFFF
+}
+
+/*充值*/
+
+.shanghu_kuaidi tr td {
+    border-bottom: 1px solid #e9e9e9;
+    color: #666666;
+    line-height: 23px;
+}
+
+/*权限*/
+.shanghu_list_quanxian {
+    border: 1px solid #b5b5b5;
+    border-top: 2px solid #b5b5b5;
+    margin-top: 20px;
+}
+
+/*评价商品*/
+.shanghu_list_pingjia {
+    border: 1px solid #b5b5b5;
+    margin-top: 20px;
+}
+
+.btn-js1 {
+    width: 70px;
+    height: 25px;
+    background: #f98a23;
+    border: 1px solid #eb7d17;
+    font-size: 12px;
+    color: #FFFFFF
+}
+
+.btn-js1:hover {
+    background: #c5151c;
+    border: 1px solid #c00e16;
+}
+
+.shanghu_list_pingjia tr td {
+    color: #666666;
+}
+
+.btn-js2 {
+    width: 120px;
+    height: 35px;
+    background: #e3393c;
+    border: 1px solid #da2e31;
+    font-size: 16px;
+    color: #FFFFFF
+}
+
+.btn-js2:hover {
+    background: #c5151c;
+    border: 1px solid #c00e16;
+}
+
+
+/**/
+.moren {
+    color: #ffffff;
+}
+
+.moren:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+

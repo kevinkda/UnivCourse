@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.UserAddressMapper">
+    <resultMap id="BaseResultMap" type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.userAddress-->
+        <id column="addressId" jdbcType="INTEGER" property="addressId"/>
+        <result column="userId" jdbcType="INTEGER" property="userId"/>
+        <result column="countryId" jdbcType="INTEGER" property="countryId"/>
+        <result column="userAddPhone" jdbcType="VARCHAR" property="userAddPhone"/>
+        <result column="province" jdbcType="INTEGER" property="province"/>
+        <result column="city" jdbcType="INTEGER" property="city"/>
+        <result column="area" jdbcType="INTEGER" property="area"/>
+        <result column="detailedAddress" jdbcType="VARCHAR" property="detailedAddress"/>
+        <result column="postcode" jdbcType="VARCHAR" property="postcode"/>
+        <result column="label" jdbcType="VARCHAR" property="label"/>
+        <result column="note" jdbcType="VARCHAR" property="note"/>
+        <result column="realSurname" jdbcType="VARCHAR" property="realSurname"/>
+        <result column="realGivenName" jdbcType="VARCHAR" property="realGivenName"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        addressId, userId, countryId, userAddPhone, province, city, area, detailedAddress,
+        postcode, `label`, note, realSurname, realGivenName
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.userAddress
+        where addressId = #{addressId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.userAddress
+        where addressId = #{addressId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="addressId" keyProperty="addressId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userAddress (userId, countryId, userAddPhone,
+        province, city, area,
+        detailedAddress, postcode, `label`,
+        note, realSurname, realGivenName
+        )
+        values (#{userId,jdbcType=INTEGER}, #{countryId,jdbcType=INTEGER}, #{userAddPhone,jdbcType=VARCHAR},
+        #{province,jdbcType=INTEGER}, #{city,jdbcType=INTEGER}, #{area,jdbcType=INTEGER},
+        #{detailedAddress,jdbcType=VARCHAR}, #{postcode,jdbcType=VARCHAR}, #{label,jdbcType=VARCHAR},
+        #{note,jdbcType=VARCHAR}, #{realSurname,jdbcType=VARCHAR}, #{realGivenName,jdbcType=VARCHAR}
+        )
+    </insert>
+    <insert id="insertSelective" keyColumn="addressId" keyProperty="addressId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userAddress
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="countryId != null">
+                countryId,
+            </if>
+            <if test="userAddPhone != null">
+                userAddPhone,
+            </if>
+            <if test="province != null">
+                province,
+            </if>
+            <if test="city != null">
+                city,
+            </if>
+            <if test="area != null">
+                area,
+            </if>
+            <if test="detailedAddress != null">
+                detailedAddress,
+            </if>
+            <if test="postcode != null">
+                postcode,
+            </if>
+            <if test="label != null">
+                `label`,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="realSurname != null">
+                realSurname,
+            </if>
+            <if test="realGivenName != null">
+                realGivenName,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="countryId != null">
+                #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="userAddPhone != null">
+                #{userAddPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                #{province,jdbcType=INTEGER},
+            </if>
+            <if test="city != null">
+                #{city,jdbcType=INTEGER},
+            </if>
+            <if test="area != null">
+                #{area,jdbcType=INTEGER},
+            </if>
+            <if test="detailedAddress != null">
+                #{detailedAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="postcode != null">
+                #{postcode,jdbcType=VARCHAR},
+            </if>
+            <if test="label != null">
+                #{label,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="realSurname != null">
+                #{realSurname,jdbcType=VARCHAR},
+            </if>
+            <if test="realGivenName != null">
+                #{realGivenName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userAddress
+        <set>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="countryId != null">
+                countryId = #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="userAddPhone != null">
+                userAddPhone = #{userAddPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                province = #{province,jdbcType=INTEGER},
+            </if>
+            <if test="city != null">
+                city = #{city,jdbcType=INTEGER},
+            </if>
+            <if test="area != null">
+                area = #{area,jdbcType=INTEGER},
+            </if>
+            <if test="detailedAddress != null">
+                detailedAddress = #{detailedAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="postcode != null">
+                postcode = #{postcode,jdbcType=VARCHAR},
+            </if>
+            <if test="label != null">
+                `label` = #{label,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="realSurname != null">
+                realSurname = #{realSurname,jdbcType=VARCHAR},
+            </if>
+            <if test="realGivenName != null">
+                realGivenName = #{realGivenName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where addressId = #{addressId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userAddress
+        set userId = #{userId,jdbcType=INTEGER},
+        countryId = #{countryId,jdbcType=INTEGER},
+        userAddPhone = #{userAddPhone,jdbcType=VARCHAR},
+        province = #{province,jdbcType=INTEGER},
+        city = #{city,jdbcType=INTEGER},
+        area = #{area,jdbcType=INTEGER},
+        detailedAddress = #{detailedAddress,jdbcType=VARCHAR},
+        postcode = #{postcode,jdbcType=VARCHAR},
+        `label` = #{label,jdbcType=VARCHAR},
+        note = #{note,jdbcType=VARCHAR},
+        realSurname = #{realSurname,jdbcType=VARCHAR},
+        realGivenName = #{realGivenName,jdbcType=VARCHAR}
+        where addressId = #{addressId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userAddress
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.userId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="countryId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.countryId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="userAddPhone = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.userAddPhone,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="province = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.province,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="city = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.city,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="area = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.area,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="detailedAddress = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.detailedAddress,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="postcode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.postcode,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`label` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.label,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="realSurname = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.realSurname,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="realGivenName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.realGivenName,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where addressId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.addressId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userAddress
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userId != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.userId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="countryId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.countryId != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.countryId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="userAddPhone = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userAddPhone != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.userAddPhone,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="province = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.province != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.province,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="city = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.city != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.city,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="area = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.area != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.area,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="detailedAddress = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.detailedAddress != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then
+                        #{item.detailedAddress,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="postcode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.postcode != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.postcode,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`label` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.label != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.label,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.note != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="realSurname = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.realSurname != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.realSurname,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="realGivenName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.realGivenName != null">
+                        when addressId = #{item.addressId,jdbcType=INTEGER} then #{item.realGivenName,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where addressId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.addressId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="addressId" keyProperty="addressId" parameterType="map" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userAddress
+        (userId, countryId, userAddPhone, province, city, area, detailedAddress, postcode,
+        `label`, note, realSurname, realGivenName)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.userId,jdbcType=INTEGER}, #{item.countryId,jdbcType=INTEGER}, #{item.userAddPhone,jdbcType=VARCHAR},
+            #{item.province,jdbcType=INTEGER}, #{item.city,jdbcType=INTEGER}, #{item.area,jdbcType=INTEGER},
+            #{item.detailedAddress,jdbcType=VARCHAR}, #{item.postcode,jdbcType=VARCHAR}, #{item.label,jdbcType=VARCHAR},
+            #{item.note,jdbcType=VARCHAR}, #{item.realSurname,jdbcType=VARCHAR}, #{item.realGivenName,jdbcType=VARCHAR}
+            )
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="addressId" keyProperty="addressId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userAddress
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="addressId != null">
+                addressId,
+            </if>
+            userId,
+            countryId,
+            userAddPhone,
+            province,
+            city,
+            area,
+            detailedAddress,
+            postcode,
+            `label`,
+            note,
+            realSurname,
+            realGivenName,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="addressId != null">
+                #{addressId,jdbcType=INTEGER},
+            </if>
+            #{userId,jdbcType=INTEGER},
+            #{countryId,jdbcType=INTEGER},
+            #{userAddPhone,jdbcType=VARCHAR},
+            #{province,jdbcType=INTEGER},
+            #{city,jdbcType=INTEGER},
+            #{area,jdbcType=INTEGER},
+            #{detailedAddress,jdbcType=VARCHAR},
+            #{postcode,jdbcType=VARCHAR},
+            #{label,jdbcType=VARCHAR},
+            #{note,jdbcType=VARCHAR},
+            #{realSurname,jdbcType=VARCHAR},
+            #{realGivenName,jdbcType=VARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="addressId != null">
+                addressId = #{addressId,jdbcType=INTEGER},
+            </if>
+            userId = #{userId,jdbcType=INTEGER},
+            countryId = #{countryId,jdbcType=INTEGER},
+            userAddPhone = #{userAddPhone,jdbcType=VARCHAR},
+            province = #{province,jdbcType=INTEGER},
+            city = #{city,jdbcType=INTEGER},
+            area = #{area,jdbcType=INTEGER},
+            detailedAddress = #{detailedAddress,jdbcType=VARCHAR},
+            postcode = #{postcode,jdbcType=VARCHAR},
+            `label` = #{label,jdbcType=VARCHAR},
+            note = #{note,jdbcType=VARCHAR},
+            realSurname = #{realSurname,jdbcType=VARCHAR},
+            realGivenName = #{realGivenName,jdbcType=VARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="addressId" keyProperty="addressId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserAddress"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userAddress
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="addressId != null">
+                addressId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="countryId != null">
+                countryId,
+            </if>
+            <if test="userAddPhone != null">
+                userAddPhone,
+            </if>
+            <if test="province != null">
+                province,
+            </if>
+            <if test="city != null">
+                city,
+            </if>
+            <if test="area != null">
+                area,
+            </if>
+            <if test="detailedAddress != null">
+                detailedAddress,
+            </if>
+            <if test="postcode != null">
+                postcode,
+            </if>
+            <if test="label != null">
+                `label`,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="realSurname != null">
+                realSurname,
+            </if>
+            <if test="realGivenName != null">
+                realGivenName,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="addressId != null">
+                #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="countryId != null">
+                #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="userAddPhone != null">
+                #{userAddPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                #{province,jdbcType=INTEGER},
+            </if>
+            <if test="city != null">
+                #{city,jdbcType=INTEGER},
+            </if>
+            <if test="area != null">
+                #{area,jdbcType=INTEGER},
+            </if>
+            <if test="detailedAddress != null">
+                #{detailedAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="postcode != null">
+                #{postcode,jdbcType=VARCHAR},
+            </if>
+            <if test="label != null">
+                #{label,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="realSurname != null">
+                #{realSurname,jdbcType=VARCHAR},
+            </if>
+            <if test="realGivenName != null">
+                #{realGivenName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="addressId != null">
+                addressId = #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="countryId != null">
+                countryId = #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="userAddPhone != null">
+                userAddPhone = #{userAddPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null">
+                province = #{province,jdbcType=INTEGER},
+            </if>
+            <if test="city != null">
+                city = #{city,jdbcType=INTEGER},
+            </if>
+            <if test="area != null">
+                area = #{area,jdbcType=INTEGER},
+            </if>
+            <if test="detailedAddress != null">
+                detailedAddress = #{detailedAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="postcode != null">
+                postcode = #{postcode,jdbcType=VARCHAR},
+            </if>
+            <if test="label != null">
+                `label` = #{label,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="realSurname != null">
+                realSurname = #{realSurname,jdbcType=VARCHAR},
+            </if>
+            <if test="realGivenName != null">
+                realGivenName = #{realGivenName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

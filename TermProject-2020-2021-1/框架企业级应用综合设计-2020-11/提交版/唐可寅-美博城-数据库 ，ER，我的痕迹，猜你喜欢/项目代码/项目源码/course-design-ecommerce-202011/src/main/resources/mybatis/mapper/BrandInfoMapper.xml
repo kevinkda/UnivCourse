@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.BrandInfoMapper">
+    <resultMap id="BaseResultMap" type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.brandInfo-->
+        <id column="brandId" jdbcType="INTEGER" property="brandId"/>
+        <result column="brandName" jdbcType="VARCHAR" property="brandName"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.brandInfo-->
+        <result column="brandPhotoUrl" jdbcType="LONGVARCHAR" property="brandPhotoUrl"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        brandId, brandName, `parameter`, updateTime
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        brandPhotoUrl
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.brandInfo
+        where brandId = #{brandId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.brandInfo
+        where brandId = #{brandId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="brandId" keyProperty="brandId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo (brandName, `parameter`, updateTime,
+        brandPhotoUrl)
+        values (#{brandName,jdbcType=VARCHAR}, #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},
+        #{brandPhotoUrl,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="brandId" keyProperty="brandId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandName != null">
+                brandName,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="brandPhotoUrl != null">
+                brandPhotoUrl,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="brandName != null">
+                #{brandName,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="brandPhotoUrl != null">
+                #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.brandInfo
+        <set>
+            <if test="brandName != null">
+                brandName = #{brandName,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="brandPhotoUrl != null">
+                brandPhotoUrl = #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where brandId = #{brandId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.brandInfo
+        set brandName = #{brandName,jdbcType=VARCHAR},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        brandPhotoUrl = #{brandPhotoUrl,jdbcType=LONGVARCHAR}
+        where brandId = #{brandId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.brandInfo
+        set brandName = #{brandName,jdbcType=VARCHAR},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP}
+        where brandId = #{brandId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.brandInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="brandName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.brandName,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="brandPhotoUrl = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.brandPhotoUrl,jdbcType=LONGVARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where brandId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.brandId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.brandInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="brandName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.brandName != null">
+                        when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.brandName,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="brandPhotoUrl = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.brandPhotoUrl != null">
+                        when brandId = #{item.brandId,jdbcType=INTEGER} then #{item.brandPhotoUrl,jdbcType=LONGVARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where brandId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.brandId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="brandId" keyProperty="brandId" parameterType="map" useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo
+        (brandName, `parameter`, updateTime, brandPhotoUrl)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.brandName,jdbcType=VARCHAR}, #{item.parameter,jdbcType=VARCHAR},
+            #{item.updateTime,jdbcType=TIMESTAMP},
+            #{item.brandPhotoUrl,jdbcType=LONGVARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="brandId" keyProperty="brandId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                brandId,
+            </if>
+            brandName,
+            `parameter`,
+            updateTime,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                #{brandId,jdbcType=INTEGER},
+            </if>
+            #{brandName,jdbcType=VARCHAR},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="brandId != null">
+                brandId = #{brandId,jdbcType=INTEGER},
+            </if>
+            brandName = #{brandName,jdbcType=VARCHAR},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateWithBLOBs" keyColumn="brandId" keyProperty="brandId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                brandId,
+            </if>
+            brandName,
+            `parameter`,
+            updateTime,
+            brandPhotoUrl,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                #{brandId,jdbcType=INTEGER},
+            </if>
+            #{brandName,jdbcType=VARCHAR},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+            #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="brandId != null">
+                brandId = #{brandId,jdbcType=INTEGER},
+            </if>
+            brandName = #{brandName,jdbcType=VARCHAR},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            brandPhotoUrl = #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="brandId" keyProperty="brandId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.BrandInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.brandInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                brandId,
+            </if>
+            <if test="brandName != null">
+                brandName,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="brandPhotoUrl != null">
+                brandPhotoUrl,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null">
+                #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="brandName != null">
+                #{brandName,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="brandPhotoUrl != null">
+                #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="brandId != null">
+                brandId = #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="brandName != null">
+                brandName = #{brandName,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="brandPhotoUrl != null">
+                brandPhotoUrl = #{brandPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

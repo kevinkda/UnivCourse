@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS Document */
+
+.brand_list strong {
+    padding-right: 20px
+}
+
+.brand_list a {
+    padding: 0px 5px;
+    color: #999999
+}
+
+.brand_list_box {
+    width: 1200px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.brand_list_left {
+    width: 216px;
+    height: auto;
+    border: 2px solid #da2040
+}
+
+.brand_tableware {
+    width: 100%;
+    height: auto;
+}
+
+.brand_tableware ul li {
+    width: 86%;
+    overflow: auto;
+    border-bottom: 1px dotted #dedede;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+.brand_tableware ul li .b_t_pro {
+    overflow: auto;
+    width: 120px;
+}
+
+.brand_tableware ul li .b_t_pro h2 {
+    color: #d51938
+}
+
+.brand_tableware ul li .b_t_pro a {
+    display: block;
+    width: 60px;
+    line-height: 21px;
+    float: left;
+    display: inline
+}
+
+.b_t_pro_img {
+    width: 50px;
+    padding-top: 10px
+}
+
+.b_t_pro_img img {
+    width: 50px;
+    height: 50px;
+}
+
+.brand_list_right {
+    width: 970px;
+    height: auto;
+}
+
+.b_b_r_one {
+    width: 970px;
+    height: 300px;
+}
+
+.brand_banner {
+    width: 710px;
+    height: 300px;
+}
+
+/* 单个图片幻灯片盒子 - 公用类 */
+.brand_slide {
+    width: 710px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: #fff
+}
+
+.brand_slide .hd {
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.brand_slide .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.brand_slide .hd ul li {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    float: left;
+    display: inline;
+    filter: alpha(opacity=70); /* IE 透明度20% */
+    -moz-opacity: 0.7; /* Moz + FF 透明度30%*/
+    opacity: 0.7; /* 支持CSS3的浏览器（FF 1.5也支持）透明度30%*/
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    font-family: Georgia;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.brand_slide .hd ul li.on {
+    background: #f00;
+    color: #fff;
+}
+
+.brand_slide .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.brand_slide .bd img {
+    width: 710px;
+    height: 300px;
+    display: block;
+}
+
+.brand_today {
+    width: 250px;
+    height: 300px;
+}
+
+.taday-tuijian {
+    width: 248px;
+    height: 198px;
+    border: 1px solid #d61939
+}
+
+.taday-tuijian h3 {
+    width: 100%;
+    line-height: 35px;
+    background: #ebe8e8;
+    text-indent: 10px;
+    color: #666666
+}
+
+.tj-text {
+    width: 90%;
+    margin-top: 10px;
+    height: 145px;
+}
+
+.tj-text .t-img {
+    width: 100px;
+    height: auto
+}
+
+.tj-text .t-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.tj-text .t-text {
+    width: 110px;
+    height: auto;
+    color: #666666
+}
+
+.tj-text .t-text p {
+    line-height: 18px;
+    margin: 5px 0
+}
+
+.t-more {
+    width: 100%;
+    line-height: 35px;
+}
+
+.t-more a {
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    background: #d61939;
+    margin-top: 10px
+}
+
+.taday-tuijian:hover {
+    border: 1px solid #0c9d30
+}
+
+.taday-tuijian:hover .t-more a {
+    background: #0c9d30;
+    color: #FFFFFF
+}
+
+.taday-tuijian-img {
+    width: 250px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.taday-tuijian-img img {
+    width: 250px;
+    height: 90px;
+}
+
+.brand_preferential {
+    width: 969px;
+    height: 253px;
+    margin-top: 10px;
+    border: 1px solid #dedede;
+    border-top: 2px solid #d7203b;
+    border-left: none;
+    background: url(../img/sprite/sprite-point.jpg) left repeat-y
+}
+
+.brand_preferential .b_p_title {
+    width: 100%;
+    height: 35px;
+    background: url(../img/sprite/sprite-point.jpg) #f7f8f8 bottom repeat-x;
+}
+
+.brand_preferential .b_p_title span {
+    display: block;
+    width: 100px;
+    line-height: 35px;
+    padding-left: 30px;
+    color: #FFFFFF;
+    background: #d7203b
+}
+
+.b_p_body {
+    width: 940px;
+    height: 195px;
+    margin-top: 11px
+}
+
+.b_p_body ul li {
+    width: 188px;
+    height: 195px;
+    float: left;
+    display: inline;
+    background: url(../img/sprite/sprite-point2.jpg) right repeat-y
+}
+
+.b_p_body ul li div {
+    padding: 10px 15px;
+    text-align: center
+}
+
+.b_p_body ul li div p {
+    line-height: 18px;
+    margin: 5px 0;
+}
+
+.b_p_body ul li div p img {
+    width: 130px;
+    height: 110px
+}
+
+.b_p_body_text {
+    height: 34px;
+}
+
+/* 1F */
+.brand-one-floor {
+    width: 1200px;
+    height: 300px;
+    margin-top: 15px;
+    background: #fff
+}
+
+.b-o-f-left {
+    width: 980px;
+    height: 300px;
+    background: #fff
+}
+
+.b-o-f-right {
+    width: 210px;
+    height: 300px;
+    background: #fff
+}
+
+.brand_floor_title {
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 2px solid #e7e6e6;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.brand_floor_title span {
+    margin-right: 10px;
+    float: left;
+    display: inline
+}
+
+.brand_floor_title .ph-btn {
+    padding-top: 9px;
+}
+
+.brand_floor_one {
+    width: 100%;
+    height: 256px;
+    margin-top: 9px;
+}
+
+.brand_floor_one_img {
+    width: 220px;
+    height: 256px;
+}
+
+.brand_floor_one_img img {
+    width: 220px;
+    height: 256px;
+}
+
+.brand_floor_one_body {
+    width: 748px;
+    height: 254px;
+    border: 1px solid #e7e6e6
+}
+
+.brand_floor_one_body ul li {
+    width: 33%;
+    height: 234px;
+    margin-top: 10px;
+    float: left;
+    display: inline;
+    background: url(../img/sprite/sprite-point2.jpg) right repeat-y
+}
+
+.brand_floor_one_body ul li div {
+    padding: 15px 20px;
+    text-align: center
+}
+
+.brand_floor_one_body ul li div p {
+    line-height: 18px;
+    margin: 5px 0
+}
+
+.brand_floor_one_body ul li div p img {
+    width: 150px;
+    height: 130px
+}
+
+.brand_floor_one_body ul li div .b_p_body_text {
+    height: 36px
+}
+
+.brand_paihang {
+    width: 210px;
+    height: 256px;
+    margin-top: 9px;
+}
+
+.brand_paihang ul li {
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    border-bottom: 1px dotted #e7e6e6
+}
+
+
+

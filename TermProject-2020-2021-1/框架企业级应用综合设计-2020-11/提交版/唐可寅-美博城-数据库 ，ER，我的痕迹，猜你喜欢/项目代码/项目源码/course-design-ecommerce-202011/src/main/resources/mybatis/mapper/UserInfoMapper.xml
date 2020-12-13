@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.UserInfoMapper">
+    <resultMap id="BaseResultMap" type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.userInfo-->
+        <id column="userId" jdbcType="INTEGER" property="userId"/>
+        <result column="userNick" jdbcType="VARCHAR" property="userNick"/>
+        <result column="userAge" jdbcType="INTEGER" property="userAge"/>
+        <result column="userEmail" jdbcType="VARCHAR" property="userEmail"/>
+        <result column="userPhone" jdbcType="VARCHAR" property="userPhone"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        userId, userNick, userAge, userEmail, userPhone
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.userInfo
+        where userId = #{userId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.userInfo
+        where userId = #{userId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userInfo (userId, userNick, userAge,
+        userEmail, userPhone)
+        values (#{userId,jdbcType=INTEGER}, #{userNick,jdbcType=VARCHAR}, #{userAge,jdbcType=INTEGER},
+        #{userEmail,jdbcType=VARCHAR}, #{userPhone,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="userNick != null">
+                userNick,
+            </if>
+            <if test="userAge != null">
+                userAge,
+            </if>
+            <if test="userEmail != null">
+                userEmail,
+            </if>
+            <if test="userPhone != null">
+                userPhone,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="userNick != null">
+                #{userNick,jdbcType=VARCHAR},
+            </if>
+            <if test="userAge != null">
+                #{userAge,jdbcType=INTEGER},
+            </if>
+            <if test="userEmail != null">
+                #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                #{userPhone,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userInfo
+        <set>
+            <if test="userNick != null">
+                userNick = #{userNick,jdbcType=VARCHAR},
+            </if>
+            <if test="userAge != null">
+                userAge = #{userAge,jdbcType=INTEGER},
+            </if>
+            <if test="userEmail != null">
+                userEmail = #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                userPhone = #{userPhone,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where userId = #{userId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userInfo
+        set userNick = #{userNick,jdbcType=VARCHAR},
+        userAge = #{userAge,jdbcType=INTEGER},
+        userEmail = #{userEmail,jdbcType=VARCHAR},
+        userPhone = #{userPhone,jdbcType=VARCHAR}
+        where userId = #{userId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userNick = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when userId = #{item.userId,jdbcType=INTEGER} then #{item.userNick,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="userAge = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when userId = #{item.userId,jdbcType=INTEGER} then #{item.userAge,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="userEmail = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when userId = #{item.userId,jdbcType=INTEGER} then #{item.userEmail,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="userPhone = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when userId = #{item.userId,jdbcType=INTEGER} then #{item.userPhone,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where userId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.userId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.userInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userNick = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userNick != null">
+                        when userId = #{item.userId,jdbcType=INTEGER} then #{item.userNick,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="userAge = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userAge != null">
+                        when userId = #{item.userId,jdbcType=INTEGER} then #{item.userAge,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="userEmail = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userEmail != null">
+                        when userId = #{item.userId,jdbcType=INTEGER} then #{item.userEmail,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="userPhone = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userPhone != null">
+                        when userId = #{item.userId,jdbcType=INTEGER} then #{item.userPhone,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where userId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.userId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" parameterType="map">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userInfo
+        (userId, userNick, userAge, userEmail, userPhone)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.userId,jdbcType=INTEGER}, #{item.userNick,jdbcType=VARCHAR}, #{item.userAge,jdbcType=INTEGER},
+            #{item.userEmail,jdbcType=VARCHAR}, #{item.userPhone,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userInfo
+        (userId, userNick, userAge, userEmail, userPhone)
+        values
+        (#{userId,jdbcType=INTEGER}, #{userNick,jdbcType=VARCHAR}, #{userAge,jdbcType=INTEGER},
+        #{userEmail,jdbcType=VARCHAR}, #{userPhone,jdbcType=VARCHAR})
+        on duplicate key update
+        userId = #{userId,jdbcType=INTEGER},
+        userNick = #{userNick,jdbcType=VARCHAR},
+        userAge = #{userAge,jdbcType=INTEGER},
+        userEmail = #{userEmail,jdbcType=VARCHAR},
+        userPhone = #{userPhone,jdbcType=VARCHAR}
+    </insert>
+    <insert id="insertOrUpdateSelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserInfo">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.userInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="userNick != null">
+                userNick,
+            </if>
+            <if test="userAge != null">
+                userAge,
+            </if>
+            <if test="userEmail != null">
+                userEmail,
+            </if>
+            <if test="userPhone != null">
+                userPhone,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="userNick != null">
+                #{userNick,jdbcType=VARCHAR},
+            </if>
+            <if test="userAge != null">
+                #{userAge,jdbcType=INTEGER},
+            </if>
+            <if test="userEmail != null">
+                #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                #{userPhone,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="userNick != null">
+                userNick = #{userNick,jdbcType=VARCHAR},
+            </if>
+            <if test="userAge != null">
+                userAge = #{userAge,jdbcType=INTEGER},
+            </if>
+            <if test="userEmail != null">
+                userEmail = #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                userPhone = #{userPhone,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

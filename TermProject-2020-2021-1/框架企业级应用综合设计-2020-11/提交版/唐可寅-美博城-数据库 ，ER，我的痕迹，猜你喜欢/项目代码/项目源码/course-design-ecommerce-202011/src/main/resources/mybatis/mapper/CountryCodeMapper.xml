@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.CountryCodeMapper">
+    <resultMap id="BaseResultMap" type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.countryCode-->
+        <id column="countryId" jdbcType="INTEGER" property="countryId"/>
+        <result column="letterCode2" jdbcType="VARCHAR" property="letterCode2"/>
+        <result column="letterCode3" jdbcType="VARCHAR" property="letterCode3"/>
+        <result column="isoId" jdbcType="VARCHAR" property="isoId"/>
+        <result column="countryEN" jdbcType="VARCHAR" property="countryEN"/>
+        <result column="countryCN" jdbcType="VARCHAR" property="countryCN"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.countryCode-->
+        <result column="note" jdbcType="LONGVARCHAR" property="note"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        countryId, letterCode2, letterCode3, isoId, countryEN, countryCN
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        note
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.countryCode
+        where countryId = #{countryId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.countryCode
+        where countryId = #{countryId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode (countryId, letterCode2, letterCode3,
+        isoId, countryEN, countryCN,
+        note)
+        values (#{countryId,jdbcType=INTEGER}, #{letterCode2,jdbcType=VARCHAR}, #{letterCode3,jdbcType=VARCHAR},
+        #{isoId,jdbcType=VARCHAR}, #{countryEN,jdbcType=VARCHAR}, #{countryCN,jdbcType=VARCHAR},
+        #{note,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="countryId != null">
+                countryId,
+            </if>
+            <if test="letterCode2 != null">
+                letterCode2,
+            </if>
+            <if test="letterCode3 != null">
+                letterCode3,
+            </if>
+            <if test="isoId != null">
+                isoId,
+            </if>
+            <if test="countryEN != null">
+                countryEN,
+            </if>
+            <if test="countryCN != null">
+                countryCN,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="countryId != null">
+                #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="letterCode2 != null">
+                #{letterCode2,jdbcType=VARCHAR},
+            </if>
+            <if test="letterCode3 != null">
+                #{letterCode3,jdbcType=VARCHAR},
+            </if>
+            <if test="isoId != null">
+                #{isoId,jdbcType=VARCHAR},
+            </if>
+            <if test="countryEN != null">
+                #{countryEN,jdbcType=VARCHAR},
+            </if>
+            <if test="countryCN != null">
+                #{countryCN,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        update CourseDesign202011.countryCode
+        <set>
+            <if test="letterCode2 != null">
+                letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+            </if>
+            <if test="letterCode3 != null">
+                letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+            </if>
+            <if test="isoId != null">
+                isoId = #{isoId,jdbcType=VARCHAR},
+            </if>
+            <if test="countryEN != null">
+                countryEN = #{countryEN,jdbcType=VARCHAR},
+            </if>
+            <if test="countryCN != null">
+                countryCN = #{countryCN,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where countryId = #{countryId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        update CourseDesign202011.countryCode
+        set letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+        letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+        isoId = #{isoId,jdbcType=VARCHAR},
+        countryEN = #{countryEN,jdbcType=VARCHAR},
+        countryCN = #{countryCN,jdbcType=VARCHAR},
+        note = #{note,jdbcType=LONGVARCHAR}
+        where countryId = #{countryId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        update CourseDesign202011.countryCode
+        set letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+        letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+        isoId = #{isoId,jdbcType=VARCHAR},
+        countryEN = #{countryEN,jdbcType=VARCHAR},
+        countryCN = #{countryCN,jdbcType=VARCHAR}
+        where countryId = #{countryId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.countryCode
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="letterCode2 = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.letterCode2,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="letterCode3 = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.letterCode3,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="isoId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.isoId,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="countryEN = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.countryEN,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="countryCN = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.countryCN,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.note,jdbcType=LONGVARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where countryId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.countryId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.countryCode
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="letterCode2 = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.letterCode2 != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.letterCode2,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="letterCode3 = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.letterCode3 != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.letterCode3,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="isoId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.isoId != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.isoId,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="countryEN = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.countryEN != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.countryEN,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="countryCN = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.countryCN != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.countryCN,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.note != null">
+                        when countryId = #{item.countryId,jdbcType=INTEGER} then #{item.note,jdbcType=LONGVARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where countryId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.countryId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" parameterType="map">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode
+        (countryId, letterCode2, letterCode3, isoId, countryEN, countryCN, note)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.countryId,jdbcType=INTEGER}, #{item.letterCode2,jdbcType=VARCHAR},
+            #{item.letterCode3,jdbcType=VARCHAR},
+            #{item.isoId,jdbcType=VARCHAR}, #{item.countryEN,jdbcType=VARCHAR}, #{item.countryCN,jdbcType=VARCHAR},
+            #{item.note,jdbcType=LONGVARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode
+        (countryId, letterCode2, letterCode3, isoId, countryEN, countryCN)
+        values
+        (#{countryId,jdbcType=INTEGER}, #{letterCode2,jdbcType=VARCHAR}, #{letterCode3,jdbcType=VARCHAR},
+        #{isoId,jdbcType=VARCHAR}, #{countryEN,jdbcType=VARCHAR}, #{countryCN,jdbcType=VARCHAR}
+        )
+        on duplicate key update
+        countryId = #{countryId,jdbcType=INTEGER},
+        letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+        letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+        isoId = #{isoId,jdbcType=VARCHAR},
+        countryEN = #{countryEN,jdbcType=VARCHAR},
+        countryCN = #{countryCN,jdbcType=VARCHAR}
+    </insert>
+    <insert id="insertOrUpdateWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode
+        (countryId, letterCode2, letterCode3, isoId, countryEN, countryCN, note)
+        values
+        (#{countryId,jdbcType=INTEGER}, #{letterCode2,jdbcType=VARCHAR}, #{letterCode3,jdbcType=VARCHAR},
+        #{isoId,jdbcType=VARCHAR}, #{countryEN,jdbcType=VARCHAR}, #{countryCN,jdbcType=VARCHAR},
+        #{note,jdbcType=LONGVARCHAR})
+        on duplicate key update
+        countryId = #{countryId,jdbcType=INTEGER},
+        letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+        letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+        isoId = #{isoId,jdbcType=VARCHAR},
+        countryEN = #{countryEN,jdbcType=VARCHAR},
+        countryCN = #{countryCN,jdbcType=VARCHAR},
+        note = #{note,jdbcType=LONGVARCHAR}
+    </insert>
+    <insert id="insertOrUpdateSelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CountryCode">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.countryCode
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="countryId != null">
+                countryId,
+            </if>
+            <if test="letterCode2 != null">
+                letterCode2,
+            </if>
+            <if test="letterCode3 != null">
+                letterCode3,
+            </if>
+            <if test="isoId != null">
+                isoId,
+            </if>
+            <if test="countryEN != null">
+                countryEN,
+            </if>
+            <if test="countryCN != null">
+                countryCN,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="countryId != null">
+                #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="letterCode2 != null">
+                #{letterCode2,jdbcType=VARCHAR},
+            </if>
+            <if test="letterCode3 != null">
+                #{letterCode3,jdbcType=VARCHAR},
+            </if>
+            <if test="isoId != null">
+                #{isoId,jdbcType=VARCHAR},
+            </if>
+            <if test="countryEN != null">
+                #{countryEN,jdbcType=VARCHAR},
+            </if>
+            <if test="countryCN != null">
+                #{countryCN,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="countryId != null">
+                countryId = #{countryId,jdbcType=INTEGER},
+            </if>
+            <if test="letterCode2 != null">
+                letterCode2 = #{letterCode2,jdbcType=VARCHAR},
+            </if>
+            <if test="letterCode3 != null">
+                letterCode3 = #{letterCode3,jdbcType=VARCHAR},
+            </if>
+            <if test="isoId != null">
+                isoId = #{isoId,jdbcType=VARCHAR},
+            </if>
+            <if test="countryEN != null">
+                countryEN = #{countryEN,jdbcType=VARCHAR},
+            </if>
+            <if test="countryCN != null">
+                countryCN = #{countryCN,jdbcType=VARCHAR},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.CommodityInformationMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.commodityInformation-->
+        <id column="commodityId" jdbcType="INTEGER" property="commodityId"/>
+        <result column="commodityName" jdbcType="VARCHAR" property="commodityName"/>
+        <result column="brandId" jdbcType="INTEGER" property="brandId"/>
+        <result column="classifyId" jdbcType="INTEGER" property="classifyId"/>
+        <result column="commodityPrice" jdbcType="DECIMAL" property="commodityPrice"/>
+        <result column="commodityStatus" jdbcType="INTEGER" property="commodityStatus"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.commodityInformation-->
+        <result column="commodityPhotoUrl" jdbcType="LONGVARCHAR" property="commodityPhotoUrl"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        commodityId, commodityName, brandId, classifyId, commodityPrice, commodityStatus,
+        `parameter`, updateTime
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        commodityPhotoUrl
+    </sql>
+
+
+    <select id="selectAll" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.commodityInformation
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.commodityInformation
+        where commodityId = #{commodityId,jdbcType=INTEGER}
+    </select>
+    <select id="selectRecommendList" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        SELECT
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        FROM CourseDesign202011.commodityInformation,
+        (SELECT userBrowsingRecords.commodityId,
+        COUNT(userBrowsingRecords.commodityId) countRecord
+        FROM userBrowsingRecords
+        GROUP BY userBrowsingRecords.commodityId
+        ORDER BY countRecord DESC) recordSort
+        WHERE commodityInformation.commodityId = recordSort.commodityId
+        ORDER BY recordSort.countRecord
+    </select>
+    <select id="selectRecommendListByUserId" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        SELECT
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        FROM CourseDesign202011.commodityInformation,
+        (SELECT userBrowsingRecords.commodityId,
+        COUNT(userBrowsingRecords.commodityId) countRecord
+        FROM userBrowsingRecords
+        WHERE userBrowsingRecords.userId = #{userId,jdbcType=INTEGER}
+        GROUP BY userBrowsingRecords.commodityId
+        ORDER BY countRecord DESC) recordSort
+        WHERE commodityInformation.commodityId = recordSort.commodityId
+        ORDER BY recordSort.countRecord
+    </select>
+
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete
+        from CourseDesign202011.commodityInformation
+        where commodityId = #{commodityId,jdbcType=INTEGER}
+    </delete>
+
+
+    <insert id="insert" keyColumn="commodityId" keyProperty="commodityId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation (commodityName, brandId, classifyId,
+        commodityPrice, commodityStatus, `parameter`,
+        updateTime, commodityPhotoUrl)
+        values (#{commodityName,jdbcType=VARCHAR}, #{brandId,jdbcType=INTEGER}, #{classifyId,jdbcType=INTEGER},
+        #{commodityPrice,jdbcType=DECIMAL}, #{commodityStatus,jdbcType=INTEGER}, #{parameter,jdbcType=VARCHAR},
+        #{updateTime,jdbcType=TIMESTAMP}, #{commodityPhotoUrl,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="commodityId" keyProperty="commodityId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityName != null">
+                commodityName,
+            </if>
+            <if test="brandId != null">
+                brandId,
+            </if>
+            <if test="classifyId != null">
+                classifyId,
+            </if>
+            <if test="commodityPrice != null">
+                commodityPrice,
+            </if>
+            <if test="commodityStatus != null">
+                commodityStatus,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="commodityPhotoUrl != null">
+                commodityPhotoUrl,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="commodityName != null">
+                #{commodityName,jdbcType=VARCHAR},
+            </if>
+            <if test="brandId != null">
+                #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="classifyId != null">
+                #{classifyId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPrice != null">
+                #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityStatus != null">
+                #{commodityStatus,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="commodityPhotoUrl != null">
+                #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="batchInsert" keyColumn="commodityId" keyProperty="commodityId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation
+        (commodityName, brandId, classifyId, commodityPrice, commodityStatus, `parameter`,
+        updateTime, commodityPhotoUrl)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.commodityName,jdbcType=VARCHAR}, #{item.brandId,jdbcType=INTEGER},
+            #{item.classifyId,jdbcType=INTEGER},
+            #{item.commodityPrice,jdbcType=DECIMAL}, #{item.commodityStatus,jdbcType=INTEGER},
+            #{item.parameter,jdbcType=VARCHAR}, #{item.updateTime,jdbcType=TIMESTAMP},
+            #{item.commodityPhotoUrl,jdbcType=LONGVARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="commodityId" keyProperty="commodityId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId,
+            </if>
+            commodityName,
+            brandId,
+            classifyId,
+            commodityPrice,
+            commodityStatus,
+            `parameter`,
+            updateTime,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                #{commodityId,jdbcType=INTEGER},
+            </if>
+            #{commodityName,jdbcType=VARCHAR},
+            #{brandId,jdbcType=INTEGER},
+            #{classifyId,jdbcType=INTEGER},
+            #{commodityPrice,jdbcType=DECIMAL},
+            #{commodityStatus,jdbcType=INTEGER},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId = #{commodityId,jdbcType=INTEGER},
+            </if>
+            commodityName = #{commodityName,jdbcType=VARCHAR},
+            brandId = #{brandId,jdbcType=INTEGER},
+            classifyId = #{classifyId,jdbcType=INTEGER},
+            commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+            commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateWithBLOBs" keyColumn="commodityId" keyProperty="commodityId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId,
+            </if>
+            commodityName,
+            brandId,
+            classifyId,
+            commodityPrice,
+            commodityStatus,
+            `parameter`,
+            updateTime,
+            commodityPhotoUrl,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                #{commodityId,jdbcType=INTEGER},
+            </if>
+            #{commodityName,jdbcType=VARCHAR},
+            #{brandId,jdbcType=INTEGER},
+            #{classifyId,jdbcType=INTEGER},
+            #{commodityPrice,jdbcType=DECIMAL},
+            #{commodityStatus,jdbcType=INTEGER},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+            #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId = #{commodityId,jdbcType=INTEGER},
+            </if>
+            commodityName = #{commodityName,jdbcType=VARCHAR},
+            brandId = #{brandId,jdbcType=INTEGER},
+            classifyId = #{classifyId,jdbcType=INTEGER},
+            commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+            commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            commodityPhotoUrl = #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="commodityId" keyProperty="commodityId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.commodityInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId,
+            </if>
+            <if test="commodityName != null">
+                commodityName,
+            </if>
+            <if test="brandId != null">
+                brandId,
+            </if>
+            <if test="classifyId != null">
+                classifyId,
+            </if>
+            <if test="commodityPrice != null">
+                commodityPrice,
+            </if>
+            <if test="commodityStatus != null">
+                commodityStatus,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="commodityPhotoUrl != null">
+                commodityPhotoUrl,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="commodityId != null">
+                #{commodityId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityName != null">
+                #{commodityName,jdbcType=VARCHAR},
+            </if>
+            <if test="brandId != null">
+                #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="classifyId != null">
+                #{classifyId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPrice != null">
+                #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityStatus != null">
+                #{commodityStatus,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="commodityPhotoUrl != null">
+                #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="commodityId != null">
+                commodityId = #{commodityId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityName != null">
+                commodityName = #{commodityName,jdbcType=VARCHAR},
+            </if>
+            <if test="brandId != null">
+                brandId = #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="classifyId != null">
+                classifyId = #{classifyId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPrice != null">
+                commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityStatus != null">
+                commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="commodityPhotoUrl != null">
+                commodityPhotoUrl = #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation">
+        <!--@mbg.generated-->
+        update CourseDesign202011.commodityInformation
+        <set>
+            <if test="commodityName != null">
+                commodityName = #{commodityName,jdbcType=VARCHAR},
+            </if>
+            <if test="brandId != null">
+                brandId = #{brandId,jdbcType=INTEGER},
+            </if>
+            <if test="classifyId != null">
+                classifyId = #{classifyId,jdbcType=INTEGER},
+            </if>
+            <if test="commodityPrice != null">
+                commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="commodityStatus != null">
+                commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="commodityPhotoUrl != null">
+                commodityPhotoUrl = #{commodityPhotoUrl,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where commodityId = #{commodityId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation">
+        <!--@mbg.generated-->
+        update CourseDesign202011.commodityInformation
+        set commodityName = #{commodityName,jdbcType=VARCHAR},
+        brandId = #{brandId,jdbcType=INTEGER},
+        classifyId = #{classifyId,jdbcType=INTEGER},
+        commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+        commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        commodityPhotoUrl = #{commodityPhotoUrl,jdbcType=LONGVARCHAR}
+        where commodityId = #{commodityId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.CommodityInformation">
+        <!--@mbg.generated-->
+        update CourseDesign202011.commodityInformation
+        set commodityName = #{commodityName,jdbcType=VARCHAR},
+        brandId = #{brandId,jdbcType=INTEGER},
+        classifyId = #{classifyId,jdbcType=INTEGER},
+        commodityPrice = #{commodityPrice,jdbcType=DECIMAL},
+        commodityStatus = #{commodityStatus,jdbcType=INTEGER},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP}
+        where commodityId = #{commodityId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.commodityInformation
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="commodityName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.commodityName,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="brandId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.brandId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="classifyId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.classifyId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="commodityPrice = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.commodityPrice,jdbcType=DECIMAL}
+                </foreach>
+            </trim>
+            <trim prefix="commodityStatus = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                    then #{item.commodityStatus,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="commodityPhotoUrl = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                    then #{item.commodityPhotoUrl,jdbcType=LONGVARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where commodityId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.commodityId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.commodityInformation
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="commodityName = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.commodityName != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                        then #{item.commodityName,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="brandId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.brandId != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.brandId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="classifyId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.classifyId != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.classifyId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="commodityPrice = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.commodityPrice != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                        then #{item.commodityPrice,jdbcType=DECIMAL}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="commodityStatus = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.commodityStatus != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                        then #{item.commodityStatus,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                        then #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="commodityPhotoUrl = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.commodityPhotoUrl != null">
+                        when commodityId = #{item.commodityId,jdbcType=INTEGER}
+                        then #{item.commodityPhotoUrl,jdbcType=LONGVARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where commodityId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.commodityId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+</mapper>

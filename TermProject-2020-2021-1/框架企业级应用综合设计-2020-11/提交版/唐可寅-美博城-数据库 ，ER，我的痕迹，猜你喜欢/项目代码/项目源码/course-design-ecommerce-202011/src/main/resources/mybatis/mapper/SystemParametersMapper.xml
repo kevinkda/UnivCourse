@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.SystemParametersMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.systemParameters-->
+        <id column="parameterId" jdbcType="INTEGER" property="parameterId"/>
+        <result column="parameterType" jdbcType="VARCHAR" property="parameterType"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="note" jdbcType="VARCHAR" property="note"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.systemParameters-->
+        <result column="parameterValue" jdbcType="LONGVARCHAR" property="parameterValue"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        parameterId, parameterType, `parameter`, updateTime, note
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        parameterValue
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.systemParameters
+        where parameterId = #{parameterId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.systemParameters
+        where parameterId = #{parameterId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="parameterId" keyProperty="parameterId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters (parameterType, `parameter`, updateTime,
+        note, parameterValue)
+        values (#{parameterType,jdbcType=VARCHAR}, #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},
+        #{note,jdbcType=VARCHAR}, #{parameterValue,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="parameterId" keyProperty="parameterId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterType != null">
+                parameterType,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="parameterValue != null">
+                parameterValue,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="parameterType != null">
+                #{parameterType,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameterValue != null">
+                #{parameterValue,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemParameters
+        <set>
+            <if test="parameterType != null">
+                parameterType = #{parameterType,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameterValue != null">
+                parameterValue = #{parameterValue,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where parameterId = #{parameterId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemParameters
+        set parameterType = #{parameterType,jdbcType=VARCHAR},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        note = #{note,jdbcType=VARCHAR},
+        parameterValue = #{parameterValue,jdbcType=LONGVARCHAR}
+        where parameterId = #{parameterId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemParameters
+        set parameterType = #{parameterType,jdbcType=VARCHAR},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        note = #{note,jdbcType=VARCHAR}
+        where parameterId = #{parameterId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemParameters
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="parameterType = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.parameterType,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="parameterValue = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when parameterId = #{item.parameterId,jdbcType=INTEGER} then
+                    #{item.parameterValue,jdbcType=LONGVARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where parameterId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.parameterId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemParameters
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="parameterType = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameterType != null">
+                        when parameterId = #{item.parameterId,jdbcType=INTEGER} then
+                        #{item.parameterType,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when parameterId = #{item.parameterId,jdbcType=INTEGER} then
+                        #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.note != null">
+                        when parameterId = #{item.parameterId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="parameterValue = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameterValue != null">
+                        when parameterId = #{item.parameterId,jdbcType=INTEGER} then
+                        #{item.parameterValue,jdbcType=LONGVARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where parameterId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.parameterId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="parameterId" keyProperty="parameterId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters
+        (parameterType, `parameter`, updateTime, note, parameterValue)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.parameterType,jdbcType=VARCHAR}, #{item.parameter,jdbcType=VARCHAR},
+            #{item.updateTime,jdbcType=TIMESTAMP},
+            #{item.note,jdbcType=VARCHAR}, #{item.parameterValue,jdbcType=LONGVARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="parameterId" keyProperty="parameterId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId,
+            </if>
+            parameterType,
+            `parameter`,
+            updateTime,
+            note,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                #{parameterId,jdbcType=INTEGER},
+            </if>
+            #{parameterType,jdbcType=VARCHAR},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+            #{note,jdbcType=VARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId = #{parameterId,jdbcType=INTEGER},
+            </if>
+            parameterType = #{parameterType,jdbcType=VARCHAR},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            note = #{note,jdbcType=VARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateWithBLOBs" keyColumn="parameterId" keyProperty="parameterId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId,
+            </if>
+            parameterType,
+            `parameter`,
+            updateTime,
+            note,
+            parameterValue,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                #{parameterId,jdbcType=INTEGER},
+            </if>
+            #{parameterType,jdbcType=VARCHAR},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+            #{note,jdbcType=VARCHAR},
+            #{parameterValue,jdbcType=LONGVARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId = #{parameterId,jdbcType=INTEGER},
+            </if>
+            parameterType = #{parameterType,jdbcType=VARCHAR},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            note = #{note,jdbcType=VARCHAR},
+            parameterValue = #{parameterValue,jdbcType=LONGVARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="parameterId" keyProperty="parameterId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemParameters"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemParameters
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId,
+            </if>
+            <if test="parameterType != null">
+                parameterType,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="parameterValue != null">
+                parameterValue,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parameterId != null">
+                #{parameterId,jdbcType=INTEGER},
+            </if>
+            <if test="parameterType != null">
+                #{parameterType,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameterValue != null">
+                #{parameterValue,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="parameterId != null">
+                parameterId = #{parameterId,jdbcType=INTEGER},
+            </if>
+            <if test="parameterType != null">
+                parameterType = #{parameterType,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameterValue != null">
+                parameterValue = #{parameterValue,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

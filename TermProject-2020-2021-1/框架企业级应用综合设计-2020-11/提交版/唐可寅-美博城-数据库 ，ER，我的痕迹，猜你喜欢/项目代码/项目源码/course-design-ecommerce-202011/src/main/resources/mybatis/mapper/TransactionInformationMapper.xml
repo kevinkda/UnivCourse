@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.TransactionInformationMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.transactionInformation-->
+        <id column="transactionId" jdbcType="INTEGER" property="transactionId"/>
+        <result column="userId" jdbcType="INTEGER" property="userId"/>
+        <result column="addressId" jdbcType="INTEGER" property="addressId"/>
+        <result column="transactionStatus" jdbcType="INTEGER" property="transactionStatus"/>
+        <result column="note" jdbcType="VARCHAR" property="note"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        transactionId, userId, addressId, transactionStatus, note, `parameter`, updateTime
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.transactionInformation
+        where transactionId = #{transactionId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.transactionInformation
+        where transactionId = #{transactionId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="transactionId" keyProperty="transactionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.transactionInformation (userId, addressId, transactionStatus,
+        note, `parameter`, updateTime
+        )
+        values (#{userId,jdbcType=INTEGER}, #{addressId,jdbcType=INTEGER}, #{transactionStatus,jdbcType=INTEGER},
+        #{note,jdbcType=VARCHAR}, #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <insert id="insertSelective" keyColumn="transactionId" keyProperty="transactionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.transactionInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="addressId != null">
+                addressId,
+            </if>
+            <if test="transactionStatus != null">
+                transactionStatus,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="addressId != null">
+                #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="transactionStatus != null">
+                #{transactionStatus,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation">
+        <!--@mbg.generated-->
+        update CourseDesign202011.transactionInformation
+        <set>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="addressId != null">
+                addressId = #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="transactionStatus != null">
+                transactionStatus = #{transactionStatus,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where transactionId = #{transactionId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation">
+        <!--@mbg.generated-->
+        update CourseDesign202011.transactionInformation
+        set userId = #{userId,jdbcType=INTEGER},
+        addressId = #{addressId,jdbcType=INTEGER},
+        transactionStatus = #{transactionStatus,jdbcType=INTEGER},
+        note = #{note,jdbcType=VARCHAR},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP}
+        where transactionId = #{transactionId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.transactionInformation
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.userId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="addressId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.addressId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="transactionStatus = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                    #{item.transactionStatus,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                    #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+        </trim>
+        where transactionId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.transactionId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.transactionInformation
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userId != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.userId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="addressId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.addressId != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                        #{item.addressId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="transactionStatus = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.transactionStatus != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                        #{item.transactionStatus,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.note != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                        #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when transactionId = #{item.transactionId,jdbcType=INTEGER} then
+                        #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where transactionId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.transactionId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="transactionId" keyProperty="transactionId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.transactionInformation
+        (userId, addressId, transactionStatus, note, `parameter`, updateTime)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.userId,jdbcType=INTEGER}, #{item.addressId,jdbcType=INTEGER},
+            #{item.transactionStatus,jdbcType=INTEGER},
+            #{item.note,jdbcType=VARCHAR}, #{item.parameter,jdbcType=VARCHAR}, #{item.updateTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="transactionId" keyProperty="transactionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.transactionInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="transactionId != null">
+                transactionId,
+            </if>
+            userId,
+            addressId,
+            transactionStatus,
+            note,
+            `parameter`,
+            updateTime,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="transactionId != null">
+                #{transactionId,jdbcType=INTEGER},
+            </if>
+            #{userId,jdbcType=INTEGER},
+            #{addressId,jdbcType=INTEGER},
+            #{transactionStatus,jdbcType=INTEGER},
+            #{note,jdbcType=VARCHAR},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="transactionId != null">
+                transactionId = #{transactionId,jdbcType=INTEGER},
+            </if>
+            userId = #{userId,jdbcType=INTEGER},
+            addressId = #{addressId,jdbcType=INTEGER},
+            transactionStatus = #{transactionStatus,jdbcType=INTEGER},
+            note = #{note,jdbcType=VARCHAR},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="transactionId" keyProperty="transactionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.TransactionInformation"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.transactionInformation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="transactionId != null">
+                transactionId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="addressId != null">
+                addressId,
+            </if>
+            <if test="transactionStatus != null">
+                transactionStatus,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="transactionId != null">
+                #{transactionId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="addressId != null">
+                #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="transactionStatus != null">
+                #{transactionStatus,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="transactionId != null">
+                transactionId = #{transactionId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="addressId != null">
+                addressId = #{addressId,jdbcType=INTEGER},
+            </if>
+            <if test="transactionStatus != null">
+                transactionStatus = #{transactionStatus,jdbcType=INTEGER},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+</mapper>

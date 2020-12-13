@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background: url(../img/login/login-bg.gif) top center no-repeat
+}
+
+/* 顶部 样式 */
+.login-top {
+    width: 930px;
+    height: 70px;
+    padding-top: 45px; /* border:1px solid red*/
+}
+
+/* 主体 样式 */
+.login-body {
+    width: 930px;
+    height: auto;
+    min-height: 420px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.login-enter {
+    width: 94%;
+    height: auto;
+}
+
+/* 左侧 */
+.login-focus {
+    width: 450px;
+    height: 290px;
+    padding-right: 50px;
+    margin-right: 50px;
+}
+
+/* 右侧 */
+.login-input-text {
+    width: 243px;
+    height: 23px;
+    line-height: 23px;
+    padding: 5px;
+    border: 1px solid #d7d4d4;
+    background: #fff;
+    font-size: 12px;
+}
+
+.login-input-text {
+    background: url(../img/login/btn-user.gif) right center no-repeat;
+    background-position: 228px 7px
+}
+
+.login-input-password {
+    background: url(../img/login/btn-password.gif) right center no-repeat;
+    background-position: 228px 7px
+}
+
+.login-input-submit {
+    width: 116px;
+    height: 38px;
+    line-height: 38px;
+    border: none;
+    background: url(../img/login/btn-submit.gif) top center no-repeat;
+}
+
+.login-input-submit {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.login-input-submit:hover {
+    background: url(../img/login/btn-submit.gif) bottom center no-repeat;
+}
+
+/* 底部 样式 */
+.login-bottom {
+    width: 930px;
+    height: auto;
+    padding: 25px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-bottom a {
+    padding: 0 10px
+}
+
+
+/* 注册 */
+.validation {
+    background: none;
+    width: 125px
+}
+
+.btn-enter {
+    display: block;
+    width: 155px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #38a149;
+    color: #FFFFFF;
+    font-weight: bold
+}
+
+.btn-enter:hover {
+    background: #31c248;
+    color: #FFFFFF
+}
+
+/* 找回 */
+.find-title {
+    width: 300px;
+    height: 45px;
+    background: url(../img/sprite/sprite-point.jpg) bottom repeat-x
+}
+
+.find-title a {
+    display: block;
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    display: inline;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999999
+}
+
+.find-title a:hover {
+    border-bottom: 1px solid #38a149;
+    margin-left: 20px;
+}
+
+#current {
+    border-bottom: 1px solid #38a149;
+    margin-left: 20px;
+    color: #38a149
+}
+
+.login-input-submit2 {
+    background: url(../img/login/btn-submit2.gif) top center no-repeat;
+    margin-left: 15px;
+}
+
+.input-long {
+    width: 370px;
+    background-position: 355px 7px;
+    color: #666666
+}
+
+.send {
+    display: block;
+    width: 170px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #919db6;
+    background: #e6ebf8;
+    color: #6b6d71;
+    margin-left: 10px;
+}
+
+

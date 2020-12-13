@@ -1,0 +1,576 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*产品详情大框架*/
+.extraBox {
+    width: 1118px;
+    overflow: auto;
+    background: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #dedede
+}
+
+/*左侧*stlye*/
+.spec-preview {
+    width: 352px;
+    height: auto;
+    float: left;
+    display: inline
+}
+
+/*右侧*stlye*/
+.extra-text {
+    width: 710px;
+    height: auto;
+    float: right;
+    display: inline;
+}
+
+.extra-text-header {
+    width: 100%;
+    border-bottom: 1px dotted #dedede;
+    line-height: 18px;
+    height: 80px
+}
+
+.extra-text-header p {
+    padding: 3px 0
+}
+
+.extra-text-body {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    border-bottom: 1px dotted #dedede
+}
+
+.extra-text-body table tr td {
+    padding: 5px
+}
+
+.zengpin {
+    background: #f4f4f4;
+    border: none
+}
+
+.zpBox {
+    width: 100%;
+    height: 70px;
+}
+
+.zpBox ul li {
+    width: 80px;
+    height: 70px;
+    float: left;
+    display: inline;
+    margin-right: 10px;
+    background: #717070
+}
+
+.zpBox ul li img {
+    width: 80px;
+    height: 70px
+}
+
+.zpBox ul li .huanyihuan {
+    display: block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.zpBox ul li .huanyihuan:hover {
+    background: #e34b64
+}
+
+.buyBottonBox {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px
+}
+
+.buyBottonBox a {
+    display: block;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.buyBotton-one {
+    width: 152px;
+    height: 44px;
+    background: url(../img/sprite/buybotton-one.png) top center no-repeat
+}
+
+.buyBotton-one:hover {
+    background: url(../img/sprite/buybotton-one-over.png) top center no-repeat
+}
+
+.buyBotton-two {
+    width: 117px;
+    height: 44px;
+    background: url(../img/sprite/buybotton-two.png) top center no-repeat;
+    margin-left: 10px
+}
+
+.buyBotton-two:hover {
+    background: url(../img/sprite/buybotton-two-over.png) top center no-repeat
+}
+
+.evaluationBox {
+    width: 1200px;
+    overflow: auto;
+    margin-top: 20px
+}
+
+.evaluation-left {
+    width: 970px;
+    height: auto;
+    background: #fff
+}
+
+.e-l-menu {
+    width: 968px;
+    height: 36px;
+    border: 1px solid #dedede;
+    background: url(../img/sprite/sprite-point.jpg) #f4f4f4 bottom repeat-x;
+    border-bottom: none;
+}
+
+.e-l-menu ul li {
+    width: 120px;
+    height: 36px;
+    float: left;
+    display: inline
+}
+
+.e-l-menu ul li a {
+    display: block;
+    width: 120px;
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #dedede;
+    border-top: 2px solid #f4f4f4;
+    text-align: center;
+}
+
+.e-l-menu ul li a:hover {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #dd383f
+}
+
+.e-l-menu ul li .menub6_1 {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #dd383f
+}
+
+.bbpf p {
+    line-height: 28px
+}
+
+.hpd {
+    width: 300px;
+    overflow: auto;
+    padding-top: 9px
+}
+
+.hpd ul li {
+    width: 90px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+    display: inline
+}
+
+.mjyx a {
+    background: #ffcccc;
+    padding: 2px 7px;
+    margin-right: 5px
+}
+
+.www {
+    width: 95%;
+    height: auto;
+    margin-top: 10px
+}
+
+.pj-Box {
+    width: 92%;
+    height: auto;
+    margin-top: 20px
+}
+
+.pj-header {
+    width: 100%;
+    background: #f5f5f5;
+    height: 40px
+}
+
+.pj-header a {
+    display: block;
+    float: left;
+    line-height: 40px;
+    padding: 0 20px
+}
+
+.pj-header a:hover {
+    background: #fff;
+    border-top: 2px solid #7ba823
+}
+
+.pj-header #current3 {
+    background: #fff;
+    border-top: 2px solid #7ba823
+}
+
+.pj-body-list {
+    padding: 15px;
+    border-bottom: 1px dotted #dedede
+}
+
+.pj-body-list p {
+    line-height: 16px;
+    margin: 10px 0
+}
+
+.e-l-text {
+    width: 968px;
+    border: 1px solid #dedede;
+    background: #fff;
+    padding: 15px 0;
+    border-top: none;
+}
+
+.evaluation-right {
+    width: 220px;
+    height: auto;
+}
+
+.payfor-dp {
+    width: 218px;
+    border: 1px solid #dedede;
+    background: #fff;
+    padding-bottom: 10px
+}
+
+.this-store-title {
+    display: block;
+    width: 100%;
+    background: #cd102f;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 12px;
+    color: #FFFFFF;
+    font-weight: bold
+}
+
+.payfor-dp .dppf {
+    display: block;
+    width: 87%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payfor-dp .dppf table tr td {
+    padding: 2px;
+}
+
+.payfor-dp .gy-thy {
+    background: #cd102f;
+    color: #FFFFFF;
+    padding: 0 5px
+}
+
+.payfor-dp .gy-text {
+    color: #cd102f;
+}
+
+.payfor-dp .dy-thy {
+    background: #8cbe28;
+    color: #FFFFFF;
+    padding: 0 5px
+}
+
+.payfor-dp .dy-text {
+    color: #8cbe28;
+}
+
+.payfor-dp .gsqc {
+    display: block;
+    width: 84%;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    padding: 15px 0;
+}
+
+.payfor-dp .gsqc p {
+    line-height: 18px;
+}
+
+.payfor-dp .jr-sc-dp {
+    display: block;
+    width: 84%;
+    height: 50px;
+    margin-top: 25px
+}
+
+.payfor-dp .jr-sc-dp .jrdp-btn {
+    display: block;
+    width: 46%;
+    border: 1px solid #f03a3a;
+    background: #ff5353;
+    text-align: center;
+    line-height: 30px;
+    color: #fff
+}
+
+.payfor-dp .jr-sc-dp .scdp-btn {
+    border: 1px solid #cccccc;
+    background: #ebebeb;
+    color: #999
+}
+
+.all-dp-box {
+    width: 218px;
+    border: 1px solid #dedede;
+    background: #fff;
+    padding-bottom: 20px;
+    margin-top: 10px
+}
+
+.all-dp-head {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #f4f4f4;
+    color: #666666;
+    text-indent: 12px;
+    border-bottom: 1px solid #dedede
+}
+
+.all-dp-body {
+    width: 80%;
+    height: auto;
+    margin-top: 20px
+}
+
+.all-dp-body table tr td {
+    padding: 3px
+}
+
+.dp-text {
+    background: #fff;
+    color: #888888;
+    border: 1px solid #dedede;
+    padding: 5px
+}
+
+.gjz-text {
+    height: 16px;
+    line-height: 16px;
+    width: 90px
+}
+
+.dp-Submit {
+    background: #f78217;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px 8px
+}
+
+.jg-text {
+    height: 16px;
+    line-height: 16px;
+    width: 32px
+}
+
+/*图片放大镜样式*/
+.jqzoom {
+    position: relative;
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #dedede;
+}
+
+.zoomdiv {
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 350px;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.jqZoomPup {
+    z-index: 10;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background: #fff /*url(../images/zoom.png) 50% center no-repeat*/;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    filter: alpha(Opacity=50);
+}
+
+.spec-scroll {
+    clear: both;
+    width: 352px;
+    overflow: auto;
+    background: #fff;
+    margin-top: 8px
+}
+
+.spec-scroll .prev {
+    float: left;
+    margin-right: 4px;
+}
+
+.spec-scroll .next {
+    float: right;
+}
+
+.spec-scroll .prev, .spec-scroll .next {
+    display: block;
+    font-family: "宋体";
+    text-align: center;
+    width: 10px;
+    height: 54px;
+    line-height: 54px;
+    border: 1px solid #dedede;
+    background: #EBEBEB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.spec-scroll .items {
+    float: left;
+    position: relative;
+    width: 322px;
+    height: 56px;
+    overflow: hidden;
+}
+
+.spec-scroll .items ul {
+    position: absolute;
+    width: 999999px;
+    height: 56px;
+}
+
+.spec-scroll .items ul li {
+    float: left;
+    width: 64px;
+    text-align: center;
+}
+
+.spec-scroll .items ul li img {
+    border: 1px solid #dedede;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+.spec-scroll .items ul li img:hover {
+    border: 1px solid #FF6600;
+}
+
+.scAndfx {
+    width: 100%;
+    height: 30px;
+    margin-top: 8px
+}
+
+.sc-btn {
+    display: block;
+    border: 1px solid #dedede;
+    padding-left: 30px;
+    width: 70px;
+    line-height: 28px;
+    background: url(../img/sprite/sc-btn.gif) #fff left center no-repeat;
+    background-position: 7px 6px;
+}
+
+.bdsharebuttonbox {
+    width: 120px;
+    border: 1px solid #dedede;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+/*颜色选择后加样式*/
+.chose a {
+    width: 30px;
+    height: 30px;
+    display: inline;
+    border: 1px solid #dedede;
+    padding: 1px;
+    margin-left: 3px;
+    float: left;
+}
+
+.chose .hd {
+    margin-left: 0px;
+}
+
+.chose a:hover {
+    border: 1px solid #e5274f;
+    color: #e5274f
+}
+
+.chose a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
