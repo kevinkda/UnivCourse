@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/shop/shop.iml" filepath="$PROJECT_DIR$/shop/shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-demo-20201117/spring-cloud-demo-20201117.iml" filepath="$PROJECT_DIR$/spring-cloud-demo-20201117/spring-cloud-demo-20201117.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-test-202011/spring-cloud-test-202011.iml" filepath="$PROJECT_DIR$/spring-cloud-test-202011/spring-cloud-test-202011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-test-20201118-eureka/spring-cloud-test-20201118-eureka.iml" filepath="$PROJECT_DIR$/spring-cloud-test-20201118-eureka/spring-cloud-test-20201118-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-test-202011/module/spring-cloud-test-consumer-20201117-01/spring-cloud-test-consumer-20201117-01.iml" filepath="$PROJECT_DIR$/spring-cloud-test-202011/module/spring-cloud-test-consumer-20201117-01/spring-cloud-test-consumer-20201117-01.iml" />
     </modules>
   </component>

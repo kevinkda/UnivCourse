@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="data-source-demo-spring" />
         <module name="shop" />
+        <module name="spring-cloud-test-20201118-eureka" />
         <module name="demo-04-20201103-jpa" />
         <module name="online-retailers-springboot-202010" />
         <module name="spring-cloud-test-consumer-20201117-01" />
@@ -16,8 +17,9 @@
         <module name="spring-cloud-test-202011" />
         <module name="hw-20200909" />
         <module name="eureka-service-20201117" />
-        <module name="demo-01-20200909" />
         <module name="demo-02-20200910-ssm" />
+        <module name="spring-cloud-demo-20201117" />
+        <module name="demo-01-20200909" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,7 +32,9 @@
       <module name="hw-20200909" target="1.8" />
       <module name="online-retailers-springboot-202010" target="1.8" />
       <module name="shop" target="1.8" />
+      <module name="spring-cloud-demo-20201117" target="1.8" />
       <module name="spring-cloud-test-202011" target="1.8" />
+      <module name="spring-cloud-test-20201118-eureka" target="1.8" />
       <module name="spring-cloud-test-consumer-20201117-01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
