@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+.oto-about {
+    width: 1200px;
+    overflow: auto;
+    margin-top: 10px;
+    background: #fff
+}
+
+.oto-about-left {
+    width: 218px;
+    overflow: auto;
+    margin-top: 10px;
+    border: 1px solid #dedede;
+    border-bottom: none
+}
+
+.oto-about-left ul li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dedede;
+    font-size: 14px
+}
+
+.oto-about-left ul li a {
+    display: block;
+    border-left: 3px solid #fff;
+    padding-left: 20px
+}
+
+.oto-about-left ul li a:hover {
+    border-left: 3px solid #dedede;
+    background: #f8f8f8
+}
+
+.oto-about-left ul li a span {
+    padding-right: 15px;
+    color: #CCCCCC
+}
+
+.oto-about-right {
+    width: 968px;
+    overflow: auto;
+    margin-top: 10px;
+    border: 1px solid #dedede;
+    min-height: 500px
+}
+
+.oto-about-right-title {
+    width: 100%;
+    height: 71px;
+    line-height: 71px;
+    text-align: center;
+    font-size: 22px;
+    background: #f8f8f8;
+    border-bottom: 1px dotted #dedede
+}
+
+.oto-about-right-body {
+    width: 96%;
+    height: auto;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

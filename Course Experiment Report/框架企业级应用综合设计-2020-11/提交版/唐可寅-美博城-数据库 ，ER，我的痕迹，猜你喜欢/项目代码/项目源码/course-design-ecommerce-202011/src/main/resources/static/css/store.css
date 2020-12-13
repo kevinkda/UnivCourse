@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ibody_two {
+    width: 100%;
+    height: auto;
+    background: url(../img/store/bg-x.jpg) #f4f4f4 repeat-x
+}
+
+.store_header {
+    width: 1200px;
+    height: 103px;
+    padding-top: 35px
+}
+
+.store_logo {
+    padding-right: 50px;
+    border-right: 1px dotted #dedede;
+    height: 75px;
+}
+
+.store_logo img {
+    height: 75px;
+}
+
+.store_zheng {
+    margin-left: 50px;
+    height: 65px;
+    margin-top: 10px
+}
+
+.store_header_right {
+    height: 55px;
+    padding-top: 20px;
+}
+
+.store_header_right a {
+    display: block;
+    border: 1px solid #dedede;
+    width: 65px;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 35px;
+    float: left
+}
+
+.store_h_kf {
+    background: url(../img/store/kf.jpg) #fff left center no-repeat;
+    background-position: 9px 10px
+}
+
+.store_h_sc {
+    background: url(../img/store/sc.jpg) #fff left center no-repeat;
+    background-position: 9px 10px
+}
+
+.store_nav {
+    width: 1200px;
+    height: 40px;
+}
+
+.store_nav ul li {
+    width: 90px;
+    line-height: 40px;
+    float: left;
+    display: inline;
+    font-size: 14px;
+    text-align: center
+}
+
+/* 幻灯片 */
+.wrap {
+    width: 1200px;
+    height: 370px;
+    margin-top: 20px
+}
+
+/* 左侧 */
+/* 单个图片幻灯片盒子 - 公用类 */
+.wrap .index_slide {
+    width: 980px;
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+    background: #fff
+}
+
+.wrap .index_slide .hd {
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+.wrap .index_slide .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.wrap .index_slide .hd ul li {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background: #000;
+    cursor: pointer;
+    float: left;
+    display: inline;
+    filter: alpha(opacity=70); /* IE 透明度20% */
+    -moz-opacity: 0.7; /* Moz + FF 透明度30%*/
+    opacity: 0.7; /* 支持CSS3的浏览器（FF 1.5也支持）透明度30%*/
+    margin-right: 5px;
+}
+
+.wrap .index_slide .hd ul li.on {
+    background: #f00;
+    color: #fff;
+}
+
+.wrap .index_slide .bd {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
+.wrap .index_slide .bd img {
+    width: 980px;
+    height: 370px;
+    display: block;
+}
+
+/* 右侧 */
+.notice {
+    width: 205px;
+    height: 370px;
+    background: #fff;
+    border-radius: 4px 4px 0px 0px
+}
+
+.notice_title {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: #ce1030;
+    color: #FFFFFF;
+    border-radius: 4px 4px 0px 0px
+}
+
+.notice_title div {
+}
+
+.notice_title h1 {
+    color: #fff;
+    font-size: 12px;
+    width: 70px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.news_list {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.news_list ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #dedede;
+    background: url(../img/sprite/li-btn-bg.jpg) left center no-repeat;
+    text-indent: 10px;
+}
+
+.store_hot {
+    width: 1210px;
+    height: 195px;
+    margin-top: 20px;
+}
+
+.store_hot ul li {
+    width: 230px;
+    height: 155px;
+    float: left;
+    display: inline;
+    margin: 6px;
+    background: #fff;
+    moz-box-shadow: 0px 3px 8px #cecece;
+    -webkit-box-shadow: 0px 3px 8px #cecece;
+    box-shadow: 0px 3px 8px #cecece;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding-top: 5px
+}
+
+.store_hot ul li img {
+    width: 220px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.store_dpmxk {
+    width: 1200px;
+    height: 420px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.store_dpmxk p {
+    display: block;
+    width: 1130px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 50px;
+    padding: 5px
+}
+
+.store_img_list {
+    width: 1140px;
+    height: auto;
+}
+
+.store_img_list table tr td {
+    padding: 5px
+}
+
+#img_size_01 {
+    width: 630px;
+    height: 330px
+}
+
+#img_size_02 {
+    width: 220px;
+    height: 330px
+}
+
+#img_size_03 {
+    width: 260px;
+    height: 160px
+}
+
+#img_size_04 {
+    width: 260px;
+    height: 160px
+}
+
+#img_size_05 {
+    width: 218px;
+    height: 385px
+}
+
+.store_tjrxk {
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.store_remai {
+    border: none
+}
+
+
+.store_fl {
+    width: 220px;
+    height: 42px;
+    line-height: 42px;
+    color: #FFFFFF;
+    background: url(../img/sprite/index-btn-jt3.gif) right center no-repeat;
+    background-position: 82px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

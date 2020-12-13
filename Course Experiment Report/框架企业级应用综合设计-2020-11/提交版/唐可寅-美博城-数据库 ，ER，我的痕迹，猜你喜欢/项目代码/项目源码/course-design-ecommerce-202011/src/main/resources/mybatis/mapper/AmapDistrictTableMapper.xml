@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.AmapDistrictTableMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.amapDistrictTable-->
+        <id column="districtId" jdbcType="INTEGER" property="districtId"/>
+        <result column="citycode" jdbcType="VARCHAR" property="citycode"/>
+        <result column="adcode" jdbcType="INTEGER" property="adcode"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="center" jdbcType="VARCHAR" property="center"/>
+        <result column="level" jdbcType="VARCHAR" property="level"/>
+        <result column="parentId" jdbcType="INTEGER" property="parentId"/>
+    </resultMap>
+    <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.amapDistrictTable-->
+        <result column="polyline" jdbcType="LONGVARCHAR" property="polyline"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        districtId, citycode, adcode, `name`, center, `level`, parentId
+    </sql>
+    <sql id="Blob_Column_List">
+        <!--@mbg.generated-->
+        polyline
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from CourseDesign202011.amapDistrictTable
+        where districtId = #{districtId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.amapDistrictTable
+        where districtId = #{districtId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="districtId" keyProperty="districtId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable (citycode, adcode, `name`,
+        center, `level`, parentId,
+        polyline)
+        values (#{citycode,jdbcType=VARCHAR}, #{adcode,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
+        #{center,jdbcType=VARCHAR}, #{level,jdbcType=VARCHAR}, #{parentId,jdbcType=INTEGER},
+        #{polyline,jdbcType=LONGVARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="districtId" keyProperty="districtId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="citycode != null">
+                citycode,
+            </if>
+            <if test="adcode != null">
+                adcode,
+            </if>
+            <if test="name != null">
+                `name`,
+            </if>
+            <if test="center != null">
+                center,
+            </if>
+            <if test="level != null">
+                `level`,
+            </if>
+            <if test="parentId != null">
+                parentId,
+            </if>
+            <if test="polyline != null">
+                polyline,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="citycode != null">
+                #{citycode,jdbcType=VARCHAR},
+            </if>
+            <if test="adcode != null">
+                #{adcode,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="center != null">
+                #{center,jdbcType=VARCHAR},
+            </if>
+            <if test="level != null">
+                #{level,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="polyline != null">
+                #{polyline,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable">
+        <!--@mbg.generated-->
+        update CourseDesign202011.amapDistrictTable
+        <set>
+            <if test="citycode != null">
+                citycode = #{citycode,jdbcType=VARCHAR},
+            </if>
+            <if test="adcode != null">
+                adcode = #{adcode,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                `name` = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="center != null">
+                center = #{center,jdbcType=VARCHAR},
+            </if>
+            <if test="level != null">
+                `level` = #{level,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                parentId = #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="polyline != null">
+                polyline = #{polyline,jdbcType=LONGVARCHAR},
+            </if>
+        </set>
+        where districtId = #{districtId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable">
+        <!--@mbg.generated-->
+        update CourseDesign202011.amapDistrictTable
+        set citycode = #{citycode,jdbcType=VARCHAR},
+        adcode = #{adcode,jdbcType=INTEGER},
+        `name` = #{name,jdbcType=VARCHAR},
+        center = #{center,jdbcType=VARCHAR},
+        `level` = #{level,jdbcType=VARCHAR},
+        parentId = #{parentId,jdbcType=INTEGER},
+        polyline = #{polyline,jdbcType=LONGVARCHAR}
+        where districtId = #{districtId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable">
+        <!--@mbg.generated-->
+        update CourseDesign202011.amapDistrictTable
+        set citycode = #{citycode,jdbcType=VARCHAR},
+        adcode = #{adcode,jdbcType=INTEGER},
+        `name` = #{name,jdbcType=VARCHAR},
+        center = #{center,jdbcType=VARCHAR},
+        `level` = #{level,jdbcType=VARCHAR},
+        parentId = #{parentId,jdbcType=INTEGER}
+        where districtId = #{districtId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.amapDistrictTable
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="citycode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.citycode,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="adcode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.adcode,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`name` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.name,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="center = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.center,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="`level` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.level,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="parentId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.parentId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="polyline = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.polyline,jdbcType=LONGVARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where districtId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.districtId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.amapDistrictTable
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="citycode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.citycode != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.citycode,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="adcode = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.adcode != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.adcode,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`name` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.name != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.name,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="center = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.center != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.center,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`level` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.level != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.level,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="parentId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parentId != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.parentId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="polyline = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.polyline != null">
+                        when districtId = #{item.districtId,jdbcType=INTEGER} then #{item.polyline,jdbcType=LONGVARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where districtId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.districtId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="districtId" keyProperty="districtId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable
+        (citycode, adcode, `name`, center, `level`, parentId, polyline)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.citycode,jdbcType=VARCHAR}, #{item.adcode,jdbcType=INTEGER}, #{item.name,jdbcType=VARCHAR},
+            #{item.center,jdbcType=VARCHAR}, #{item.level,jdbcType=VARCHAR}, #{item.parentId,jdbcType=INTEGER},
+            #{item.polyline,jdbcType=LONGVARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="districtId" keyProperty="districtId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                districtId,
+            </if>
+            citycode,
+            adcode,
+            `name`,
+            center,
+            `level`,
+            parentId,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                #{districtId,jdbcType=INTEGER},
+            </if>
+            #{citycode,jdbcType=VARCHAR},
+            #{adcode,jdbcType=INTEGER},
+            #{name,jdbcType=VARCHAR},
+            #{center,jdbcType=VARCHAR},
+            #{level,jdbcType=VARCHAR},
+            #{parentId,jdbcType=INTEGER},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="districtId != null">
+                districtId = #{districtId,jdbcType=INTEGER},
+            </if>
+            citycode = #{citycode,jdbcType=VARCHAR},
+            adcode = #{adcode,jdbcType=INTEGER},
+            `name` = #{name,jdbcType=VARCHAR},
+            center = #{center,jdbcType=VARCHAR},
+            `level` = #{level,jdbcType=VARCHAR},
+            parentId = #{parentId,jdbcType=INTEGER},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateWithBLOBs" keyColumn="districtId" keyProperty="districtId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                districtId,
+            </if>
+            citycode,
+            adcode,
+            `name`,
+            center,
+            `level`,
+            parentId,
+            polyline,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                #{districtId,jdbcType=INTEGER},
+            </if>
+            #{citycode,jdbcType=VARCHAR},
+            #{adcode,jdbcType=INTEGER},
+            #{name,jdbcType=VARCHAR},
+            #{center,jdbcType=VARCHAR},
+            #{level,jdbcType=VARCHAR},
+            #{parentId,jdbcType=INTEGER},
+            #{polyline,jdbcType=LONGVARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="districtId != null">
+                districtId = #{districtId,jdbcType=INTEGER},
+            </if>
+            citycode = #{citycode,jdbcType=VARCHAR},
+            adcode = #{adcode,jdbcType=INTEGER},
+            `name` = #{name,jdbcType=VARCHAR},
+            center = #{center,jdbcType=VARCHAR},
+            `level` = #{level,jdbcType=VARCHAR},
+            parentId = #{parentId,jdbcType=INTEGER},
+            polyline = #{polyline,jdbcType=LONGVARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="districtId" keyProperty="districtId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.AmapDistrictTable"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.amapDistrictTable
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                districtId,
+            </if>
+            <if test="citycode != null">
+                citycode,
+            </if>
+            <if test="adcode != null">
+                adcode,
+            </if>
+            <if test="name != null">
+                `name`,
+            </if>
+            <if test="center != null">
+                center,
+            </if>
+            <if test="level != null">
+                `level`,
+            </if>
+            <if test="parentId != null">
+                parentId,
+            </if>
+            <if test="polyline != null">
+                polyline,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="districtId != null">
+                #{districtId,jdbcType=INTEGER},
+            </if>
+            <if test="citycode != null">
+                #{citycode,jdbcType=VARCHAR},
+            </if>
+            <if test="adcode != null">
+                #{adcode,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="center != null">
+                #{center,jdbcType=VARCHAR},
+            </if>
+            <if test="level != null">
+                #{level,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="polyline != null">
+                #{polyline,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="districtId != null">
+                districtId = #{districtId,jdbcType=INTEGER},
+            </if>
+            <if test="citycode != null">
+                citycode = #{citycode,jdbcType=VARCHAR},
+            </if>
+            <if test="adcode != null">
+                adcode = #{adcode,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                `name` = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="center != null">
+                center = #{center,jdbcType=VARCHAR},
+            </if>
+            <if test="level != null">
+                `level` = #{level,jdbcType=VARCHAR},
+            </if>
+            <if test="parentId != null">
+                parentId = #{parentId,jdbcType=INTEGER},
+            </if>
+            <if test="polyline != null">
+                polyline = #{polyline,jdbcType=LONGVARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

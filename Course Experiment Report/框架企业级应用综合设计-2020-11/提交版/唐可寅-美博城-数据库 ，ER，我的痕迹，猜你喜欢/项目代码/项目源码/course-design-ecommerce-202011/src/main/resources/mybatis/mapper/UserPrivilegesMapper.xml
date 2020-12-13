@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.UserPrivilegesMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    <!--@Table CourseDesign202011.userPrivileges-->
+    <id column="userId" jdbcType="INTEGER" property="userId" />
+    <result column="consumer" jdbcType="INTEGER" property="consumer" />
+    <result column="dev" jdbcType="INTEGER" property="dev" />
+    <result column="manager" jdbcType="INTEGER" property="manager" />
+    <result column="test" jdbcType="INTEGER" property="test" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    userId, consumer, dev, manager, test, updateTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from CourseDesign202011.userPrivileges
+    where userId = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from CourseDesign202011.userPrivileges
+    where userId = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    insert into CourseDesign202011.userPrivileges (userId, consumer, dev, 
+      manager, test, updateTime
+      )
+    values (#{userId,jdbcType=INTEGER}, #{consumer,jdbcType=INTEGER}, #{dev,jdbcType=INTEGER}, 
+      #{manager,jdbcType=INTEGER}, #{test,jdbcType=INTEGER}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    insert into CourseDesign202011.userPrivileges
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        userId,
+      </if>
+      <if test="consumer != null">
+        consumer,
+      </if>
+      <if test="dev != null">
+        dev,
+      </if>
+      <if test="manager != null">
+        manager,
+      </if>
+      <if test="test != null">
+        test,
+      </if>
+      <if test="updateTime != null">
+        updateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="consumer != null">
+        #{consumer,jdbcType=INTEGER},
+      </if>
+      <if test="dev != null">
+        #{dev,jdbcType=INTEGER},
+      </if>
+      <if test="manager != null">
+        #{manager,jdbcType=INTEGER},
+      </if>
+      <if test="test != null">
+        #{test,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    update CourseDesign202011.userPrivileges
+    <set>
+      <if test="consumer != null">
+        consumer = #{consumer,jdbcType=INTEGER},
+      </if>
+      <if test="dev != null">
+        dev = #{dev,jdbcType=INTEGER},
+      </if>
+      <if test="manager != null">
+        manager = #{manager,jdbcType=INTEGER},
+      </if>
+      <if test="test != null">
+        test = #{test,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null">
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where userId = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    update CourseDesign202011.userPrivileges
+    set consumer = #{consumer,jdbcType=INTEGER},
+      dev = #{dev,jdbcType=INTEGER},
+      manager = #{manager,jdbcType=INTEGER},
+      test = #{test,jdbcType=INTEGER},
+      updateTime = #{updateTime,jdbcType=TIMESTAMP}
+    where userId = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update CourseDesign202011.userPrivileges
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="consumer = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when userId = #{item.userId,jdbcType=INTEGER} then #{item.consumer,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="dev = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when userId = #{item.userId,jdbcType=INTEGER} then #{item.dev,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="manager = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when userId = #{item.userId,jdbcType=INTEGER} then #{item.manager,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="test = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when userId = #{item.userId,jdbcType=INTEGER} then #{item.test,jdbcType=INTEGER}
+        </foreach>
+      </trim>
+      <trim prefix="updateTime = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when userId = #{item.userId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+        </foreach>
+      </trim>
+    </trim>
+    where userId in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.userId,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <update id="updateBatchSelective" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update CourseDesign202011.userPrivileges
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="consumer = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.consumer != null">
+            when userId = #{item.userId,jdbcType=INTEGER} then #{item.consumer,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="dev = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.dev != null">
+            when userId = #{item.userId,jdbcType=INTEGER} then #{item.dev,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="manager = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.manager != null">
+            when userId = #{item.userId,jdbcType=INTEGER} then #{item.manager,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="test = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.test != null">
+            when userId = #{item.userId,jdbcType=INTEGER} then #{item.test,jdbcType=INTEGER}
+          </if>
+        </foreach>
+      </trim>
+      <trim prefix="updateTime = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.updateTime != null">
+            when userId = #{item.userId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+          </if>
+        </foreach>
+      </trim>
+    </trim>
+    where userId in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.userId,jdbcType=INTEGER}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated-->
+    insert into CourseDesign202011.userPrivileges
+    (userId, consumer, dev, manager, test, updateTime)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.userId,jdbcType=INTEGER}, #{item.consumer,jdbcType=INTEGER}, #{item.dev,jdbcType=INTEGER}, 
+        #{item.manager,jdbcType=INTEGER}, #{item.test,jdbcType=INTEGER}, #{item.updateTime,jdbcType=TIMESTAMP}
+        )
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    insert into CourseDesign202011.userPrivileges
+    (userId, consumer, dev, manager, test, updateTime)
+    values
+    (#{userId,jdbcType=INTEGER}, #{consumer,jdbcType=INTEGER}, #{dev,jdbcType=INTEGER}, 
+      #{manager,jdbcType=INTEGER}, #{test,jdbcType=INTEGER}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+    on duplicate key update 
+    userId = #{userId,jdbcType=INTEGER}, 
+    consumer = #{consumer,jdbcType=INTEGER}, 
+    dev = #{dev,jdbcType=INTEGER}, 
+    manager = #{manager,jdbcType=INTEGER}, 
+    test = #{test,jdbcType=INTEGER}, 
+    updateTime = #{updateTime,jdbcType=TIMESTAMP}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.UserPrivileges">
+    <!--@mbg.generated-->
+    insert into CourseDesign202011.userPrivileges
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        userId,
+      </if>
+      <if test="consumer != null">
+        consumer,
+      </if>
+      <if test="dev != null">
+        dev,
+      </if>
+      <if test="manager != null">
+        manager,
+      </if>
+      <if test="test != null">
+        test,
+      </if>
+      <if test="updateTime != null">
+        updateTime,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="consumer != null">
+        #{consumer,jdbcType=INTEGER},
+      </if>
+      <if test="dev != null">
+        #{dev,jdbcType=INTEGER},
+      </if>
+      <if test="manager != null">
+        #{manager,jdbcType=INTEGER},
+      </if>
+      <if test="test != null">
+        #{test,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="userId != null">
+        userId = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="consumer != null">
+        consumer = #{consumer,jdbcType=INTEGER},
+      </if>
+      <if test="dev != null">
+        dev = #{dev,jdbcType=INTEGER},
+      </if>
+      <if test="manager != null">
+        manager = #{manager,jdbcType=INTEGER},
+      </if>
+      <if test="test != null">
+        test = #{test,jdbcType=INTEGER},
+      </if>
+      <if test="updateTime != null">
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+</mapper>

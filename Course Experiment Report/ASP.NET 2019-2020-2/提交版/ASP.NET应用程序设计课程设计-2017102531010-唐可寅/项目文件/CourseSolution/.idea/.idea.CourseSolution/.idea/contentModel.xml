@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CourseSolution.1894176649.00" t="ExcludeRecursive" />
+    <e p="E:\University\ASP.NET\Solution\CourseSolution" t="IncludeFlat">
+      <e p="Common" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="Common.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CourseSolution.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TestBLL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="TestBLL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TestDAL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SqlHelper.cs" t="Include" />
+        <e p="TestDAL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TestModel" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="TestModel.csproj" t="IncludeRecursive" />
+        <e p="UserInfo.cs" t="Include" />
+      </e>
+      <e p="WebApplication1" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="Register.ashx" t="Include" />
+          <e p="Register.ashx.cs" t="Include" />
+          <e p="Register.html" t="Include" />
+          <e p="WebForm1.aspx" t="Include" />
+          <e p="WebForm1.aspx.cs" t="Include" />
+          <e p="WebForm1.aspx.designer.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="index.html" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebApplication1.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebApplication2" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="08001.ashx" t="Include" />
+          <e p="08001.ashx.cs" t="Include" />
+          <e p="08001.aspx" t="Include" />
+          <e p="08001.aspx.cs" t="Include" />
+          <e p="08001.aspx.designer.cs" t="Include" />
+          <e p="08001a.ashx" t="Include" />
+          <e p="08001a.ashx.cs" t="Include" />
+          <e p="08001a.aspx" t="Include" />
+          <e p="08001a.aspx.cs" t="Include" />
+          <e p="08001a.aspx.designer.cs" t="Include" />
+          <e p="08002.ashx" t="Include" />
+          <e p="08002.ashx.cs" t="Include" />
+          <e p="08002.aspx" t="Include" />
+          <e p="08002.aspx.cs" t="Include" />
+          <e p="08002.aspx.designer.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="WebApplication2.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebApplication20191121" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Image" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UpFile.ashx" t="Include" />
+        <e p="UpFile.ashx.cs" t="Include" />
+        <e p="UpFile.html" t="Include" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebApplication20191121.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebApplication3" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="Login.ashx" t="Include" />
+          <e p="Login.ashx.cs" t="Include" />
+          <e p="Login.html" t="Include" />
+          <e p="Register.ashx" t="Include" />
+          <e p="Register.ashx.cs" t="Include" />
+          <e p="Register.html" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebApplication3.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebApplicationTest" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="WebApplicationTest.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="WebSolution2019091903" t="IncludeRecursive">
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+      </e>
+      <e p="WebSolution20190926" t="IncludeRecursive">
+        <e p="addUserInfo.ashx" t="Include" />
+        <e p="addUserInfo.html" t="Include" />
+        <e p="delete.ashx" t="Include" />
+        <e p="Error.html" t="Include" />
+        <e p="Handler01.ashx" t="Include" />
+        <e p="HtmlPage02.html" t="Include" />
+        <e p="tableStyle.css" t="Include" />
+        <e p="update.ashx" t="Include" />
+        <e p="update.html" t="Include" />
+        <e p="updateInfo.ashx" t="Include" />
+        <e p="userInfo.ashx" t="Include" />
+        <e p="userInfo.html" t="Include" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+      </e>
+      <e p="WebSolution20191024" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="Error.html" t="Include" />
+          <e p="Login.ashx" t="Include" />
+          <e p="Login.html" t="Include" />
+          <e p="Register.ashx" t="Include" />
+          <e p="Register.html" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+      </e>
+      <e p="WebSolution201910241" t="IncludeRecursive">
+        <e p="Error.html" t="Include" />
+        <e p="Login.ashx" t="Include" />
+        <e p="Login.html" t="Include" />
+        <e p="Register.ashx" t="Include" />
+        <e p="Register.html" t="Include" />
+        <e p="Success.html" t="Include" />
+        <e p="UserExists.html" t="Include" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

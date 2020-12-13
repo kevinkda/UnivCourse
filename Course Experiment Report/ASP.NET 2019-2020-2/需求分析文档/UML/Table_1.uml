@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.file</OriginalElement>
+  <nodes>
+    <node x="15.0" y="232.0">a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.file</node>
+    <node x="0.0" y="0.0">a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.Table_1</node>
+    <node x="216.0" y="0.0">a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.UserInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.file" target="a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.Table_1">
+      <point x="0.0" y="-69.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="192.5" y="185.0" />
+  <SelectedNodes>
+    <node>a31b798d-c4ae-41cf-9c16-d27f85907357.TABLE:university.dbo.file</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

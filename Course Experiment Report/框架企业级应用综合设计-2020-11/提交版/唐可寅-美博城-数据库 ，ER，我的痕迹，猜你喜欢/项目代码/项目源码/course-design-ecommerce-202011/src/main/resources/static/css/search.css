@@ -1,0 +1,433 @@
+@charset "utf-8";
+/* CSS Document */
+/* 搜索条件 */
+.search_longly {
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search_longly table tr td {
+    padding: 7px 0;
+    border-bottom: 1px dotted #dedede
+}
+
+.search_longly table tr td .divleft {
+    text-align: left;
+}
+
+.search_longly table tr td .divright {
+    text-align: right;
+    padding-right: 20px;
+    color: #999;
+}
+
+.search_longly table tr td .checkOn {
+    background: #d91d3b;
+    color: #FFFFFF;
+    padding: 2px 5px
+}
+
+.oto_select {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 2px;
+    color: #666666
+}
+
+.oto_select_left_10 {
+    margin-left: 10px;
+}
+
+.the_goods_brand {
+    width: 100%;
+    overflow: auto
+}
+
+.the_goods_brand a { /* display:block ; float:left ; */
+    margin-left: 25px;
+    color: #d91d3b;
+    padding: 0 5px;
+}
+
+.the_goods_brand a:hover {
+    background: #d91d3b;
+    color: #FFFFFF;
+}
+
+.oto_button {
+    float: right;
+    display: block;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    color: #666666
+}
+
+.oto_button:hover {
+    background: #d91d3b;
+    color: #FFFFFF;
+    border: 1px solid #ca112f
+}
+
+.oto_button_on {
+    background: #d91d3b;
+    color: #FFFFFF;
+    border: 1px solid #ca112f
+}
+
+.more_search a {
+    margin-right: 10px;
+}
+
+/* 搜索结果 */
+.results_of_search {
+    width: 1200px;
+    height: 30px;
+    background: #f5f5f5;
+    border-top: 2px solid #d91d3b
+}
+
+.results_of_search .results_list {
+    height: 30px;
+    background: #fff;
+    margin-left: 15px;
+    border-right: 1px solid #d4d4d4
+}
+
+.results_of_search .results_list ul li {
+    float: left;
+    display: inline;
+    width: 48px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    border-right: none;
+    padding-right: 1px;
+}
+
+.s_one {
+    width: 100px;
+}
+
+.s_two {
+    width: 270px;
+}
+
+.s_three {
+    width: 350px;
+}
+
+.oto_text {
+    width: 40px;
+    height: 20px;
+    padding: 4px;
+    line-height: 20px;
+    border: none;
+    background: #fff
+}
+
+.results_of_search .results_list .checkOn {
+    color: #d91d3b
+}
+
+.results_of_search .results_list span {
+    margin: 7px 2px 0 5px
+}
+
+.page_results {
+    height: 25px;
+    padding-top: 5px;
+    margin-right: 15px;
+}
+
+.btn-lt {
+    background: #f4f4f4;
+    border: 1px solid #d4d4d4;
+    color: #5a5a5a;
+    padding: 3px 5px 2px 5px;
+    text-align: center;
+    font-family: "宋体";
+    font-weight: bold
+}
+
+.btn-lt:hover {
+    background: #2a2a29;
+    border: 1px solid #212121;
+    color: #fff;
+}
+
+
+.ibody {
+    padding: 15px 0
+}
+
+.shangpin_Box {
+    width: 1210px;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+.shangpin_Box ul li {
+    width: 228px;
+    height: 370px;
+    background: #fff;
+    border: 2px solid #fff;
+    margin: 5px;
+    float: left;
+    display: inline;
+    -moz-box-shadow: 0px 3px 8px #cecece;
+    -webkit-box-shadow: 0px 3px 8px #cecece;
+    box-shadow: 0px 3px 8px #cecece;
+}
+
+.shangpin_Box ul li:hover {
+    border: 2px solid #ca3037;
+}
+
+.shangpin_Box ul li p {
+    padding: 3px 0
+}
+
+.shangpin_Box ul li p img {
+    width: 200px;
+    height: 200px;
+}
+
+.padding10 {
+    padding: 14px;
+}
+
+.shangpin_Box_text {
+    height: 30px;
+    line-height: 14px;
+}
+
+.shangpin_Box_button1 {
+    background: #ca3037;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px 15px
+}
+
+.shangpin_Box_button1:hover {
+    background: #939090;
+    border-radius: 2px
+}
+
+.shangpin_Box_button2 {
+    background: #939090;
+    color: #FFFFFF;
+    border: none;
+    padding: 0px 15px
+}
+
+.shangpin_Box_button2:hover {
+    background: #ca3037;
+    border-radius: 2px
+}
+
+.btn_buy {
+    margin-top: 0px;
+}
+
+.storeBox {
+    width: 1200px;
+    height: auto;
+}
+
+.storeBox ul li {
+    width: 1198px;
+    height: auto;
+    border: 1px solid #dedede;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.storeBox ul li .remai_goods ul li {
+    border: none;
+    height: 270px;
+}
+
+.storeBox ul li .remai_goods ul li p {
+    margin-bottom: 6px
+}
+
+.storeBox ul li .dp_pro {
+    border: none
+}
+
+.cuxiao {
+    background: #ca3037;
+    color: #FFFFFF;
+    padding: 0px 5px
+}
+
+.storeTitle {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    line-height: 22px
+}
+
+.storeTitle .padding10 {
+    overflow: auto
+}
+
+.storeTitle .m_l_10 {
+    margin-left: 10px;
+}
+
+.enter_store {
+    background: #f8f8f8;
+    border: 1px solid #dedede;
+    display: block;
+    width: 100px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 5px
+}
+
+.enter_store:hover {
+    background: #ca3037;
+    border: 1px solid #ca3037;
+    color: #FFFFFF
+}
+
+
+.all_page {
+    text-align: center;
+    height: 55px;
+    width: 1200px;
+    margin-top: 10px;
+    background: none;
+    padding-top: 30px;
+}
+
+.all_page a {
+    border: 1px solid #d5d3d3;
+    background: #fff;
+    border-radius: 2px;
+    padding: 8px 12px;
+    margin: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.all_page a:hover {
+    background: #ca3037;
+    border: 1px solid #ca3037;
+    color: #FFFFFF
+}
+
+.all_page .pageOn {
+    background: #ca3037;
+    border: 1px solid #ca3037;
+    color: #FFFFFF
+}
+
+.remai_goods {
+    width: 1198px;
+    height: 298px;
+    border: 1px solid #dedede;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.remai_goods_title {
+    width: 1110px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 14px
+}
+
+.remai_goods ul {
+    width: 1140px;
+    height: 230px;
+    margin: 0 auto
+}
+
+.remai_goods ul li {
+    width: 160px;
+    height: 230px;
+    float: left;
+    display: inline;
+    margin: 0 15px;
+    line-height: 14px;
+}
+
+.remai_goods ul li img {
+    width: 160px;
+    height: 160px;
+}
+
+.remai_goods ul li:hover {
+}
+
+.remai_goods ul li p {
+    margin: 5px 0
+}
+
+.remai_goods_text {
+    height: 32px;
+    line-height: 15px;
+}
+
+
+/**/
+
+.btn-jx1 {
+    width: 50px;
+    height: 25px;
+    background: #f6f6f6;
+    border: 1px solid #dedede;
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+
+.btn-jx1:hover {
+    border: 1px solid #cdcdcd;
+    color: #666666
+}
+
+.btn-jx2 {
+    width: 50px;
+    height: 25px;
+    background: #d91d3b;
+    border: 1px solid #ca112f;
+    font-size: 12px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="226c5457-8911-4aec-8446-a99c53c5bafb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/addUserInfo.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/userInfo.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/updateInfo.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/Handler01.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20191024/App_Code/Register.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/update.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20190926/delete.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20191024/App_Code/Login.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution201910241/Login.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20191024/Web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution201910241/Register.ashx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebSolution20191024/Web.Debug.config" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WebSolution20190926/updata.html" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/addUserInfo.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/updataInfo.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/Handler01.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/update.html" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/updateInfo.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution20190926/update.ashx" />
+        <option value="$PROJECT_DIR$/WebApplication3/App_Code/Login.html" />
+        <option value="$PROJECT_DIR$/WebSolution20191024/Web.config" />
+        <option value="$PROJECT_DIR$/WebSolution20191024/App_Code/Login.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution20191024/App_Code/Login.html" />
+        <option value="$PROJECT_DIR$/WebSolution20191024/App_Code/Register.html" />
+        <option value="$PROJECT_DIR$/WebSolution20191024/App_Code/Register.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution201910241/Register.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution201910241/Login.ashx" />
+        <option value="$PROJECT_DIR$/WebSolution201910241/Login.html" />
+        <option value="$PROJECT_DIR$/WebSolution201910241/Register.html" />
+        <option value="$PROJECT_DIR$/WebSolution201910241/Success.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SJwjkrC6VipmgKhuQoUpv9F4p4" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="C:/Program Files (x86)/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:WebSolution20190926 /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files (x86)/IIS Express" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WebSolution20190926" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <browser url="http://localhost:5000/localhost_1541" start="true" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/CourseSolution/WebApplication1/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="226c5457-8911-4aec-8446-a99c53c5bafb" name="Default Changelist" comment="" />
+      <created>1571295144821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571295144821</updated>
+      <workItem from="1571295149081" duration="1474000" />
+      <workItem from="1571296899662" duration="2422000" />
+      <workItem from="1571299337457" duration="1979000" />
+      <workItem from="1571899737033" duration="15000" />
+      <workItem from="1571899773484" duration="1760000" />
+      <workItem from="1571901635358" duration="1887000" />
+      <workItem from="1571906476706" duration="14000" />
+      <workItem from="1571906514900" duration="420000" />
+      <workItem from="1572511517928" duration="636000" />
+      <workItem from="1574325321262" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebSolution20190926/update.ashx</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/WebSolution20190926/update.ashx" initialLine="49">
+            <startOffsets>
+              <option value="1861" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1862" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.SystemPermissionsMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.systemPermissions-->
+        <id column="privilegeId" jdbcType="INTEGER" property="privilegeId"/>
+        <result column="permissionTypes" jdbcType="VARCHAR" property="permissionTypes"/>
+        <result column="stateAuthority" jdbcType="INTEGER" property="stateAuthority"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="note" jdbcType="VARCHAR" property="note"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        privilegeId, permissionTypes, stateAuthority, `parameter`, updateTime, note
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.systemPermissions
+        where privilegeId = #{privilegeId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.systemPermissions
+        where privilegeId = #{privilegeId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="privilegeId" keyProperty="privilegeId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemPermissions (permissionTypes, stateAuthority,
+        `parameter`, updateTime, note
+        )
+        values (#{permissionTypes,jdbcType=VARCHAR}, #{stateAuthority,jdbcType=INTEGER},
+        #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, #{note,jdbcType=VARCHAR}
+        )
+    </insert>
+    <insert id="insertSelective" keyColumn="privilegeId" keyProperty="privilegeId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemPermissions
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="permissionTypes != null">
+                permissionTypes,
+            </if>
+            <if test="stateAuthority != null">
+                stateAuthority,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="permissionTypes != null">
+                #{permissionTypes,jdbcType=VARCHAR},
+            </if>
+            <if test="stateAuthority != null">
+                #{stateAuthority,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemPermissions
+        <set>
+            <if test="permissionTypes != null">
+                permissionTypes = #{permissionTypes,jdbcType=VARCHAR},
+            </if>
+            <if test="stateAuthority != null">
+                stateAuthority = #{stateAuthority,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where privilegeId = #{privilegeId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemPermissions
+        set permissionTypes = #{permissionTypes,jdbcType=VARCHAR},
+        stateAuthority = #{stateAuthority,jdbcType=INTEGER},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        note = #{note,jdbcType=VARCHAR}
+        where privilegeId = #{privilegeId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemPermissions
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="permissionTypes = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then
+                    #{item.permissionTypes,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="stateAuthority = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.stateAuthority,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+        </trim>
+        where privilegeId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.privilegeId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.systemPermissions
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="permissionTypes = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.permissionTypes != null">
+                        when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then
+                        #{item.permissionTypes,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="stateAuthority = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.stateAuthority != null">
+                        when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then
+                        #{item.stateAuthority,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then
+                        #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="note = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.note != null">
+                        when privilegeId = #{item.privilegeId,jdbcType=INTEGER} then #{item.note,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where privilegeId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.privilegeId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="privilegeId" keyProperty="privilegeId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemPermissions
+        (permissionTypes, stateAuthority, `parameter`, updateTime, note)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.permissionTypes,jdbcType=VARCHAR}, #{item.stateAuthority,jdbcType=INTEGER},
+            #{item.parameter,jdbcType=VARCHAR}, #{item.updateTime,jdbcType=TIMESTAMP}, #{item.note,jdbcType=VARCHAR}
+            )
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="privilegeId" keyProperty="privilegeId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemPermissions
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="privilegeId != null">
+                privilegeId,
+            </if>
+            permissionTypes,
+            stateAuthority,
+            `parameter`,
+            updateTime,
+            note,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="privilegeId != null">
+                #{privilegeId,jdbcType=INTEGER},
+            </if>
+            #{permissionTypes,jdbcType=VARCHAR},
+            #{stateAuthority,jdbcType=INTEGER},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+            #{note,jdbcType=VARCHAR},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="privilegeId != null">
+                privilegeId = #{privilegeId,jdbcType=INTEGER},
+            </if>
+            permissionTypes = #{permissionTypes,jdbcType=VARCHAR},
+            stateAuthority = #{stateAuthority,jdbcType=INTEGER},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            note = #{note,jdbcType=VARCHAR},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="privilegeId" keyProperty="privilegeId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.SystemPermissions"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.systemPermissions
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="privilegeId != null">
+                privilegeId,
+            </if>
+            <if test="permissionTypes != null">
+                permissionTypes,
+            </if>
+            <if test="stateAuthority != null">
+                stateAuthority,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="note != null">
+                note,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="privilegeId != null">
+                #{privilegeId,jdbcType=INTEGER},
+            </if>
+            <if test="permissionTypes != null">
+                #{permissionTypes,jdbcType=VARCHAR},
+            </if>
+            <if test="stateAuthority != null">
+                #{stateAuthority,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                #{note,jdbcType=VARCHAR},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="privilegeId != null">
+                privilegeId = #{privilegeId,jdbcType=INTEGER},
+            </if>
+            <if test="permissionTypes != null">
+                permissionTypes = #{permissionTypes,jdbcType=VARCHAR},
+            </if>
+            <if test="stateAuthority != null">
+                stateAuthority = #{stateAuthority,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="note != null">
+                note = #{note,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

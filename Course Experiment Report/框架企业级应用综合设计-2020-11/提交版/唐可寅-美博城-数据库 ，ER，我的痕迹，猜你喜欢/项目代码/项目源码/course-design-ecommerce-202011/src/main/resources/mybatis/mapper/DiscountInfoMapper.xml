@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.DiscountInfoMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.discountInfo-->
+        <id column="discountId" jdbcType="INTEGER" property="discountId"/>
+        <result column="discountType" jdbcType="INTEGER" property="discountType"/>
+        <result column="startTime" jdbcType="TIMESTAMP" property="startTime"/>
+        <result column="stopTime" jdbcType="TIMESTAMP" property="stopTime"/>
+        <result column="discountNum" jdbcType="INTEGER" property="discountNum"/>
+        <result column="discountAmount" jdbcType="DECIMAL" property="discountAmount"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        discountId, discountType, startTime, stopTime, discountNum, discountAmount, `status`,
+        `parameter`, updateTime
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.discountInfo
+        where discountId = #{discountId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.discountInfo
+        where discountId = #{discountId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="discountId" keyProperty="discountId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountInfo (discountType, startTime, stopTime,
+        discountNum, discountAmount, `status`,
+        `parameter`, updateTime)
+        values (#{discountType,jdbcType=INTEGER}, #{startTime,jdbcType=TIMESTAMP}, #{stopTime,jdbcType=TIMESTAMP},
+        #{discountNum,jdbcType=INTEGER}, #{discountAmount,jdbcType=DECIMAL}, #{status,jdbcType=INTEGER},
+        #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" keyColumn="discountId" keyProperty="discountId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountType != null">
+                discountType,
+            </if>
+            <if test="startTime != null">
+                startTime,
+            </if>
+            <if test="stopTime != null">
+                stopTime,
+            </if>
+            <if test="discountNum != null">
+                discountNum,
+            </if>
+            <if test="discountAmount != null">
+                discountAmount,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="discountType != null">
+                #{discountType,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="stopTime != null">
+                #{stopTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="discountNum != null">
+                #{discountNum,jdbcType=INTEGER},
+            </if>
+            <if test="discountAmount != null">
+                #{discountAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountInfo
+        <set>
+            <if test="discountType != null">
+                discountType = #{discountType,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                startTime = #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="stopTime != null">
+                stopTime = #{stopTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="discountNum != null">
+                discountNum = #{discountNum,jdbcType=INTEGER},
+            </if>
+            <if test="discountAmount != null">
+                discountAmount = #{discountAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where discountId = #{discountId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountInfo
+        set discountType = #{discountType,jdbcType=INTEGER},
+        startTime = #{startTime,jdbcType=TIMESTAMP},
+        stopTime = #{stopTime,jdbcType=TIMESTAMP},
+        discountNum = #{discountNum,jdbcType=INTEGER},
+        discountAmount = #{discountAmount,jdbcType=DECIMAL},
+        `status` = #{status,jdbcType=INTEGER},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP}
+        where discountId = #{discountId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="discountType = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.discountType,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="startTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.startTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="stopTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.stopTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+            <trim prefix="discountNum = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.discountNum,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="discountAmount = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.discountAmount,jdbcType=DECIMAL}
+                </foreach>
+            </trim>
+            <trim prefix="`status` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.status,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+        </trim>
+        where discountId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.discountId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountInfo
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="discountType = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.discountType != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.discountType,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="startTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.startTime != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.startTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="stopTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.stopTime != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.stopTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="discountNum = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.discountNum != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.discountNum,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="discountAmount = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.discountAmount != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then
+                        #{item.discountAmount,jdbcType=DECIMAL}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`status` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.status != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.status,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when discountId = #{item.discountId,jdbcType=INTEGER} then #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where discountId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.discountId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="discountId" keyProperty="discountId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountInfo
+        (discountType, startTime, stopTime, discountNum, discountAmount, `status`, `parameter`,
+        updateTime)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.discountType,jdbcType=INTEGER}, #{item.startTime,jdbcType=TIMESTAMP},
+            #{item.stopTime,jdbcType=TIMESTAMP},
+            #{item.discountNum,jdbcType=INTEGER}, #{item.discountAmount,jdbcType=DECIMAL},
+            #{item.status,jdbcType=INTEGER}, #{item.parameter,jdbcType=VARCHAR}, #{item.updateTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="discountId" keyProperty="discountId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                discountId,
+            </if>
+            discountType,
+            startTime,
+            stopTime,
+            discountNum,
+            discountAmount,
+            `status`,
+            `parameter`,
+            updateTime,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                #{discountId,jdbcType=INTEGER},
+            </if>
+            #{discountType,jdbcType=INTEGER},
+            #{startTime,jdbcType=TIMESTAMP},
+            #{stopTime,jdbcType=TIMESTAMP},
+            #{discountNum,jdbcType=INTEGER},
+            #{discountAmount,jdbcType=DECIMAL},
+            #{status,jdbcType=INTEGER},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="discountId != null">
+                discountId = #{discountId,jdbcType=INTEGER},
+            </if>
+            discountType = #{discountType,jdbcType=INTEGER},
+            startTime = #{startTime,jdbcType=TIMESTAMP},
+            stopTime = #{stopTime,jdbcType=TIMESTAMP},
+            discountNum = #{discountNum,jdbcType=INTEGER},
+            discountAmount = #{discountAmount,jdbcType=DECIMAL},
+            `status` = #{status,jdbcType=INTEGER},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="discountId" keyProperty="discountId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountInfo"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountInfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                discountId,
+            </if>
+            <if test="discountType != null">
+                discountType,
+            </if>
+            <if test="startTime != null">
+                startTime,
+            </if>
+            <if test="stopTime != null">
+                stopTime,
+            </if>
+            <if test="discountNum != null">
+                discountNum,
+            </if>
+            <if test="discountAmount != null">
+                discountAmount,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="discountType != null">
+                #{discountType,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="stopTime != null">
+                #{stopTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="discountNum != null">
+                #{discountNum,jdbcType=INTEGER},
+            </if>
+            <if test="discountAmount != null">
+                #{discountAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="discountId != null">
+                discountId = #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="discountType != null">
+                discountType = #{discountType,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                startTime = #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="stopTime != null">
+                stopTime = #{stopTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="discountNum != null">
+                discountNum = #{discountNum,jdbcType=INTEGER},
+            </if>
+            <if test="discountAmount != null">
+                discountAmount = #{discountAmount,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+</mapper>

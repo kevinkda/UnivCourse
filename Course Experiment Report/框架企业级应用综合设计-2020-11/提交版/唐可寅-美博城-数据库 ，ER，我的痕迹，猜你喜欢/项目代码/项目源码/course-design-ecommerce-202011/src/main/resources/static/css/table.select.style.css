@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/**表格/属性**/
+.tableBox {
+    background: #fff;
+    margin: 0 auto;
+    height: auto;
+}
+
+.tableBox .title-bg {
+    line-height: 20px;
+    background: #efefef;
+    font-weight: bold;
+    color: #666666;
+}
+
+.tableBox table {
+    border-collapse: collapse;
+}
+
+.tableBox table tr td {
+    border: 1px solid #dedede;
+    background: none;
+    padding: 10px;
+    line-height: 22px;
+    color: #777777;
+    text-align: center
+}
+
+.tableBox table tr:hover td {
+    background: #f4f4f4
+}
+
+.tableInput {
+    background: #fff;
+    height: auto;
+    padding: 0px;
+}
+
+.tableInput table {
+    border-collapse: collapse;
+}
+
+.tableInput table tr td {
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+/* 登录 表格 */
+.enterInput {
+    background: #fff;
+    height: auto;
+    padding: 0px;
+}
+
+.enterInput table {
+    border-collapse: collapse;
+}
+
+.enterInput table tr td {
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+/* 注册 表格 */
+.zhuceInput {
+    background: #fff;
+    height: auto;
+    padding: 0px;
+}
+
+.zhuceInput table {
+    border-collapse: collapse;
+}
+
+.zhuceInput table tr td {
+    border: none;
+    background: none;
+    padding: 11px 8px;
+}

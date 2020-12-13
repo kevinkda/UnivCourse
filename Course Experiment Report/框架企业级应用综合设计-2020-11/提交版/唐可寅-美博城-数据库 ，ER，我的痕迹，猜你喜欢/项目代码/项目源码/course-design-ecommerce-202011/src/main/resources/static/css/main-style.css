@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS 顶部横条 */
+.index-top-box {
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f5f5f5
+}
+
+.index-top {
+    width: 1200px;
+    height: 34px;
+    line-height: 34px;
+}
+
+/* CSS 区域选择 */
+.index-area {
+    width: 250px;
+    height: 34px;
+}
+
+.index-area ul li {
+    float: left;
+    display: inline;
+}
+
+.checkCity {
+    display: block;
+    width: 78px;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    position: relative;
+    margin-left: 5px;
+    background: url(../img/sprite/index-btn-jt2.gif) right center no-repeat;
+    background-position: 62px 15px
+}
+
+.listCity {
+    width: 510px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    top: 33px
+}
+
+.checkCity:hover {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    background: url(../img/sprite/index-btn-jt1.gif) #fff right center no-repeat;
+    background-position: 62px 15px
+}
+
+.checkCity:hover .listCity {
+    display: block;
+}
+
+/**大区选择**/
+.checkRegional {
+    width: 100%;
+    line-height: 22px;
+    border-bottom: 1px dotted #dedede;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.checkRegional a {
+    padding: 0 5px;
+}
+
+.checkRegional a:hover {
+    color: #FF0000;
+}
+
+.addMore {
+    width: 100%;
+    height: auto;
+    line-height: 20px;
+    padding: 10px 0;
+    border-bottom: 1px dotted #dedede;
+    background: #f5f5f5;
+}
+
+.addMore a {
+    padding: 2px 7px;
+    margin-left: 5px
+}
+
+.addMore a:hover {
+    background: #0f9b33;
+    color: #FFFFFF
+}
+
+.community {
+    display: block;
+    width: 90px;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    position: relative;
+    margin-left: 5px;
+    background: url(../img/sprite/index-btn-jt2.gif) right center no-repeat;
+    background-position: 72px 15px
+}
+
+.listCommunity {
+    width: 500px;
+    padding: 0px;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    top: 33px
+}
+
+.community:hover {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    background: url(../img/sprite/index-btn-jt1.gif) #fff right center no-repeat;
+    background-position: 72px 15px
+}
+
+.community:hover .listCommunity {
+    display: block;
+}
+
+/**社区选择**/
+.qu-check {
+    width: 90%;
+    overflow: auto;
+    padding: 2% 5%
+}
+
+.qu-check li {
+    width: 25%;
+    height: 32px;
+    float: left;
+    display: inline;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.qu-check li a {
+    display: block;
+    width: 86%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+    font-weight: bold;
+    color: #868686;
+    background: #edecec;
+    margin: 0 auto;
+    background: #f4f4f4;
+    border-radius: 4px
+}
+
+.qu-check li a:hover {
+    border: 1px solid #e34f69;
+    color: #fff;
+    background: #f25a75
+}
+
+/**商圈选择**/
+.quan-check li {
+    width: 50%
+}
+
+.quan-check li a {
+    width: 90%
+}
+
+/**顶部菜单**/
+.topMenu { /*width:850px*/
+    height: 34px;
+    color: #868686
+}
+
+.topMenu a {
+    color: #868686
+}
+
+.topMenu a:hover {
+    color: #e5274f
+}
+
+.topMenu ul li {
+    float: left;
+    display: inline;
+}
+
+.phone {
+    width: 60px;
+}
+
+.btn-phone {
+    display: block;
+    width: 9px;
+    height: 13px;
+    float: left;
+    display: inline;
+    margin: 10px 5px 0 0;
+    background: url(../img/sprite/index-btn-phone.gif) top center no-repeat;
+}
+
+.phone:hover a {
+    color: #cb102f
+}
+
+.phone:hover .btn-phone {
+    background: url(../img/sprite/index-btn-phone.gif) bottom center no-repeat;
+}
+
+.welcome {
+    padding: 0 10px;
+}
+
+.login-link {
+    padding: 0 5px;
+}
+
+/**易到的货**/
+.myGoods {
+    display: block;
+    width: 90px;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    position: relative;
+    margin-left: 10px;
+    background: url(../img/sprite/index-btn-jt2.gif) right center no-repeat;
+    background-position: 72px 15px
+}
+
+.allGoods {
+    width: 180px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    top: 33px
+}
+
+.myGoods:hover {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    background: url(../img/sprite/index-btn-jt1.gif) #fff right center no-repeat;
+    background-position: 72px 15px
+}
+
+.myGoods:hover .allGoods {
+    display: block;
+}
+
+/**收藏夹**/
+.favorit {
+    display: block;
+    width: 65px;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    position: relative;
+    margin-left: 0px;
+    background: url(../img/sprite/index-btn-jt2.gif) right center no-repeat;
+    background-position: 48px 15px
+}
+
+.Collection-of-goods {
+    width: 180px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    top: 33px
+}
+
+.favorit:hover {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    background: url(../img/sprite/index-btn-jt1.gif) #fff right center no-repeat;
+    background-position: 48px 15px
+}
+
+.favorit:hover .Collection-of-goods {
+    display: block;
+}
+
+/**网站导航**/
+.webNav {
+    display: block;
+    width: 75px;
+    height: 34px;
+    border: 1px solid #f5f5f5;
+    border-bottom: none;
+    position: relative;
+    margin-left: 0px;
+    background: url(../img/sprite/index-btn-jt2.gif) right center no-repeat;
+    background-position: 60px 15px
+}
+
+.all-webNav {
+    width: 448px;
+    padding: 15px 0;
+    background: #fff;
+    border: 1px solid #dedede;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    top: 33px
+}
+
+.webNav:hover {
+    border: 1px solid #dedede;
+    border-bottom: none;
+    background: url(../img/sprite/index-btn-jt1.gif) #fff right center no-repeat;
+    background-position: 60px 15px
+}
+
+.webNav:hover .all-webNav {
+    display: block;
+}
+
+.all-menu {
+    border-right: 1px dotted #dedede;
+    height: auto;
+    width: 80px;
+    margin-left: 30px;
+}
+
+.all-menu li {
+    width: 90%;
+    line-height: 24px;
+}
+
+
+/**logo**/
+.logoBox {
+    width: 1200px;
+    height: 85px;
+    padding-top: 30px;
+}
+
+.logo {
+    width: 300px;
+    height: 85px;
+}
+
+/**搜索**/
+.searchBox {
+    width: 600px;
+    height: 80px;
+    padding-top: 5px;
+    margin-left: 160px;
+}
+
+.searchCheck {
+    width: 120px;
+    height: 34px;
+}
+
+.searchCheck .select {
+    width: 110px;
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #dadada;
+    color: #989898
+}
+
+.searchCheck .select:hover {
+    border: 1px solid #7f9db9;
+    color: #989898
+}
+
+.searchinput {
+    width: 480px;
+    height: auto
+}
+
+.S-bg {
+    width: 470px;
+    height: 30px;
+    padding: 2px;
+    background: #e34b64;
+}
+
+.S-text {
+    background: #fff;
+    width: 392px;
+    _width: 392px;
+    height: 24px;
+    line-height: 24px;
+    padding: 2px;
+    border: 1px solid #fff
+}
+
+.S-submit {
+    background: none;
+    display: block;
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: #FFFFFF
+}
+
+.S-submit:hover {
+    color: #FFFF33
+}
+
+.hot-words {
+    line-height: 24px;
+    padding: 5px 0;
+}
+
+.hot-words a {
+    padding: 0 3px;
+    color: #999999
+}
+
+.hot-words a:hover {
+    color: #e5274f
+}
+
+/**导航**/
+.navBox {
+    width: 100%;
+    height: 42px;
+    background: #bc1b35
+}
+
+.nav {
+    width: 1200px;
+    height: 42px;
+    background: #d51938
+}
+
+/**商品分类**/
+.classification {
+    width: 220px;
+    background: #9f0b23;
+    height: 42px
+}
+
+.classification .hd {
+    width: 220px;
+    height: 42px;
+    line-height: 42px;
+    text-indent: 15px;
+    color: #FFFFFF;
+    background: url(../img/sprite/index-btn-jt3.gif) right center no-repeat;
+    background-position: 82px 20px;
+}
+
+/**主导航**/
+.bigNav {
+    width: 500px;
+    height: 42px;
+}
+
+.bigNav ul li {
+    width: 120px;
+    height: 42px;
+    float: left;
+    display: inline;
+    background: url(../img/sprite/nav-fg.gif) right center no-repeat
+}
+
+.bigNav ul li a {
+    display: block;
+    width: 118px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bigNav ul li a:hover {
+    background: #e41537;
+    color: #FFFF33
+}
+
+/**购物车**/
+.shopping-cart {
+    width: 160px;
+    padding-left: 60px;
+    height: 42px;
+    line-height: 42px;
+    color: #FFFFFF;
+    border-left: 1px dotted #e41537;
+    background: url(../img/sprite/buyCar.png) left center no-repeat;
+    background-position: 20px 5px
+}
+
+.shopping-cart:hover {
+    background: url(../img/sprite/buyCar.png) #e41537 left center no-repeat;
+    background-position: 20px 5px
+}
+
+
+/**幻灯片**/
+.slideBox {
+    width: 1200px;
+    height: 420px;
+    background: #9f0b23;
+    position: relative
+}
+
+.slideBox .banner {
+    width: 980px;
+    height: 420px;
+    background: #fff;
+}
+
+/**公告**/
+.index-notice {
+    width: 210px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.notice-title {
+    width: 100%;
+    height: 30px;
+    background: #e34b64;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.notice-title span a {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.notice-news {
+    width: 86%;
+    height: 240px;
+    margin-top: 10px;
+}
+
+.notice-news ul li {
+    width: 100%;
+    height: 29px;
+    line-height: 29px;
+    border-bottom: 1px dotted #dedede
+}
+
+.notice-img {
+    width: 180px;
+    height: 90px;
+    background: #000;
+    margin-top: 15px;
+}
+
+.notice img {
+    width: 180px;
+    height: 90px;
+    border: none
+}
+
+

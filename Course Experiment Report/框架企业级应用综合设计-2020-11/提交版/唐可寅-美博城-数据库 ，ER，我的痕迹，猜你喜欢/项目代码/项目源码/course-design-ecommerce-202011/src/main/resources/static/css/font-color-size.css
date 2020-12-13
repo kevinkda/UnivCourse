@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: "微软雅黑", "宋体", "Arail";
+    font-size: 12px;
+    line-height: 24px;
+    color: #a3a3a3
+}
+
+/* 搭配字体颜色-淡灰色 */
+.color01 {
+    color: #dadada;
+}
+
+/* 正文字体颜色-灰色 */
+.color1 {
+    color: #a3a3a3;
+}
+
+/* 链接字体颜色-深灰色 */
+.color2 {
+    color: #737373;
+}
+
+/* 正确/通过/字体颜色-绿色 */
+.color3 {
+    color: #38a149;
+}
+
+/* 错误/提醒/字体颜色-红色 */
+.color4 {
+    color: #e5274f;
+}
+
+/* 移到链接/字体颜色-蓝色 */
+.color5 {
+    color: #177bd0;
+}
+
+.color6 {
+    color: #f29707
+}
+
+/* 普通字体大小-12-bold */
+.size12 {
+    font-size: 12px;
+}
+
+.size12-b {
+    font-size: 12px;
+    font-weight: bold
+}
+
+/* 普通字体大小-14-bold */
+.size14 {
+    font-size: 14px;
+}
+
+.size14-b {
+    font-size: 14px;
+    font-weight: bold
+}
+
+/* 普通字体大小-16-bold */
+.size16 {
+    font-size: 16px;
+}
+
+.size16-b {
+    font-size: 16px;
+    font-weight: bold
+}
+
+/* 普通字体大小-18-bold */
+.size18 {
+    font-size: 18px;
+}
+
+.size18-b {
+    font-size: 18px;
+    font-weight: bold
+}
+
+/* 普通字体大小-20-bold */
+.size20 {
+    font-size: 20px;
+}
+
+.size20-b {
+    font-size: 20px;
+    font-weight: bold
+}
+
+/* 普通字体大小-38-bold */
+.size38 {
+    font-size: 38px;
+}
+
+.size38-b {
+    font-size: 38px;
+    font-weight: bold
+}
+
+
+/* h标签*/
+h1 {
+    font-size: 16px
+}
+
+h2 {
+    font-size: 14px
+}
+
+h3 {
+    font-size: 12px
+}
+
+
+/* 外部调用字体 */
+@font-face {
+    font-family: DigifaceWide; /*调用的字体名字*/
+    src: url('DigifawWide.ttf'); /*字体文件路径*/
+}
+
+.kingwell {
+    font-family: DigifaceWide;
+    font-size: 18px;
+}

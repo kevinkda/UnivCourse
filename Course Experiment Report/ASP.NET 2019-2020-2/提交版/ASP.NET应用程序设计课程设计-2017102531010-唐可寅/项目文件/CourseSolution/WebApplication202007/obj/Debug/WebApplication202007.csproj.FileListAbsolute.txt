@@ -1,0 +1,7 @@
+F:\CourseDesign\CourseSolution\WebApplication202007\bin\WebApplication3.dll.config
+F:\CourseDesign\CourseSolution\WebApplication202007\bin\WebApplication3.dll
+F:\CourseDesign\CourseSolution\WebApplication202007\bin\WebApplication3.pdb
+F:\CourseDesign\CourseSolution\WebApplication202007\obj\Debug\WebApplication202007.csproj.CoreCompileInputs.cache
+F:\CourseDesign\CourseSolution\WebApplication202007\obj\Debug\WebApplication3.dll
+F:\CourseDesign\CourseSolution\WebApplication202007\obj\Debug\WebApplication3.pdb
+F:\CourseDesign\CourseSolution\WebApplication202007\obj\Debug\WebApplication202007.csprojAssemblyReference.cache

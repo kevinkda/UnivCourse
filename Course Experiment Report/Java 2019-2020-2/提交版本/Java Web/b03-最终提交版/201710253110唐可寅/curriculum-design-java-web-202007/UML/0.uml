@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MAVEN</ID>
+  <OriginalElement>com.kevinkda.univ.course:chat-room-202005:1.0.0</OriginalElement>
+  <nodes>
+    <node x="0.0" y="286.80944055944065">com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0</node>
+    <node x="330.5" y="486.3592657342658">com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT</node>
+    <node x="527.5" y="490.55944055944065">com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/org.mybatis:mybatis:jar:3.5.5</node>
+    <node x="512.5" y="530.5594405594406">com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-io:commons-io:jar:2.7</node>
+    <node x="489.5" y="348.05944055944065">com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.2</node>
+    <node x="495.0" y="308.05944055944065">com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-logging:commons-logging:jar:1.2</node>
+    <node x="334.5" y="426.3592657342658">com.alibaba:fastjson:jar:1.2.68</node>
+    <node x="332.0" y="0.0">net.sf.ezmorph:ezmorph:jar:1.0.6</node>
+    <node x="505.0" y="5.0">net.sf.ezmorph:ezmorph:jar:1.0.6/commons-lang:commons-lang:jar:2.3</node>
+    <node x="336.0" y="111.00961538461542">net.sf.json-lib:json-lib:jar:2.4</node>
+    <node x="489.5" y="225.55944055944062">net.sf.json-lib:json-lib:jar:2.4/commons-beanutils:commons-beanutils:jar:1.8.0</node>
+    <node x="484.0" y="145.55944055944062">net.sf.json-lib:json-lib:jar:2.4/commons-collections:commons-collections:jar:3.2.1</node>
+    <node x="505.0" y="50.00000000000003">net.sf.json-lib:json-lib:jar:2.4/commons-lang:commons-lang:jar:2.5</node>
+    <node x="495.0" y="185.55944055944062">net.sf.json-lib:json-lib:jar:2.4/commons-logging:commons-logging:jar:1.1.1</node>
+    <node x="312.5" y="40.00000000000003">commons-lang:commons-lang:jar:2.6</node>
+    <node x="291.5" y="207.04982517482523">commons-collections:commons-collections:jar:3.2.1-atlassian-01</node>
+    <node x="302.5" y="331.0096153846154">commons-logging:commons-logging:jar:1.1</node>
+    <node x="297.0" y="286.80944055944065">commons-beanutils:commons-beanutils:jar:1.9.4</node>
+    <node x="484.0" y="265.55944055944065">commons-beanutils:commons-beanutils:jar:1.9.4/commons-collections:commons-collections:jar:3.2.2</node>
+    <node x="290.0" y="151.00961538461542">mysql:mysql-connector-java:jar:8.0.20</node>
+    <node x="509.0" y="105.55944055944062">mysql:mysql-connector-java:jar:8.0.20/com.google.protobuf:protobuf-java:jar:3.6.1</node>
+    <node x="307.0" y="546.3592657342658">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+    <node x="346.0" y="386.3592657342658">junit:junit:jar:4.13</node>
+    <node x="505.5" y="396.59965034965046">junit:junit:jar:4.13/org.hamcrest:hamcrest-core:jar:1.3</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4" target="net.sf.json-lib:json-lib:jar:2.4/commons-beanutils:commons-beanutils:jar:1.8.0">
+      <point x="36.0" y="7.5" />
+      <point x="454.0" y="128.50961538461542" />
+      <point x="474.0" y="230.55944055944062" />
+      <point x="-75.0" y="-5.0" />
+    </edge>
+    <edge source="mysql:mysql-connector-java:jar:8.0.20" target="mysql:mysql-connector-java:jar:8.0.20/com.google.protobuf:protobuf-java:jar:3.6.1">
+      <point x="82.0" y="-0.0" />
+      <point x="474.0" y="115.55944055944062" />
+      <point x="-55.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="net.sf.json-lib:json-lib:jar:2.4">
+      <point x="130.0" y="-5.454545454545439" />
+      <point x="280.0" y="126.00961538461542" />
+      <point x="-36.0" y="5.0" />
+    </edge>
+    <edge source="commons-beanutils:commons-beanutils:jar:1.9.4" target="commons-beanutils:commons-beanutils:jar:1.9.4/commons-collections:commons-collections:jar:3.2.2">
+      <point x="75.0" y="-2.5" />
+      <point x="-80.5" y="5.0" />
+    </edge>
+    <edge source="commons-beanutils:commons-beanutils:jar:1.9.4/commons-collections:commons-collections:jar:3.2.2" target="commons-collections:commons-collections:jar:3.2.1-atlassian-01">
+      <point x="-80.5" y="-5.0" />
+      <point x="80.5" y="5.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="commons-logging:commons-logging:jar:1.1">
+      <point x="130.0" y="1.818181818181813" />
+      <point x="280.0" y="341.0096153846154" />
+      <point x="-69.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="commons-beanutils:commons-beanutils:jar:1.9.4">
+      <point x="130.0" y="-0.0" />
+      <point x="-75.0" y="-0.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4/commons-logging:commons-logging:jar:1.1.1" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-logging:commons-logging:jar:1.2">
+      <point x="-69.5" y="5.0" />
+      <point x="474.0" y="200.55944055944062" />
+      <point x="474.0" y="310.55944055944065" />
+      <point x="-69.5" y="-7.5" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="net.sf.ezmorph:ezmorph:jar:1.0.6">
+      <point x="130.0" y="-9.090909090909065" />
+      <point x="280.0" y="5.0" />
+      <point x="-40.0" y="-5.0" />
+    </edge>
+    <edge source="junit:junit:jar:4.13" target="junit:junit:jar:4.13/org.hamcrest:hamcrest-core:jar:1.3">
+      <point x="26.0" y="-0.0" />
+      <point x="454.0" y="396.3592657342658" />
+      <point x="474.0" y="406.59965034965046" />
+      <point x="-59.0" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.2" target="commons-beanutils:commons-beanutils:jar:1.9.4">
+      <point x="-75.0" y="-5.0" />
+      <point x="474.0" y="353.05944055944065" />
+      <point x="75.0" y="7.5" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="commons-collections:commons-collections:jar:3.2.1-atlassian-01">
+      <point x="130.0" y="-1.818181818181813" />
+      <point x="-80.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.2">
+      <point x="41.5" y="-2.5" />
+      <point x="454.0" y="493.8592657342658" />
+      <point x="474.0" y="363.05944055944065" />
+      <point x="-75.0" y="5.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+      <point x="130.0" y="9.090909090909065" />
+      <point x="280.0" y="556.3592657342658" />
+      <point x="-65.0" y="-0.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4" target="net.sf.ezmorph:ezmorph:jar:1.0.6">
+      <point x="-36.0" y="-5.0" />
+      <point x="280.0" y="116.00961538461542" />
+      <point x="280.0" y="15.0" />
+      <point x="-40.0" y="5.0" />
+    </edge>
+    <edge source="commons-logging:commons-logging:jar:1.1" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-logging:commons-logging:jar:1.2">
+      <point x="69.5" y="-0.0" />
+      <point x="454.0" y="341.0096153846154" />
+      <point x="474.0" y="320.55944055944065" />
+      <point x="-69.5" y="2.5" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-logging:commons-logging:jar:1.2">
+      <point x="41.5" y="-7.5" />
+      <point x="454.0" y="488.8592657342658" />
+      <point x="474.0" y="325.55944055944065" />
+      <point x="-69.5" y="7.5" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+      <point x="0.0" y="10.0" />
+      <point x="0.0" y="-10.0" />
+    </edge>
+    <edge source="net.sf.ezmorph:ezmorph:jar:1.0.6/commons-lang:commons-lang:jar:2.3" target="commons-lang:commons-lang:jar:2.6">
+      <point x="-59.5" y="5.0" />
+      <point x="474.0" y="20.0" />
+      <point x="454.0" y="45.00000000000003" />
+      <point x="59.5" y="-5.0" />
+    </edge>
+    <edge source="net.sf.ezmorph:ezmorph:jar:1.0.6" target="net.sf.ezmorph:ezmorph:jar:1.0.6/commons-lang:commons-lang:jar:2.3">
+      <point x="40.0" y="-0.0" />
+      <point x="-59.5" y="-5.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4" target="net.sf.json-lib:json-lib:jar:2.4/commons-logging:commons-logging:jar:1.1.1">
+      <point x="36.0" y="2.5" />
+      <point x="454.0" y="123.50961538461542" />
+      <point x="474.0" y="190.55944055944062" />
+      <point x="-69.5" y="-5.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="commons-lang:commons-lang:jar:2.6">
+      <point x="130.0" y="-7.272727272727252" />
+      <point x="280.0" y="50.00000000000003" />
+      <point x="-59.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-io:commons-io:jar:2.7">
+      <point x="41.5" y="7.5" />
+      <point x="454.0" y="503.8592657342658" />
+      <point x="474.0" y="540.5594405594406" />
+      <point x="-52.0" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="mysql:mysql-connector-java:jar:8.0.20">
+      <point x="130.0" y="-3.636363636363626" />
+      <point x="-82.0" y="-0.0" />
+    </edge>
+    <edge source="commons-beanutils:commons-beanutils:jar:1.9.4" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/commons-logging:commons-logging:jar:1.2">
+      <point x="75.0" y="2.5" />
+      <point x="474.0" y="315.55944055944065" />
+      <point x="-69.5" y="-2.5" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT">
+      <point x="130.0" y="7.272727272727252" />
+      <point x="280.0" y="496.3592657342658" />
+      <point x="-41.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="com.alibaba:fastjson:jar:1.2.68">
+      <point x="130.0" y="5.454545454545439" />
+      <point x="280.0" y="436.3592657342658" />
+      <point x="-37.5" y="-0.0" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT/org.mybatis:mybatis:jar:3.5.5">
+      <point x="41.5" y="2.5" />
+      <point x="454.0" y="498.8592657342658" />
+      <point x="474.0" y="500.55944055944065" />
+      <point x="-37.0" y="-0.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4" target="net.sf.json-lib:json-lib:jar:2.4/commons-collections:commons-collections:jar:3.2.1">
+      <point x="36.0" y="-2.5" />
+      <point x="454.0" y="118.50961538461542" />
+      <point x="-80.5" y="-5.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4/commons-lang:commons-lang:jar:2.5" target="commons-lang:commons-lang:jar:2.6">
+      <point x="-59.5" y="-5.0" />
+      <point x="59.5" y="5.0" />
+    </edge>
+    <edge source="com.kevinkda.univ.course:curriculum-design-java-web-202007:1.0.0" target="junit:junit:jar:4.13">
+      <point x="130.0" y="3.636363636363626" />
+      <point x="280.0" y="396.3592657342658" />
+      <point x="-26.0" y="-0.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4/commons-collections:commons-collections:jar:3.2.1" target="commons-collections:commons-collections:jar:3.2.1-atlassian-01">
+      <point x="-80.5" y="5.0" />
+      <point x="80.5" y="-5.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4/commons-beanutils:commons-beanutils:jar:1.8.0" target="commons-beanutils:commons-beanutils:jar:1.9.4">
+      <point x="-75.0" y="5.0" />
+      <point x="474.0" y="240.55944055944062" />
+      <point x="75.0" y="-7.5" />
+    </edge>
+    <edge source="com.kevinkda:java-utils:jar:3.1.2-SNAPSHOT" target="com.alibaba:fastjson:jar:1.2.68">
+      <point x="0.0" y="-10.0" />
+      <point x="0.0" y="10.0" />
+    </edge>
+    <edge source="net.sf.json-lib:json-lib:jar:2.4" target="net.sf.json-lib:json-lib:jar:2.4/commons-lang:commons-lang:jar:2.5">
+      <point x="36.0" y="-7.5" />
+      <point x="454.0" y="113.50961538461542" />
+      <point x="474.0" y="65.00000000000003" />
+      <point x="-59.5" y="5.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9471890971039182" x="322.5" y="283.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Show Paths: Root -&gt; Selection</Category>
+  </Categories>
+  <VISIBILITY>All</VISIBILITY>
+</Diagram>
+

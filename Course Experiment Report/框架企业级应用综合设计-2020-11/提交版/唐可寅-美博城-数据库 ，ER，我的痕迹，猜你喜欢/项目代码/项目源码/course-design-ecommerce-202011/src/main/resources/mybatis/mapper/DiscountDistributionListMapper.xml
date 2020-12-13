@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.mapper.DiscountDistributionListMapper">
+    <resultMap id="BaseResultMap"
+               type="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList">
+        <!--@mbg.generated-->
+        <!--@Table CourseDesign202011.discountDistributionList-->
+        <id column="distributionId" jdbcType="INTEGER" property="distributionId"/>
+        <result column="discountId" jdbcType="INTEGER" property="discountId"/>
+        <result column="userId" jdbcType="INTEGER" property="userId"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="parameter" jdbcType="VARCHAR" property="parameter"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        distributionId, discountId, userId, `status`, `parameter`, updateTime
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from CourseDesign202011.discountDistributionList
+        where distributionId = #{distributionId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        <!--@mbg.generated-->
+        delete from CourseDesign202011.discountDistributionList
+        where distributionId = #{distributionId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" keyColumn="distributionId" keyProperty="distributionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountDistributionList (discountId, userId, `status`,
+        `parameter`, updateTime)
+        values (#{discountId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{status,jdbcType=INTEGER},
+        #{parameter,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insertSelective" keyColumn="distributionId" keyProperty="distributionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountDistributionList
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                discountId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="discountId != null">
+                #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountDistributionList
+        <set>
+            <if test="discountId != null">
+                discountId = #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where distributionId = #{distributionId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountDistributionList
+        set discountId = #{discountId,jdbcType=INTEGER},
+        userId = #{userId,jdbcType=INTEGER},
+        `status` = #{status,jdbcType=INTEGER},
+        `parameter` = #{parameter,jdbcType=VARCHAR},
+        updateTime = #{updateTime,jdbcType=TIMESTAMP}
+        where distributionId = #{distributionId,jdbcType=INTEGER}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountDistributionList
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="discountId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                    #{item.discountId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when distributionId = #{item.distributionId,jdbcType=INTEGER} then #{item.userId,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`status` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when distributionId = #{item.distributionId,jdbcType=INTEGER} then #{item.status,jdbcType=INTEGER}
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                    #{item.parameter,jdbcType=VARCHAR}
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                    #{item.updateTime,jdbcType=TIMESTAMP}
+                </foreach>
+            </trim>
+        </trim>
+        where distributionId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.distributionId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <update id="updateBatchSelective" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update CourseDesign202011.discountDistributionList
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="discountId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.discountId != null">
+                        when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                        #{item.discountId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="userId = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.userId != null">
+                        when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                        #{item.userId,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`status` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.status != null">
+                        when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                        #{item.status,jdbcType=INTEGER}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="`parameter` = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.parameter != null">
+                        when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                        #{item.parameter,jdbcType=VARCHAR}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="updateTime = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    <if test="item.updateTime != null">
+                        when distributionId = #{item.distributionId,jdbcType=INTEGER} then
+                        #{item.updateTime,jdbcType=TIMESTAMP}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where distributionId in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.distributionId,jdbcType=INTEGER}
+        </foreach>
+    </update>
+    <insert id="batchInsert" keyColumn="distributionId" keyProperty="distributionId" parameterType="map"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountDistributionList
+        (discountId, userId, `status`, `parameter`, updateTime)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.discountId,jdbcType=INTEGER}, #{item.userId,jdbcType=INTEGER}, #{item.status,jdbcType=INTEGER},
+            #{item.parameter,jdbcType=VARCHAR}, #{item.updateTime,jdbcType=TIMESTAMP})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" keyColumn="distributionId" keyProperty="distributionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountDistributionList
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="distributionId != null">
+                distributionId,
+            </if>
+            discountId,
+            userId,
+            `status`,
+            `parameter`,
+            updateTime,
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="distributionId != null">
+                #{distributionId,jdbcType=INTEGER},
+            </if>
+            #{discountId,jdbcType=INTEGER},
+            #{userId,jdbcType=INTEGER},
+            #{status,jdbcType=INTEGER},
+            #{parameter,jdbcType=VARCHAR},
+            #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="distributionId != null">
+                distributionId = #{distributionId,jdbcType=INTEGER},
+            </if>
+            discountId = #{discountId,jdbcType=INTEGER},
+            userId = #{userId,jdbcType=INTEGER},
+            `status` = #{status,jdbcType=INTEGER},
+            `parameter` = #{parameter,jdbcType=VARCHAR},
+            updateTime = #{updateTime,jdbcType=TIMESTAMP},
+        </trim>
+    </insert>
+    <insert id="insertOrUpdateSelective" keyColumn="distributionId" keyProperty="distributionId"
+            parameterType="cn.edu.hbut.pro.design.system.ecommerce.b202011.group.kevin.domain.DiscountDistributionList"
+            useGeneratedKeys="true">
+        <!--@mbg.generated-->
+        insert into CourseDesign202011.discountDistributionList
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="distributionId != null">
+                distributionId,
+            </if>
+            <if test="discountId != null">
+                discountId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="status != null">
+                `status`,
+            </if>
+            <if test="parameter != null">
+                `parameter`,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="distributionId != null">
+                #{distributionId,jdbcType=INTEGER},
+            </if>
+            <if test="discountId != null">
+                #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="distributionId != null">
+                distributionId = #{distributionId,jdbcType=INTEGER},
+            </if>
+            <if test="discountId != null">
+                discountId = #{discountId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                userId = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="parameter != null">
+                `parameter` = #{parameter,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+</mapper>

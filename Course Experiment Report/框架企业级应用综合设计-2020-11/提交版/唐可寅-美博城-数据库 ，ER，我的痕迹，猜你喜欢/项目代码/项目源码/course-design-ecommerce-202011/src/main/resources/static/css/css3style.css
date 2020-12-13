@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* div圆角 */
+.border-radius {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* div投影 */
+.shadow {
+    -moz-box-shadow: 0px 3px 8px #cecece;
+    -webkit-box-shadow: 0px 3px 8px #cecece;
+    box-shadow: 0px 3px 8px #cecece;
+}
+
+/* text投影 */
+.text-shadow {
+    text-shadow: 1px 1px 0px #fff;
+}
+
+/* text描边 */
+.Text-Stroke {
+    -webkit-text-stroke: 1.0px #000000;
+}
+
+/* 背景渐变 */
+.css3bg {
+    -webkit-transition: background .3s ease, color 0.2s linear;
+    -moz-transition: background .3s ease, color 0.2s linear;
+    -o-transition: background .3s ease, color 0.2s linear;
+    transition: background .3s ease, color 0.2s linear;
+}
+
+/* 内阴影 */
+.box-shadow {
+    -moz-box-shadow: 2px 2px 2px #f1f0f0 inset; /* For Firefox3.6+ */
+    -webkit-box-shadow: 2px 2px 2px #f1f0f0 inset; /* For Chrome5+, Safari5+ */
+    box-shadow: 2px 2px 2px #f1f0f0 inset; /* For Latest Opera */
+}
+
+
+/* 图片元素 */
+img { /* border: none; _display:block  ; max-width: 100%; height: auto; width: auto\9; ie8 */
+}
+
+img {
+    border: none;
+    _display: block;
+    height: auto; /* ie8 */
+}
+
+
+/* div宽度增加过度 */
+.div_short {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    transition: width 2s;
+    -moz-transition: width 2s; /* Firefox 4 */
+    -webkit-transition: width 2s; /* Safari and Chrome */
+    -o-transition: width 2s; /* Opera */
+}
+
+.div_short:hover {
+    width: 300px;
+}
