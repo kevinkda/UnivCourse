@@ -20,5 +20,5 @@
 - 框架企业级应用综合设计-2020-11
 
 ## 本科主辅修毕业设计/论文
-- 基于数据挖掘的舆情警报系统设计与实现
-- 考虑文本情感的知识推荐系统分析与设计
+- 基于数据挖掘的舆情警报系统设计与实现 (Design and Implementation of Public Opinion Alarm System Based on Data Mining)
+- 考虑文本情感的知识推荐系统分析与设计 (Analysis and Design of Knowledge Recommendation System Considering Text Emotion)
