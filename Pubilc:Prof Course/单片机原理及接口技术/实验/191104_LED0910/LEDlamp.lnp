@@ -1,4 +1,0 @@
-"STARTUP.obj",
-"LEDlampPro.obj" 
-TO "LEDlamp" 
-RAMSIZE(256) 
